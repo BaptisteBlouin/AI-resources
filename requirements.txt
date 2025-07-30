@@ -1,0 +1,9 @@
+# Requirements for AI Resources Hub
+# Install with: pip install -r requirements.txt
+
+# Core dependencies
+pyyaml>=6.0,<7.0
+
+# Optional dependencies for development
+# requests>=2.25.0  # For URL validation (if implemented)
+# colorama>=0.4.0   # For colored terminal output

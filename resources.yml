@@ -1,0 +1,29 @@
+resources:
+  - name: "Hugging Face Hub"
+    url: "https://huggingface.co/"
+    description: "Models, datasets, and inference API for NLP, CV, and beyond."
+    tags: ["tools/data-management", "community"]
+  - name: "LangChain"
+    url: "https://github.com/langchain-ai/langchain"
+    description: "Framework for building LLM-powered applications."
+    tags: ["libraries/python/llm-frameworks"]
+  - title: "Attention Is All You Need"
+    url: "https://arxiv.org/abs/1706.03762"
+    summary: "Introduced the Transformer architecture, revolutionizing sequence modeling."
+    tags: ["papers/transformers"]
+  - name: "Distill.pub"
+    url: "https://distill.pub/"
+    description: "Interactive, visual essays on modern ML concepts."
+    tags: ["web-resources/blogs-and-articles"]
+  - name: "Fast.ai Practical Deep Learning for Coders"
+    url: "https://course.fast.ai/"
+    description: "Hands-on course to build state-of-the-art deep learning models."
+    tags: ["tutorials/deep-learning"]
+  - name: "OpenAI WebText"
+    url: "https://github.com/openai/gpt-2-output-dataset"
+    description: "Dataset of web pages used to train GPT-2."
+    tags: ["datasets/text"]
+  - name: "r/MachineLearning"
+    url: "https://www.reddit.com/r/MachineLearning/"
+    description: "Active community for ML research and discussions."
+    tags: ["community/forums"]
