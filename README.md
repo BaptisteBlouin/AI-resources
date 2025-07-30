@@ -91,11 +91,11 @@ echo "  - name: 'Your Amazing AI Tool'
 The following list is automatically generated from `resources.yml`.
 
 <!-- START AUTO -->
-<!-- Generated on 2025-07-30 13:38:52 UTC by generate_readme.py -->
+<!-- Generated on 2025-07-30 13:43:33 UTC by generate_readme.py -->
 
 ## 🌐 View the Interactive AI Resources Hub
 
-**[👆 Click here to explore all 8 AI resources →](https://baptisteblouin.github.io/AI-Resources/)**
+**[👆 Click here to explore all 8 AI resources →](https://baptisteblouin.github.io/AI-resources/)**
 
 This repository contains a curated collection of **8 AI resources** across **7 categories**, including:
 
@@ -112,16 +112,16 @@ This repository contains a curated collection of **8 AI resources** across **7 c
 
 ### 🚀 Quick Access
 
-- **[🌐 Browse Resources](https://baptisteblouin.github.io/AI-Resources/)** - Interactive web interface
+- **[🌐 Browse Resources](https://baptisteblouin.github.io/AI-resources/)** - Interactive web interface
 - **[📝 Contribute](CONTRIBUTING.md)** - Add new resources
-- **[🐛 Report Issues](https://github.com/BaptisteBlouin/AI-Resources/issues)** - Help us improve
-- **[💬 Discussions](https://github.com/BaptisteBlouin/AI-Resources/discussions)** - Join the community
+- **[🐛 Report Issues](https://github.com/BaptisteBlouin/AI-resources/issues)** - Help us improve
+- **[💬 Discussions](https://github.com/BaptisteBlouin/AI-resources/discussions)** - Join the community
 
 ---
 
 <div align="center">
 
-**[⭐ Star this repository](https://github.com/BaptisteBlouin/AI-Resources/stargazers) • [🍴 Fork it](https://github.com/BaptisteBlouin/AI-Resources/fork) • [📖 View on GitHub Pages](https://baptisteblouin.github.io/AI-Resources/)**
+**[⭐ Star this repository](https://github.com/BaptisteBlouin/AI-resources/stargazers) • [🍴 Fork it](https://github.com/BaptisteBlouin/AI-resources/fork) • [📖 View on GitHub Pages](https://baptisteblouin.github.io/AI-resources/)**
 
 *Automatically updated from [`resources.yml`](resources.yml) • Last updated: July 30, 2025*
 

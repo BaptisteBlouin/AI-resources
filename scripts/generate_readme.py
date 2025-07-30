@@ -731,7 +731,7 @@ def generate_simple_readme(nested: Dict[str, Any]) -> str:
 
 ## 🌐 View the Interactive AI Resources Hub
 
-**[👆 Click here to explore all {total_resources} AI resources →](https://baptisteblouin.github.io/AI-Resources/)**
+**[👆 Click here to explore all {total_resources} AI resources →](https://baptisteblouin.github.io/AI-resources/)**
 
 This repository contains a curated collection of **{total_resources} AI resources** across **{len(nested)} categories**, including:
 
@@ -748,16 +748,16 @@ This repository contains a curated collection of **{total_resources} AI resource
 
 ### 🚀 Quick Access
 
-- **[🌐 Browse Resources](https://baptisteblouin.github.io/AI-Resources/)** - Interactive web interface
+- **[🌐 Browse Resources](https://baptisteblouin.github.io/AI-resources/)** - Interactive web interface
 - **[📝 Contribute](CONTRIBUTING.md)** - Add new resources
-- **[🐛 Report Issues](https://github.com/BaptisteBlouin/AI-Resources/issues)** - Help us improve
-- **[💬 Discussions](https://github.com/BaptisteBlouin/AI-Resources/discussions)** - Join the community
+- **[🐛 Report Issues](https://github.com/BaptisteBlouin/AI-resources/issues)** - Help us improve
+- **[💬 Discussions](https://github.com/BaptisteBlouin/AI-resources/discussions)** - Join the community
 
 ---
 
 <div align="center">
 
-**[⭐ Star this repository](https://github.com/BaptisteBlouin/AI-Resources/stargazers) • [🍴 Fork it](https://github.com/BaptisteBlouin/AI-Resources/fork) • [📖 View on GitHub Pages](https://baptisteblouin.github.io/AI-Resources/)**
+**[⭐ Star this repository](https://github.com/BaptisteBlouin/AI-resources/stargazers) • [🍴 Fork it](https://github.com/BaptisteBlouin/AI-resources/fork) • [📖 View on GitHub Pages](https://baptisteblouin.github.io/AI-resources/)**
 
 *Automatically updated from [`resources.yml`](resources.yml) • Last updated: {datetime.now().strftime('%B %d, %Y')}*
 
