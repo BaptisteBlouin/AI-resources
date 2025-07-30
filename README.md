@@ -2,9 +2,9 @@
 
 # 🤖 AI Resources Hub
 
-### A curated collection of cutting-edge AI tools, libraries, papers, and learning resources
+### A collection of cutting-edge AI tools, libraries, papers, and learning resources
 
-[![Made with ❤️](https://img.shields.io/badge/Made%20with-❤️-red.svg)](https://github.com/BaptisteBlouin/AI-Resources)
+[![Made with ❤️](https://img.shields.io/badge/Made%20with-❤️-red.svg)](https://github.com/BaptisteBlouin/AI-resources)
 [![Community Driven](https://img.shields.io/badge/Community-Driven-blue.svg)](CONTRIBUTING.md)
 [![Auto Updated](https://img.shields.io/badge/Auto-Updated-green.svg)](scripts/generate_readme.py)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -55,14 +55,14 @@
 
 ## 🚀 Quick Start
 
-### 💻 For Developers
+### 💻 For Contributors
 
 ```bash
 # Clone this repository for offline access
-git clone https://github.com/BaptisteBlouin/AI-Resources.git
+git clone https://github.com/BaptisteBlouin/AI-resources.git
 
 # Generate an updated README with the latest resources
-cd AI-Resources
+cd AI-resources
 python scripts/generate_readme.py
 
 # Add new resources easily
@@ -72,34 +72,20 @@ echo "  - name: 'Your Amazing AI Tool'
     tags: ['tools/machine-learning']" >> resources.yml
 ```
 
-### 🔍 Finding Resources
-
-- **Browser Search**: Use `Ctrl+F` (or `Cmd+F` on Mac) to find specific tools or topics
-- **Category Browsing**: Navigate through organized sections with clear counts
-- **GitHub Integration**: GitHub repositories show live stars and commit activity
-- **Direct Links**: All resources link directly to their official pages
-
-### 📱 GitHub Native Experience
-
-- 🏷️ **Category Icons**: Each category has a distinct emoji for quick identification
-- 🔗 **Direct Links**: All resource links work perfectly on GitHub
-- 📊 **Live Badges**: GitHub repositories display real-time stars and activity
-- 📖 **Markdown Native**: Fully compatible with GitHub's markdown rendering
-
 ## 📚 Resources
 
 The following list is automatically generated from `resources.yml`.
 
 <!-- START AUTO -->
-<!-- Generated on 2025-07-30 13:43:33 UTC by generate_readme.py -->
+<!-- Generated on 2025-07-30 15:26:36 UTC by generate_readme.py -->
 
 ## 🌐 View the Interactive AI Resources Hub
 
-**[👆 Click here to explore all 8 AI resources →](https://baptisteblouin.github.io/AI-resources/)**
+**[👆 Click here to explore all 100 AI resources →](https://baptisteblouin.github.io/AI-resources/)**
 
-This repository contains a curated collection of **8 AI resources** across **7 categories**, including:
+This repository contains a curated collection of **100 AI resources** across **12 categories**, including:
 
-**Community** (2) • **Datasets** (1) • **Libraries** (1) • **Papers** (1) • **Tools** (1)...
+**Books** (8) • **Certificates** (1) • **Community** (5) • **Datasets** (15) • **Free** (1)...
 
 ### ✨ Features
 
@@ -130,16 +116,16 @@ This repository contains a curated collection of **8 AI resources** across **7 c
 
 ## 🤝 Contributing
 
-We believe in the power of community! Your contributions help make this resource collection even better for everyone.
+Your contributions help make this resource collection even better for everyone.
 
 ### 🎯 How to Contribute
 
-| Method | Description | Difficulty |
-|--------|-------------|------------|
-| 🔗 **Add Resources** | Submit new tools, papers, or tutorials via `resources.yml` | ⭐ Easy |
-| 🐛 **Report Issues** | Found a broken link or outdated info? Let us know! | ⭐ Easy |
-| 💡 **Suggest Features** | Have ideas for improvements? We'd love to hear them! | ⭐⭐ Medium |
-| 🛠️ **Code Improvements** | Enhance the generation script or add new features | ⭐⭐⭐ Advanced |
+| Method | Description |
+|--------|-------------|
+| 🔗 **Add Resources** | Submit new tools, papers, or tutorials via `resources.yml` |
+| 🐛 **Report Issues** | Found a broken link or outdated info? Let me know! |
+| 💡 **Suggest Features** | Have ideas for improvements? Let me know! |
+| 🛠️ **Code Improvements** | Enhance the generation script or add new features |
 
 ### 📋 Quick Start Guide
 
@@ -167,12 +153,12 @@ If this resource collection has helped you, consider giving it a ⭐ star!
 
 ### 🔄 Automation
 
-This README is automatically generated from [`resources.yml`](resources.yml) using our [smart generation script](scripts/generate_readme.py).
+This README is automatically generated from [`resources.yml`](resources.yml) using the [generation script](scripts/generate_readme.py).
 
 **Last Updated**: `Generated automatically on every commit`
 
 ---
 
-<sub>Built with ❤️ by the AI community • [Report Issues](https://github.com/BaptisteBlouin/AI-Resources/issues) • [Join Discussions](https://github.com/BaptisteBlouin/AI-Resources/discussions)</sub>
+<sub> [Report Issues](https://github.com/BaptisteBlouin/AI-Resources/issues) • [Join Discussions](https://github.com/BaptisteBlouin/AI-Resources/discussions)</sub>
 
 </div>

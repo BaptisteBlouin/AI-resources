@@ -1,6 +1,215 @@
 {
+  "libraries": {
+    "_items": [],
+    "python": {
+      "_items": [],
+      "nlp": {
+        "_items": [
+          {
+            "name": "AllenNLP",
+            "url": "https://github.com/allenai/allennlp",
+            "description": "Open-source NLP research library built on PyTorch, facilitating the development of state-of-the-art deep learning models for NLP tasks.",
+            "tags": [
+              "libraries/python/nlp"
+            ]
+          },
+          {
+            "name": "Hugging Face Transformers",
+            "url": "https://github.com/huggingface/transformers",
+            "description": "Library providing state-of-the-art pre-trained transformer models (BERT, GPT, etc.) and tools for NLP and beyond.",
+            "tags": [
+              "libraries/python/nlp"
+            ]
+          },
+          {
+            "name": "Rasa",
+            "url": "https://github.com/RasaHQ/rasa",
+            "description": "Open source framework for building conversational AI chatbots with natural language understanding and dialogue management.",
+            "tags": [
+              "libraries/python/nlp"
+            ]
+          },
+          {
+            "name": "spaCy",
+            "url": "https://github.com/explosion/spaCy",
+            "description": "Industrial-strength Natural Language Processing library in Python with efficient implementations for parsing, NER, and more.",
+            "tags": [
+              "libraries/python/nlp"
+            ]
+          }
+        ]
+      },
+      "deep-learning": {
+        "_items": [
+          {
+            "name": "Fast.ai (Library)",
+            "url": "https://github.com/fastai/fastai",
+            "description": "High-level library built on PyTorch to simplify training fast and accurate neural networks, as used in the fast.ai courses.",
+            "tags": [
+              "libraries/python/deep-learning"
+            ]
+          },
+          {
+            "name": "JAX",
+            "url": "https://github.com/google/jax",
+            "description": "NumPy-like library by Google that uses XLA to accelerate machine learning research, supporting autodiff and just-in-time compilation.",
+            "tags": [
+              "libraries/python/deep-learning"
+            ]
+          },
+          {
+            "name": "Keras",
+            "url": "https://keras.io/",
+            "description": "High-level neural networks API, now integrated with TensorFlow, that simplifies building and training deep learning models.",
+            "tags": [
+              "libraries/python/deep-learning"
+            ]
+          },
+          {
+            "name": "PyTorch",
+            "url": "https://pytorch.org/",
+            "description": "Open source deep learning framework known for dynamic computation graphs and a strong developer community.",
+            "tags": [
+              "libraries/python/deep-learning"
+            ]
+          },
+          {
+            "name": "TensorFlow",
+            "url": "https://www.tensorflow.org/",
+            "description": "Google's open source library for numerical computation and large-scale machine learning, powering many production ML systems.",
+            "tags": [
+              "libraries/python/deep-learning"
+            ]
+          }
+        ]
+      },
+      "tools": {
+        "_items": [
+          {
+            "name": "Gradio",
+            "url": "https://github.com/gradio-app/gradio",
+            "description": "Python library to create user-friendly web interfaces for machine learning models, enabling easy model demos and sharing.",
+            "tags": [
+              "libraries/python/tools"
+            ]
+          },
+          {
+            "name": "Streamlit",
+            "url": "https://github.com/streamlit/streamlit",
+            "description": "App framework that turns Python scripts into interactive web apps, often used for machine learning demos and dashboards.",
+            "tags": [
+              "libraries/python/tools"
+            ]
+          }
+        ]
+      },
+      "data": {
+        "_items": [
+          {
+            "name": "Hugging Face Datasets",
+            "url": "https://github.com/huggingface/datasets",
+            "description": "Library for accessing, sharing, and processing datasets in ML, with a large collection of ready-to-use datasets and tools.",
+            "tags": [
+              "libraries/python/data"
+            ]
+          }
+        ]
+      },
+      "llm-frameworks": {
+        "_items": [
+          {
+            "name": "LangChain",
+            "url": "https://github.com/langchain-ai/langchain",
+            "description": "Framework for building LLM-powered applications.",
+            "tags": [
+              "libraries/python/llm-frameworks"
+            ]
+          },
+          {
+            "name": "LlamaIndex (GPT Index)",
+            "url": "https://github.com/jerryjliu/llama_index",
+            "description": "Framework for connecting large language models with external knowledge sources, enabling LLM applications beyond ChatGPT.",
+            "tags": [
+              "libraries/python/llm-frameworks"
+            ]
+          }
+        ]
+      },
+      "machine-learning": {
+        "_items": [
+          {
+            "name": "Scikit-learn",
+            "url": "https://scikit-learn.org/",
+            "description": "Popular Python library providing many efficient implementations of machine learning algorithms and tools (classification, regression, clustering, etc.).",
+            "tags": [
+              "libraries/python/machine-learning"
+            ]
+          },
+          {
+            "name": "XGBoost",
+            "url": "https://github.com/dmlc/xgboost",
+            "description": "Extreme Gradient Boosting library for scalable, fast gradient boosting decision trees, often winning tabular data competitions.",
+            "tags": [
+              "libraries/python/machine-learning"
+            ]
+          }
+        ]
+      },
+      "hyperparameter-optimization": {
+        "_items": [
+          {
+            "name": "Optuna",
+            "url": "https://github.com/optuna/optuna",
+            "description": "A hyperparameter optimization framework to automate hyperparameter search, compatible with various machine learning libraries.",
+            "tags": [
+              "libraries/python/hyperparameter-optimization"
+            ]
+          }
+        ]
+      },
+      "distributed-computing": {
+        "_items": [
+          {
+            "name": "Ray",
+            "url": "https://github.com/ray-project/ray",
+            "description": "A distributed computing framework for machine learning and AI, providing tools for distributed training, hyperparameter optimization, and more.",
+            "tags": [
+              "libraries/python/distributed-computing"
+            ]
+          }
+        ]
+      }
+    },
+    "c++": {
+      "_items": [],
+      "vision": {
+        "_items": [
+          {
+            "name": "OpenCV",
+            "url": "https://opencv.org/",
+            "description": "Open source computer vision library offering a wide range of image and video processing algorithms, with C++ core and Python bindings.",
+            "tags": [
+              "libraries/c++/vision"
+            ]
+          }
+        ]
+      }
+    }
+  },
   "tools": {
     "_items": [],
+    "development": {
+      "_items": [
+        {
+          "name": "Google Colaboratory",
+          "url": "https://colab.research.google.com/",
+          "description": "Free online Jupyter notebook environment with GPUs, for running and sharing ML experiments in the cloud.",
+          "tags": [
+            "tools/development"
+          ]
+        }
+      ]
+    },
     "data-management": {
       "_items": [
         {
@@ -10,6 +219,107 @@
           "tags": [
             "tools/data-management",
             "community"
+          ]
+        }
+      ]
+    },
+    "competitions": {
+      "_items": [
+        {
+          "name": "Kaggle",
+          "url": "https://www.kaggle.com/",
+          "description": "Platform for data science competitions, hosting datasets, and a vibrant data science community.",
+          "tags": [
+            "tools/competitions",
+            "community"
+          ]
+        }
+      ]
+    },
+    "rl": {
+      "_items": [
+        {
+          "name": "OpenAI Gym",
+          "url": "https://gym.openai.com/",
+          "description": "Collection of standardized environments (like Atari games) for developing and benchmarking reinforcement learning algorithms.",
+          "tags": [
+            "tools/rl"
+          ]
+        }
+      ]
+    },
+    "visualization": {
+      "_items": [
+        {
+          "name": "TensorBoard",
+          "url": "https://www.tensorflow.org/tensorboard",
+          "description": "Suite of visualization tools for inspecting and monitoring machine learning training runs (graphs, metrics, etc.).",
+          "tags": [
+            "tools/visualization"
+          ]
+        }
+      ]
+    },
+    "experiment-tracking": {
+      "_items": [
+        {
+          "name": "Weights & Biases",
+          "url": "https://wandb.ai/",
+          "description": "Experiment tracking and model management platform for machine learning projects.",
+          "tags": [
+            "tools/experiment-tracking"
+          ]
+        }
+      ]
+    },
+    "mlops": {
+      "_items": [
+        {
+          "name": "MLflow",
+          "url": "https://github.com/mlflow/mlflow",
+          "description": "An open-source platform for managing the end-to-end machine learning lifecycle, covering experiment tracking, reproducible model packaging, deployment, and a centralized model registry.",
+          "tags": [
+            "tools/mlops"
+          ]
+        },
+        {
+          "name": "Kubeflow",
+          "url": "https://github.com/kubeflow/kubeflow",
+          "description": "An open-source MLOps toolkit that makes it simple to deploy, scale, and manage machine learning workflows on Kubernetes.",
+          "tags": [
+            "tools/mlops"
+          ]
+        }
+      ]
+    },
+    "ml-platforms": {
+      "_items": [
+        {
+          "name": "Amazon SageMaker",
+          "url": "https://aws.amazon.com/sagemaker/",
+          "description": "A fully managed service for building, training, and deploying machine learning models at scale, with support for popular frameworks like TensorFlow and PyTorch.",
+          "tags": [
+            "tools/ml-platforms"
+          ]
+        },
+        {
+          "name": "Google Cloud AI Platform",
+          "url": "https://cloud.google.com/ai-platform",
+          "description": "A fully managed service for building, training, and deploying machine learning models at scale, with support for popular frameworks like TensorFlow and PyTorch.",
+          "tags": [
+            "tools/ml-platforms"
+          ]
+        }
+      ]
+    },
+    "cv": {
+      "_items": [
+        {
+          "name": "Segment Anything Model (SAM)",
+          "url": "https://github.com/facebookresearch/segment-anything",
+          "description": "A foundation model for promptable image segmentation that produces high-quality object masks from simple inputs, trained on 11M images with 1.1B masks.",
+          "tags": [
+            "tools/cv"
           ]
         }
       ]
@@ -25,10 +335,27 @@
           "tools/data-management",
           "community"
         ]
+      },
+      {
+        "name": "Kaggle",
+        "url": "https://www.kaggle.com/",
+        "description": "Platform for data science competitions, hosting datasets, and a vibrant data science community.",
+        "tags": [
+          "tools/competitions",
+          "community"
+        ]
       }
     ],
     "forums": {
       "_items": [
+        {
+          "name": "Cross Validated (Stack Exchange)",
+          "url": "https://stats.stackexchange.com/",
+          "description": "Stack Exchange Q&A forum for statistics, machine learning, and data science questions (also known as Cross Validated).",
+          "tags": [
+            "community/forums"
+          ]
+        },
         {
           "name": "r/MachineLearning",
           "url": "https://www.reddit.com/r/MachineLearning/",
@@ -36,38 +363,13 @@
           "tags": [
             "community/forums"
           ]
-        }
-      ]
-    }
-  },
-  "libraries": {
-    "_items": [],
-    "python": {
-      "_items": [],
-      "llm-frameworks": {
-        "_items": [
-          {
-            "name": "LangChain",
-            "url": "https://github.com/langchain-ai/langchain",
-            "description": "Framework for building LLM-powered applications.",
-            "tags": [
-              "libraries/python/llm-frameworks"
-            ]
-          }
-        ]
-      }
-    }
-  },
-  "papers": {
-    "_items": [],
-    "transformers": {
-      "_items": [
+        },
         {
-          "title": "Attention Is All You Need",
-          "url": "https://arxiv.org/abs/1706.03762",
-          "summary": "Introduced the Transformer architecture, revolutionizing sequence modeling.",
+          "name": "r/learnmachinelearning",
+          "url": "https://www.reddit.com/r/learnmachinelearning/",
+          "description": "Reddit community geared towards beginners and learners in ML, where members share tutorials, questions, and project help.",
           "tags": [
-            "papers/transformers"
+            "community/forums"
           ]
         }
       ]
@@ -75,8 +377,28 @@
   },
   "web-resources": {
     "_items": [],
+    "papers": {
+      "_items": [
+        {
+          "name": "Papers with Code",
+          "url": "https://paperswithcode.com/",
+          "description": "Online index linking ML research papers with their code implementations and leaderboards on standard benchmarks.",
+          "tags": [
+            "web-resources/papers"
+          ]
+        }
+      ]
+    },
     "blogs-and-articles": {
       "_items": [
+        {
+          "name": "DeepMind Blog",
+          "url": "https://www.deepmind.com/blog",
+          "description": "Official DeepMind blog sharing the latest research breakthroughs, technical explainers, and perspectives on AI.",
+          "tags": [
+            "web-resources/blogs-and-articles"
+          ]
+        },
         {
           "name": "Distill.pub",
           "url": "https://distill.pub/",
@@ -84,20 +406,53 @@
           "tags": [
             "web-resources/blogs-and-articles"
           ]
-        }
-      ]
-    }
-  },
-  "tutorials": {
-    "_items": [],
-    "deep-learning": {
-      "_items": [
+        },
         {
-          "name": "Fast.ai Practical Deep Learning for Coders",
-          "url": "https://course.fast.ai/",
-          "description": "Hands-on course to build state-of-the-art deep learning models.",
+          "name": "KDnuggets",
+          "url": "https://www.kdnuggets.com/",
+          "description": "Resource site for AI, data science, and machine learning news, tutorials, and opinion pieces, active since the 1990s.",
           "tags": [
-            "tutorials/deep-learning"
+            "web-resources/blogs-and-articles"
+          ]
+        },
+        {
+          "name": "Machine Learning Mastery",
+          "url": "https://machinelearningmastery.com/",
+          "description": "Blog by Jason Brownlee offering hands-on tutorials and clear explanations for machine learning and deep learning techniques.",
+          "tags": [
+            "web-resources/blogs-and-articles"
+          ]
+        },
+        {
+          "name": "OpenAI Blog",
+          "url": "https://openai.com/blog",
+          "description": "Official blog of OpenAI, featuring research announcements, policy discussions, and insights into AI advancements.",
+          "tags": [
+            "web-resources/blogs-and-articles"
+          ]
+        },
+        {
+          "name": "The Gradient",
+          "url": "https://thegradient.pub/",
+          "description": "Online magazine with in-depth articles, interviews, and essays on cutting-edge AI research and trends.",
+          "tags": [
+            "web-resources/blogs-and-articles"
+          ]
+        },
+        {
+          "name": "Towards Data Science",
+          "url": "https://towardsdatascience.com/",
+          "description": "Medium's popular publication for data science and AI, hosting a wide range of tutorials, opinion pieces, and guides.",
+          "tags": [
+            "web-resources/blogs-and-articles"
+          ]
+        },
+        {
+          "name": "The einsum function",
+          "url": "https://ajcr.net/Basic-guide-to-einsum/",
+          "description": "A basic introduction to NumPy's einsum",
+          "tags": [
+            "web-resources/blogs-and-articles"
           ]
         }
       ]
@@ -105,8 +460,78 @@
   },
   "datasets": {
     "_items": [],
+    "images": {
+      "_items": [
+        {
+          "name": "CIFAR-10/100",
+          "url": "https://www.cs.toronto.edu/~kriz/cifar.html",
+          "description": "Small image datasets (60,000 32x32 images) of 10 or 100 classes, commonly used for quick experiments in computer vision research.",
+          "tags": [
+            "datasets/images"
+          ]
+        },
+        {
+          "name": "ImageNet",
+          "url": "https://www.image-net.org/",
+          "description": "Large dataset of 14 million labeled images across 20,000 categories; pivotal for advancing computer vision (e.g., annual ImageNet competition).",
+          "tags": [
+            "datasets/images"
+          ]
+        },
+        {
+          "name": "LAION-5B",
+          "url": "https://laion.ai/blog/laion-5b/",
+          "description": "Massive dataset of 5 billion image-text pairs collected for training multimodal models (e.g., CLIP, Stable Diffusion) at scale.",
+          "tags": [
+            "datasets/images",
+            "datasets/text"
+          ]
+        },
+        {
+          "name": "MNIST",
+          "url": "http://yann.lecun.com/exdb/mnist/",
+          "description": "Classic dataset of 70,000 handwritten digit images (0-9) used as a baseline for image classification algorithms.",
+          "tags": [
+            "datasets/images"
+          ]
+        },
+        {
+          "name": "MS COCO",
+          "url": "https://cocodataset.org/",
+          "description": "Common Objects in Context: a dataset for image recognition, segmentation, and captioning, containing 330K images with context-rich annotations.",
+          "tags": [
+            "datasets/images"
+          ]
+        }
+      ]
+    },
     "text": {
       "_items": [
+        {
+          "name": "Common Crawl",
+          "url": "https://commoncrawl.org/",
+          "description": "Open repository of billions of web pages (raw web crawl data), often used to construct large-scale datasets for language modeling.",
+          "tags": [
+            "datasets/text"
+          ]
+        },
+        {
+          "name": "GLUE Benchmark",
+          "url": "https://gluebenchmark.com/",
+          "description": "General Language Understanding Evaluation: a collection of 9 diverse NLU tasks for evaluating and comparing language model performance.",
+          "tags": [
+            "datasets/text"
+          ]
+        },
+        {
+          "name": "LAION-5B",
+          "url": "https://laion.ai/blog/laion-5b/",
+          "description": "Massive dataset of 5 billion image-text pairs collected for training multimodal models (e.g., CLIP, Stable Diffusion) at scale.",
+          "tags": [
+            "datasets/images",
+            "datasets/text"
+          ]
+        },
         {
           "name": "OpenAI WebText",
           "url": "https://github.com/openai/gpt-2-output-dataset",
@@ -114,8 +539,502 @@
           "tags": [
             "datasets/text"
           ]
+        },
+        {
+          "name": "The Pile",
+          "url": "https://pile.eleuther.ai/",
+          "description": "Open 800GB text dataset from EleutherAI composed of diverse sources (encyclopedias, forums, etc.), designed for training large-scale language models.",
+          "tags": [
+            "datasets/text"
+          ]
+        },
+        {
+          "name": "SQuAD",
+          "url": "https://rajpurkar.github.io/SQuAD-explorer/",
+          "description": "Stanford Question Answering Dataset: reading comprehension benchmark consisting of questions on Wikipedia articles and corresponding answer spans.",
+          "tags": [
+            "datasets/text"
+          ]
         }
       ]
+    },
+    "audio": {
+      "_items": [
+        {
+          "name": "LibriSpeech",
+          "url": "https://www.openslr.org/12",
+          "description": "Corpus of approximately 1000 hours of English audiobook recordings, widely used for training and benchmarking speech recognition systems.",
+          "tags": [
+            "datasets/audio"
+          ]
+        }
+      ]
+    },
+    "misc": {
+      "_items": [
+        {
+          "name": "UCI Machine Learning Repository",
+          "url": "https://archive.ics.uci.edu/ml/index.php",
+          "description": "Collection of hundreds of datasets from various domains, openly available for machine learning research and education.",
+          "tags": [
+            "datasets/misc"
+          ]
+        }
+      ]
+    },
+    "eeg": {
+      "_items": [
+        {
+          "name": "BEED (Bangalore EEG Epilepsy Dataset)",
+          "url": "https://archive.ics.uci.edu/ml/datasets/Bangalore+EEG+Epilepsy+Dataset",
+          "description": "A comprehensive EEG collection for epileptic seizure detection and classification, featuring high-fidelity signals from 20 adult subjects across four categories.",
+          "tags": [
+            "datasets/eeg",
+            "datasets/healthcare"
+          ]
+        }
+      ]
+    },
+    "healthcare": {
+      "_items": [
+        {
+          "name": "BEED (Bangalore EEG Epilepsy Dataset)",
+          "url": "https://archive.ics.uci.edu/ml/datasets/Bangalore+EEG+Epilepsy+Dataset",
+          "description": "A comprehensive EEG collection for epileptic seizure detection and classification, featuring high-fidelity signals from 20 adult subjects across four categories.",
+          "tags": [
+            "datasets/eeg",
+            "datasets/healthcare"
+          ]
+        }
+      ]
+    }
+  },
+  "tutorials": {
+    "_items": [],
+    "machine-learning": {
+      "_items": [
+        {
+          "name": "Andrew Ng's Machine Learning (Coursera)",
+          "url": "https://www.coursera.org/learn/machine-learning",
+          "description": "Classic introductory online course from Stanford (via Coursera) covering the fundamentals of machine learning. Taught by Andrew Ng.",
+          "tags": [
+            "tutorials/machine-learning"
+          ]
+        },
+        {
+          "name": "IBM Machine Learning Professional Certificate",
+          "url": "https://www.coursera.org/professional-certificates/ibm-machine-learning",
+          "description": "A series of courses covering machine learning concepts and practical skills using Python and IBM Watson, designed for building job-ready skills.",
+          "tags": [
+            "tutorials/machine-learning",
+            "certificates"
+          ]
+        },
+        {
+          "name": "Google's Machine Learning Crash Course",
+          "url": "https://developers.google.com/machine-learning/crash-course",
+          "description": "A fast-paced introduction to machine learning concepts and techniques with interactive exercises, offered for free by Google.",
+          "tags": [
+            "tutorials/machine-learning",
+            "free"
+          ]
+        },
+        {
+          "name": "Data Science: Machine Learning (Harvard)",
+          "url": "https://www.edx.org/course/data-science-machine-learning",
+          "description": "A course covering machine learning techniques using Python and real-world datasets, part of Harvard's Data Science Professional Certificate.",
+          "tags": [
+            "tutorials/machine-learning",
+            "universities/harvard"
+          ]
+        }
+      ]
+    },
+    "deep-learning": {
+      "_items": [
+        {
+          "name": "Deep Learning Specialization (deeplearning.ai)",
+          "url": "https://www.coursera.org/specializations/deep-learning",
+          "description": "Five-course Coursera specialization that covers neural networks, deep learning techniques, and applications. Led by Andrew Ng.",
+          "tags": [
+            "tutorials/deep-learning"
+          ]
+        },
+        {
+          "name": "Fast.ai Practical Deep Learning for Coders",
+          "url": "https://course.fast.ai/",
+          "description": "Hands-on course to build state-of-the-art deep learning models.",
+          "tags": [
+            "tutorials/deep-learning"
+          ]
+        },
+        {
+          "name": "Full Stack Deep Learning",
+          "url": "https://fullstackdeeplearning.com/",
+          "description": "Course that teaches how to design, train, deploy, and maintain deep learning projects, bridging the gap between research and production (MLOps).",
+          "tags": [
+            "tutorials/deep-learning"
+          ]
+        },
+        {
+          "name": "Hugging Face Transformers Course",
+          "url": "https://huggingface.co/learn",
+          "description": "Free online course from Hugging Face that teaches how to use transformer models for various tasks in NLP, vision, and more.",
+          "tags": [
+            "tutorials/deep-learning"
+          ]
+        },
+        {
+          "name": "MIT 6.S191: Introduction to Deep Learning",
+          "url": "http://introtodeeplearning.com/",
+          "description": "MIT's introductory course on deep learning fundamentals and applications, featuring hands-on labs and recorded lectures.",
+          "tags": [
+            "tutorials/deep-learning"
+          ]
+        },
+        {
+          "name": "Stanford CS224n: NLP with Deep Learning",
+          "url": "http://web.stanford.edu/class/cs224n/",
+          "description": "Top NLP course covering modern natural language processing techniques, from word vectors to transformers (lecture videos and notes available).",
+          "tags": [
+            "tutorials/deep-learning"
+          ]
+        },
+        {
+          "name": "Stanford CS231n: Convolutional Neural Networks",
+          "url": "http://cs231n.stanford.edu/",
+          "description": "Renowned Stanford course on deep learning for computer vision, with freely available lecture videos and comprehensive notes.",
+          "tags": [
+            "tutorials/deep-learning"
+          ]
+        }
+      ]
+    },
+    "reinforcement-learning": {
+      "_items": [
+        {
+          "name": "DeepMind x UCL Reinforcement Learning Lectures",
+          "url": "https://www.youtube.com/playlist?list=PLqYmG7hTraZBiG_XpjnPrSNw-1XQaM_gB",
+          "description": "Comprehensive 10-lecture series on reinforcement learning (2015) taught by DeepMind's David Silver, covering key concepts and algorithms.",
+          "tags": [
+            "tutorials/reinforcement-learning"
+          ]
+        }
+      ]
+    }
+  },
+  "certificates": {
+    "_items": [
+      {
+        "name": "IBM Machine Learning Professional Certificate",
+        "url": "https://www.coursera.org/professional-certificates/ibm-machine-learning",
+        "description": "A series of courses covering machine learning concepts and practical skills using Python and IBM Watson, designed for building job-ready skills.",
+        "tags": [
+          "tutorials/machine-learning",
+          "certificates"
+        ]
+      }
+    ]
+  },
+  "free": {
+    "_items": [
+      {
+        "name": "Google's Machine Learning Crash Course",
+        "url": "https://developers.google.com/machine-learning/crash-course",
+        "description": "A fast-paced introduction to machine learning concepts and techniques with interactive exercises, offered for free by Google.",
+        "tags": [
+          "tutorials/machine-learning",
+          "free"
+        ]
+      }
+    ]
+  },
+  "universities": {
+    "_items": [],
+    "harvard": {
+      "_items": [
+        {
+          "name": "Data Science: Machine Learning (Harvard)",
+          "url": "https://www.edx.org/course/data-science-machine-learning",
+          "description": "A course covering machine learning techniques using Python and real-world datasets, part of Harvard's Data Science Professional Certificate.",
+          "tags": [
+            "tutorials/machine-learning",
+            "universities/harvard"
+          ]
+        }
+      ]
+    }
+  },
+  "papers": {
+    "_items": [],
+    "transformers": {
+      "_items": [
+        {
+          "name": "Attention Is All You Need",
+          "url": "https://arxiv.org/abs/1706.03762",
+          "description": "Introduced the Transformer architecture, revolutionizing sequence modeling.",
+          "tags": [
+            "papers/transformers"
+          ]
+        },
+        {
+          "name": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+          "url": "https://arxiv.org/abs/1810.04805",
+          "description": "Devlin et al. (2018) introduced BERT, a pre-trained bidirectional transformer model that achieved state-of-the-art performance across numerous NLP tasks via fine-tuning.",
+          "tags": [
+            "papers/transformers"
+          ]
+        },
+        {
+          "name": "Language Models are Few-Shot Learners",
+          "url": "https://arxiv.org/abs/2005.14165",
+          "description": "Brown et al. (2020) presented GPT-3, a 175-billion parameter language model, showing that large language models can perform new tasks in a few-shot setting without additional training.",
+          "tags": [
+            "papers/transformers"
+          ]
+        }
+      ]
+    },
+    "generative": {
+      "_items": [
+        {
+          "name": "DALL·E: Zero-Shot Text-to-Image Generation",
+          "url": "https://arxiv.org/abs/2102.12092",
+          "description": "Ramesh et al. (2021) introduced DALL·E, a transformer that generates images from text descriptions, showcasing creative generative abilities of large models.",
+          "tags": [
+            "papers/generative"
+          ]
+        },
+        {
+          "name": "Generative Adversarial Networks",
+          "url": "https://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf",
+          "description": "Goodfellow et al. (2014) introduced GANs, a framework of two neural networks (generator and discriminator) competing to produce realistic synthetic data.",
+          "tags": [
+            "papers/generative"
+          ]
+        },
+        {
+          "name": "High-Resolution Image Synthesis with Latent Diffusion Models",
+          "url": "https://arxiv.org/abs/2112.10752",
+          "description": "Rombach et al. (2022) presented Stable Diffusion, a latent diffusion model enabling high-quality image generation efficiently on consumer hardware.",
+          "tags": [
+            "papers/generative"
+          ]
+        },
+        {
+          "name": "Denoising Diffusion Probabilistic Models",
+          "url": "https://arxiv.org/abs/2006.11239",
+          "description": "Introduced diffusion models for generative modeling by training a model to reverse a gradual noising process.",
+          "tags": [
+            "papers/generative"
+          ]
+        }
+      ]
+    },
+    "cv": {
+      "_items": [
+        {
+          "name": "Deep Residual Learning for Image Recognition",
+          "url": "https://arxiv.org/abs/1512.03385",
+          "description": "He et al. (2015) introduced residual networks (ResNets), enabling the training of ultra-deep neural networks and winning the 2015 ImageNet competition.",
+          "tags": [
+            "papers/cv"
+          ]
+        },
+        {
+          "name": "ImageNet Classification with Deep Convolutional Neural Networks",
+          "url": "https://dl.acm.org/doi/10.1145/3065386",
+          "description": "Krizhevsky et al. (2012) showed that deep CNNs (AlexNet) can achieve breakthrough performance on image classification, kickstarting the deep learning era in computer vision.",
+          "tags": [
+            "papers/cv"
+          ]
+        },
+        {
+          "name": "NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis",
+          "url": "https://arxiv.org/abs/2003.08934",
+          "description": "Introduced Neural Radiance Fields (NeRF) to reconstruct 3D scenes from 2D images by optimizing a continuous 5D representation.",
+          "tags": [
+            "papers/cv"
+          ]
+        }
+      ]
+    },
+    "reinforcement-learning": {
+      "_items": [
+        {
+          "name": "Human-level control through deep reinforcement learning",
+          "url": "https://www.nature.com/articles/nature14236",
+          "description": "Mnih et al. (2015) demonstrated a deep Q-network (DQN) that learned to play Atari games at human level, launching deep reinforcement learning as a field.",
+          "tags": [
+            "papers/reinforcement-learning"
+          ]
+        },
+        {
+          "name": "Mastering the Game of Go with Deep Neural Networks and Tree Search",
+          "url": "https://www.nature.com/articles/nature16961",
+          "description": "Silver et al. (2016) detailed AlphaGo, the first program to defeat professional Go players by combining deep neural networks with Monte Carlo tree search.",
+          "tags": [
+            "papers/reinforcement-learning"
+          ]
+        },
+        {
+          "name": "Mastering the Game of Go without Human Knowledge",
+          "url": "https://www.nature.com/articles/nature24270",
+          "description": "Silver et al. (2017) introduced AlphaGo Zero, which learned Go superhumanly through self-play alone, without any human example games.",
+          "tags": [
+            "papers/reinforcement-learning"
+          ]
+        }
+      ]
+    },
+    "nlp": {
+      "_items": [
+        {
+          "name": "Neural Machine Translation by Jointly Learning to Align and Translate",
+          "url": "https://arxiv.org/abs/1409.0473",
+          "description": "Bahdanau et al. (2015) introduced the attention mechanism in sequence models, allowing neural translators to align words and significantly improving translation quality.",
+          "tags": [
+            "papers/nlp"
+          ]
+        },
+        {
+          "name": "Sequence to Sequence Learning with Neural Networks",
+          "url": "https://arxiv.org/abs/1409.3215",
+          "description": "Sutskever et al. (2014) demonstrated training an encoder-decoder LSTM to map sequences to sequences (e.g., translating sentences) entirely with neural networks.",
+          "tags": [
+            "papers/nlp"
+          ]
+        }
+      ]
+    },
+    "speech": {
+      "_items": [
+        {
+          "name": "Robust Speech Recognition via Large-Scale Weak Supervision",
+          "url": "https://arxiv.org/abs/2212.04356",
+          "description": "Radford et al. (2022) introduced Whisper, a speech recognition model trained on 680k hours of multilingual data, achieving highly robust transcription across languages.",
+          "tags": [
+            "papers/speech"
+          ]
+        }
+      ]
+    },
+    "multimodal": {
+      "_items": [
+        {
+          "name": "Learning Transferable Visual Models from Natural Language Supervision",
+          "url": "https://arxiv.org/abs/2103.00020",
+          "description": "Presented CLIP, a multimodal model trained to align image and text representations in a shared embedding space.",
+          "tags": [
+            "papers/multimodal"
+          ]
+        }
+      ]
+    }
+  },
+  "books": {
+    "_items": [],
+    "overview": {
+      "_items": [
+        {
+          "name": "Artificial Intelligence: A Modern Approach",
+          "url": "https://aima.cs.berkeley.edu/",
+          "description": "Standard AI textbook by Stuart Russell and Peter Norvig, covering a broad range of AI topics (search, planning, learning, vision, NLP, etc.).",
+          "tags": [
+            "books/overview"
+          ]
+        }
+      ]
+    },
+    "deep-learning": {
+      "_items": [
+        {
+          "name": "Deep Learning (Goodfellow et al.)",
+          "url": "https://www.deeplearningbook.org/",
+          "description": "Comprehensive textbook (2016) covering deep learning theory and techniques, by Ian Goodfellow, Yoshua Bengio, and Aaron Courville. Available online.",
+          "tags": [
+            "books/deep-learning"
+          ]
+        },
+        {
+          "name": "Dive into Deep Learning",
+          "url": "https://d2l.ai/",
+          "description": "Interactive open-source book (with code) by Aston Zhang et al., teaching deep learning concepts and implementations using Python, MXNet/PyTorch.",
+          "tags": [
+            "books/deep-learning"
+          ]
+        },
+        {
+          "name": "Neural Networks and Deep Learning",
+          "url": "http://neuralnetworksanddeeplearning.com/",
+          "description": "Michael Nielsen's free online book (2015) that introduces the core concepts of neural networks and deep learning through clear explanations and code.",
+          "tags": [
+            "books/deep-learning"
+          ]
+        }
+      ]
+    },
+    "machine-learning": {
+      "_items": [
+        {
+          "name": "Introduction to Statistical Learning",
+          "url": "https://www.statlearning.com/",
+          "description": "Accessible introduction to statistical learning by James, Witten, Hastie, and Tibshirani (free PDF available); focuses on applications and includes R examples.",
+          "tags": [
+            "books/machine-learning"
+          ]
+        },
+        {
+          "name": "The Elements of Statistical Learning",
+          "url": "https://web.stanford.edu/~hastie/ElemStatLearn/",
+          "description": "Influential book by Hastie, Tibshirani, and Friedman on statistical learning methods; a more advanced companion to 'Introduction to Statistical Learning'.",
+          "tags": [
+            "books/machine-learning"
+          ]
+        }
+      ]
+    },
+    "data-science": {
+      "_items": [
+        {
+          "name": "Python Data Science Handbook",
+          "url": "https://jakevdp.github.io/PythonDataScienceHandbook/",
+          "description": "A comprehensive guide to data science using Python, covering NumPy, Pandas, Matplotlib, and Scikit-learn.",
+          "tags": [
+            "books/data-science"
+          ]
+        }
+      ]
+    },
+    "reinforcement-learning": {
+      "_items": [
+        {
+          "name": "Reinforcement Learning: An Introduction",
+          "url": "http://incompleteideas.net/book/the-book-2nd.html",
+          "description": "Classic textbook by Richard Sutton and Andrew Barto providing a thorough introduction to reinforcement learning (first edition is freely available).",
+          "tags": [
+            "books/reinforcement-learning"
+          ]
+        }
+      ]
+    }
+  },
+  "lists": {
+    "_items": [],
+    "github": {
+      "_items": [],
+      "llm-engineering": {
+        "_items": [
+          {
+            "name": "LLM Engineer Toolkit",
+            "url": "https://github.com/KalyanKS-NLP/llm-engineer-toolkit",
+            "description": "This repository contains a curated list of 120+ LLM libraries category wise.",
+            "tags": [
+              "lists/github/llm-engineering"
+            ]
+          }
+        ]
+      }
     }
   }
 }
