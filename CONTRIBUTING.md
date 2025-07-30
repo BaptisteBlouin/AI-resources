@@ -39,6 +39,8 @@ We welcome all kinds of contributions:
 5. **Test your changes**:
    ```bash
    python scripts/generate_readme.py
+   # Or use the Makefile
+   make update
    ```
 
 6. **Commit and push**:
@@ -107,6 +109,11 @@ pip install pyyaml
 
 # Test the generation script
 python scripts/generate_readme.py
+
+# Or use Makefile commands
+make update          # Generate README and web assets
+make serve          # Start local development server
+make stats          # Show project statistics
 
 # Run with different options
 python scripts/generate_readme.py --help

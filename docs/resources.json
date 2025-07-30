@@ -1,0 +1,121 @@
+{
+  "tools": {
+    "_items": [],
+    "data-management": {
+      "_items": [
+        {
+          "name": "Hugging Face Hub",
+          "url": "https://huggingface.co/",
+          "description": "Models, datasets, and inference API for NLP, CV, and beyond.",
+          "tags": [
+            "tools/data-management",
+            "community"
+          ]
+        }
+      ]
+    }
+  },
+  "community": {
+    "_items": [
+      {
+        "name": "Hugging Face Hub",
+        "url": "https://huggingface.co/",
+        "description": "Models, datasets, and inference API for NLP, CV, and beyond.",
+        "tags": [
+          "tools/data-management",
+          "community"
+        ]
+      }
+    ],
+    "forums": {
+      "_items": [
+        {
+          "name": "r/MachineLearning",
+          "url": "https://www.reddit.com/r/MachineLearning/",
+          "description": "Active community for ML research and discussions.",
+          "tags": [
+            "community/forums"
+          ]
+        }
+      ]
+    }
+  },
+  "libraries": {
+    "_items": [],
+    "python": {
+      "_items": [],
+      "llm-frameworks": {
+        "_items": [
+          {
+            "name": "LangChain",
+            "url": "https://github.com/langchain-ai/langchain",
+            "description": "Framework for building LLM-powered applications.",
+            "tags": [
+              "libraries/python/llm-frameworks"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "papers": {
+    "_items": [],
+    "transformers": {
+      "_items": [
+        {
+          "title": "Attention Is All You Need",
+          "url": "https://arxiv.org/abs/1706.03762",
+          "summary": "Introduced the Transformer architecture, revolutionizing sequence modeling.",
+          "tags": [
+            "papers/transformers"
+          ]
+        }
+      ]
+    }
+  },
+  "web-resources": {
+    "_items": [],
+    "blogs-and-articles": {
+      "_items": [
+        {
+          "name": "Distill.pub",
+          "url": "https://distill.pub/",
+          "description": "Interactive, visual essays on modern ML concepts.",
+          "tags": [
+            "web-resources/blogs-and-articles"
+          ]
+        }
+      ]
+    }
+  },
+  "tutorials": {
+    "_items": [],
+    "deep-learning": {
+      "_items": [
+        {
+          "name": "Fast.ai Practical Deep Learning for Coders",
+          "url": "https://course.fast.ai/",
+          "description": "Hands-on course to build state-of-the-art deep learning models.",
+          "tags": [
+            "tutorials/deep-learning"
+          ]
+        }
+      ]
+    }
+  },
+  "datasets": {
+    "_items": [],
+    "text": {
+      "_items": [
+        {
+          "name": "OpenAI WebText",
+          "url": "https://github.com/openai/gpt-2-output-dataset",
+          "description": "Dataset of web pages used to train GPT-2.",
+          "tags": [
+            "datasets/text"
+          ]
+        }
+      ]
+    }
+  }
+}

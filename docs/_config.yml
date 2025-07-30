@@ -1,0 +1,41 @@
+# GitHub Pages Configuration for AI Resources Hub
+
+# Site settings
+title: "AI Resources Hub"
+description: "A curated collection of cutting-edge AI tools, libraries, papers, and learning resources"
+url: "https://baptisteblouin.github.io"
+baseurl: "/AI-Tools"
+
+# GitHub repository
+repository: BaptisteBlouin/AI-Tools
+
+# SEO settings
+lang: en
+author: AI Community
+twitter:
+  username: # Add your Twitter handle if desired
+
+# GitHub Pages settings
+theme: null
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Include/exclude files
+include:
+  - _redirects
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - gemfiles
+  - .git
+  - .github
+
+# Site metadata
+google_analytics: # Add your GA tracking ID if desired

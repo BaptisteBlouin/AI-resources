@@ -14,10 +14,10 @@ install: ## Install dependencies
 	pip install -r requirements.txt
 	@echo "✅ Dependencies installed!"
 
-update: ## Generate updated README
-	@echo "🔄 Generating updated README..."
+update: ## Generate updated README and web assets
+	@echo "🔄 Generating updated README and web assets..."
 	python scripts/generate_readme.py
-	@echo "✅ README updated!"
+	@echo "✅ README and web assets updated!"
 
 check: ## Validate resources.yml syntax
 	@echo "🔍 Validating resources.yml..."
@@ -43,6 +43,16 @@ stats: ## Show project statistics
 	@echo "Categories: $$(python -c 'import yaml; data=yaml.safe_load(open("resources.yml")); tags=set(); [tags.update(r.get("tags", [])) for r in data["resources"]]; main_cats=set([t.split("/")[0] for t in tags]); print(len(main_cats))')"
 	@echo "Lines of Code: $$(wc -l scripts/generate_readme.py | awk '{print $$1}')"
 
+serve: update ## Generate and serve the web interface locally
+	@echo "🌐 Starting local server..."
+	cd docs && python -m http.server 8000
+	@echo "🚀 Server running at http://localhost:8000"
+
+deploy: update ## Generate assets for deployment
+	@echo "🚀 Assets ready for GitHub Pages deployment"
+	@echo "💡 Push to main branch to trigger auto-deployment"
+
 # Quick commands
 gen: update ## Alias for update
 build: update ## Alias for update
+web: serve ## Alias for serve

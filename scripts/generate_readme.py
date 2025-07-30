@@ -177,6 +177,85 @@ def get_badges_html(url: str, item: Dict[str, Any] = None) -> str:
     return ' '.join(badges)
 
 
+def gen_resources_markdown(nested: Dict[str, Any], depth: int = 0) -> str:
+    """Generate GitHub-compatible markdown for resources.
+    
+    Args:
+        nested: Nested dictionary of categorized resources
+        depth: Current nesting depth for styling
+        
+    Returns:
+        Markdown string with categorized resources
+    """
+    if not nested or depth > 3:
+        return ''
+        
+    markdown = []
+    
+    for cat, node in sorted(nested.items()):
+        if cat == '_items' or not isinstance(node, dict):
+            continue
+            
+        title = cat.replace('-', ' ').title()
+        total = count_items(node)
+        
+        if total == 0:
+            continue
+            
+        # Create category header with icon and count
+        icon = get_category_icon(cat)
+        header_level = '#' * (depth + 3)  # Start at h3
+        
+        markdown.append(f'\n{header_level} {icon} {title} ({total})\n')
+        
+        # Add items if they exist
+        if node.get('_items'):
+            # Sort items by name/title
+            items = sorted(
+                node['_items'], 
+                key=lambda x: (x.get('name') or x.get('title', '')).lower()
+            )
+            
+            for item in items:
+                name = item.get('name') or item.get('title', 'Unnamed Resource')
+                url = item.get('url', '')
+                desc = item.get('description') or item.get('summary', 'No description available')
+                badges = get_badges_html(url, item)
+                
+                # Create markdown list item
+                markdown.append(f'- **[{name}]({url})** - {desc}')
+                
+                # Add badges if they exist  
+                if badges:
+                    # Convert HTML badges to proper markdown
+                    badge_lines = []
+                    processed_badges = set()  # Avoid duplicates
+                    
+                    # Handle all linked badges (GitHub, ArXiv, etc.)
+                    linked_matches = re.findall(r'<a href="([^"]+)" target="_blank" rel="noopener noreferrer"><img src="([^"]+)" alt="([^"]+)"/></a>', badges)
+                    for link_url, badge_url, alt_text in linked_matches:
+                        if badge_url not in processed_badges:
+                            badge_lines.append(f'![{alt_text}]({badge_url})')
+                            processed_badges.add(badge_url)
+                    
+                    # Handle type badges (no link) - but avoid those already processed
+                    type_matches = re.findall(r'<img src="([^"]+)" alt="([^"]+)"/>', badges)
+                    for badge_url, alt_text in type_matches:
+                        if badge_url not in processed_badges:
+                            badge_lines.append(f'![{alt_text}]({badge_url})')
+                            processed_badges.add(badge_url)
+                    
+                    if badge_lines:
+                        markdown.append(f'  {" ".join(badge_lines)}')
+                
+        # Recursively add subcategories
+        sub_md = gen_resources_markdown(node, depth + 1)
+        if sub_md:
+            markdown.append(sub_md)
+    
+    return '\n'.join(markdown)
+
+
 def gen_resources_html(nested: Dict[str, Any], depth: int = 0) -> str:
     """Generate HTML list of resources with enhanced styled cards.
     
@@ -623,14 +702,77 @@ def validate_yaml_structure(data: Dict[str, Any]) -> bool:
     return True
 
 
+def generate_web_resources(nested: Dict[str, Any]) -> str:
+    """Generate JSON data for the web application.
+    
+    Args:
+        nested: Nested dictionary of categorized resources
+        
+    Returns:
+        JSON string for web app consumption
+    """
+    import json
+    return json.dumps(nested, indent=2, ensure_ascii=False)
+
+
+def generate_simple_readme(nested: Dict[str, Any]) -> str:
+    """Generate a simple README that redirects to GitHub Pages.
+    
+    Args:
+        nested: Nested dictionary of categorized resources
+        
+    Returns:
+        Simple markdown content for README
+    """
+    total_resources = sum(count_items(nested[cat]) for cat in nested)
+    timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')
+    
+    return f'''<!-- Generated on {timestamp} by generate_readme.py -->
+
+## 🌐 View the Interactive AI Resources Hub
+
+**[👆 Click here to explore all {total_resources} AI resources →](https://baptisteblouin.github.io/AI-Tools/)**
+
+This repository contains a curated collection of **{total_resources} AI resources** across **{len(nested)} categories**, including:
+
+{' • '.join([f"**{cat.replace('-', ' ').title()}** ({count_items(nested[cat])})" for cat in sorted(nested.keys())[:5]])}{"..." if len(nested) > 5 else ""}
+
+### ✨ Features
+
+- 🔍 **Real-time search** across all resources
+- 📱 **Responsive design** for all devices  
+- 🎨 **Modern interface** with smooth animations
+- 📊 **Live GitHub data** (stars, commits, etc.)
+- ⌨️ **Keyboard shortcuts** (`Ctrl+K` to search)
+- 🌙 **Dark mode** support
+
+### 🚀 Quick Access
+
+- **[🌐 Browse Resources](https://baptisteblouin.github.io/AI-Tools/)** - Interactive web interface
+- **[📝 Contribute](CONTRIBUTING.md)** - Add new resources
+- **[🐛 Report Issues](https://github.com/BaptisteBlouin/AI-Tools/issues)** - Help us improve
+- **[💬 Discussions](https://github.com/BaptisteBlouin/AI-Tools/discussions)** - Join the community
+
+---
+
+<div align="center">
+
+**[⭐ Star this repository](https://github.com/BaptisteBlouin/AI-Tools/stargazers) • [🍴 Fork it](https://github.com/BaptisteBlouin/AI-Tools/fork) • [📖 View on GitHub Pages](https://baptisteblouin.github.io/AI-Tools/)**
+
+*Automatically updated from [`resources.yml`](resources.yml) • Last updated: {datetime.now().strftime('%B %d, %Y')}*
+
+</div>'''
+
+
 def main() -> None:
-    """Main function to generate the README."""
+    """Main function to generate both README and web assets."""
     args = parse_arguments()
     
     # Determine file paths
     script_dir = Path(__file__).parent
     resources_file = args.resources_file or script_dir.parent / 'resources.yml'
     readme_file = args.readme_file or script_dir.parent / 'README.md'
+    docs_dir = script_dir.parent / 'docs'
     
     # Validate file paths
     if not resources_file.exists():
@@ -657,26 +799,16 @@ def main() -> None:
             print("Warning: No valid resources found")
             return
         
-        # Generate components
-        styles = get_modern_styles()
-        search_box = '<input type="text" id="resource-search" placeholder="🔍 Search resources... (Ctrl+K)" />'
-        summary = gen_summary_badges(nested)
-        grid = f'<div class="categories-grid">{gen_resources_html(nested)}</div>'
-        script = get_enhanced_script()
+        # Generate web resources JSON
+        web_json = generate_web_resources(nested)
+        web_json_file = docs_dir / 'resources.json'
+        docs_dir.mkdir(exist_ok=True)
         
-        # Generate timestamp
-        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')
-        generation_note = f'<!-- Generated on {timestamp} by generate_readme.py -->'
+        with open(web_json_file, 'w', encoding='utf-8') as f:
+            f.write(web_json)
         
-        # Combine all components
-        auto_content = '\n'.join([
-            generation_note,
-            styles,
-            search_box,
-            summary,
-            grid,
-            script
-        ])
+        # Generate simple README
+        simple_readme_content = generate_simple_readme(nested)
         
         # Read and update README
         with open(readme_file, 'r', encoding='utf-8') as f:
@@ -689,7 +821,7 @@ def main() -> None:
         before, rest = readme_content.split('<!-- START AUTO -->', 1)
         _, after = rest.split('<!-- END AUTO -->', 1)
         
-        new_content = f"{before}<!-- START AUTO -->\n{auto_content}\n<!-- END AUTO -->{after}"
+        new_content = f"{before}<!-- START AUTO -->\n{simple_readme_content}\n<!-- END AUTO -->{after}"
         
         # Write updated README
         with open(readme_file, 'w', encoding='utf-8') as f:
@@ -698,14 +830,15 @@ def main() -> None:
         if not args.quiet:
             total_resources = sum(count_items(nested[cat]) for cat in nested)
             print(f"✅ README.md successfully updated!")
+            print(f"🌐 Web resources JSON generated at {web_json_file}")
             print(f"📊 Generated content for {total_resources} resources across {len(nested)} categories")
-            print(f"🎨 Enhanced with modern styling, search, and interactive features")
+            print(f"🎨 Interactive web interface available at GitHub Pages")
             
     except yaml.YAMLError as e:
         print(f"Error parsing YAML file: {e}")
         sys.exit(1)
     except Exception as e:
-        print(f"Error generating README: {e}")
+        print(f"Error generating files: {e}")
         sys.exit(1)
 
 
