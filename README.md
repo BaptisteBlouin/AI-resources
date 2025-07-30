@@ -77,15 +77,15 @@ echo "  - name: 'Your Amazing AI Tool'
 The following list is automatically generated from `resources.yml`.
 
 <!-- START AUTO -->
-<!-- Generated on 2025-07-30 15:26:36 UTC by generate_readme.py -->
+<!-- Generated on 2025-07-30 22:42:43 UTC by generate_readme.py -->
 
 ## 🌐 View the Interactive AI Resources Hub
 
-**[👆 Click here to explore all 100 AI resources →](https://baptisteblouin.github.io/AI-resources/)**
+**[👆 Click here to explore all 99 AI resources →](https://baptisteblouin.github.io/AI-resources/)**
 
-This repository contains a curated collection of **100 AI resources** across **12 categories**, including:
+This repository contains a curated collection of **99 AI resources** across **11 categories**, including:
 
-**Books** (8) • **Certificates** (1) • **Community** (5) • **Datasets** (15) • **Free** (1)...
+**Books** (8) • **Certificates** (1) • **Community** (5) • **Datasets** (15) • **Libraries** (19)...
 
 ### ✨ Features
 

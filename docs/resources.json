@@ -635,8 +635,7 @@
           "url": "https://developers.google.com/machine-learning/crash-course",
           "description": "A fast-paced introduction to machine learning concepts and techniques with interactive exercises, offered for free by Google.",
           "tags": [
-            "tutorials/machine-learning",
-            "free"
+            "tutorials/machine-learning"
           ]
         },
         {
@@ -732,19 +731,6 @@
         "tags": [
           "tutorials/machine-learning",
           "certificates"
-        ]
-      }
-    ]
-  },
-  "free": {
-    "_items": [
-      {
-        "name": "Google's Machine Learning Crash Course",
-        "url": "https://developers.google.com/machine-learning/crash-course",
-        "description": "A fast-paced introduction to machine learning concepts and techniques with interactive exercises, offered for free by Google.",
-        "tags": [
-          "tutorials/machine-learning",
-          "free"
         ]
       }
     ]

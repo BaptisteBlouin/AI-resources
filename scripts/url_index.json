@@ -1,0 +1,752 @@
+{
+  "https://github.com/allenai/allennlp": {
+    "name": "AllenNLP",
+    "original_url": "https://github.com/allenai/allennlp",
+    "tags": [
+      "libraries/python/nlp"
+    ],
+    "added_date": null
+  },
+  "https://github.com/fastai/fastai": {
+    "name": "Fast.ai (Library)",
+    "original_url": "https://github.com/fastai/fastai",
+    "tags": [
+      "libraries/python/deep-learning"
+    ],
+    "added_date": null
+  },
+  "https://github.com/gradio-app/gradio": {
+    "name": "Gradio",
+    "original_url": "https://github.com/gradio-app/gradio",
+    "tags": [
+      "libraries/python/tools"
+    ],
+    "added_date": null
+  },
+  "https://github.com/huggingface/transformers": {
+    "name": "Hugging Face Transformers",
+    "original_url": "https://github.com/huggingface/transformers",
+    "tags": [
+      "libraries/python/nlp"
+    ],
+    "added_date": null
+  },
+  "https://github.com/huggingface/datasets": {
+    "name": "Hugging Face Datasets",
+    "original_url": "https://github.com/huggingface/datasets",
+    "tags": [
+      "libraries/python/data"
+    ],
+    "added_date": null
+  },
+  "https://github.com/google/jax": {
+    "name": "JAX",
+    "original_url": "https://github.com/google/jax",
+    "tags": [
+      "libraries/python/deep-learning"
+    ],
+    "added_date": null
+  },
+  "https://keras.io/": {
+    "name": "Keras",
+    "original_url": "https://keras.io/",
+    "tags": [
+      "libraries/python/deep-learning"
+    ],
+    "added_date": null
+  },
+  "https://github.com/langchain-ai/langchain": {
+    "name": "LangChain",
+    "original_url": "https://github.com/langchain-ai/langchain",
+    "tags": [
+      "libraries/python/llm-frameworks"
+    ],
+    "added_date": null
+  },
+  "https://github.com/jerryjliu/llama_index": {
+    "name": "LlamaIndex (GPT Index)",
+    "original_url": "https://github.com/jerryjliu/llama_index",
+    "tags": [
+      "libraries/python/llm-frameworks"
+    ],
+    "added_date": null
+  },
+  "https://opencv.org/": {
+    "name": "OpenCV",
+    "original_url": "https://opencv.org/",
+    "tags": [
+      "libraries/c++/vision"
+    ],
+    "added_date": null
+  },
+  "https://pytorch.org/": {
+    "name": "PyTorch",
+    "original_url": "https://pytorch.org/",
+    "tags": [
+      "libraries/python/deep-learning"
+    ],
+    "added_date": null
+  },
+  "https://github.com/RasaHQ/rasa": {
+    "name": "Rasa",
+    "original_url": "https://github.com/RasaHQ/rasa",
+    "tags": [
+      "libraries/python/nlp"
+    ],
+    "added_date": null
+  },
+  "https://scikit-learn.org/": {
+    "name": "Scikit-learn",
+    "original_url": "https://scikit-learn.org/",
+    "tags": [
+      "libraries/python/machine-learning"
+    ],
+    "added_date": null
+  },
+  "https://github.com/explosion/spaCy": {
+    "name": "spaCy",
+    "original_url": "https://github.com/explosion/spaCy",
+    "tags": [
+      "libraries/python/nlp"
+    ],
+    "added_date": null
+  },
+  "https://github.com/streamlit/streamlit": {
+    "name": "Streamlit",
+    "original_url": "https://github.com/streamlit/streamlit",
+    "tags": [
+      "libraries/python/tools"
+    ],
+    "added_date": null
+  },
+  "https://tensorflow.org/": {
+    "name": "TensorFlow",
+    "original_url": "https://www.tensorflow.org/",
+    "tags": [
+      "libraries/python/deep-learning"
+    ],
+    "added_date": null
+  },
+  "https://github.com/dmlc/xgboost": {
+    "name": "XGBoost",
+    "original_url": "https://github.com/dmlc/xgboost",
+    "tags": [
+      "libraries/python/machine-learning"
+    ],
+    "added_date": null
+  },
+  "https://github.com/optuna/optuna": {
+    "name": "Optuna",
+    "original_url": "https://github.com/optuna/optuna",
+    "tags": [
+      "libraries/python/hyperparameter-optimization"
+    ],
+    "added_date": null
+  },
+  "https://github.com/ray-project/ray": {
+    "name": "Ray",
+    "original_url": "https://github.com/ray-project/ray",
+    "tags": [
+      "libraries/python/distributed-computing"
+    ],
+    "added_date": null
+  },
+  "https://colab.research.google.com/": {
+    "name": "Google Colaboratory",
+    "original_url": "https://colab.research.google.com/",
+    "tags": [
+      "tools/development"
+    ],
+    "added_date": null
+  },
+  "https://huggingface.co/": {
+    "name": "Hugging Face Hub",
+    "original_url": "https://huggingface.co/",
+    "tags": [
+      "tools/data-management",
+      "community"
+    ],
+    "added_date": null
+  },
+  "https://kaggle.com/": {
+    "name": "Kaggle",
+    "original_url": "https://www.kaggle.com/",
+    "tags": [
+      "tools/competitions",
+      "community"
+    ],
+    "added_date": null
+  },
+  "https://gym.openai.com/": {
+    "name": "OpenAI Gym",
+    "original_url": "https://gym.openai.com/",
+    "tags": [
+      "tools/rl"
+    ],
+    "added_date": null
+  },
+  "https://paperswithcode.com/": {
+    "name": "Papers with Code",
+    "original_url": "https://paperswithcode.com/",
+    "tags": [
+      "web-resources/papers"
+    ],
+    "added_date": null
+  },
+  "https://tensorflow.org/tensorboard": {
+    "name": "TensorBoard",
+    "original_url": "https://www.tensorflow.org/tensorboard",
+    "tags": [
+      "tools/visualization"
+    ],
+    "added_date": null
+  },
+  "https://wandb.ai/": {
+    "name": "Weights & Biases",
+    "original_url": "https://wandb.ai/",
+    "tags": [
+      "tools/experiment-tracking"
+    ],
+    "added_date": null
+  },
+  "https://github.com/mlflow/mlflow": {
+    "name": "MLflow",
+    "original_url": "https://github.com/mlflow/mlflow",
+    "tags": [
+      "tools/mlops"
+    ],
+    "added_date": null
+  },
+  "https://github.com/kubeflow/kubeflow": {
+    "name": "Kubeflow",
+    "original_url": "https://github.com/kubeflow/kubeflow",
+    "tags": [
+      "tools/mlops"
+    ],
+    "added_date": null
+  },
+  "https://aws.amazon.com/sagemaker": {
+    "name": "Amazon SageMaker",
+    "original_url": "https://aws.amazon.com/sagemaker/",
+    "tags": [
+      "tools/ml-platforms"
+    ],
+    "added_date": null
+  },
+  "https://cloud.google.com/ai-platform": {
+    "name": "Google Cloud AI Platform",
+    "original_url": "https://cloud.google.com/ai-platform",
+    "tags": [
+      "tools/ml-platforms"
+    ],
+    "added_date": null
+  },
+  "https://github.com/facebookresearch/segment-anything": {
+    "name": "Segment Anything Model (SAM)",
+    "original_url": "https://github.com/facebookresearch/segment-anything",
+    "tags": [
+      "tools/cv"
+    ],
+    "added_date": null
+  },
+  "https://cs.toronto.edu/~kriz/cifar.html": {
+    "name": "CIFAR-10/100",
+    "original_url": "https://www.cs.toronto.edu/~kriz/cifar.html",
+    "tags": [
+      "datasets/images"
+    ],
+    "added_date": null
+  },
+  "https://commoncrawl.org/": {
+    "name": "Common Crawl",
+    "original_url": "https://commoncrawl.org/",
+    "tags": [
+      "datasets/text"
+    ],
+    "added_date": null
+  },
+  "https://gluebenchmark.com/": {
+    "name": "GLUE Benchmark",
+    "original_url": "https://gluebenchmark.com/",
+    "tags": [
+      "datasets/text"
+    ],
+    "added_date": null
+  },
+  "https://image-net.org/": {
+    "name": "ImageNet",
+    "original_url": "https://www.image-net.org/",
+    "tags": [
+      "datasets/images"
+    ],
+    "added_date": null
+  },
+  "https://laion.ai/blog/laion-5b": {
+    "name": "LAION-5B",
+    "original_url": "https://laion.ai/blog/laion-5b/",
+    "tags": [
+      "datasets/images",
+      "datasets/text"
+    ],
+    "added_date": null
+  },
+  "https://openslr.org/12": {
+    "name": "LibriSpeech",
+    "original_url": "https://www.openslr.org/12",
+    "tags": [
+      "datasets/audio"
+    ],
+    "added_date": null
+  },
+  "https://yann.lecun.com/exdb/mnist": {
+    "name": "MNIST",
+    "original_url": "http://yann.lecun.com/exdb/mnist/",
+    "tags": [
+      "datasets/images"
+    ],
+    "added_date": null
+  },
+  "https://cocodataset.org/": {
+    "name": "MS COCO",
+    "original_url": "https://cocodataset.org/",
+    "tags": [
+      "datasets/images"
+    ],
+    "added_date": null
+  },
+  "https://github.com/openai/gpt-2-output-dataset": {
+    "name": "OpenAI WebText",
+    "original_url": "https://github.com/openai/gpt-2-output-dataset",
+    "tags": [
+      "datasets/text"
+    ],
+    "added_date": null
+  },
+  "https://pile.eleuther.ai/": {
+    "name": "The Pile",
+    "original_url": "https://pile.eleuther.ai/",
+    "tags": [
+      "datasets/text"
+    ],
+    "added_date": null
+  },
+  "https://rajpurkar.github.io/SQuAD-explorer": {
+    "name": "SQuAD",
+    "original_url": "https://rajpurkar.github.io/SQuAD-explorer/",
+    "tags": [
+      "datasets/text"
+    ],
+    "added_date": null
+  },
+  "https://archive.ics.uci.edu/ml/index.php": {
+    "name": "UCI Machine Learning Repository",
+    "original_url": "https://archive.ics.uci.edu/ml/index.php",
+    "tags": [
+      "datasets/misc"
+    ],
+    "added_date": null
+  },
+  "https://archive.ics.uci.edu/ml/datasets/Bangalore+EEG+Epilepsy+Dataset": {
+    "name": "BEED (Bangalore EEG Epilepsy Dataset)",
+    "original_url": "https://archive.ics.uci.edu/ml/datasets/Bangalore+EEG+Epilepsy+Dataset",
+    "tags": [
+      "datasets/eeg",
+      "datasets/healthcare"
+    ],
+    "added_date": null
+  },
+  "https://coursera.org/learn/machine-learning": {
+    "name": "Andrew Ng's Machine Learning (Coursera)",
+    "original_url": "https://www.coursera.org/learn/machine-learning",
+    "tags": [
+      "tutorials/machine-learning"
+    ],
+    "added_date": null
+  },
+  "https://coursera.org/specializations/deep-learning": {
+    "name": "Deep Learning Specialization (deeplearning.ai)",
+    "original_url": "https://www.coursera.org/specializations/deep-learning",
+    "tags": [
+      "tutorials/deep-learning"
+    ],
+    "added_date": null
+  },
+  "https://youtube.com/playlist?list=PLqYmG7hTraZBiG_XpjnPrSNw-1XQaM_gB": {
+    "name": "DeepMind x UCL Reinforcement Learning Lectures",
+    "original_url": "https://www.youtube.com/playlist?list=PLqYmG7hTraZBiG_XpjnPrSNw-1XQaM_gB",
+    "tags": [
+      "tutorials/reinforcement-learning"
+    ],
+    "added_date": null
+  },
+  "https://course.fast.ai/": {
+    "name": "Fast.ai Practical Deep Learning for Coders",
+    "original_url": "https://course.fast.ai/",
+    "tags": [
+      "tutorials/deep-learning"
+    ],
+    "added_date": null
+  },
+  "https://fullstackdeeplearning.com/": {
+    "name": "Full Stack Deep Learning",
+    "original_url": "https://fullstackdeeplearning.com/",
+    "tags": [
+      "tutorials/deep-learning"
+    ],
+    "added_date": null
+  },
+  "https://huggingface.co/learn": {
+    "name": "Hugging Face Transformers Course",
+    "original_url": "https://huggingface.co/learn",
+    "tags": [
+      "tutorials/deep-learning"
+    ],
+    "added_date": null
+  },
+  "https://introtodeeplearning.com/": {
+    "name": "MIT 6.S191: Introduction to Deep Learning",
+    "original_url": "http://introtodeeplearning.com/",
+    "tags": [
+      "tutorials/deep-learning"
+    ],
+    "added_date": null
+  },
+  "https://web.stanford.edu/class/cs224n": {
+    "name": "Stanford CS224n: NLP with Deep Learning",
+    "original_url": "http://web.stanford.edu/class/cs224n/",
+    "tags": [
+      "tutorials/deep-learning"
+    ],
+    "added_date": null
+  },
+  "https://cs231n.stanford.edu/": {
+    "name": "Stanford CS231n: Convolutional Neural Networks",
+    "original_url": "http://cs231n.stanford.edu/",
+    "tags": [
+      "tutorials/deep-learning"
+    ],
+    "added_date": null
+  },
+  "https://coursera.org/professional-certificates/ibm-machine-learning": {
+    "name": "IBM Machine Learning Professional Certificate",
+    "original_url": "https://www.coursera.org/professional-certificates/ibm-machine-learning",
+    "tags": [
+      "tutorials/machine-learning",
+      "certificates"
+    ],
+    "added_date": null
+  },
+  "https://developers.google.com/machine-learning/crash-course": {
+    "name": "Google's Machine Learning Crash Course",
+    "original_url": "https://developers.google.com/machine-learning/crash-course",
+    "tags": [
+      "tutorials/machine-learning"
+    ],
+    "added_date": null
+  },
+  "https://edx.org/course/data-science-machine-learning": {
+    "name": "Data Science: Machine Learning (Harvard)",
+    "original_url": "https://www.edx.org/course/data-science-machine-learning",
+    "tags": [
+      "tutorials/machine-learning",
+      "universities/harvard"
+    ],
+    "added_date": null
+  },
+  "https://arxiv.org/abs/1706.03762": {
+    "name": "Attention Is All You Need",
+    "original_url": "https://arxiv.org/abs/1706.03762",
+    "tags": [
+      "papers/transformers"
+    ],
+    "added_date": null
+  },
+  "https://arxiv.org/abs/1810.04805": {
+    "name": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+    "original_url": "https://arxiv.org/abs/1810.04805",
+    "tags": [
+      "papers/transformers"
+    ],
+    "added_date": null
+  },
+  "https://arxiv.org/abs/2102.12092": {
+    "name": "DALL·E: Zero-Shot Text-to-Image Generation",
+    "original_url": "https://arxiv.org/abs/2102.12092",
+    "tags": [
+      "papers/generative"
+    ],
+    "added_date": null
+  },
+  "https://arxiv.org/abs/1512.03385": {
+    "name": "Deep Residual Learning for Image Recognition",
+    "original_url": "https://arxiv.org/abs/1512.03385",
+    "tags": [
+      "papers/cv"
+    ],
+    "added_date": null
+  },
+  "https://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf": {
+    "name": "Generative Adversarial Networks",
+    "original_url": "https://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf",
+    "tags": [
+      "papers/generative"
+    ],
+    "added_date": null
+  },
+  "https://arxiv.org/abs/2112.10752": {
+    "name": "High-Resolution Image Synthesis with Latent Diffusion Models",
+    "original_url": "https://arxiv.org/abs/2112.10752",
+    "tags": [
+      "papers/generative"
+    ],
+    "added_date": null
+  },
+  "https://nature.com/articles/nature14236": {
+    "name": "Human-level control through deep reinforcement learning",
+    "original_url": "https://www.nature.com/articles/nature14236",
+    "tags": [
+      "papers/reinforcement-learning"
+    ],
+    "added_date": null
+  },
+  "https://dl.acm.org/doi/10.1145/3065386": {
+    "name": "ImageNet Classification with Deep Convolutional Neural Networks",
+    "original_url": "https://dl.acm.org/doi/10.1145/3065386",
+    "tags": [
+      "papers/cv"
+    ],
+    "added_date": null
+  },
+  "https://arxiv.org/abs/2005.14165": {
+    "name": "Language Models are Few-Shot Learners",
+    "original_url": "https://arxiv.org/abs/2005.14165",
+    "tags": [
+      "papers/transformers"
+    ],
+    "added_date": null
+  },
+  "https://nature.com/articles/nature16961": {
+    "name": "Mastering the Game of Go with Deep Neural Networks and Tree Search",
+    "original_url": "https://www.nature.com/articles/nature16961",
+    "tags": [
+      "papers/reinforcement-learning"
+    ],
+    "added_date": null
+  },
+  "https://nature.com/articles/nature24270": {
+    "name": "Mastering the Game of Go without Human Knowledge",
+    "original_url": "https://www.nature.com/articles/nature24270",
+    "tags": [
+      "papers/reinforcement-learning"
+    ],
+    "added_date": null
+  },
+  "https://arxiv.org/abs/1409.0473": {
+    "name": "Neural Machine Translation by Jointly Learning to Align and Translate",
+    "original_url": "https://arxiv.org/abs/1409.0473",
+    "tags": [
+      "papers/nlp"
+    ],
+    "added_date": null
+  },
+  "https://arxiv.org/abs/2212.04356": {
+    "name": "Robust Speech Recognition via Large-Scale Weak Supervision",
+    "original_url": "https://arxiv.org/abs/2212.04356",
+    "tags": [
+      "papers/speech"
+    ],
+    "added_date": null
+  },
+  "https://arxiv.org/abs/1409.3215": {
+    "name": "Sequence to Sequence Learning with Neural Networks",
+    "original_url": "https://arxiv.org/abs/1409.3215",
+    "tags": [
+      "papers/nlp"
+    ],
+    "added_date": null
+  },
+  "https://arxiv.org/abs/2006.11239": {
+    "name": "Denoising Diffusion Probabilistic Models",
+    "original_url": "https://arxiv.org/abs/2006.11239",
+    "tags": [
+      "papers/generative"
+    ],
+    "added_date": null
+  },
+  "https://arxiv.org/abs/2003.08934": {
+    "name": "NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis",
+    "original_url": "https://arxiv.org/abs/2003.08934",
+    "tags": [
+      "papers/cv"
+    ],
+    "added_date": null
+  },
+  "https://arxiv.org/abs/2103.00020": {
+    "name": "Learning Transferable Visual Models from Natural Language Supervision",
+    "original_url": "https://arxiv.org/abs/2103.00020",
+    "tags": [
+      "papers/multimodal"
+    ],
+    "added_date": null
+  },
+  "https://aima.cs.berkeley.edu/": {
+    "name": "Artificial Intelligence: A Modern Approach",
+    "original_url": "https://aima.cs.berkeley.edu/",
+    "tags": [
+      "books/overview"
+    ],
+    "added_date": null
+  },
+  "https://deeplearningbook.org/": {
+    "name": "Deep Learning (Goodfellow et al.)",
+    "original_url": "https://www.deeplearningbook.org/",
+    "tags": [
+      "books/deep-learning"
+    ],
+    "added_date": null
+  },
+  "https://d2l.ai/": {
+    "name": "Dive into Deep Learning",
+    "original_url": "https://d2l.ai/",
+    "tags": [
+      "books/deep-learning"
+    ],
+    "added_date": null
+  },
+  "https://statlearning.com/": {
+    "name": "Introduction to Statistical Learning",
+    "original_url": "https://www.statlearning.com/",
+    "tags": [
+      "books/machine-learning"
+    ],
+    "added_date": null
+  },
+  "https://neuralnetworksanddeeplearning.com/": {
+    "name": "Neural Networks and Deep Learning",
+    "original_url": "http://neuralnetworksanddeeplearning.com/",
+    "tags": [
+      "books/deep-learning"
+    ],
+    "added_date": null
+  },
+  "https://jakevdp.github.io/PythonDataScienceHandbook": {
+    "name": "Python Data Science Handbook",
+    "original_url": "https://jakevdp.github.io/PythonDataScienceHandbook/",
+    "tags": [
+      "books/data-science"
+    ],
+    "added_date": null
+  },
+  "https://incompleteideas.net/book/the-book-2nd.html": {
+    "name": "Reinforcement Learning: An Introduction",
+    "original_url": "http://incompleteideas.net/book/the-book-2nd.html",
+    "tags": [
+      "books/reinforcement-learning"
+    ],
+    "added_date": null
+  },
+  "https://web.stanford.edu/~hastie/ElemStatLearn": {
+    "name": "The Elements of Statistical Learning",
+    "original_url": "https://web.stanford.edu/~hastie/ElemStatLearn/",
+    "tags": [
+      "books/machine-learning"
+    ],
+    "added_date": null
+  },
+  "https://stats.stackexchange.com/": {
+    "name": "Cross Validated (Stack Exchange)",
+    "original_url": "https://stats.stackexchange.com/",
+    "tags": [
+      "community/forums"
+    ],
+    "added_date": null
+  },
+  "https://deepmind.com/blog": {
+    "name": "DeepMind Blog",
+    "original_url": "https://www.deepmind.com/blog",
+    "tags": [
+      "web-resources/blogs-and-articles"
+    ],
+    "added_date": null
+  },
+  "https://distill.pub/": {
+    "name": "Distill.pub",
+    "original_url": "https://distill.pub/",
+    "tags": [
+      "web-resources/blogs-and-articles"
+    ],
+    "added_date": null
+  },
+  "https://kdnuggets.com/": {
+    "name": "KDnuggets",
+    "original_url": "https://www.kdnuggets.com/",
+    "tags": [
+      "web-resources/blogs-and-articles"
+    ],
+    "added_date": null
+  },
+  "https://machinelearningmastery.com/": {
+    "name": "Machine Learning Mastery",
+    "original_url": "https://machinelearningmastery.com/",
+    "tags": [
+      "web-resources/blogs-and-articles"
+    ],
+    "added_date": null
+  },
+  "https://openai.com/blog": {
+    "name": "OpenAI Blog",
+    "original_url": "https://openai.com/blog",
+    "tags": [
+      "web-resources/blogs-and-articles"
+    ],
+    "added_date": null
+  },
+  "https://reddit.com/r/MachineLearning": {
+    "name": "r/MachineLearning",
+    "original_url": "https://www.reddit.com/r/MachineLearning/",
+    "tags": [
+      "community/forums"
+    ],
+    "added_date": null
+  },
+  "https://reddit.com/r/learnmachinelearning": {
+    "name": "r/learnmachinelearning",
+    "original_url": "https://www.reddit.com/r/learnmachinelearning/",
+    "tags": [
+      "community/forums"
+    ],
+    "added_date": null
+  },
+  "https://thegradient.pub/": {
+    "name": "The Gradient",
+    "original_url": "https://thegradient.pub/",
+    "tags": [
+      "web-resources/blogs-and-articles"
+    ],
+    "added_date": null
+  },
+  "https://towardsdatascience.com/": {
+    "name": "Towards Data Science",
+    "original_url": "https://towardsdatascience.com/",
+    "tags": [
+      "web-resources/blogs-and-articles"
+    ],
+    "added_date": null
+  },
+  "https://github.com/KalyanKS-NLP/llm-engineer-toolkit": {
+    "name": "LLM Engineer Toolkit",
+    "original_url": "https://github.com/KalyanKS-NLP/llm-engineer-toolkit",
+    "tags": [
+      "lists/github/llm-engineering"
+    ],
+    "added_date": null
+  },
+  "https://ajcr.net/Basic-guide-to-einsum": {
+    "name": "The einsum function",
+    "original_url": "https://ajcr.net/Basic-guide-to-einsum/",
+    "tags": [
+      "web-resources/blogs-and-articles"
+    ],
+    "added_date": null
+  }
+}

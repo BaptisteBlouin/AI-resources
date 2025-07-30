@@ -783,6 +783,20 @@ def main() -> None:
         print(f"Error: README file not found: {readme_file}")
         sys.exit(1)
     
+    # Update URL index for duplicate detection
+    try:
+        from url_index import URLIndex
+        url_index = URLIndex()
+        urls_added = url_index.rebuild_from_resources(resources_file)
+        if not args.quiet:
+            print(f"🔄 Updated URL index with {urls_added} URLs")
+    except ImportError:
+        if not args.quiet:
+            print("⚠️  URL index module not found, skipping index update")
+    except Exception as e:
+        if not args.quiet:
+            print(f"⚠️  Could not update URL index: {e}")
+    
     try:
         # Load and validate YAML data
         with open(resources_file, 'r', encoding='utf-8') as f:
