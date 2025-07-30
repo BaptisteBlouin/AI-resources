@@ -4,7 +4,7 @@
 
 ### A curated collection of cutting-edge AI tools, libraries, papers, and learning resources
 
-[![Made with ❤️](https://img.shields.io/badge/Made%20with-❤️-red.svg)](https://github.com/BaptisteBlouin/AI-Tools)
+[![Made with ❤️](https://img.shields.io/badge/Made%20with-❤️-red.svg)](https://github.com/BaptisteBlouin/AI-Resources)
 [![Community Driven](https://img.shields.io/badge/Community-Driven-blue.svg)](CONTRIBUTING.md)
 [![Auto Updated](https://img.shields.io/badge/Auto-Updated-green.svg)](scripts/generate_readme.py)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -59,10 +59,10 @@
 
 ```bash
 # Clone this repository for offline access
-git clone https://github.com/BaptisteBlouin/AI-Tools.git
+git clone https://github.com/BaptisteBlouin/AI-Resources.git
 
 # Generate an updated README with the latest resources
-cd AI-Tools
+cd AI-Resources
 python scripts/generate_readme.py
 
 # Add new resources easily
@@ -91,11 +91,11 @@ echo "  - name: 'Your Amazing AI Tool'
 The following list is automatically generated from `resources.yml`.
 
 <!-- START AUTO -->
-<!-- Generated on 2025-07-30 13:22:15 UTC by generate_readme.py -->
+<!-- Generated on 2025-07-30 13:38:52 UTC by generate_readme.py -->
 
 ## 🌐 View the Interactive AI Resources Hub
 
-**[👆 Click here to explore all 8 AI resources →](https://baptisteblouin.github.io/AI-Tools/)**
+**[👆 Click here to explore all 8 AI resources →](https://baptisteblouin.github.io/AI-Resources/)**
 
 This repository contains a curated collection of **8 AI resources** across **7 categories**, including:
 
@@ -112,16 +112,16 @@ This repository contains a curated collection of **8 AI resources** across **7 c
 
 ### 🚀 Quick Access
 
-- **[🌐 Browse Resources](https://baptisteblouin.github.io/AI-Tools/)** - Interactive web interface
+- **[🌐 Browse Resources](https://baptisteblouin.github.io/AI-Resources/)** - Interactive web interface
 - **[📝 Contribute](CONTRIBUTING.md)** - Add new resources
-- **[🐛 Report Issues](https://github.com/BaptisteBlouin/AI-Tools/issues)** - Help us improve
-- **[💬 Discussions](https://github.com/BaptisteBlouin/AI-Tools/discussions)** - Join the community
+- **[🐛 Report Issues](https://github.com/BaptisteBlouin/AI-Resources/issues)** - Help us improve
+- **[💬 Discussions](https://github.com/BaptisteBlouin/AI-Resources/discussions)** - Join the community
 
 ---
 
 <div align="center">
 
-**[⭐ Star this repository](https://github.com/BaptisteBlouin/AI-Tools/stargazers) • [🍴 Fork it](https://github.com/BaptisteBlouin/AI-Tools/fork) • [📖 View on GitHub Pages](https://baptisteblouin.github.io/AI-Tools/)**
+**[⭐ Star this repository](https://github.com/BaptisteBlouin/AI-Resources/stargazers) • [🍴 Fork it](https://github.com/BaptisteBlouin/AI-Resources/fork) • [📖 View on GitHub Pages](https://baptisteblouin.github.io/AI-Resources/)**
 
 *Automatically updated from [`resources.yml`](resources.yml) • Last updated: July 30, 2025*
 
@@ -162,8 +162,8 @@ We believe in the power of community! Your contributions help make this resource
 
 If this resource collection has helped you, consider giving it a ⭐ star!
 
-[![GitHub stars](https://img.shields.io/github/stars/BaptisteBlouin/AI-Tools?style=social)](https://github.com/BaptisteBlouin/AI-Tools/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/BaptisteBlouin/AI-Tools?style=social)](https://github.com/BaptisteBlouin/AI-Tools/network/members)
+[![GitHub stars](https://img.shields.io/github/stars/BaptisteBlouin/AI-Resources?style=social)](https://github.com/BaptisteBlouin/AI-Resources/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/BaptisteBlouin/AI-Resources?style=social)](https://github.com/BaptisteBlouin/AI-Resources/network/members)
 
 ### 🔄 Automation
 
@@ -173,6 +173,6 @@ This README is automatically generated from [`resources.yml`](resources.yml) usi
 
 ---
 
-<sub>Built with ❤️ by the AI community • [Report Issues](https://github.com/BaptisteBlouin/AI-Tools/issues) • [Join Discussions](https://github.com/BaptisteBlouin/AI-Tools/discussions)</sub>
+<sub>Built with ❤️ by the AI community • [Report Issues](https://github.com/BaptisteBlouin/AI-Resources/issues) • [Join Discussions](https://github.com/BaptisteBlouin/AI-Resources/discussions)</sub>
 
 </div>

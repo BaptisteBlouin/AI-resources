@@ -19,8 +19,8 @@ We welcome all kinds of contributions:
 1. **Fork** this repository to your GitHub account
 2. **Clone** your fork locally:
    ```bash
-   git clone https://github.com/YourUsername/AI-Tools.git
-   cd AI-Tools
+   git clone https://github.com/YourUsername/AI-Resources.git
+   cd AI-Resources
    ```
 
 3. **Create a branch** for your contribution:
@@ -101,8 +101,8 @@ web-resources/apis
 
 ```bash
 # Clone the repository
-git clone https://github.com/BaptisteBlouin/AI-Tools.git
-cd AI-Tools
+git clone https://github.com/BaptisteBlouin/AI-Resources.git
+cd AI-Resources
 
 # Install dependencies (if needed)
 pip install pyyaml
@@ -171,8 +171,8 @@ Use clear, descriptive commit messages:
 
 ## 💬 Getting Help
 
-- 🐛 **Found a bug?** [Create an issue](https://github.com/BaptisteBlouin/AI-Tools/issues)
-- 💡 **Have an idea?** [Start a discussion](https://github.com/BaptisteBlouin/AI-Tools/discussions)
+- 🐛 **Found a bug?** [Create an issue](https://github.com/BaptisteBlouin/AI-Resources/issues)
+- 💡 **Have an idea?** [Start a discussion](https://github.com/BaptisteBlouin/AI-Resources/discussions)
 - ❓ **Need help?** Comment on your PR or reach out in discussions
 
 ## 🎯 Advanced Contributions

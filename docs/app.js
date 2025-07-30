@@ -76,27 +76,39 @@ class AIResourcesApp {
     handleSearch(query) {
         const searchTerm = query.toLowerCase().trim();
         const allItems = this.resourcesGrid.querySelectorAll('.search-item');
+        const allCategories = this.resourcesGrid.querySelectorAll('.category-section');
 
+        // Hide/show individual items based on search
         allItems.forEach(item => {
             const text = item.textContent.toLowerCase();
             const shouldShow = !searchTerm || text.includes(searchTerm);
             item.style.display = shouldShow ? '' : 'none';
         });
 
-        // Auto-expand categories with visible items when searching
         if (searchTerm) {
-            const visibleItems = this.resourcesGrid.querySelectorAll('.search-item:not([style*="none"])');
-            const categoriesToExpand = new Set();
-            
-            visibleItems.forEach(item => {
-                const categoryId = item.dataset.category;
-                if (categoryId) {
-                    categoriesToExpand.add(categoryId);
+            // Auto-expand all categories to show search results
+            allCategories.forEach(categorySection => {
+                const categoryToggle = categorySection.querySelector('.category-toggle');
+                if (categoryToggle) {
+                    const categoryId = categoryToggle.dataset.category;
+                    if (categoryId) {
+                        this.expandCategory(categoryId);
+                    }
                 }
             });
-
-            categoriesToExpand.forEach(categoryId => {
-                this.expandCategory(categoryId);
+        } else {
+            // When search is cleared, collapse subcategories but keep main categories expanded
+            allCategories.forEach(categorySection => {
+                const isMainCategory = categorySection.classList.contains('depth-0');
+                const categoryToggle = categorySection.querySelector('.category-toggle');
+                if (categoryToggle) {
+                    const categoryId = categoryToggle.dataset.category;
+                    if (categoryId) {
+                        if (isMainCategory) {
+                            this.expandCategory(categoryId);
+                        }
+                    }
+                }
             });
         }
     }

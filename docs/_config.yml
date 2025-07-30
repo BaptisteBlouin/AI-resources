@@ -4,10 +4,10 @@
 title: "AI Resources Hub"
 description: "A curated collection of cutting-edge AI tools, libraries, papers, and learning resources"
 url: "https://baptisteblouin.github.io"
-baseurl: "/AI-Tools"
+baseurl: "/AI-Resources"
 
 # GitHub repository
-repository: BaptisteBlouin/AI-Tools
+repository: BaptisteBlouin/AI-Resources
 
 # SEO settings
 lang: en
