@@ -2212,3 +2212,8 @@ resources:
     description: "https://github.com/JohnSnowLabs/nlu"
     tags: ["Tools/Libraries/Deep Learning"]
     
+  - name: "Spark Nlp"
+    url: "https://github.com/JohnSnowLabs/spark-nlp"
+    description: "https://github.com/JohnSnowLabs/spark-nlp"
+    tags: ["Tools/Libraries/Generative AI"]
+    
