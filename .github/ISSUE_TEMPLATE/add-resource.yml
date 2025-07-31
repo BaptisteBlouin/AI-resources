@@ -1,0 +1,77 @@
+name: 🚀 Add New AI Resource
+description: Submit a new AI resource to be added to the collection
+title: "[Resource] "
+labels: ["resource-submission", "pending-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📝 Add New AI Resource
+        
+        Thanks for contributing to our AI resources collection! Please fill out the information below.
+        All fields marked with * are required.
+
+  - type: input
+    id: resource-name
+    attributes:
+      label: "Resource Name *"
+      description: "Name of the AI resource, tool, library, or service"
+      placeholder: "e.g., TensorFlow, GPT-4, OpenCV"
+    validations:
+      required: true
+
+  - type: input
+    id: resource-url
+    attributes:
+      label: "URL *"
+      description: "Direct link to the resource"
+      placeholder: "https://example.com/awesome-ai-tool"
+    validations:
+      required: true
+
+  - type: textarea
+    id: resource-description
+    attributes:
+      label: "Description *"
+      description: "Brief, helpful description of what this resource does and why it's useful"
+      placeholder: "A comprehensive deep learning framework for building and training neural networks..."
+      render: markdown
+    validations:
+      required: true
+
+  - type: input
+    id: resource-tags
+    attributes:
+      label: "Tags *"
+      description: "Comma-separated tags (e.g., libraries/python/ml, tools/development)"
+      placeholder: "libraries/python/ml, tools/development, tutorials/beginner"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: submission-checklist
+    attributes:
+      label: "Submission Checklist"
+      description: "Please verify the following before submitting"
+      options:
+        - label: "The URL is accessible and working"
+          required: true
+        - label: "The resource is not already in the collection"
+          required: true
+        - label: "The description is clear and helpful"
+          required: true
+        - label: "The tags follow the format: category/subcategory/item"
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        
+        ### 🤖 What happens next?
+        
+        1. **Review**: A maintainer will review your submission
+        2. **Approval**: If approved, the resource will be automatically added
+        3. **Integration**: The resource appears in the collection within minutes
+        
+        **Note**: By submitting this resource, you confirm it's publicly available and relevant to AI/ML.

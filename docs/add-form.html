@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Resources - AI Resources Hub</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+    
+    <style>
+        :root {
+            --primary: #2563eb;
+            --success: #059669;
+            --error: #dc2626;
+            --warning: #d97706;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-card: #f1f5f9;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --border: #e2e8f0;
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            --radius: 8px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-primary: #0f172a;
+                --bg-secondary: #1e293b;
+                --bg-card: #334155;
+                --text-primary: #f1f5f9;
+                --text-secondary: #cbd5e1;
+                --border: #475569;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1,6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary), #3b82f6);
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: var(--radius);
+            margin-bottom: 2rem;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: var(--radius);
+            transition: all 0.2s;
+        }
+
+        .nav-links a:hover {
+            background: var(--bg-secondary);
+            color: var(--primary);
+        }
+
+        .form-container {
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            padding: 2rem;
+            box-shadow: var(--shadow-md);
+        }
+
+        .resources-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .resource-counter {
+            background: var(--primary);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: var(--radius);
+            font-weight: 600;
+        }
+
+        .resource-item {
+            background: var(--bg-primary);
+            border: 2px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .resource-item.completed {
+            border-color: var(--success);
+            background: rgba(5, 150, 105, 0.05);
+        }
+
+        .resource-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .resource-item-title {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .resource-number {
+            background: var(--primary);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+
+        .remove-resource-btn {
+            background: var(--error);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: var(--radius);
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: opacity 0.2s;
+        }
+
+        .remove-resource-btn:hover {
+            opacity: 0.8;
+        }
+
+        .remove-resource-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid var(--border);
+            border-radius: var(--radius);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-size: 1rem;
+            transition: border-color 0.2s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .form-help {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin-top: 0.25rem;
+        }
+
+        .tag-input-container {
+            position: relative;
+        }
+
+        .selected-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            min-height: 2.5rem;
+            padding: 0.5rem;
+            border: 2px solid var(--border);
+            border-radius: var(--radius);
+            background: var(--bg-primary);
+        }
+
+        .selected-tag {
+            background: var(--primary);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .selected-tag .remove-tag {
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .selected-tags-placeholder {
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        .resource-validation-status {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            padding: 0.75rem;
+            border-radius: var(--radius);
+            font-size: 0.9rem;
+        }
+
+        .resource-validation-status.valid {
+            background: rgba(5, 150, 105, 0.1);
+            color: var(--success);
+            border: 1px solid rgba(5, 150, 105, 0.2);
+        }
+
+        .resource-validation-status.invalid {
+            background: rgba(220, 38, 38, 0.1);
+            color: var(--error);
+            border: 1px solid rgba(220, 38, 38, 0.2);
+        }
+
+        .add-resource-btn {
+            background: var(--success);
+            color: white;
+            border: none;
+            padding: 1rem 1.5rem;
+            border-radius: var(--radius);
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            margin: 1rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: opacity 0.2s;
+        }
+
+        .add-resource-btn:hover {
+            opacity: 0.9;
+        }
+
+        .batch-submit-section {
+            background: var(--bg-secondary);
+            border: 2px solid var(--primary);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .batch-summary {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            color: var(--text-primary);
+        }
+
+        .batch-summary strong {
+            color: var(--primary);
+        }
+
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius);
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .button-primary {
+            background: var(--primary);
+            color: white;
+            border: 2px solid var(--primary);
+        }
+
+        .button-primary:hover {
+            opacity: 0.9;
+        }
+
+        .button-primary:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .button-secondary {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .button-secondary:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .import-mode-section {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .import-mode-tabs {
+            display: flex;
+            gap: 0.5rem;
+            justify-content: center;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .import-tab {
+            background: var(--bg-primary);
+            color: var(--text-secondary);
+            border: 2px solid var(--border);
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius);
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .import-tab:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .import-tab.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .import-mode-content {
+            display: none;
+        }
+
+        .import-mode-content.active {
+            display: block;
+        }
+
+        .yaml-section {
+            background: var(--bg-primary);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .yaml-validation {
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: var(--radius);
+            border: 2px solid var(--border);
+        }
+
+        .validation-status {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 600;
+        }
+
+        .validation-status.pending {
+            color: var(--text-secondary);
+        }
+
+        .validation-status.valid {
+            color: var(--success);
+            background: rgba(5, 150, 105, 0.1);
+            border-color: var(--success);
+        }
+
+        .validation-status.error {
+            color: var(--error);
+            background: rgba(220, 38, 38, 0.1);
+            border-color: var(--error);
+        }
+
+        .yaml-preview {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: var(--bg-secondary);
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+        }
+
+        .yaml-preview h4 {
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .yaml-resource-item {
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .yaml-resource-name {
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .yaml-resource-url {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .yaml-resource-description {
+            color: var(--text-primary);
+            font-size: 0.875rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .yaml-resource-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.25rem;
+        }
+
+        .yaml-resource-tag {
+            background: var(--primary);
+            color: white;
+            padding: 0.125rem 0.5rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+        }
+
+        .tag-suggestions {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: var(--bg-primary);
+            border: 2px solid var(--border);
+            border-top: none;
+            border-radius: 0 0 var(--radius) var(--radius);
+            max-height: 200px;
+            overflow-y: auto;
+            z-index: 1000;
+        }
+
+        .tag-suggestion {
+            padding: 0.5rem 0.75rem;
+            cursor: pointer;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .tag-suggestion:hover {
+            background: var(--bg-secondary);
+        }
+
+        .tag-suggestion:last-child {
+            border-bottom: none;
+        }
+
+        .tag-suggestion-name {
+            color: var(--text-primary);
+        }
+
+        .tag-suggestion-count {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        .popular-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .popular-tag {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .popular-tag:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .category-browser {
+            margin-top: 1rem;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .category-item {
+            padding: 0.5rem 0.75rem;
+            border-bottom: 1px solid var(--border);
+            cursor: pointer;
+        }
+
+        .category-item:hover {
+            background: var(--bg-secondary);
+        }
+
+        .category-item:last-child {
+            border-bottom: none;
+        }
+
+        .category-item.expandable {
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .category-item.subcategory {
+            padding-left: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .form-container {
+                padding: 1.5rem;
+            }
+            
+            .resources-header {
+                flex-direction: column;
+                gap: 1rem;
+                align-items: flex-start;
+            }
+            
+            .button-group {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>📝 Add Resources</h1>
+            <p>Add one or more AI resources to the collection</p>
+        </header>
+
+        <nav class="nav-links">
+            <a href="index.html">🏠 Browse Resources</a>
+            <a href="https://github.com/BaptisteBlouin/AI-resources" target="_blank">📚 GitHub</a>
+        </nav>
+
+        <div class="form-container">
+            <!-- Import Mode Selection -->
+            <div class="import-mode-section">
+                <h3>📥 Import Mode</h3>
+                <div class="import-mode-tabs">
+                    <button type="button" class="import-tab active" data-mode="form">
+                        📄 Form Mode
+                    </button>
+                    <button type="button" class="import-tab" data-mode="yaml">
+                        📁 YAML Import
+                    </button>
+                </div>
+            </div>
+
+            <!-- Form Mode -->
+            <div id="form-mode" class="import-mode-content active">
+                <form id="add-resources-form">
+                    <div class="resources-header">
+                        <h3>📝 Resources to Add</h3>
+                        <div class="resource-counter">
+                            <span id="resource-count">1</span> resource(s)
+                        </div>
+                    </div>
+                
+                <div id="resources-container">
+                    <!-- Resources will be dynamically added here -->
+                </div>
+                
+                <button type="button" id="add-resource-btn" class="add-resource-btn">
+                    ➕ Add Another Resource
+                </button>
+                
+                <div class="batch-submit-section">
+                    <div class="batch-summary">
+                        Ready to submit <strong id="valid-resources-count">0</strong> of <strong id="total-resources-count">1</strong> resources
+                    </div>
+                    <div class="button-group">
+                        <button type="button" class="button button-secondary" id="preview-btn">
+                            👀 Preview All
+                        </button>
+                        <button type="submit" class="button button-primary" id="submit-all-btn" disabled>
+                            🚀 Submit All Resources
+                        </button>
+                    </div>
+                </div>
+                </form>
+            </div>
+
+            <!-- YAML Import Mode -->
+            <div id="yaml-mode" class="import-mode-content">
+                <form id="yaml-import-form">
+                    <div class="yaml-section">
+                        <h3>📁 YAML Import</h3>
+                        <div class="form-group">
+                            <label for="yaml-input">Paste YAML content</label>
+                            <textarea id="yaml-input" rows="15" 
+                                      placeholder="resources:
+  - name: &quot;TensorFlow&quot;
+    url: &quot;https://tensorflow.org&quot;
+    description: &quot;Open source machine learning framework&quot;
+    tags: [&quot;libraries/python/ml&quot;, &quot;tools/development&quot;]
+    
+  - name: &quot;PyTorch&quot;
+    url: &quot;https://pytorch.org&quot;
+    description: &quot;Deep learning framework&quot;
+    tags: [&quot;libraries/python/deep-learning&quot;]"></textarea>
+                            <div class="form-help">
+                                Paste YAML content with resources. The system will validate and parse the content automatically.
+                            </div>
+                        </div>
+                        
+                        <div class="yaml-validation" id="yaml-validation">
+                            <div class="validation-status pending">
+                                📄 Paste YAML content above to validate
+                            </div>
+                        </div>
+                        
+                        <div class="yaml-preview" id="yaml-preview" style="display: none;">
+                            <h4>📋 Parsed Resources</h4>
+                            <div id="yaml-preview-content"></div>
+                        </div>
+                        
+                        <div class="button-group">
+                            <button type="button" class="button button-secondary" id="yaml-validate-btn">
+                                🔍 Validate YAML
+                            </button>
+                            <button type="submit" class="button button-primary" id="yaml-submit-btn" disabled>
+                                🚀 Import Resources
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        class MultiResourceManager {
+            constructor() {
+                this.resources = [];
+                this.resourceIdCounter = 1;
+                this.allTags = [];
+                this.popularTags = [];
+                this.categories = {};
+                this.currentMode = 'form';
+                this.init();
+            }
+
+            init() {
+                this.loadTagData();
+                this.setupModeListeners();
+                this.setupEventListeners();
+                
+                // Add first resource automatically in form mode
+                this.addNewResource();
+                this.updateUI();
+            }
+
+            async loadTagData() {
+                try {
+                    const response = await fetch('resources.json');
+                    if (!response.ok) throw new Error('Failed to load resources');
+                    
+                    const data = await response.json();
+                    this.extractTagData(data);
+                    this.renderPopularTags();
+                    this.renderCategories();
+                } catch (error) {
+                    console.error('Error loading tag data:', error);
+                    // Fallback to basic tags
+                    this.allTags = [
+                        'libraries/python/ml',
+                        'tools/development',
+                        'tutorials/beginner',
+                        'papers/research',
+                        'datasets/text'
+                    ];
+                }
+            }
+
+            extractTagData(data) {
+                const tagCounts = {};
+                
+                // Recursively extract tags from the nested structure
+                const extractFromNode = (node) => {
+                    if (node._items) {
+                        node._items.forEach(item => {
+                            if (item.tags) {
+                                item.tags.forEach(tag => {
+                                    tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+                                });
+                            }
+                        });
+                    }
+                    
+                    Object.keys(node).forEach(key => {
+                        if (key !== '_items' && typeof node[key] === 'object') {
+                            extractFromNode(node[key]);
+                        }
+                    });
+                };
+                
+                extractFromNode(data);
+                
+                // Sort tags by usage
+                this.allTags = Object.keys(tagCounts).sort((a, b) => tagCounts[b] - tagCounts[a]);
+                this.popularTags = this.allTags.slice(0, 10);
+                
+                // Build category structure
+                this.categories = this.buildCategoryStructure(this.allTags);
+            }
+
+            buildCategoryStructure(tags) {
+                const structure = {};
+                
+                tags.forEach(tag => {
+                    const parts = tag.split('/');
+                    let current = structure;
+                    
+                    parts.forEach((part, index) => {
+                        if (!current[part]) {
+                            current[part] = { 
+                                tags: [],
+                                subcategories: {}
+                            };
+                        }
+                        
+                        if (index === parts.length - 1) {
+                            current[part].tags.push(tag);
+                        } else {
+                            current = current[part].subcategories;
+                        }
+                    });
+                });
+                
+                return structure;
+            }
+
+            setupModeListeners() {
+                document.querySelectorAll('.import-tab').forEach(tab => {
+                    tab.addEventListener('click', (e) => {
+                        const mode = e.target.dataset.mode;
+                        this.switchMode(mode);
+                    });
+                });
+            }
+
+            switchMode(mode) {
+                this.currentMode = mode;
+                
+                // Update tabs
+                document.querySelectorAll('.import-tab').forEach(tab => {
+                    tab.classList.toggle('active', tab.dataset.mode === mode);
+                });
+                
+                // Update content
+                document.querySelectorAll('.import-mode-content').forEach(content => {
+                    content.classList.toggle('active', content.id === `${mode}-mode`);
+                });
+                
+                if (mode === 'yaml') {
+                    this.setupYamlListeners();
+                }
+            }
+
+            setupEventListeners() {
+                document.getElementById('add-resource-btn').addEventListener('click', () => {
+                    this.addNewResource();
+                });
+
+                document.getElementById('add-resources-form').addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    this.submitAllResources();
+                });
+            }
+
+            setupYamlListeners() {
+                const yamlInput = document.getElementById('yaml-input');
+                const validateBtn = document.getElementById('yaml-validate-btn');
+                const submitBtn = document.getElementById('yaml-submit-btn');
+                
+                yamlInput.addEventListener('input', () => {
+                    submitBtn.disabled = true;
+                    document.getElementById('yaml-preview').style.display = 'none';
+                });
+                
+                validateBtn.addEventListener('click', () => {
+                    this.validateYaml();
+                });
+                
+                document.getElementById('yaml-import-form').addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    this.submitYamlResources();
+                });
+            }
+
+            validateYaml() {
+                const yamlInput = document.getElementById('yaml-input');
+                const validation = document.getElementById('yaml-validation');
+                const preview = document.getElementById('yaml-preview');
+                const submitBtn = document.getElementById('yaml-submit-btn');
+                
+                try {
+                    const yamlContent = yamlInput.value.trim();
+                    if (!yamlContent) {
+                        throw new Error('Please paste YAML content');
+                    }
+                    
+                    // Simple YAML parsing (basic validation)
+                    const resources = this.parseYamlResources(yamlContent);
+                    
+                    if (resources.length === 0) {
+                        throw new Error('No valid resources found in YAML');
+                    }
+                    
+                    // Update validation status
+                    validation.innerHTML = `
+                        <div class="validation-status valid">
+                            ✅ Valid YAML - Found ${resources.length} resource(s)
+                        </div>
+                    `;
+                    
+                    // Show preview
+                    this.renderYamlPreview(resources);
+                    preview.style.display = 'block';
+                    submitBtn.disabled = false;
+                    
+                } catch (error) {
+                    validation.innerHTML = `
+                        <div class="validation-status error">
+                            ❌ ${error.message}
+                        </div>
+                    `;
+                    preview.style.display = 'none';
+                    submitBtn.disabled = true;
+                }
+            }
+
+            parseYamlResources(yamlContent) {
+                // Simple YAML parser for our specific format
+                const resources = [];
+                const lines = yamlContent.split('\n');
+                let currentResource = null;
+                
+                for (let line of lines) {
+                    line = line.trim();
+                    if (!line || line.startsWith('#')) continue;
+                    
+                    if (line.startsWith('- name:')) {
+                        if (currentResource) {
+                            resources.push(currentResource);
+                        }
+                        currentResource = {
+                            name: this.extractYamlValue(line),
+                            url: '',
+                            description: '',
+                            tags: []
+                        };
+                    } else if (currentResource) {
+                        if (line.startsWith('url:')) {
+                            currentResource.url = this.extractYamlValue(line);
+                        } else if (line.startsWith('description:')) {
+                            currentResource.description = this.extractYamlValue(line);
+                        } else if (line.startsWith('tags:')) {
+                            const tagsStr = line.substring(5).trim();
+                            if (tagsStr.startsWith('[') && tagsStr.endsWith(']')) {
+                                const tagsContent = tagsStr.slice(1, -1);
+                                currentResource.tags = tagsContent.split(',')
+                                    .map(tag => tag.trim().replace(/['"]/g, ''))
+                                    .filter(tag => tag);
+                            }
+                        }
+                    }
+                }
+                
+                if (currentResource) {
+                    resources.push(currentResource);
+                }
+                
+                // Validate resources
+                return resources.filter(resource => 
+                    resource.name && resource.url && resource.description && resource.tags.length > 0
+                );
+            }
+
+            extractYamlValue(line) {
+                const colonIndex = line.indexOf(':');
+                if (colonIndex === -1) return '';
+                
+                let value = line.substring(colonIndex + 1).trim();
+                if ((value.startsWith('"') && value.endsWith('"')) || 
+                    (value.startsWith("'") && value.endsWith("'"))) {
+                    value = value.slice(1, -1);
+                }
+                return value;
+            }
+
+            renderYamlPreview(resources) {
+                const previewContent = document.getElementById('yaml-preview-content');
+                
+                previewContent.innerHTML = resources.map(resource => `
+                    <div class="yaml-resource-item">
+                        <div class="yaml-resource-name">${resource.name}</div>
+                        <div class="yaml-resource-url">${resource.url}</div>
+                        <div class="yaml-resource-description">${resource.description}</div>
+                        <div class="yaml-resource-tags">
+                            ${resource.tags.map(tag => `<span class="yaml-resource-tag">${tag}</span>`).join('')}
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            submitYamlResources() {
+                const yamlInput = document.getElementById('yaml-input');
+                const resources = this.parseYamlResources(yamlInput.value.trim());
+                
+                if (resources.length === 0) {
+                    alert('No valid resources found. Please validate your YAML first.');
+                    return;
+                }
+                
+                // Always use batch format
+                this.submitBatchResources(resources);
+            }
+
+            handleTagInput(resourceId, value) {
+                if (value.length > 0) {
+                    this.showTagSuggestions(resourceId, value);
+                } else {
+                    this.hideTagSuggestions(resourceId);
+                }
+            }
+
+            showTagSuggestions(resourceId, filter = '') {
+                const suggestionsEl = document.getElementById(`tag-suggestions-${resourceId}`);
+                const resource = this.resources.find(r => r.id === resourceId);
+                if (!resource) return;
+                
+                let matchingTags = this.allTags.filter(tag => {
+                    return tag.toLowerCase().includes(filter.toLowerCase()) &&
+                           !resource.tags.includes(tag);
+                });
+                
+                if (matchingTags.length === 0 && filter) {
+                    // Suggest creating new tag
+                    matchingTags = [`${filter} (create new)`];
+                }
+                
+                if (matchingTags.length > 0) {
+                    suggestionsEl.innerHTML = matchingTags.slice(0, 8).map(tag => {
+                        const isNew = tag.includes('(create new)');
+                        const displayTag = isNew ? tag.replace(' (create new)', '') : tag;
+                        return `
+                            <div class="tag-suggestion" onMouseDown="manager.addTagToResource(${resourceId}, '${displayTag}')">
+                                <span class="tag-suggestion-name">${displayTag}</span>
+                                ${!isNew ? '<span class="tag-suggestion-count">existing</span>' : '<span class="tag-suggestion-count">new</span>'}
+                            </div>
+                        `;
+                    }).join('');
+                    suggestionsEl.classList.remove('hidden');
+                } else {
+                    this.hideTagSuggestions(resourceId);
+                }
+            }
+
+            hideTagSuggestions(resourceId) {
+                setTimeout(() => {
+                    const suggestionsEl = document.getElementById(`tag-suggestions-${resourceId}`);
+                    if (suggestionsEl) {
+                        suggestionsEl.classList.add('hidden');
+                    }
+                }, 150);
+            }
+
+            addTagToResource(resourceId, tag) {
+                const resource = this.resources.find(r => r.id === resourceId);
+                if (!resource || resource.tags.includes(tag)) return;
+                
+                resource.tags.push(tag);
+                this.updateTagsDisplay(resource);
+                this.validateResource(resource);
+                this.updateUI();
+                
+                // Clear input
+                const tagInput = document.getElementById(`tag-input-${resourceId}`);
+                if (tagInput) {
+                    tagInput.value = '';
+                }
+                
+                this.hideTagSuggestions(resourceId);
+            }
+
+            renderPopularTags() {
+                // Will be called after resources are added
+                this.resources.forEach(resource => {
+                    this.renderPopularTagsForResource(resource.id);
+                });
+            }
+
+            renderPopularTagsForResource(resourceId) {
+                const popularTagsEl = document.getElementById(`popular-tags-${resourceId}`);
+                if (!popularTagsEl) return;
+                
+                const resource = this.resources.find(r => r.id === resourceId);
+                if (!resource) return;
+                
+                popularTagsEl.innerHTML = this.popularTags
+                    .filter(tag => !resource.tags.includes(tag))
+                    .slice(0, 8)
+                    .map(tag => `
+                        <span class="popular-tag" onclick="manager.addTagToResource(${resourceId}, '${tag}')">
+                            ${tag}
+                        </span>
+                    `).join('');
+            }
+
+            renderCategories() {
+                // Will be called after resources are added
+                this.resources.forEach(resource => {
+                    this.renderCategoriesForResource(resource.id);
+                });
+            }
+
+            renderCategoriesForResource(resourceId) {
+                const categoryBrowserEl = document.getElementById(`category-browser-${resourceId}`);
+                if (!categoryBrowserEl) return;
+                
+                const resource = this.resources.find(r => r.id === resourceId);
+                if (!resource) return;
+                
+                let html = '';
+                Object.keys(this.categories).forEach(category => {
+                    const categoryData = this.categories[category];
+                    html += `
+                        <div class="category-item expandable" onclick="manager.toggleCategory('${resourceId}', '${category}')">
+                            📁 ${category} (${Object.keys(categoryData.subcategories).length + categoryData.tags.length})
+                        </div>
+                        <div id="subcategories-${resourceId}-${category}" class="hidden">
+                    `;
+                    
+                    // Add direct tags
+                    categoryData.tags.forEach(tag => {
+                        if (!resource.tags.includes(tag)) {
+                            html += `
+                                <div class="category-item subcategory" onclick="manager.addTagToResource(${resourceId}, '${tag}')">
+                                    🏷️ ${tag}
+                                </div>
+                            `;
+                        }
+                    });
+                    
+                    // Add subcategories
+                    Object.keys(categoryData.subcategories).forEach(subcat => {
+                        const subcatData = categoryData.subcategories[subcat];
+                        subcatData.tags.forEach(tag => {
+                            if (!resource.tags.includes(tag)) {
+                                html += `
+                                    <div class="category-item subcategory" onclick="manager.addTagToResource(${resourceId}, '${tag}')">
+                                        🏷️ ${tag}
+                                    </div>
+                                `;
+                            }
+                        });
+                    });
+                    
+                    html += '</div>';
+                });
+                
+                categoryBrowserEl.innerHTML = html;
+            }
+
+            toggleCategory(resourceId, category) {
+                const subcatsEl = document.getElementById(`subcategories-${resourceId}-${category}`);
+                if (subcatsEl) {
+                    subcatsEl.classList.toggle('hidden');
+                }
+            }
+
+            addNewResource() {
+                const resourceId = this.resourceIdCounter++;
+                const resource = {
+                    id: resourceId,
+                    name: '',
+                    url: '',
+                    description: '',
+                    tags: [],
+                    isValid: false
+                };
+
+                this.resources.push(resource);
+                this.renderResource(resource);
+                this.updateUI();
+            }
+
+            removeResource(resourceId) {
+                if (this.resources.length <= 1) return; // Don't allow removing the last resource
+                
+                this.resources = this.resources.filter(r => r.id !== resourceId);
+                document.getElementById(`resource-${resourceId}`).remove();
+                this.updateUI();
+            }
+
+            renderResource(resource) {
+                const container = document.getElementById('resources-container');
+                const resourceEl = document.createElement('div');
+                resourceEl.className = 'resource-item';
+                resourceEl.id = `resource-${resource.id}`;
+                
+                resourceEl.innerHTML = `
+                    <div class="resource-item-header">
+                        <div class="resource-item-title">
+                            <span class="resource-number">${resource.id}</span>
+                            Resource ${resource.id}
+                        </div>
+                        <button type="button" class="remove-resource-btn" onclick="manager.removeResource(${resource.id})" ${this.resources.length === 1 ? 'disabled' : ''}>
+                            🗑️ Remove
+                        </button>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="url-${resource.id}">URL *</label>
+                        <input type="url" id="url-${resource.id}" placeholder="https://example.com/awesome-ai-tool" 
+                               onInput="manager.updateResource(${resource.id}, 'url', this.value)">
+                        <div class="form-help">Direct link to the resource</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="name-${resource.id}">Resource Name *</label>
+                        <input type="text" id="name-${resource.id}" placeholder="e.g., TensorFlow, GPT-4, OpenCV" 
+                               onInput="manager.updateResource(${resource.id}, 'name', this.value)">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="description-${resource.id}">Description *</label>
+                        <textarea id="description-${resource.id}" 
+                                  placeholder="Brief description of what this resource does and why it's useful..."  
+                                  onInput="manager.updateResource(${resource.id}, 'description', this.value)"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="tag-input-${resource.id}">Search and select tags</label>
+                        <div class="tag-input-container">
+                            <input type="text" id="tag-input-${resource.id}" placeholder="Type to search for tags..." 
+                                   onInput="manager.handleTagInput(${resource.id}, this.value)"
+                                   onFocus="manager.showTagSuggestions(${resource.id})"
+                                   onBlur="manager.hideTagSuggestions(${resource.id})">
+                            <div id="tag-suggestions-${resource.id}" class="tag-suggestions hidden"></div>
+                        </div>
+                        <div class="form-help">
+                            Start typing to search existing tags or create new ones. Format: category/subcategory/item
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Selected Tags</label>
+                        <div id="selected-tags-${resource.id}" class="selected-tags">
+                            <div class="selected-tags-placeholder">No tags selected yet</div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Popular Tags (click to add)</label>
+                        <div id="popular-tags-${resource.id}" class="popular-tags">
+                            <!-- Popular tags will be loaded here -->
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Browse by Category</label>
+                        <div id="category-browser-${resource.id}" class="category-browser">
+                            <!-- Categories will be loaded here -->
+                        </div>  
+                    </div>
+                    
+                    <div class="resource-validation-status invalid" id="status-${resource.id}">
+                        ❌ Please fill out all required fields
+                    </div>
+                `;
+                
+                container.appendChild(resourceEl);
+                
+                // Initialize tag system for this resource
+                setTimeout(() => {
+                    this.renderPopularTagsForResource(resourceId);
+                    this.renderCategoriesForResource(resourceId);
+                }, 100);
+            }
+
+            updateResource(resourceId, field, value) {
+                const resource = this.resources.find(r => r.id === resourceId);
+                if (!resource) return;
+
+                resource[field] = value;
+                this.validateResource(resource);
+                this.updateUI();
+            }
+
+            updateTagsDisplay(resource) {
+                const tagsContainer = document.getElementById(`selected-tags-${resource.id}`);
+                
+                if (resource.tags.length === 0) {
+                    tagsContainer.innerHTML = '<div class="selected-tags-placeholder">No tags selected yet</div>';
+                } else {
+                    tagsContainer.innerHTML = resource.tags.map(tag => 
+                        `<span class="selected-tag">
+                            ${tag}
+                            <span class="remove-tag" onclick="manager.removeTag(${resource.id}, '${tag}')">×</span>
+                        </span>`
+                    ).join('');
+                }
+                
+                // Update popular tags and categories to hide already selected ones
+                this.renderPopularTagsForResource(resource.id);
+                this.renderCategoriesForResource(resource.id);
+            }
+
+            removeTag(resourceId, tagToRemove) {
+                const resource = this.resources.find(r => r.id === resourceId);
+                if (!resource) return;
+
+                resource.tags = resource.tags.filter(tag => tag !== tagToRemove);
+                
+                // Update the input field
+                const tagsInput = document.getElementById(`tags-${resourceId}`);
+                tagsInput.value = resource.tags.join(', ');
+                
+                this.updateTagsDisplay(resource);
+                this.validateResource(resource);
+                this.updateUI();
+            }
+
+            validateResource(resource) {
+                const required = ['name', 'url', 'description'];
+                const isValid = required.every(field => resource[field].trim()) && resource.tags.length > 0;
+                
+                resource.isValid = isValid;
+                
+                const resourceEl = document.getElementById(`resource-${resource.id}`);
+                const statusEl = document.getElementById(`status-${resource.id}`);
+                
+                if (isValid) {
+                    resourceEl.classList.add('completed');
+                    statusEl.className = 'resource-validation-status valid';
+                    statusEl.innerHTML = '✅ Resource is ready to submit';
+                } else {
+                    resourceEl.classList.remove('completed');
+                    statusEl.className = 'resource-validation-status invalid';
+                    statusEl.innerHTML = '❌ Please fill out all required fields';
+                }
+            }
+
+            updateUI() {
+                const totalCount = this.resources.length;
+                const validCount = this.resources.filter(r => r.isValid).length;
+
+                document.getElementById('resource-count').textContent = totalCount;
+                document.getElementById('total-resources-count').textContent = totalCount;
+                document.getElementById('valid-resources-count').textContent = validCount;
+
+                const submitBtn = document.getElementById('submit-all-btn');
+                submitBtn.disabled = validCount === 0;
+
+                // Update remove button states
+                this.resources.forEach(resource => {
+                    const removeBtn = document.querySelector(`#resource-${resource.id} .remove-resource-btn`);
+                    if (removeBtn) {
+                        removeBtn.disabled = this.resources.length === 1;
+                    }
+                });
+            }
+
+            submitAllResources() {
+                const validResources = this.resources.filter(r => r.isValid);
+                if (validResources.length === 0) {
+                    alert('Please complete at least one resource before submitting.');
+                    return;
+                }
+
+                // Always use batch format for consistency, even for single resources
+                this.submitBatchResources(validResources);
+            }
+
+            submitBatchResources(resources) {
+                let yaml = '';
+                resources.forEach(resource => {
+                    yaml += `- name: "${resource.name}"\n`;
+                    yaml += `  url: "${resource.url}"\n`;
+                    yaml += `  description: "${resource.description}"\n`;
+                    yaml += `  tags: [${resource.tags.map(tag => `"${tag}"`).join(', ')}]\n\n`;
+                });
+
+                const title = `[Batch] ${resources.length} AI Resource${resources.length > 1 ? 's' : ''}`;
+                const body = `### Resources YAML *
+
+\`\`\`yaml
+${yaml.trim()}
+\`\`\`
+
+### Number of Resources
+
+${resources.length}
+
+### Batch Submission Checklist
+
+- [x] All URLs are accessible and working
+- [x] No resources are already in the collection  
+- [x] All descriptions are clear and helpful
+- [x] All tags follow the format: category/subcategory/item
+- [x] YAML syntax is correct`;
+
+                const githubUrl = `https://github.com/BaptisteBlouin/AI-resources/issues/new?labels=batch-submission,pending-review&title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
+                window.open(githubUrl, '_blank');
+            }
+        }
+
+        // Initialize the manager
+        const manager = new MultiResourceManager();
+    </script>
+</body>
+</html>

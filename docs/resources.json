@@ -1,0 +1,3957 @@
+{
+  "Reading": {
+    "_items": [],
+    "Papers": {
+      "_items": [],
+      "Preprint Servers": {
+        "_items": [
+          {
+            "name": "ArXiv Computer Science - Artificial Intelligence",
+            "url": "https://arxiv.org/list/cs.AI/recent",
+            "description": "Preprint server with latest AI research papers covering all areas of artificial intelligence",
+            "tags": [
+              "Reading/Papers/Preprint Servers"
+            ]
+          },
+          {
+            "name": "bioRxiv",
+            "url": "https://www.biorxiv.org/",
+            "description": "Preprint server for biology research including AI applications in life sciences",
+            "tags": [
+              "Reading/Papers/Preprint Servers"
+            ]
+          },
+          {
+            "name": "ChemRxiv",
+            "url": "https://chemrxiv.org/",
+            "description": "Preprint server for chemistry research including AI applications in chemical sciences",
+            "tags": [
+              "Reading/Papers/Preprint Servers"
+            ]
+          },
+          {
+            "name": "medRxiv",
+            "url": "https://www.medrxiv.org/",
+            "description": "Preprint server for medical research including AI applications in healthcare",
+            "tags": [
+              "Reading/Papers/Preprint Servers"
+            ]
+          }
+        ]
+      },
+      "Academic Journals": {
+        "_items": [
+          {
+            "name": "Nature Machine Intelligence",
+            "url": "https://www.nature.com/natmachintell/",
+            "description": "Premier academic journal publishing high-quality research in machine intelligence",
+            "tags": [
+              "Reading/Papers/Academic Journals"
+            ]
+          },
+          {
+            "name": "Journal of Machine Learning Research (JMLR)",
+            "url": "https://www.jmlr.org/",
+            "description": "Leading journal for machine learning theory and methods with open access",
+            "tags": [
+              "Reading/Papers/Academic Journals"
+            ]
+          },
+          {
+            "name": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+            "url": "https://www.computer.org/csdl/journal/tp",
+            "description": "Top-tier journal for computer vision and machine learning research",
+            "tags": [
+              "Reading/Papers/Academic Journals"
+            ]
+          },
+          {
+            "name": "JMIR AI",
+            "url": "https://ai.jmir.org/",
+            "description": "Journal focusing on AI applications in healthcare and medical research",
+            "tags": [
+              "Reading/Papers/Academic Journals"
+            ]
+          }
+        ]
+      },
+      "Conference Proceedings": {
+        "_items": [
+          {
+            "name": "NeurIPS Proceedings",
+            "url": "https://neurips.cc/",
+            "description": "Neural Information Processing Systems - premier ML conference proceedings",
+            "tags": [
+              "Reading/Papers/Conference Proceedings"
+            ]
+          },
+          {
+            "name": "ICML Proceedings",
+            "url": "https://icml.cc/",
+            "description": "International Conference on Machine Learning proceedings",
+            "tags": [
+              "Reading/Papers/Conference Proceedings"
+            ]
+          },
+          {
+            "name": "ICLR Proceedings",
+            "url": "https://iclr.cc/",
+            "description": "International Conference on Learning Representations proceedings",
+            "tags": [
+              "Reading/Papers/Conference Proceedings"
+            ]
+          },
+          {
+            "name": "ACL Anthology",
+            "url": "https://aclanthology.org/",
+            "description": "Digital archive of natural language processing and computational linguistics papers",
+            "tags": [
+              "Reading/Papers/Conference Proceedings"
+            ]
+          }
+        ]
+      },
+      "Research Repositories": {
+        "_items": [
+          {
+            "name": "Papers with Code",
+            "url": "https://paperswithcode.com/",
+            "description": "Repository linking machine learning papers with their code implementations",
+            "tags": [
+              "Reading/Papers/Research Repositories"
+            ]
+          },
+          {
+            "name": "Semantic Scholar",
+            "url": "https://www.semanticscholar.org/",
+            "description": "AI-powered academic search engine for scientific literature",
+            "tags": [
+              "Reading/Papers/Research Repositories"
+            ]
+          },
+          {
+            "name": "Google Scholar",
+            "url": "https://scholar.google.com/",
+            "description": "Academic search engine for scholarly literature across disciplines",
+            "tags": [
+              "Reading/Papers/Research Repositories"
+            ]
+          },
+          {
+            "name": "Paper Digest",
+            "url": "https://www.paperdigest.org/",
+            "description": "AI-powered platform for analyzing and ranking influential research papers",
+            "tags": [
+              "Reading/Papers/Research Repositories"
+            ]
+          }
+        ]
+      }
+    },
+    "Books": {
+      "_items": [],
+      "Foundational Texts": {
+        "_items": [
+          {
+            "name": "Artificial Intelligence: A Modern Approach by Russell & Norvig",
+            "url": "https://aima.cs.berkeley.edu/",
+            "description": "Comprehensive textbook covering foundational AI concepts and algorithms",
+            "tags": [
+              "Reading/Books/Foundational Texts"
+            ]
+          },
+          {
+            "name": "Deep Learning by Goodfellow, Bengio, and Courville",
+            "url": "https://www.deeplearningbook.org/",
+            "description": "Mathematical foundations of deep learning with comprehensive theory",
+            "tags": [
+              "Reading/Books/Foundational Texts"
+            ]
+          },
+          {
+            "name": "Pattern Recognition and Machine Learning by Bishop",
+            "url": "https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/",
+            "description": "Bayesian approach to machine learning with mathematical rigor",
+            "tags": [
+              "Reading/Books/Foundational Texts"
+            ]
+          },
+          {
+            "name": "The Elements of Statistical Learning by Hastie, Tibshirani & Friedman",
+            "url": "https://web.stanford.edu/~hastie/ElemStatLearn/",
+            "description": "Statistical learning theory and methods for data mining and machine learning",
+            "tags": [
+              "Reading/Books/Foundational Texts"
+            ]
+          }
+        ]
+      },
+      "Domain-Specific": {
+        "_items": [
+          {
+            "name": "Natural Language Processing with Python by Bird, Klein & Loper",
+            "url": "https://www.nltk.org/book/",
+            "description": "Practical guide to NLP using Python and NLTK library",
+            "tags": [
+              "Reading/Books/Domain-Specific"
+            ]
+          },
+          {
+            "name": "Computer Vision: Algorithms and Applications by Szeliski",
+            "url": "https://szeliski.org/Book/",
+            "description": "Comprehensive textbook on computer vision algorithms and techniques",
+            "tags": [
+              "Reading/Books/Domain-Specific"
+            ]
+          },
+          {
+            "name": "Reinforcement Learning: An Introduction by Sutton & Barto",
+            "url": "http://incompleteideas.net/book/the-book.html",
+            "description": "Standard textbook for reinforcement learning theory and algorithms",
+            "tags": [
+              "Reading/Books/Domain-Specific"
+            ]
+          },
+          {
+            "name": "Speech and Language Processing by Jurafsky & Martin",
+            "url": "https://web.stanford.edu/~jurafsky/slp3/",
+            "description": "Comprehensive guide to computational linguistics and NLP",
+            "tags": [
+              "Reading/Books/Domain-Specific"
+            ]
+          }
+        ]
+      },
+      "Practical Guides": {
+        "_items": [
+          {
+            "name": "Hands-On Machine Learning by Aurélien Géron",
+            "url": "https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/",
+            "description": "Practical guide to machine learning with scikit-learn, Keras, and TensorFlow",
+            "tags": [
+              "Reading/Books/Practical Guides"
+            ]
+          },
+          {
+            "name": "Python Machine Learning by Sebastian Raschka",
+            "url": "https://sebastianraschka.com/books/",
+            "description": "Machine learning and deep learning with Python implementation",
+            "tags": [
+              "Reading/Books/Practical Guides"
+            ]
+          },
+          {
+            "name": "Machine Learning Engineering by Andriy Burkov",
+            "url": "http://www.mlebook.com/",
+            "description": "Practical guide to building and deploying machine learning systems",
+            "tags": [
+              "Reading/Books/Practical Guides"
+            ]
+          },
+          {
+            "name": "Practical Deep Learning for Coders by Howard & Gugger",
+            "url": "https://course.fast.ai/Resources/book.html",
+            "description": "Top-down approach to deep learning with practical implementations",
+            "tags": [
+              "Reading/Books/Practical Guides"
+            ]
+          }
+        ]
+      },
+      "Ethics & Society": {
+        "_items": [
+          {
+            "name": "Weapons of Math Destruction by Cathy O'Neil",
+            "url": "https://weaponsofmathdestructionbook.com/",
+            "description": "Critical examination of algorithmic bias and fairness in AI systems",
+            "tags": [
+              "Reading/Books/Ethics & Society"
+            ]
+          },
+          {
+            "name": "Race After Technology by Ruha Benjamin",
+            "url": "https://www.ruhabenjamin.com/race-after-technology",
+            "description": "Analysis of racial bias in algorithmic design and technology",
+            "tags": [
+              "Reading/Books/Ethics & Society"
+            ]
+          },
+          {
+            "name": "Human Compatible by Stuart Russell",
+            "url": "https://humancompatible.ai/",
+            "description": "AI safety and the challenge of creating beneficial artificial intelligence",
+            "tags": [
+              "Reading/Books/Ethics & Society"
+            ]
+          }
+        ]
+      }
+    },
+    "Blogs": {
+      "_items": [],
+      "Technical Blogs": {
+        "_items": [
+          {
+            "name": "Distill.pub",
+            "url": "https://distill.pub/",
+            "description": "Interactive and visual explanations of machine learning concepts",
+            "tags": [
+              "Reading/Blogs/Technical Blogs"
+            ]
+          },
+          {
+            "name": "OpenAI Blog",
+            "url": "https://openai.com/blog/",
+            "description": "Latest research updates and insights from OpenAI team",
+            "tags": [
+              "Reading/Blogs/Technical Blogs"
+            ]
+          },
+          {
+            "name": "DeepMind Blog",
+            "url": "https://deepmind.com/blog",
+            "description": "Research updates and insights from DeepMind's AI research",
+            "tags": [
+              "Reading/Blogs/Technical Blogs"
+            ]
+          },
+          {
+            "name": "Google AI Blog",
+            "url": "https://ai.googleblog.com/",
+            "description": "Technical blog covering Google's AI research and applications",
+            "tags": [
+              "Reading/Blogs/Technical Blogs"
+            ]
+          },
+          {
+            "name": "Meta AI Blog",
+            "url": "https://ai.meta.com/blog/",
+            "description": "Research updates from Meta's AI research division (FAIR)",
+            "tags": [
+              "Reading/Blogs/Technical Blogs"
+            ]
+          }
+        ]
+      },
+      "Industry Analysis": {
+        "_items": [
+          {
+            "name": "Towards Data Science",
+            "url": "https://towardsdatascience.com/",
+            "description": "Medium publication with data science and ML articles",
+            "tags": [
+              "Reading/Blogs/Industry Analysis"
+            ]
+          },
+          {
+            "name": "The Gradient",
+            "url": "https://thegradient.pub/",
+            "description": "Digital magazine for research and perspectives on AI",
+            "tags": [
+              "Reading/Blogs/Industry Analysis"
+            ]
+          },
+          {
+            "name": "VentureBeat AI",
+            "url": "https://venturebeat.com/ai/",
+            "description": "AI industry news, analysis, and business applications",
+            "tags": [
+              "Reading/Blogs/Industry Analysis"
+            ]
+          }
+        ]
+      },
+      "Personal Blogs": {
+        "_items": [
+          {
+            "name": "Andrej Karpathy's Blog",
+            "url": "https://karpathy.github.io/",
+            "description": "Deep learning insights from former Tesla AI director",
+            "tags": [
+              "Reading/Blogs/Personal Blogs"
+            ]
+          },
+          {
+            "name": "Sebastian Raschka's Blog",
+            "url": "https://sebastianraschka.com/",
+            "description": "Machine learning research and practical insights",
+            "tags": [
+              "Reading/Blogs/Personal Blogs"
+            ]
+          },
+          {
+            "name": "Jeremy Howard's Blog",
+            "url": "https://www.jeremy.org/",
+            "description": "Fast.ai co-founder's insights on practical deep learning",
+            "tags": [
+              "Reading/Blogs/Personal Blogs"
+            ]
+          },
+          {
+            "name": "Cassie Kozyrkov's Blog",
+            "url": "https://kozyrkov.medium.com/",
+            "description": "Former Google Chief Decision Scientist's perspectives on AI and data",
+            "tags": [
+              "Reading/Blogs/Personal Blogs"
+            ]
+          }
+        ]
+      }
+    },
+    "Other": {
+      "_items": [],
+      "White Papers": {
+        "_items": [
+          {
+            "name": "McKinsey AI Report 2025",
+            "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
+            "description": "Annual comprehensive analysis of AI adoption and impact across industries",
+            "tags": [
+              "Reading/Other/White Papers"
+            ]
+          }
+        ]
+      },
+      "Technical Documentation": {
+        "_items": [
+          {
+            "name": "TensorFlow Documentation",
+            "url": "https://www.tensorflow.org/guide",
+            "description": "Official documentation for TensorFlow machine learning framework",
+            "tags": [
+              "Reading/Other/Technical Documentation"
+            ]
+          },
+          {
+            "name": "PyTorch Documentation",
+            "url": "https://pytorch.org/docs/",
+            "description": "Comprehensive documentation for PyTorch deep learning framework",
+            "tags": [
+              "Reading/Other/Technical Documentation"
+            ]
+          },
+          {
+            "name": "Hugging Face Documentation",
+            "url": "https://huggingface.co/docs",
+            "description": "Documentation for transformers and NLP model libraries",
+            "tags": [
+              "Reading/Other/Technical Documentation"
+            ]
+          },
+          {
+            "name": "Anthropic Claude Documentation",
+            "url": "https://docs.anthropic.com/",
+            "description": "API documentation and guides for Claude AI assistant",
+            "tags": [
+              "Reading/Other/Technical Documentation"
+            ]
+          }
+        ]
+      },
+      "Case Studies": {
+        "_items": [
+          {
+            "name": "Microsoft AI Customer Stories",
+            "url": "https://customers.microsoft.com/en-us/search?sq=AI&ff=&p=0",
+            "description": "Enterprise AI implementation case studies from Microsoft customers",
+            "tags": [
+              "Reading/Other/Case Studies"
+            ]
+          },
+          {
+            "name": "AWS AI/ML Case Studies",
+            "url": "https://aws.amazon.com/machine-learning/customers/",
+            "description": "Machine learning implementation stories from AWS customers",
+            "tags": [
+              "Reading/Other/Case Studies"
+            ]
+          }
+        ]
+      },
+      "Policy Documents": {
+        "_items": [
+          {
+            "name": "NIST AI Risk Management Framework",
+            "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+            "description": "US government framework for managing AI risks and governance",
+            "tags": [
+              "Reading/Other/Policy Documents"
+            ]
+          },
+          {
+            "name": "EU AI Act",
+            "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+            "description": "European Union's comprehensive AI regulation framework",
+            "tags": [
+              "Reading/Other/Policy Documents"
+            ]
+          },
+          {
+            "name": "UNESCO AI Ethics Recommendation",
+            "url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics",
+            "description": "Global framework for AI ethics and governance",
+            "tags": [
+              "Reading/Other/Policy Documents"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Datasets": {
+    "_items": [],
+    "NLP": {
+      "_items": [],
+      "Foundational": {
+        "_items": [
+          {
+            "name": "GLUE Benchmark",
+            "url": "https://gluebenchmark.com/",
+            "description": "General Language Understanding Evaluation benchmark for NLP models",
+            "tags": [
+              "Datasets/NLP/Foundational"
+            ]
+          },
+          {
+            "name": "SuperGLUE",
+            "url": "https://super.gluebenchmark.com/",
+            "description": "More challenging language understanding benchmark",
+            "tags": [
+              "Datasets/NLP/Foundational"
+            ]
+          },
+          {
+            "name": "SQuAD 2.0",
+            "url": "https://rajpurkar.github.io/SQuAD-explorer/",
+            "description": "Stanford Question Answering Dataset for reading comprehension",
+            "tags": [
+              "Datasets/NLP/Foundational"
+            ]
+          },
+          {
+            "name": "Common Crawl",
+            "url": "https://commoncrawl.org/",
+            "description": "Open repository of web crawl data used for training language models",
+            "tags": [
+              "Datasets/NLP/Foundational"
+            ]
+          }
+        ]
+      },
+      "Multilingual": {
+        "_items": [
+          {
+            "name": "OPUS Collection",
+            "url": "https://opus.nlpl.eu/",
+            "description": "Large collection of translated texts for multilingual NLP",
+            "tags": [
+              "Datasets/NLP/Multilingual"
+            ]
+          },
+          {
+            "name": "XTREME Benchmark",
+            "url": "https://github.com/google-research/xtreme",
+            "description": "Cross-lingual TRansfer Evaluation benchmark",
+            "tags": [
+              "Datasets/NLP/Multilingual"
+            ]
+          },
+          {
+            "name": "FLORES-101",
+            "url": "https://github.com/facebookresearch/flores",
+            "description": "Many-to-many multilingual machine translation dataset",
+            "tags": [
+              "Datasets/NLP/Multilingual"
+            ]
+          },
+          {
+            "name": "mBERT Evaluation Datasets",
+            "url": "https://github.com/google-research/bert/blob/master/multilingual.md",
+            "description": "Evaluation datasets for multilingual BERT models",
+            "tags": [
+              "Datasets/NLP/Multilingual"
+            ]
+          }
+        ]
+      },
+      "Domain-Specific": {
+        "_items": [
+          {
+            "name": "PubMed Abstracts",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/",
+            "description": "Biomedical literature abstracts for medical NLP applications",
+            "tags": [
+              "Datasets/NLP/Domain-Specific"
+            ]
+          },
+          {
+            "name": "CaseLaw Access Project",
+            "url": "https://case.law/",
+            "description": "Legal documents dataset for legal AI applications",
+            "tags": [
+              "Datasets/NLP/Domain-Specific"
+            ]
+          },
+          {
+            "name": "Reddit Comments Dataset",
+            "url": "https://www.reddit.com/r/datasets/comments/3bxlg7/i_have_every_publicly_available_reddit_comment/",
+            "description": "Large collection of Reddit comments for social media NLP",
+            "tags": [
+              "Datasets/NLP/Domain-Specific"
+            ]
+          },
+          {
+            "name": "Yelp Reviews Dataset",
+            "url": "https://business.yelp.com/data/resources/open-dataset/",
+            "description": "Restaurant and business reviews for sentiment analysis",
+            "tags": [
+              "Datasets/NLP/Domain-Specific"
+            ]
+          }
+        ]
+      },
+      "Instruction Following": {
+        "_items": [
+          {
+            "name": "Alpaca Dataset",
+            "url": "https://github.com/tatsu-lab/stanford_alpaca",
+            "description": "Instruction-following dataset for training conversational AI models",
+            "tags": [
+              "Datasets/NLP/Instruction Following"
+            ]
+          },
+          {
+            "name": "Vicuna Dataset",
+            "url": "https://github.com/lm-sys/FastChat",
+            "description": "Conversation dataset based on ShareGPT for chatbot training",
+            "tags": [
+              "Datasets/NLP/Instruction Following"
+            ]
+          },
+          {
+            "name": "FLAN Collection",
+            "url": "https://github.com/google-research/flan",
+            "description": "Finetuned Language Net collection of instruction datasets",
+            "tags": [
+              "Datasets/NLP/Instruction Following"
+            ]
+          },
+          {
+            "name": "Anthropic HH-RLHF",
+            "url": "https://github.com/anthropics/hh-rlhf",
+            "description": "Human preference data for training helpful and harmless AI assistants",
+            "tags": [
+              "Datasets/NLP/Instruction Following"
+            ]
+          }
+        ]
+      }
+    },
+    "Computer Vision": {
+      "_items": [],
+      "Core Datasets": {
+        "_items": [
+          {
+            "name": "ImageNet",
+            "url": "https://www.image-net.org/",
+            "description": "Large-scale visual recognition dataset with millions of labeled images",
+            "tags": [
+              "Datasets/Computer Vision/Core Datasets"
+            ]
+          },
+          {
+            "name": "COCO Dataset",
+            "url": "https://cocodataset.org/",
+            "description": "Common Objects in Context dataset for object detection and segmentation",
+            "tags": [
+              "Datasets/Computer Vision/Core Datasets"
+            ]
+          },
+          {
+            "name": "Cityscapes",
+            "url": "https://www.cityscapes-dataset.com/",
+            "description": "Urban scene understanding dataset for autonomous driving",
+            "tags": [
+              "Datasets/Computer Vision/Core Datasets"
+            ]
+          }
+        ]
+      },
+      "Specialized": {
+        "_items": [
+          {
+            "name": "LAION-5B",
+            "url": "https://laion.ai/blog/laion-5b/",
+            "description": "Large-scale image-text dataset with 5 billion image-text pairs",
+            "tags": [
+              "Datasets/Computer Vision/Specialized"
+            ]
+          },
+          {
+            "name": "Open Images Dataset",
+            "url": "https://storage.googleapis.com/openimages/web/index.html",
+            "description": "Diverse dataset with millions of images annotated with labels and bounding boxes",
+            "tags": [
+              "Datasets/Computer Vision/Specialized"
+            ]
+          },
+          {
+            "name": "SUN Database",
+            "url": "https://groups.csail.mit.edu/vision/SUN/",
+            "description": "Scene UNderstanding database for scene recognition and object detection",
+            "tags": [
+              "Datasets/Computer Vision/Specialized"
+            ]
+          },
+          {
+            "name": "Places365",
+            "url": "http://places2.csail.mit.edu/",
+            "description": "Scene-centric database for scene recognition and visual understanding",
+            "tags": [
+              "Datasets/Computer Vision/Specialized"
+            ]
+          }
+        ]
+      },
+      "Video": {
+        "_items": [
+          {
+            "name": "Kinetics-700",
+            "url": "https://deepmind.com/research/open-source/kinetics",
+            "description": "Large-scale video dataset for action recognition",
+            "tags": [
+              "Datasets/Computer Vision/Video"
+            ]
+          },
+          {
+            "name": "Something-Something V2",
+            "url": "https://developer.qualcomm.com/software/ai-datasets/something-something",
+            "description": "Video dataset for temporal reasoning and action understanding",
+            "tags": [
+              "Datasets/Computer Vision/Video"
+            ]
+          },
+          {
+            "name": "AVA Dataset",
+            "url": "https://research.google.com/ava/",
+            "description": "Atomic Visual Actions dataset for spatio-temporal action localization",
+            "tags": [
+              "Datasets/Computer Vision/Video"
+            ]
+          },
+          {
+            "name": "YouTube-8M",
+            "url": "https://research.google.com/youtube8m/",
+            "description": "Large-scale video understanding dataset with millions of YouTube videos",
+            "tags": [
+              "Datasets/Computer Vision/Video"
+            ]
+          }
+        ]
+      },
+      "3D Vision": {
+        "_items": [
+          {
+            "name": "ModelNet",
+            "url": "https://modelnet.cs.princeton.edu/",
+            "description": "3D CAD model dataset for 3D object recognition",
+            "tags": [
+              "Datasets/Computer Vision/3D Vision"
+            ]
+          },
+          {
+            "name": "ScanNet",
+            "url": "http://www.scan-net.org/",
+            "description": "3D scene understanding dataset with RGB-D scans",
+            "tags": [
+              "Datasets/Computer Vision/3D Vision"
+            ]
+          },
+          {
+            "name": "KITTI Dataset",
+            "url": "http://www.cvlibs.net/datasets/kitti/",
+            "description": "Autonomous driving dataset with 3D object detection and tracking",
+            "tags": [
+              "Datasets/Computer Vision/3D Vision"
+            ]
+          }
+        ]
+      }
+    },
+    "Multimodal": {
+      "_items": [],
+      "Vision-Language": {
+        "_items": [
+          {
+            "name": "LAION-400M",
+            "url": "https://laion.ai/blog/laion-400-open-dataset/",
+            "description": "Large-scale image-text dataset for vision-language models",
+            "tags": [
+              "Datasets/Multimodal/Vision-Language"
+            ]
+          },
+          {
+            "name": "Conceptual Captions",
+            "url": "https://ai.google.com/research/ConceptualCaptions/",
+            "description": "Dataset of images with descriptive captions",
+            "tags": [
+              "Datasets/Multimodal/Vision-Language"
+            ]
+          },
+          {
+            "name": "Visual Question Answering (VQA) 2.0",
+            "url": "https://visualqa.org/",
+            "description": "Dataset for visual question answering with natural language",
+            "tags": [
+              "Datasets/Multimodal/Vision-Language"
+            ]
+          }
+        ]
+      },
+      "Audio-Visual": {
+        "_items": [
+          {
+            "name": "AudioSet",
+            "url": "https://research.google.com/audioset/",
+            "description": "Large-scale dataset of manually-annotated audio events",
+            "tags": [
+              "Datasets/Multimodal/Audio-Visual"
+            ]
+          },
+          {
+            "name": "VGGSound",
+            "url": "https://www.robots.ox.ac.uk/~vgg/data/vggsound/",
+            "description": "Large-scale audio-visual dataset with correspondence",
+            "tags": [
+              "Datasets/Multimodal/Audio-Visual"
+            ]
+          },
+          {
+            "name": "AVSpeech",
+            "url": "https://looking-to-listen.github.io/avspeech/",
+            "description": "Audio-visual speech dataset for lip reading and speech separation",
+            "tags": [
+              "Datasets/Multimodal/Audio-Visual"
+            ]
+          },
+          {
+            "name": "MUSIC Dataset",
+            "url": "https://github.com/roudimit/MUSIC_dataset",
+            "description": "Audio-visual dataset for musical instrument sound separation",
+            "tags": [
+              "Datasets/Multimodal/Audio-Visual"
+            ]
+          }
+        ]
+      },
+      "Text-Code": {
+        "_items": [
+          {
+            "name": "GitHub Code Dataset",
+            "url": "https://huggingface.co/datasets/codeparrot/github-code",
+            "description": "Large collection of source code from GitHub repositories",
+            "tags": [
+              "Datasets/Multimodal/Text-Code"
+            ]
+          },
+          {
+            "name": "Stack Overflow Data Dump",
+            "url": "https://archive.org/details/stackexchange",
+            "description": "Programming Q&A dataset from Stack Overflow",
+            "tags": [
+              "Datasets/Multimodal/Text-Code"
+            ]
+          },
+          {
+            "name": "CodeSearchNet",
+            "url": "https://github.com/github/CodeSearchNet",
+            "description": "Dataset for semantic code search across multiple programming languages",
+            "tags": [
+              "Datasets/Multimodal/Text-Code"
+            ]
+          },
+          {
+            "name": "BigQuery Public Datasets",
+            "url": "https://cloud.google.com/bigquery/public-data",
+            "description": "Large collection of public datasets including code repositories",
+            "tags": [
+              "Datasets/Multimodal/Text-Code"
+            ]
+          }
+        ]
+      },
+      "Scientific": {
+        "_items": [
+          {
+            "name": "Multimodal ArXiv",
+            "url": "https://arxiv.org/abs/2403.00231",
+            "description": "Dataset combining scientific papers with figures and text for multimodal understanding",
+            "tags": [
+              "Datasets/Multimodal/Scientific"
+            ]
+          },
+          {
+            "name": "ChartQA",
+            "url": "https://github.com/vis-nlp/ChartQA",
+            "description": "Question answering dataset for charts and scientific figures",
+            "tags": [
+              "Datasets/Multimodal/Scientific"
+            ]
+          }
+        ]
+      }
+    },
+    "Robotics": {
+      "_items": [
+        {
+          "name": "ROS Datasets Collection",
+          "url": "https://robots.ros.org/",
+          "description": "Collection of robotics datasets compatible with Robot Operating System",
+          "tags": [
+            "Datasets/Robotics"
+          ]
+        }
+      ]
+    },
+    "Healthcare": {
+      "_items": [
+        {
+          "name": "MIMIC-III",
+          "url": "https://mimic.mit.edu/",
+          "description": "Medical Information Mart for Intensive Care containing healthcare data",
+          "tags": [
+            "Datasets/Healthcare"
+          ]
+        }
+      ]
+    },
+    "Quantum ML": {
+      "_items": [
+        {
+          "name": "QDataSet",
+          "url": "https://arxiv.org/abs/2108.06661",
+          "description": "Quantum datasets for machine learning applications",
+          "tags": [
+            "Datasets/Quantum ML"
+          ]
+        }
+      ]
+    },
+    "Finance": {
+      "_items": [
+        {
+          "name": "Financial Data from Yahoo Finance",
+          "url": "https://finance.yahoo.com/",
+          "description": "Stock market and financial data for algorithmic trading research",
+          "tags": [
+            "Datasets/Finance"
+          ]
+        }
+      ]
+    },
+    "Climate": {
+      "_items": [
+        {
+          "name": "Climate Data Store",
+          "url": "https://cds.climate.copernicus.eu/",
+          "description": "European Centre for climate and weather data",
+          "tags": [
+            "Datasets/Climate"
+          ]
+        }
+      ]
+    }
+  },
+  "Tools": {
+    "_items": [],
+    "Libraries": {
+      "_items": [],
+      "Deep Learning": {
+        "_items": [
+          {
+            "name": "TensorFlow",
+            "url": "https://www.tensorflow.org/",
+            "description": "Open-source machine learning framework by Google",
+            "tags": [
+              "Tools/Libraries/Deep Learning"
+            ]
+          },
+          {
+            "name": "PyTorch",
+            "url": "https://pytorch.org/",
+            "description": "Deep learning framework with dynamic computation graphs",
+            "tags": [
+              "Tools/Libraries/Deep Learning"
+            ]
+          },
+          {
+            "name": "JAX",
+            "url": "https://jax.readthedocs.io/",
+            "description": "NumPy-compatible library for high-performance machine learning research",
+            "tags": [
+              "Tools/Libraries/Deep Learning"
+            ]
+          },
+          {
+            "name": "MXNet",
+            "url": "https://mxnet.apache.org/",
+            "description": "Scalable deep learning framework supporting multiple languages",
+            "tags": [
+              "Tools/Libraries/Deep Learning"
+            ]
+          },
+          {
+            "name": "Keras",
+            "url": "https://keras.io/",
+            "description": "High-level neural networks API running on top of deep learning frameworks",
+            "tags": [
+              "Tools/Libraries/Deep Learning"
+            ]
+          },
+          {
+            "name": "PyTorch Lightning",
+            "url": "https://www.pytorchlightning.ai/",
+            "description": "Research framework for PyTorch that organizes code and scales models",
+            "tags": [
+              "Tools/Libraries/Deep Learning"
+            ]
+          },
+          {
+            "name": "Flax",
+            "url": "https://github.com/google/flax",
+            "description": "Neural network library for JAX designed for flexibility",
+            "tags": [
+              "Tools/Libraries/Deep Learning"
+            ]
+          },
+          {
+            "name": "NVIDIA / apex",
+            "url": "https://github.com/NVIDIA/apex",
+            "description": "NVIDIA / apex",
+            "tags": [
+              "Tools/Libraries/Deep Learning"
+            ]
+          },
+          {
+            "name": "hyperopt",
+            "url": "https://github.com/hyperopt/hyperopt",
+            "description": "Distributed Asynchronous Hyperparameter Optimization in Python ",
+            "tags": [
+              "Tools/Libraries/Deep Learning"
+            ]
+          },
+          {
+            "name": "ColossalAI",
+            "url": "https://github.com/hpcaitech/ColossalAI",
+            "description": "Making large AI models cheaper, faster and more accessible ",
+            "tags": [
+              "Tools/Libraries/Deep Learning"
+            ]
+          }
+        ]
+      },
+      "Traditional ML": {
+        "_items": [
+          {
+            "name": "scikit-learn",
+            "url": "https://scikit-learn.org/",
+            "description": "Machine learning library for Python with classical algorithms",
+            "tags": [
+              "Tools/Libraries/Traditional ML"
+            ]
+          },
+          {
+            "name": "XGBoost",
+            "url": "https://xgboost.readthedocs.io/",
+            "description": "Optimized gradient boosting framework for machine learning",
+            "tags": [
+              "Tools/Libraries/Traditional ML"
+            ]
+          },
+          {
+            "name": "LightGBM",
+            "url": "https://lightgbm.readthedocs.io/",
+            "description": "Fast gradient boosting framework by Microsoft",
+            "tags": [
+              "Tools/Libraries/Traditional ML"
+            ]
+          },
+          {
+            "name": "CatBoost",
+            "url": "https://catboost.ai/",
+            "description": "Gradient boosting library with categorical feature support",
+            "tags": [
+              "Tools/Libraries/Traditional ML"
+            ]
+          },
+          {
+            "name": "Apache Spark MLlib",
+            "url": "https://spark.apache.org/mllib/",
+            "description": "Scalable machine learning library for big data processing",
+            "tags": [
+              "Tools/Libraries/Traditional ML"
+            ]
+          }
+        ]
+      },
+      "Generative AI": {
+        "_items": [
+          {
+            "name": "LangChain",
+            "url": "https://langchain.com/",
+            "description": "Framework for developing applications with large language models",
+            "tags": [
+              "Tools/Libraries/Generative AI"
+            ]
+          },
+          {
+            "name": "LlamaIndex",
+            "url": "https://www.llamaindex.ai/",
+            "description": "Data framework for connecting custom data to large language models",
+            "tags": [
+              "Tools/Libraries/Generative AI"
+            ]
+          },
+          {
+            "name": "Semantic Kernel",
+            "url": "https://github.com/microsoft/semantic-kernel",
+            "description": "Microsoft's SDK for integrating AI services into applications",
+            "tags": [
+              "Tools/Libraries/Generative AI"
+            ]
+          },
+          {
+            "name": "CrewAI",
+            "url": "https://github.com/joaomdmoura/crewAI",
+            "description": "Framework for orchestrating role-playing autonomous AI agents",
+            "tags": [
+              "Tools/Libraries/Generative AI"
+            ]
+          },
+          {
+            "name": "AutoGen",
+            "url": "https://github.com/microsoft/autogen",
+            "description": "Multi-agent conversation framework by Microsoft",
+            "tags": [
+              "Tools/Libraries/Generative AI"
+            ]
+          },
+          {
+            "name": "LangGraph",
+            "url": "https://github.com/langchain-ai/langgraph",
+            "description": "Library for building stateful, multi-actor applications with LLMs",
+            "tags": [
+              "Tools/Libraries/Generative AI"
+            ]
+          }
+        ]
+      },
+      "Domain-Specific": {
+        "_items": [
+          {
+            "name": "spaCy",
+            "url": "https://spacy.io/",
+            "description": "Industrial-strength natural language processing library",
+            "tags": [
+              "Tools/Libraries/Domain-Specific"
+            ]
+          },
+          {
+            "name": "OpenCV",
+            "url": "https://opencv.org/",
+            "description": "Open source computer vision and machine learning library",
+            "tags": [
+              "Tools/Libraries/Domain-Specific"
+            ]
+          },
+          {
+            "name": "ROS (Robot Operating System)",
+            "url": "https://www.ros.org/",
+            "description": "Flexible framework for writing robot software",
+            "tags": [
+              "Tools/Libraries/Domain-Specific"
+            ]
+          },
+          {
+            "name": "OpenAI Gym",
+            "url": "https://gym.openai.com/",
+            "description": "Toolkit for developing and comparing reinforcement learning algorithms",
+            "tags": [
+              "Tools/Libraries/Domain-Specific"
+            ]
+          },
+          {
+            "name": "NLTK",
+            "url": "https://www.nltk.org/",
+            "description": "Natural Language Toolkit for Python NLP applications",
+            "tags": [
+              "Tools/Libraries/Domain-Specific"
+            ]
+          },
+          {
+            "name": "OpenVINO",
+            "url": "https://www.openvino.ai/",
+            "description": "Intel's toolkit for optimizing and deploying AI inference",
+            "tags": [
+              "Tools/Libraries/Domain-Specific"
+            ]
+          },
+          {
+            "name": "MediaPipe",
+            "url": "https://mediapipe.dev/",
+            "description": "Google's framework for building perception pipelines",
+            "tags": [
+              "Tools/Libraries/Domain-Specific"
+            ]
+          }
+        ]
+      },
+      "Data Processing": {
+        "_items": [
+          {
+            "name": "Pandas",
+            "url": "https://pandas.pydata.org/",
+            "description": "Data manipulation and analysis library for Python",
+            "tags": [
+              "Tools/Libraries/Data Processing"
+            ]
+          },
+          {
+            "name": "NumPy",
+            "url": "https://numpy.org/",
+            "description": "Fundamental package for scientific computing with Python",
+            "tags": [
+              "Tools/Libraries/Data Processing"
+            ]
+          },
+          {
+            "name": "Apache Spark",
+            "url": "https://spark.apache.org/",
+            "description": "Unified analytics engine for large-scale data processing",
+            "tags": [
+              "Tools/Libraries/Data Processing"
+            ]
+          },
+          {
+            "name": "Apache Kafka",
+            "url": "https://kafka.apache.org/",
+            "description": "Distributed streaming platform for real-time data feeds",
+            "tags": [
+              "Tools/Libraries/Data Processing"
+            ]
+          },
+          {
+            "name": "Dask",
+            "url": "https://dask.org/",
+            "description": "Parallel computing library that scales Python analytics",
+            "tags": [
+              "Tools/Libraries/Data Processing"
+            ]
+          },
+          {
+            "name": "Polars",
+            "url": "https://pola.rs/",
+            "description": "Fast multi-threaded DataFrame library for Python and Rust",
+            "tags": [
+              "Tools/Libraries/Data Processing"
+            ]
+          }
+        ]
+      },
+      "MLOps": {
+        "_items": [
+          {
+            "name": "MLflow",
+            "url": "https://mlflow.org/",
+            "description": "Open source platform for the machine learning lifecycle",
+            "tags": [
+              "Tools/Libraries/MLOps"
+            ]
+          },
+          {
+            "name": "Kubeflow",
+            "url": "https://www.kubeflow.org/",
+            "description": "Machine learning workflows on Kubernetes",
+            "tags": [
+              "Tools/Libraries/MLOps"
+            ]
+          },
+          {
+            "name": "ZenML",
+            "url": "https://zenml.io/",
+            "description": "Extensible MLOps framework for production-ready ML pipelines",
+            "tags": [
+              "Tools/Libraries/MLOps"
+            ]
+          },
+          {
+            "name": "Dagster",
+            "url": "https://dagster.io/",
+            "description": "Data orchestrator for machine learning and analytics",
+            "tags": [
+              "Tools/Libraries/MLOps"
+            ]
+          },
+          {
+            "name": "Prefect",
+            "url": "https://www.prefect.io/",
+            "description": "Modern workflow orchestration framework",
+            "tags": [
+              "Tools/Libraries/MLOps"
+            ]
+          },
+          {
+            "name": "Apache Airflow",
+            "url": "https://airflow.apache.org/",
+            "description": "Platform to programmatically author, schedule and monitor workflows",
+            "tags": [
+              "Tools/Libraries/MLOps"
+            ]
+          },
+          {
+            "name": "Kedro",
+            "url": "https://kedro.org/",
+            "description": "Production-ready data science framework",
+            "tags": [
+              "Tools/Libraries/MLOps"
+            ]
+          },
+          {
+            "name": "tensorflow / tensorboard",
+            "url": "https://github.com/tensorflow/tensorboard",
+            "description": "TensorFlow's Visualization Toolkit ",
+            "tags": [
+              "Tools/Libraries/MLOps"
+            ]
+          }
+        ]
+      },
+      "Tracking": {
+        "_items": [
+          {
+            "name": "Weights & Biases",
+            "url": "https://wandb.ai/",
+            "description": "Experiment tracking and model management platform",
+            "tags": [
+              "Tools/Libraries/Tracking"
+            ]
+          },
+          {
+            "name": "Neptune.ai",
+            "url": "https://neptune.ai/",
+            "description": "Metadata store for MLOps with experiment management",
+            "tags": [
+              "Tools/Libraries/Tracking"
+            ]
+          },
+          {
+            "name": "Comet ML",
+            "url": "https://www.comet.ml/",
+            "description": "Machine learning experiment management and optimization",
+            "tags": [
+              "Tools/Libraries/Tracking"
+            ]
+          },
+          {
+            "name": "TensorBoard",
+            "url": "https://www.tensorflow.org/tensorboard",
+            "description": "TensorFlow's visualization toolkit for machine learning experimentation",
+            "tags": [
+              "Tools/Libraries/Tracking"
+            ]
+          },
+          {
+            "name": "ClearML",
+            "url": "https://clear.ml/",
+            "description": "Open source MLOps platform for experiment management",
+            "tags": [
+              "Tools/Libraries/Tracking"
+            ]
+          }
+        ]
+      },
+      "Quantum ML": {
+        "_items": [
+          {
+            "name": "PennyLane",
+            "url": "https://pennylane.ai/",
+            "description": "Cross-platform Python library for quantum machine learning",
+            "tags": [
+              "Tools/Libraries/Quantum ML"
+            ]
+          }
+        ]
+      }
+    },
+    "Cloud Platforms": {
+      "_items": [],
+      "Major Cloud": {
+        "_items": [
+          {
+            "name": "AWS Bedrock",
+            "url": "https://aws.amazon.com/bedrock/",
+            "description": "Fully managed service for building generative AI applications",
+            "tags": [
+              "Tools/Cloud Platforms/Major Cloud"
+            ]
+          },
+          {
+            "name": "Google Vertex AI",
+            "url": "https://cloud.google.com/vertex-ai",
+            "description": "Unified ML platform for building and deploying AI models",
+            "tags": [
+              "Tools/Cloud Platforms/Major Cloud"
+            ]
+          },
+          {
+            "name": "Azure OpenAI Service",
+            "url": "https://azure.microsoft.com/en-us/products/ai-services/openai-service",
+            "description": "Microsoft's cloud service for OpenAI models",
+            "tags": [
+              "Tools/Cloud Platforms/Major Cloud"
+            ]
+          },
+          {
+            "name": "AWS SageMaker",
+            "url": "https://aws.amazon.com/sagemaker/",
+            "description": "Fully managed machine learning platform",
+            "tags": [
+              "Tools/Cloud Platforms/Major Cloud"
+            ]
+          },
+          {
+            "name": "Google Cloud AI Platform",
+            "url": "https://cloud.google.com/ai-platform",
+            "description": "Integrated suite of machine learning products",
+            "tags": [
+              "Tools/Cloud Platforms/Major Cloud"
+            ]
+          },
+          {
+            "name": "Azure Machine Learning",
+            "url": "https://azure.microsoft.com/en-us/products/machine-learning/",
+            "description": "Enterprise-grade machine learning service",
+            "tags": [
+              "Tools/Cloud Platforms/Major Cloud"
+            ]
+          }
+        ]
+      },
+      "GPU Providers": {
+        "_items": [
+          {
+            "name": "Lambda Labs",
+            "url": "https://lambdalabs.com/",
+            "description": "GPU cloud platform optimized for machine learning workloads",
+            "tags": [
+              "Tools/Cloud Platforms/GPU Providers"
+            ]
+          },
+          {
+            "name": "Paperspace",
+            "url": "https://www.paperspace.com/",
+            "description": "Cloud platform for AI development with GPU access",
+            "tags": [
+              "Tools/Cloud Platforms/GPU Providers"
+            ]
+          },
+          {
+            "name": "RunPod",
+            "url": "https://www.runpod.io/",
+            "description": "Cloud platform for GPU compute on demand",
+            "tags": [
+              "Tools/Cloud Platforms/GPU Providers"
+            ]
+          },
+          {
+            "name": "Together AI",
+            "url": "https://www.together.ai/",
+            "description": "Platform for running and fine-tuning open source models",
+            "tags": [
+              "Tools/Cloud Platforms/GPU Providers"
+            ]
+          },
+          {
+            "name": "Vast.ai",
+            "url": "https://vast.ai/",
+            "description": "Marketplace for renting GPU compute power",
+            "tags": [
+              "Tools/Cloud Platforms/GPU Providers"
+            ]
+          },
+          {
+            "name": "CoreWeave",
+            "url": "https://www.coreweave.com/",
+            "description": "Kubernetes-native cloud platform for GPU workloads",
+            "tags": [
+              "Tools/Cloud Platforms/GPU Providers"
+            ]
+          }
+        ]
+      },
+      "Specialized": {
+        "_items": [
+          {
+            "name": "Hugging Face Spaces",
+            "url": "https://huggingface.co/spaces",
+            "description": "Platform for hosting and sharing machine learning demos",
+            "tags": [
+              "Tools/Cloud Platforms/Specialized"
+            ]
+          },
+          {
+            "name": "Replicate",
+            "url": "https://replicate.com/",
+            "description": "Platform for running machine learning models in the cloud",
+            "tags": [
+              "Tools/Cloud Platforms/Specialized"
+            ]
+          },
+          {
+            "name": "Modal",
+            "url": "https://modal.com/",
+            "description": "Serverless platform for data and ML workloads",
+            "tags": [
+              "Tools/Cloud Platforms/Specialized"
+            ]
+          },
+          {
+            "name": "Banana",
+            "url": "https://www.banana.dev/",
+            "description": "Serverless platform for ML model inference",
+            "tags": [
+              "Tools/Cloud Platforms/Specialized"
+            ]
+          },
+          {
+            "name": "OctoML",
+            "url": "https://octoml.ai/",
+            "description": "MLOps platform for efficient model deployment",
+            "tags": [
+              "Tools/Cloud Platforms/Specialized"
+            ]
+          }
+        ]
+      }
+    },
+    "Development Tools": {
+      "_items": [],
+      "Model Serving": {
+        "_items": [
+          {
+            "name": "BentoML",
+            "url": "https://bentoml.org/",
+            "description": "Framework for building and deploying machine learning models",
+            "tags": [
+              "Tools/Development Tools/Model Serving"
+            ]
+          },
+          {
+            "name": "Seldon Core",
+            "url": "https://www.seldon.io/",
+            "description": "MLOps framework for packaging, deploying and monitoring ML models",
+            "tags": [
+              "Tools/Development Tools/Model Serving"
+            ]
+          },
+          {
+            "name": "NVIDIA Triton",
+            "url": "https://developer.nvidia.com/nvidia-triton-inference-server",
+            "description": "Inference server for optimized AI model deployment",
+            "tags": [
+              "Tools/Development Tools/Model Serving"
+            ]
+          },
+          {
+            "name": "TorchServe",
+            "url": "https://pytorch.org/serve/",
+            "description": "PyTorch model serving framework",
+            "tags": [
+              "Tools/Development Tools/Model Serving"
+            ]
+          },
+          {
+            "name": "KServe",
+            "url": "https://kserve.github.io/website/",
+            "description": "Kubernetes-native model inference platform",
+            "tags": [
+              "Tools/Development Tools/Model Serving"
+            ]
+          }
+        ]
+      },
+      "Data Labeling": {
+        "_items": [
+          {
+            "name": "Scale AI",
+            "url": "https://scale.com/",
+            "description": "Data labeling and annotation platform for machine learning",
+            "tags": [
+              "Tools/Development Tools/Data Labeling"
+            ]
+          },
+          {
+            "name": "Labelbox",
+            "url": "https://labelbox.com/",
+            "description": "Data labeling platform for computer vision and NLP",
+            "tags": [
+              "Tools/Development Tools/Data Labeling"
+            ]
+          },
+          {
+            "name": "SuperAnnotate",
+            "url": "https://www.superannotate.com/",
+            "description": "AI-powered data annotation platform",
+            "tags": [
+              "Tools/Development Tools/Data Labeling"
+            ]
+          },
+          {
+            "name": "Label Studio",
+            "url": "https://labelstud.io/",
+            "description": "Open source data labeling tool with ML backend",
+            "tags": [
+              "Tools/Development Tools/Data Labeling"
+            ]
+          },
+          {
+            "name": "CVAT",
+            "url": "https://cvat.ai/",
+            "description": "Computer Vision Annotation Tool for image and video labeling",
+            "tags": [
+              "Tools/Development Tools/Data Labeling"
+            ]
+          }
+        ]
+      },
+      "Data Quality": {
+        "_items": [
+          {
+            "name": "Great Expectations",
+            "url": "https://greatexpectations.io/",
+            "description": "Framework for data quality and validation",
+            "tags": [
+              "Tools/Development Tools/Data Quality"
+            ]
+          },
+          {
+            "name": "Monte Carlo",
+            "url": "https://www.montecarlodata.com/",
+            "description": "Data observability platform for data quality monitoring",
+            "tags": [
+              "Tools/Development Tools/Data Quality"
+            ]
+          },
+          {
+            "name": "Metaplane",
+            "url": "https://www.metaplane.dev/",
+            "description": "Data observability platform for detecting data issues",
+            "tags": [
+              "Tools/Development Tools/Data Quality"
+            ]
+          },
+          {
+            "name": "Anomalo",
+            "url": "https://www.anomalo.com/",
+            "description": "Data quality monitoring with anomaly detection",
+            "tags": [
+              "Tools/Development Tools/Data Quality"
+            ]
+          }
+        ]
+      },
+      "Version Control": {
+        "_items": [
+          {
+            "name": "DVC (Data Version Control)",
+            "url": "https://dvc.org/",
+            "description": "Version control system for machine learning projects",
+            "tags": [
+              "Tools/Development Tools/Version Control"
+            ]
+          },
+          {
+            "name": "LakeFS",
+            "url": "https://lakefs.io/",
+            "description": "Git-like version control for data lakes",
+            "tags": [
+              "Tools/Development Tools/Version Control"
+            ]
+          },
+          {
+            "name": "Pachyderm",
+            "url": "https://www.pachyderm.com/",
+            "description": "Data versioning and pipeline orchestration platform",
+            "tags": [
+              "Tools/Development Tools/Version Control"
+            ]
+          },
+          {
+            "name": "Delta Lake",
+            "url": "https://delta.io/",
+            "description": "Open source storage framework for data lakes",
+            "tags": [
+              "Tools/Development Tools/Version Control"
+            ]
+          }
+        ]
+      },
+      "AI Coding": {
+        "_items": [
+          {
+            "name": "Cursor IDE",
+            "url": "https://cursor.com/",
+            "description": "AI-powered code editor with built-in AI assistance",
+            "tags": [
+              "Tools/Development Tools/AI Coding"
+            ]
+          },
+          {
+            "name": "Windsurf",
+            "url": "https://codeium.com/windsurf",
+            "description": "AI-powered IDE with agentic capabilities",
+            "tags": [
+              "Tools/Development Tools/AI Coding"
+            ]
+          },
+          {
+            "name": "Zed Editor",
+            "url": "https://zed.dev/",
+            "description": "High-performance multiplayer code editor with AI features",
+            "tags": [
+              "Tools/Development Tools/AI Coding"
+            ]
+          },
+          {
+            "name": "Claude for Code",
+            "url": "https://docs.anthropic.com/en/docs/claude-code",
+            "description": "Command line tool for agentic coding with Claude",
+            "tags": [
+              "Tools/Development Tools/AI Coding"
+            ]
+          },
+          {
+            "name": "v0 by Vercel",
+            "url": "https://v0.dev/",
+            "description": "AI-powered UI generation tool for React components",
+            "tags": [
+              "Tools/Development Tools/AI Coding"
+            ]
+          }
+        ]
+      }
+    },
+    "Hardware": {
+      "_items": [],
+      "AI Chips": {
+        "_items": [
+          {
+            "name": "NVIDIA A100",
+            "url": "https://www.nvidia.com/en-us/data-center/a100/",
+            "description": "GPU accelerator for AI training and inference workloads",
+            "tags": [
+              "Tools/Hardware/AI Chips"
+            ]
+          },
+          {
+            "name": "NVIDIA H100",
+            "url": "https://www.nvidia.com/en-us/data-center/h100/",
+            "description": "Latest GPU architecture optimized for transformer models",
+            "tags": [
+              "Tools/Hardware/AI Chips"
+            ]
+          },
+          {
+            "name": "Google TPUs",
+            "url": "https://cloud.google.com/tpu",
+            "description": "Tensor Processing Units optimized for machine learning",
+            "tags": [
+              "Tools/Hardware/AI Chips"
+            ]
+          },
+          {
+            "name": "AWS Trainium",
+            "url": "https://aws.amazon.com/machine-learning/trainium/",
+            "description": "AWS custom chip designed for deep learning training",
+            "tags": [
+              "Tools/Hardware/AI Chips"
+            ]
+          },
+          {
+            "name": "AWS Inferentia",
+            "url": "https://aws.amazon.com/machine-learning/inferentia/",
+            "description": "AWS custom chip optimized for ML inference",
+            "tags": [
+              "Tools/Hardware/AI Chips"
+            ]
+          },
+          {
+            "name": "Cerebras Wafer-Scale Engine",
+            "url": "https://www.cerebras.net/",
+            "description": "Largest AI chip designed for deep learning workloads",
+            "tags": [
+              "Tools/Hardware/AI Chips"
+            ]
+          }
+        ]
+      },
+      "Edge Hardware": {
+        "_items": [
+          {
+            "name": "NVIDIA Jetson",
+            "url": "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/",
+            "description": "Edge AI computing platform for autonomous machines",
+            "tags": [
+              "Tools/Hardware/Edge Hardware"
+            ]
+          },
+          {
+            "name": "Google Coral Edge TPU",
+            "url": "https://coral.ai/",
+            "description": "Edge AI development platform with TPU acceleration",
+            "tags": [
+              "Tools/Hardware/Edge Hardware"
+            ]
+          },
+          {
+            "name": "Intel Movidius",
+            "url": "https://www.intel.com/content/www/us/en/products/details/processors/movidius-vpu.html",
+            "description": "Vision processing units for edge AI applications",
+            "tags": [
+              "Tools/Hardware/Edge Hardware"
+            ]
+          },
+          {
+            "name": "Raspberry Pi AI Kit",
+            "url": "https://www.raspberrypi.com/products/ai-kit/",
+            "description": "AI acceleration kit for Raspberry Pi edge computing",
+            "tags": [
+              "Tools/Hardware/Edge Hardware"
+            ]
+          }
+        ]
+      },
+      "Quantum": {
+        "_items": [
+          {
+            "name": "IBM Quantum",
+            "url": "https://quantum-computing.ibm.com/",
+            "description": "Cloud-based quantum computing platform",
+            "tags": [
+              "Tools/Hardware/Quantum"
+            ]
+          },
+          {
+            "name": "Google Quantum AI",
+            "url": "https://quantumai.google/",
+            "description": "Google's quantum computing research and platform",
+            "tags": [
+              "Tools/Hardware/Quantum"
+            ]
+          },
+          {
+            "name": "Amazon Braket",
+            "url": "https://aws.amazon.com/braket/",
+            "description": "Fully managed quantum computing service",
+            "tags": [
+              "Tools/Hardware/Quantum"
+            ]
+          },
+          {
+            "name": "Rigetti Quantum Cloud Services",
+            "url": "https://www.rigetti.com/",
+            "description": "Full-stack quantum computing company",
+            "tags": [
+              "Tools/Hardware/Quantum"
+            ]
+          },
+          {
+            "name": "Xanadu Quantum AI",
+            "url": "https://www.xanadu.ai/",
+            "description": "Quantum computing company with photonic quantum processors",
+            "tags": [
+              "Tools/Hardware/Quantum"
+            ]
+          },
+          {
+            "name": "IonQ",
+            "url": "https://ionq.com/",
+            "description": "Quantum computing company with trapped ion systems",
+            "tags": [
+              "Tools/Hardware/Quantum"
+            ]
+          }
+        ]
+      }
+    },
+    "Data Processing": {
+      "_items": [],
+      "Modern Data Stack": {
+        "_items": [
+          {
+            "name": "Snowflake",
+            "url": "https://www.snowflake.com/",
+            "description": "Cloud data platform with ML capabilities",
+            "tags": [
+              "Tools/Data Processing/Modern Data Stack"
+            ]
+          },
+          {
+            "name": "Databricks",
+            "url": "https://databricks.com/",
+            "description": "Unified analytics platform for big data and machine learning",
+            "tags": [
+              "Tools/Data Processing/Modern Data Stack"
+            ]
+          },
+          {
+            "name": "Fivetran",
+            "url": "https://fivetran.com/",
+            "description": "Automated data integration platform",
+            "tags": [
+              "Tools/Data Processing/Modern Data Stack"
+            ]
+          },
+          {
+            "name": "dbt (data build tool)",
+            "url": "https://www.getdbt.com/",
+            "description": "SQL-first transformation workflow for analytics teams",
+            "tags": [
+              "Tools/Data Processing/Modern Data Stack"
+            ]
+          }
+        ]
+      }
+    },
+    "Monitoring": {
+      "_items": [],
+      "ML Observability": {
+        "_items": [
+          {
+            "name": "Arize AI",
+            "url": "https://arize.com/",
+            "description": "ML observability platform for model monitoring",
+            "tags": [
+              "Tools/Monitoring/ML Observability"
+            ]
+          },
+          {
+            "name": "WhyLabs",
+            "url": "https://whylabs.ai/",
+            "description": "AI observability platform for data and ML monitoring",
+            "tags": [
+              "Tools/Monitoring/ML Observability"
+            ]
+          },
+          {
+            "name": "Evidently AI",
+            "url": "https://www.evidentlyai.com/",
+            "description": "Open source ML monitoring and testing framework",
+            "tags": [
+              "Tools/Monitoring/ML Observability"
+            ]
+          },
+          {
+            "name": "Fiddler AI",
+            "url": "https://www.fiddler.ai/",
+            "description": "Model performance management platform",
+            "tags": [
+              "Tools/Monitoring/ML Observability"
+            ]
+          }
+        ]
+      }
+    },
+    "Data Storage": {
+      "_items": [],
+      "Vector Databases": {
+        "_items": [
+          {
+            "name": "Pinecone",
+            "url": "https://www.pinecone.io/",
+            "description": "Fully managed vector database for ML applications",
+            "tags": [
+              "Tools/Data Storage/Vector Databases"
+            ]
+          },
+          {
+            "name": "Weaviate",
+            "url": "https://weaviate.io/",
+            "description": "Open source vector database with semantic search",
+            "tags": [
+              "Tools/Data Storage/Vector Databases"
+            ]
+          },
+          {
+            "name": "Chroma",
+            "url": "https://www.trychroma.com/",
+            "description": "Open source embedding database for AI applications",
+            "tags": [
+              "Tools/Data Storage/Vector Databases"
+            ]
+          },
+          {
+            "name": "Qdrant",
+            "url": "https://qdrant.tech/",
+            "description": "Vector database for next generation AI applications",
+            "tags": [
+              "Tools/Data Storage/Vector Databases"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Applications": {
+    "_items": [],
+    "Conversational AI": {
+      "_items": [],
+      "ChatBots": {
+        "_items": [
+          {
+            "name": "ChatGPT",
+            "url": "https://chat.openai.com/",
+            "description": "Advanced conversational AI assistant by OpenAI",
+            "tags": [
+              "Applications/Conversational AI/ChatBots"
+            ]
+          },
+          {
+            "name": "Claude",
+            "url": "https://claude.ai/",
+            "description": "AI assistant by Anthropic focused on helpful, harmless, and honest responses",
+            "tags": [
+              "Applications/Conversational AI/ChatBots"
+            ]
+          },
+          {
+            "name": "Google Gemini",
+            "url": "https://gemini.google.com/",
+            "description": "Google's multimodal AI assistant and chatbot",
+            "tags": [
+              "Applications/Conversational AI/ChatBots"
+            ]
+          },
+          {
+            "name": "Microsoft Copilot",
+            "url": "https://copilot.microsoft.com/",
+            "description": "Microsoft's AI assistant integrated across products",
+            "tags": [
+              "Applications/Conversational AI/ChatBots"
+            ]
+          },
+          {
+            "name": "Perplexity AI",
+            "url": "https://www.perplexity.ai/",
+            "description": "AI-powered search and conversational assistant",
+            "tags": [
+              "Applications/Conversational AI/ChatBots"
+            ]
+          }
+        ]
+      },
+      "Voice Assistants": {
+        "_items": [
+          {
+            "name": "Google Assistant",
+            "url": "https://assistant.google.com/",
+            "description": "Voice-activated virtual assistant for everyday tasks",
+            "tags": [
+              "Applications/Conversational AI/Voice Assistants"
+            ]
+          },
+          {
+            "name": "Amazon Alexa",
+            "url": "https://developer.amazon.com/alexa",
+            "description": "Voice service and smart home control platform",
+            "tags": [
+              "Applications/Conversational AI/Voice Assistants"
+            ]
+          },
+          {
+            "name": "Apple Siri",
+            "url": "https://www.apple.com/siri/",
+            "description": "Apple's built-in voice assistant across devices",
+            "tags": [
+              "Applications/Conversational AI/Voice Assistants"
+            ]
+          },
+          {
+            "name": "Microsoft Cortana",
+            "url": "https://www.microsoft.com/en-us/cortana",
+            "description": "Microsoft's digital assistant for productivity",
+            "tags": [
+              "Applications/Conversational AI/Voice Assistants"
+            ]
+          }
+        ]
+      },
+      "Specialized": {
+        "_items": [
+          {
+            "name": "GitHub Copilot",
+            "url": "https://github.com/features/copilot",
+            "description": "AI pair programmer for code generation and completion",
+            "tags": [
+              "Applications/Conversational AI/Specialized"
+            ]
+          },
+          {
+            "name": "Harvey AI",
+            "url": "https://www.harvey.ai/",
+            "description": "AI platform specifically designed for legal professionals",
+            "tags": [
+              "Applications/Conversational AI/Specialized"
+            ]
+          },
+          {
+            "name": "Cursor IDE",
+            "url": "https://cursor.sh/",
+            "description": "AI-powered code editor with built-in AI assistant",
+            "tags": [
+              "Applications/Conversational AI/Specialized"
+            ]
+          },
+          {
+            "name": "Qodo (formerly CodiumAI)",
+            "url": "https://www.qodo.ai/",
+            "description": "AI coding assistant focused on test generation and code quality",
+            "tags": [
+              "Applications/Conversational AI/Specialized"
+            ]
+          },
+          {
+            "name": "Aider",
+            "url": "https://github.com/paul-gauthier/aider",
+            "description": "AI pair programming tool for terminal-based development",
+            "tags": [
+              "Applications/Conversational AI/Specialized"
+            ]
+          }
+        ]
+      }
+    },
+    "Content Generation": {
+      "_items": [],
+      "Text": {
+        "_items": [
+          {
+            "name": "GPT-4",
+            "url": "https://openai.com/gpt-4",
+            "description": "Large language model for text generation and completion",
+            "tags": [
+              "Applications/Content Generation/Text"
+            ]
+          },
+          {
+            "name": "Copy.ai",
+            "url": "https://www.copy.ai/",
+            "description": "AI copywriting tool for marketing and business content",
+            "tags": [
+              "Applications/Content Generation/Text"
+            ]
+          },
+          {
+            "name": "Jasper",
+            "url": "https://www.jasper.ai/",
+            "description": "AI writing assistant for content creation and marketing",
+            "tags": [
+              "Applications/Content Generation/Text"
+            ]
+          },
+          {
+            "name": "Grammarly",
+            "url": "https://www.grammarly.com/",
+            "description": "AI-powered writing assistant for grammar and style",
+            "tags": [
+              "Applications/Content Generation/Text"
+            ]
+          },
+          {
+            "name": "Notion AI",
+            "url": "https://www.notion.so/product/ai",
+            "description": "AI writing assistant integrated into Notion workspace",
+            "tags": [
+              "Applications/Content Generation/Text"
+            ]
+          }
+        ]
+      },
+      "Images": {
+        "_items": [
+          {
+            "name": "Midjourney",
+            "url": "https://www.midjourney.com/",
+            "description": "AI art generator creating images from text descriptions",
+            "tags": [
+              "Applications/Content Generation/Images"
+            ]
+          },
+          {
+            "name": "DALL-E 3",
+            "url": "https://openai.com/dall-e-3",
+            "description": "OpenAI's text-to-image generation model",
+            "tags": [
+              "Applications/Content Generation/Images"
+            ]
+          },
+          {
+            "name": "Stable Diffusion",
+            "url": "https://stability.ai/stable-diffusion",
+            "description": "Open source text-to-image diffusion model",
+            "tags": [
+              "Applications/Content Generation/Images"
+            ]
+          },
+          {
+            "name": "Adobe Firefly",
+            "url": "https://www.adobe.com/products/firefly.html",
+            "description": "Adobe's generative AI for creative workflows",
+            "tags": [
+              "Applications/Content Generation/Images"
+            ]
+          },
+          {
+            "name": "Leonardo AI",
+            "url": "https://leonardo.ai/",
+            "description": "AI platform for generating production-quality visual assets",
+            "tags": [
+              "Applications/Content Generation/Images"
+            ]
+          }
+        ]
+      },
+      "Video": {
+        "_items": [
+          {
+            "name": "Synthesia",
+            "url": "https://www.synthesia.io/",
+            "description": "AI video generation platform with digital avatars",
+            "tags": [
+              "Applications/Content Generation/Video"
+            ]
+          },
+          {
+            "name": "RunwayML",
+            "url": "https://runwayml.com/",
+            "description": "AI tools for creative video generation and editing",
+            "tags": [
+              "Applications/Content Generation/Video"
+            ]
+          },
+          {
+            "name": "Pika Labs",
+            "url": "https://www.pika.art/",
+            "description": "AI video generation from text and images",
+            "tags": [
+              "Applications/Content Generation/Video"
+            ]
+          },
+          {
+            "name": "HeyGen",
+            "url": "https://www.heygen.com/",
+            "description": "AI avatar video generator for business communications",
+            "tags": [
+              "Applications/Content Generation/Video"
+            ]
+          },
+          {
+            "name": "Luma Dream Machine",
+            "url": "https://lumalabs.ai/dream-machine",
+            "description": "AI model for generating high-quality, realistic videos",
+            "tags": [
+              "Applications/Content Generation/Video"
+            ]
+          }
+        ]
+      },
+      "Audio": {
+        "_items": [
+          {
+            "name": "Suno",
+            "url": "https://suno.ai/",
+            "description": "AI music generation platform for creating songs",
+            "tags": [
+              "Applications/Content Generation/Audio"
+            ]
+          },
+          {
+            "name": "ElevenLabs",
+            "url": "https://elevenlabs.io/",
+            "description": "AI voice synthesis and speech generation platform",
+            "tags": [
+              "Applications/Content Generation/Audio"
+            ]
+          },
+          {
+            "name": "Mubert",
+            "url": "https://mubert.com/",
+            "description": "AI music generation for content creators and businesses",
+            "tags": [
+              "Applications/Content Generation/Audio"
+            ]
+          },
+          {
+            "name": "Speechify",
+            "url": "https://speechify.com/",
+            "description": "AI text-to-speech platform for content consumption",
+            "tags": [
+              "Applications/Content Generation/Audio"
+            ]
+          },
+          {
+            "name": "Udio",
+            "url": "https://www.udio.com/",
+            "description": "AI music creation platform for generating full songs",
+            "tags": [
+              "Applications/Content Generation/Audio"
+            ]
+          }
+        ]
+      },
+      "Code": {
+        "_items": [
+          {
+            "name": "GitHub Copilot",
+            "url": "https://github.com/features/copilot",
+            "description": "AI pair programmer for code generation and completion",
+            "tags": [
+              "Applications/Content Generation/Code"
+            ]
+          },
+          {
+            "name": "Amazon CodeWhisperer",
+            "url": "https://aws.amazon.com/codewhisperer/",
+            "description": "AI coding companion for generating code suggestions",
+            "tags": [
+              "Applications/Content Generation/Code"
+            ]
+          },
+          {
+            "name": "Tabnine",
+            "url": "https://www.tabnine.com/",
+            "description": "AI code completion tool supporting multiple languages",
+            "tags": [
+              "Applications/Content Generation/Code"
+            ]
+          },
+          {
+            "name": "Replit Ghostwriter",
+            "url": "https://replit.com/site/ghostwriter",
+            "description": "AI pair programmer integrated into Replit IDE",
+            "tags": [
+              "Applications/Content Generation/Code"
+            ]
+          },
+          {
+            "name": "Sourcery",
+            "url": "https://sourcery.ai/",
+            "description": "AI code review and refactoring tool for Python",
+            "tags": [
+              "Applications/Content Generation/Code"
+            ]
+          }
+        ]
+      },
+      "Creative Tools": {
+        "_items": [
+          {
+            "name": "RunwayML",
+            "url": "https://runwayml.com/",
+            "description": "AI tools for creative professionals and content creators",
+            "tags": [
+              "Applications/Content Generation/Creative Tools"
+            ]
+          },
+          {
+            "name": "Stability AI",
+            "url": "https://stability.ai/",
+            "description": "Company behind Stable Diffusion and other generative AI models",
+            "tags": [
+              "Applications/Content Generation/Creative Tools"
+            ]
+          },
+          {
+            "name": "Artbreeder",
+            "url": "https://www.artbreeder.com/",
+            "description": "Collaborative AI art creation platform",
+            "tags": [
+              "Applications/Content Generation/Creative Tools"
+            ]
+          }
+        ]
+      }
+    },
+    "Industry-Specific": {
+      "_items": [],
+      "Healthcare": {
+        "_items": [
+          {
+            "name": "IBM Watson Health",
+            "url": "https://www.ibm.com/watson-health",
+            "description": "AI platform for healthcare data analysis and insights",
+            "tags": [
+              "Applications/Industry-Specific/Healthcare"
+            ]
+          },
+          {
+            "name": "PathAI",
+            "url": "https://www.pathai.com/",
+            "description": "AI platform for pathology and medical diagnostics",
+            "tags": [
+              "Applications/Industry-Specific/Healthcare"
+            ]
+          },
+          {
+            "name": "Tempus",
+            "url": "https://www.tempus.com/",
+            "description": "AI platform for precision medicine and cancer treatment",
+            "tags": [
+              "Applications/Industry-Specific/Healthcare"
+            ]
+          },
+          {
+            "name": "Aidoc",
+            "url": "https://www.aidoc.com/",
+            "description": "AI platform for medical imaging and radiology",
+            "tags": [
+              "Applications/Industry-Specific/Healthcare"
+            ]
+          }
+        ]
+      },
+      "Finance": {
+        "_items": [
+          {
+            "name": "Stripe Radar",
+            "url": "https://stripe.com/radar",
+            "description": "Machine learning fraud detection for online payments",
+            "tags": [
+              "Applications/Industry-Specific/Finance"
+            ]
+          },
+          {
+            "name": "Palantir Foundry",
+            "url": "https://www.palantir.com/platforms/foundry/",
+            "description": "Data integration and analytics platform for financial institutions",
+            "tags": [
+              "Applications/Industry-Specific/Finance"
+            ]
+          },
+          {
+            "name": "DataRobot",
+            "url": "https://www.datarobot.com/",
+            "description": "Automated machine learning platform for financial services",
+            "tags": [
+              "Applications/Industry-Specific/Finance"
+            ]
+          }
+        ]
+      },
+      "Automotive": {
+        "_items": [
+          {
+            "name": "Tesla Autopilot",
+            "url": "https://www.tesla.com/autopilot",
+            "description": "Advanced driver assistance system using computer vision",
+            "tags": [
+              "Applications/Industry-Specific/Automotive"
+            ]
+          },
+          {
+            "name": "Waymo",
+            "url": "https://waymo.com/",
+            "description": "Autonomous driving technology and self-driving car service",
+            "tags": [
+              "Applications/Industry-Specific/Automotive"
+            ]
+          },
+          {
+            "name": "NVIDIA DRIVE",
+            "url": "https://developer.nvidia.com/drive",
+            "description": "AI platform for autonomous vehicle development",
+            "tags": [
+              "Applications/Industry-Specific/Automotive"
+            ]
+          },
+          {
+            "name": "Mobileye",
+            "url": "https://www.mobileye.com/",
+            "description": "Computer vision and AI for advanced driver assistance systems",
+            "tags": [
+              "Applications/Industry-Specific/Automotive"
+            ]
+          }
+        ]
+      },
+      "Retail": {
+        "_items": [
+          {
+            "name": "Amazon Personalize",
+            "url": "https://aws.amazon.com/personalize/",
+            "description": "ML service for building recommendation systems",
+            "tags": [
+              "Applications/Industry-Specific/Retail"
+            ]
+          },
+          {
+            "name": "Dynamic Yield",
+            "url": "https://www.dynamicyield.com/",
+            "description": "AI-powered personalization platform for e-commerce",
+            "tags": [
+              "Applications/Industry-Specific/Retail"
+            ]
+          },
+          {
+            "name": "Yotpo",
+            "url": "https://www.yotpo.com/",
+            "description": "AI-powered customer content marketing platform",
+            "tags": [
+              "Applications/Industry-Specific/Retail"
+            ]
+          }
+        ]
+      },
+      "Education": {
+        "_items": [
+          {
+            "name": "Coursera AI",
+            "url": "https://www.coursera.org/",
+            "description": "AI-powered personalized learning and course recommendations",
+            "tags": [
+              "Applications/Industry-Specific/Education"
+            ]
+          },
+          {
+            "name": "Khan Academy Khanmigo",
+            "url": "https://www.khanacademy.org/khan-labs",
+            "description": "AI tutor and teaching assistant for personalized learning",
+            "tags": [
+              "Applications/Industry-Specific/Education"
+            ]
+          },
+          {
+            "name": "Grammarly for Education",
+            "url": "https://www.grammarly.com/edu",
+            "description": "AI writing assistant for educational institutions",
+            "tags": [
+              "Applications/Industry-Specific/Education"
+            ]
+          },
+          {
+            "name": "Century Tech",
+            "url": "https://www.century.tech/",
+            "description": "AI platform for personalized learning and teaching",
+            "tags": [
+              "Applications/Industry-Specific/Education"
+            ]
+          }
+        ]
+      },
+      "Productivity": {
+        "_items": [
+          {
+            "name": "Notion AI",
+            "url": "https://www.notion.so/product/ai",
+            "description": "AI-powered productivity and note-taking platform",
+            "tags": [
+              "Applications/Industry-Specific/Productivity"
+            ]
+          },
+          {
+            "name": "Otter.ai",
+            "url": "https://otter.ai/",
+            "description": "AI-powered meeting transcription and note-taking",
+            "tags": [
+              "Applications/Industry-Specific/Productivity"
+            ]
+          },
+          {
+            "name": "Zapier",
+            "url": "https://zapier.com/",
+            "description": "Automation platform connecting apps and workflows",
+            "tags": [
+              "Applications/Industry-Specific/Productivity"
+            ]
+          }
+        ]
+      }
+    },
+    "Specialized Domains": {
+      "_items": [],
+      "Autonomous Systems": {
+        "_items": [
+          {
+            "name": "Boston Dynamics Spot",
+            "url": "https://www.bostondynamics.com/products/spot",
+            "description": "AI-powered quadruped robot for various applications",
+            "tags": [
+              "Applications/Specialized Domains/Autonomous Systems"
+            ]
+          },
+          {
+            "name": "Skydio Drones",
+            "url": "https://www.skydio.com/",
+            "description": "Autonomous drones with AI-powered navigation",
+            "tags": [
+              "Applications/Specialized Domains/Autonomous Systems"
+            ]
+          },
+          {
+            "name": "Cruise",
+            "url": "https://getcruise.com/",
+            "description": "Self-driving car technology and ride-hailing service",
+            "tags": [
+              "Applications/Specialized Domains/Autonomous Systems"
+            ]
+          }
+        ]
+      },
+      "Edge AI": {
+        "_items": [
+          {
+            "name": "Edge Impulse",
+            "url": "https://edgeimpulse.com/",
+            "description": "Leading platform for developing edge AI applications",
+            "tags": [
+              "Applications/Specialized Domains/Edge AI"
+            ]
+          },
+          {
+            "name": "Google AI Edge",
+            "url": "https://ai.google.dev/edge",
+            "description": "Tools and frameworks for deploying AI models on edge devices",
+            "tags": [
+              "Applications/Specialized Domains/Edge AI"
+            ]
+          },
+          {
+            "name": "TensorFlow Lite",
+            "url": "https://www.tensorflow.org/lite",
+            "description": "Lightweight solution for mobile and embedded devices",
+            "tags": [
+              "Applications/Specialized Domains/Edge AI"
+            ]
+          },
+          {
+            "name": "ONNX Runtime",
+            "url": "https://onnxruntime.ai/",
+            "description": "Cross-platform inference and training accelerator",
+            "tags": [
+              "Applications/Specialized Domains/Edge AI"
+            ]
+          }
+        ]
+      },
+      "Scientific AI": {
+        "_items": [
+          {
+            "name": "DeepMind AlphaFold",
+            "url": "https://deepmind.com/research/case-studies/alphafold",
+            "description": "AI system for protein structure prediction",
+            "tags": [
+              "Applications/Specialized Domains/Scientific AI"
+            ]
+          },
+          {
+            "name": "OpenAI GPT for Science",
+            "url": "https://openai.com/research",
+            "description": "AI applications in scientific research and discovery",
+            "tags": [
+              "Applications/Specialized Domains/Scientific AI"
+            ]
+          },
+          {
+            "name": "IBM Research AI",
+            "url": "https://research.ibm.com/artificial-intelligence",
+            "description": "AI research for scientific and industrial applications",
+            "tags": [
+              "Applications/Specialized Domains/Scientific AI"
+            ]
+          }
+        ]
+      },
+      "Robotics": {
+        "_items": [
+          {
+            "name": "Boston Dynamics AI",
+            "url": "https://www.bostondynamics.com/",
+            "description": "Advanced robotics with AI-powered movement and navigation",
+            "tags": [
+              "Applications/Specialized Domains/Robotics"
+            ]
+          },
+          {
+            "name": "Tesla Bot (Optimus)",
+            "url": "https://www.tesla.com/AI",
+            "description": "Tesla's humanoid robot project with AI capabilities",
+            "tags": [
+              "Applications/Specialized Domains/Robotics"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Courses & Training": {
+    "_items": [],
+    "Courses": {
+      "_items": [],
+      "University": {
+        "_items": [
+          {
+            "name": "Stanford CS229 - Machine Learning",
+            "url": "http://cs229.stanford.edu/",
+            "description": "Comprehensive machine learning course by Andrew Ng",
+            "tags": [
+              "Courses & Training/Courses/University"
+            ]
+          },
+          {
+            "name": "Stanford CS231n - Computer Vision",
+            "url": "http://cs231n.stanford.edu/",
+            "description": "Convolutional Neural Networks for Visual Recognition course",
+            "tags": [
+              "Courses & Training/Courses/University"
+            ]
+          },
+          {
+            "name": "MIT 6.034 - Artificial Intelligence",
+            "url": "https://ocw.mit.edu/courses/6-034-artificial-intelligence-fall-2010/",
+            "description": "Introduction to artificial intelligence from MIT OpenCourseWare",
+            "tags": [
+              "Courses & Training/Courses/University"
+            ]
+          },
+          {
+            "name": "CMU 10-701 - Machine Learning",
+            "url": "http://www.cs.cmu.edu/~tom/10701_sp11/",
+            "description": "Graduate-level machine learning course from Carnegie Mellon",
+            "tags": [
+              "Courses & Training/Courses/University"
+            ]
+          },
+          {
+            "name": "Berkeley CS188 - Artificial Intelligence",
+            "url": "https://inst.eecs.berkeley.edu/~cs188/",
+            "description": "Introduction to artificial intelligence from UC Berkeley",
+            "tags": [
+              "Courses & Training/Courses/University"
+            ]
+          }
+        ]
+      },
+      "MOOC Platforms": {
+        "_items": [
+          {
+            "name": "Coursera AI for Everyone",
+            "url": "https://www.coursera.org/learn/ai-for-everyone",
+            "description": "Non-technical introduction to AI by Andrew Ng",
+            "tags": [
+              "Courses & Training/Courses/MOOC Platforms"
+            ]
+          },
+          {
+            "name": "Udacity Machine Learning Nanodegree",
+            "url": "https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009t",
+            "description": "Project-based machine learning program",
+            "tags": [
+              "Courses & Training/Courses/MOOC Platforms"
+            ]
+          },
+          {
+            "name": "Coursera Deep Learning Specialization",
+            "url": "https://www.coursera.org/specializations/deep-learning",
+            "description": "Five-course specialization in deep learning by deeplearning.ai",
+            "tags": [
+              "Courses & Training/Courses/MOOC Platforms"
+            ]
+          }
+        ]
+      },
+      "Platform-Specific": {
+        "_items": [
+          {
+            "name": "DeepLearning.AI Courses",
+            "url": "https://www.deeplearning.ai/",
+            "description": "Comprehensive deep learning specialization by Andrew Ng",
+            "tags": [
+              "Courses & Training/Courses/Platform-Specific"
+            ]
+          },
+          {
+            "name": "Fast.ai Practical Deep Learning",
+            "url": "https://course.fast.ai/",
+            "description": "Practical deep learning course with top-down approach",
+            "tags": [
+              "Courses & Training/Courses/Platform-Specific"
+            ]
+          },
+          {
+            "name": "Google AI Education",
+            "url": "https://ai.google/education/",
+            "description": "Free AI and ML courses from Google",
+            "tags": [
+              "Courses & Training/Courses/Platform-Specific"
+            ]
+          },
+          {
+            "name": "Microsoft Learn AI",
+            "url": "https://docs.microsoft.com/en-us/learn/browse/?products=azure&subjects=artificial-intelligence",
+            "description": "AI learning paths on Microsoft Azure platform",
+            "tags": [
+              "Courses & Training/Courses/Platform-Specific"
+            ]
+          }
+        ]
+      },
+      "Domain-Specific": {
+        "_items": [
+          {
+            "name": "CS224N - Natural Language Processing",
+            "url": "http://web.stanford.edu/class/cs224n/",
+            "description": "Stanford's NLP course with deep learning focus",
+            "tags": [
+              "Courses & Training/Courses/Domain-Specific"
+            ]
+          },
+          {
+            "name": "CS231n - Computer Vision",
+            "url": "http://cs231n.stanford.edu/",
+            "description": "Convolutional Neural Networks for Visual Recognition",
+            "tags": [
+              "Courses & Training/Courses/Domain-Specific"
+            ]
+          },
+          {
+            "name": "CS234 - Reinforcement Learning",
+            "url": "http://web.stanford.edu/class/cs234/",
+            "description": "Stanford course on reinforcement learning algorithms",
+            "tags": [
+              "Courses & Training/Courses/Domain-Specific"
+            ]
+          },
+          {
+            "name": "MIT 6.S191 - Introduction to Deep Learning",
+            "url": "http://introtodeeplearning.com/",
+            "description": "MIT's introductory course on deep learning",
+            "tags": [
+              "Courses & Training/Courses/Domain-Specific"
+            ]
+          }
+        ]
+      }
+    },
+    "Bootcamps": {
+      "_items": [],
+      "Premium": {
+        "_items": [
+          {
+            "name": "Fullstack Academy AI Bootcamp",
+            "url": "https://www.fullstackacademy.com/programs/ai-machine-learning-bootcamp",
+            "description": "Comprehensive AI and machine learning bootcamp program",
+            "tags": [
+              "Courses & Training/Bootcamps/Premium"
+            ]
+          },
+          {
+            "name": "MIT Professional Education AI",
+            "url": "https://professional.mit.edu/course-catalog/artificial-intelligence",
+            "description": "Executive education programs in AI from MIT",
+            "tags": [
+              "Courses & Training/Bootcamps/Premium"
+            ]
+          }
+        ]
+      },
+      "Mid-Range": {
+        "_items": [
+          {
+            "name": "BrainStation AI Course",
+            "url": "https://brainstation.io/course/artificial-intelligence",
+            "description": "Part-time AI course focusing on practical applications",
+            "tags": [
+              "Courses & Training/Bootcamps/Mid-Range"
+            ]
+          },
+          {
+            "name": "Simplilearn AI Engineer",
+            "url": "https://www.simplilearn.com/artificial-intelligence-masters-program-training-course",
+            "description": "AI Engineer Master's Program with hands-on projects",
+            "tags": [
+              "Courses & Training/Bootcamps/Mid-Range"
+            ]
+          }
+        ]
+      },
+      "Affordable": {
+        "_items": [
+          {
+            "name": "IBM AI Professional Certificate",
+            "url": "https://www.coursera.org/professional-certificates/applied-artifical-intelligence-ibm-watson-ai",
+            "description": "Professional certificate program in AI applications",
+            "tags": [
+              "Courses & Training/Bootcamps/Affordable"
+            ]
+          }
+        ]
+      },
+      "Specialized": {
+        "_items": [
+          {
+            "name": "MLOps Bootcamp",
+            "url": "https://www.mlops.community/",
+            "description": "Specialized training in MLOps practices and tools",
+            "tags": [
+              "Courses & Training/Bootcamps/Specialized"
+            ]
+          },
+          {
+            "name": "AI Ethics Course",
+            "url": "https://professional.mit.edu/course-catalog/ethics-ai-building-responsible-ai-machine-learning-and-gpts",
+            "description": "MIT course on building responsible AI systems",
+            "tags": [
+              "Courses & Training/Bootcamps/Specialized"
+            ]
+          },
+          {
+            "name": "Computer Vision Bootcamp",
+            "url": "https://www.pyimagesearch.com/pyimagesearch-gurus/",
+            "description": "Specialized training in computer vision applications",
+            "tags": [
+              "Courses & Training/Bootcamps/Specialized"
+            ]
+          }
+        ]
+      }
+    },
+    "Certificates": {
+      "_items": [],
+      "Cloud Providers": {
+        "_items": [
+          {
+            "name": "AWS Machine Learning Specialty",
+            "url": "https://aws.amazon.com/certification/certified-machine-learning-specialty/",
+            "description": "Cloud certification for machine learning on AWS platform",
+            "tags": [
+              "Courses & Training/Certificates/Cloud Providers"
+            ]
+          },
+          {
+            "name": "Google Cloud AI Engineer",
+            "url": "https://cloud.google.com/certification/machine-learning-engineer",
+            "description": "Professional certification for ML engineering on GCP",
+            "tags": [
+              "Courses & Training/Certificates/Cloud Providers"
+            ]
+          },
+          {
+            "name": "Azure AI Engineer Associate",
+            "url": "https://docs.microsoft.com/en-us/learn/certifications/azure-ai-engineer/",
+            "description": "Microsoft certification for AI solutions on Azure",
+            "tags": [
+              "Courses & Training/Certificates/Cloud Providers"
+            ]
+          },
+          {
+            "name": "IBM Watson Certification",
+            "url": "https://www.ibm.com/training/certification/watson",
+            "description": "Certification programs for IBM Watson AI platform",
+            "tags": [
+              "Courses & Training/Certificates/Cloud Providers"
+            ]
+          }
+        ]
+      },
+      "Industry Standard": {
+        "_items": [
+          {
+            "name": "NVIDIA Deep Learning Institute",
+            "url": "https://www.nvidia.com/en-us/training/",
+            "description": "Industry-standard certifications for deep learning and AI",
+            "tags": [
+              "Courses & Training/Certificates/Industry Standard"
+            ]
+          },
+          {
+            "name": "TensorFlow Developer Certificate",
+            "url": "https://www.tensorflow.org/certificate",
+            "description": "Google's certification for TensorFlow proficiency",
+            "tags": [
+              "Courses & Training/Certificates/Industry Standard"
+            ]
+          }
+        ]
+      },
+      "Academic": {
+        "_items": [
+          {
+            "name": "Stanford AI Graduate Certificate",
+            "url": "https://online.stanford.edu/programs/artificial-intelligence-graduate-certificate",
+            "description": "Graduate-level certificate program in AI from Stanford",
+            "tags": [
+              "Courses & Training/Certificates/Academic"
+            ]
+          },
+          {
+            "name": "MIT Professional Education AI",
+            "url": "https://professional.mit.edu/course-catalog/artificial-intelligence",
+            "description": "Professional education certificates in AI from MIT",
+            "tags": [
+              "Courses & Training/Certificates/Academic"
+            ]
+          },
+          {
+            "name": "Harvard Extension AI",
+            "url": "https://www.extension.harvard.edu/academics/graduate-degrees/artificial-intelligence-graduate-certificate",
+            "description": "Graduate certificate in artificial intelligence from Harvard",
+            "tags": [
+              "Courses & Training/Certificates/Academic"
+            ]
+          }
+        ]
+      },
+      "Professional": {
+        "_items": [
+          {
+            "name": "AIE Certification Program",
+            "url": "https://www.aie.org/",
+            "description": "Professional AI Engineer certification tracks",
+            "tags": [
+              "Courses & Training/Certificates/Professional"
+            ]
+          }
+        ]
+      }
+    },
+    "Examples": {
+      "_items": [],
+      "Interactive Platforms": {
+        "_items": [
+          {
+            "name": "Kaggle Learn",
+            "url": "https://www.kaggle.com/learn",
+            "description": "Free micro-courses in data science and machine learning",
+            "tags": [
+              "Courses & Training/Examples/Interactive Platforms"
+            ]
+          },
+          {
+            "name": "Google Colab",
+            "url": "https://colab.research.google.com/",
+            "description": "Free Jupyter notebook environment with GPU access for ML experiments",
+            "tags": [
+              "Courses & Training/Examples/Interactive Platforms"
+            ]
+          },
+          {
+            "name": "Jupyter Notebooks Gallery",
+            "url": "https://jupyter.org/try",
+            "description": "Collection of interactive Jupyter notebooks for learning",
+            "tags": [
+              "Courses & Training/Examples/Interactive Platforms"
+            ]
+          },
+          {
+            "name": "Observable",
+            "url": "https://observablehq.com/",
+            "description": "Interactive platform for data visualization and analysis",
+            "tags": [
+              "Courses & Training/Examples/Interactive Platforms"
+            ]
+          }
+        ]
+      },
+      "Code Repositories": {
+        "_items": [
+          {
+            "name": "Awesome Machine Learning",
+            "url": "https://github.com/josephmisiti/awesome-machine-learning",
+            "description": "Curated list of machine learning frameworks, libraries and software",
+            "tags": [
+              "Courses & Training/Examples/Code Repositories"
+            ]
+          },
+          {
+            "name": "ML From Scratch",
+            "url": "https://github.com/eriklindernoren/ML-From-Scratch",
+            "description": "Machine learning algorithms implemented from scratch",
+            "tags": [
+              "Courses & Training/Examples/Code Repositories"
+            ]
+          },
+          {
+            "name": "TensorFlow Examples",
+            "url": "https://github.com/tensorflow/examples",
+            "description": "Official TensorFlow examples and tutorials",
+            "tags": [
+              "Courses & Training/Examples/Code Repositories"
+            ]
+          },
+          {
+            "name": "PyTorch Examples",
+            "url": "https://github.com/pytorch/examples",
+            "description": "Collection of PyTorch examples and tutorials",
+            "tags": [
+              "Courses & Training/Examples/Code Repositories"
+            ]
+          }
+        ]
+      },
+      "Video Tutorials": {
+        "_items": [
+          {
+            "name": "3Blue1Brown Neural Networks",
+            "url": "https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi",
+            "description": "Visual explanations of neural networks and deep learning concepts",
+            "tags": [
+              "Courses & Training/Examples/Video Tutorials"
+            ]
+          },
+          {
+            "name": "Sentdex ML Tutorials",
+            "url": "https://www.youtube.com/user/sentdex",
+            "description": "Python programming tutorials including machine learning",
+            "tags": [
+              "Courses & Training/Examples/Video Tutorials"
+            ]
+          },
+          {
+            "name": "Two Minute Papers",
+            "url": "https://www.youtube.com/user/keeroyz",
+            "description": "YouTube channel explaining latest AI research papers",
+            "tags": [
+              "Courses & Training/Examples/Video Tutorials"
+            ]
+          },
+          {
+            "name": "StatQuest",
+            "url": "https://www.youtube.com/user/joshstarmer",
+            "description": "Statistics and machine learning concepts explained simply",
+            "tags": [
+              "Courses & Training/Examples/Video Tutorials"
+            ]
+          }
+        ]
+      },
+      "Hands-on Projects": {
+        "_items": [
+          {
+            "name": "Machine Learning Mastery",
+            "url": "https://machinelearningmastery.com/",
+            "description": "Step-by-step tutorials and project walkthroughs",
+            "tags": [
+              "Courses & Training/Examples/Hands-on Projects"
+            ]
+          },
+          {
+            "name": "Real Python ML Tutorials",
+            "url": "https://realpython.com/tutorials/machine-learning/",
+            "description": "Practical machine learning tutorials in Python",
+            "tags": [
+              "Courses & Training/Examples/Hands-on Projects"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Community & Networking": {
+    "_items": [],
+    "Professional Networks": {
+      "_items": [],
+      "General Professional": {
+        "_items": [
+          {
+            "name": "LinkedIn AI Groups",
+            "url": "https://www.linkedin.com/groups/",
+            "description": "Professional networking groups focused on artificial intelligence",
+            "tags": [
+              "Community & Networking/Professional Networks/General Professional"
+            ]
+          },
+          {
+            "name": "Association for Computing Machinery (ACM)",
+            "url": "https://www.acm.org/",
+            "description": "World's largest educational and scientific computing society",
+            "tags": [
+              "Community & Networking/Professional Networks/General Professional"
+            ]
+          },
+          {
+            "name": "IEEE Computer Society",
+            "url": "https://www.computer.org/",
+            "description": "Professional organization for computing professionals",
+            "tags": [
+              "Community & Networking/Professional Networks/General Professional"
+            ]
+          }
+        ]
+      },
+      "Local Communities": {
+        "_items": [
+          {
+            "name": "AI Meetup Groups",
+            "url": "https://www.meetup.com/topics/artificial-intelligence/",
+            "description": "Local AI and machine learning meetup groups worldwide",
+            "tags": [
+              "Community & Networking/Professional Networks/Local Communities"
+            ]
+          },
+          {
+            "name": "Data Science Societies",
+            "url": "https://www.meetup.com/topics/data-science/",
+            "description": "Local data science and analytics communities",
+            "tags": [
+              "Community & Networking/Professional Networks/Local Communities"
+            ]
+          },
+          {
+            "name": "Tech Industry Groups",
+            "url": "https://www.meetup.com/topics/tech/",
+            "description": "Technology-focused professional meetups and societies",
+            "tags": [
+              "Community & Networking/Professional Networks/Local Communities"
+            ]
+          }
+        ]
+      }
+    },
+    "Online Communities": {
+      "_items": [],
+      "High-Engagement": {
+        "_items": [
+          {
+            "name": "r/MachineLearning",
+            "url": "https://www.reddit.com/r/MachineLearning/",
+            "description": "Reddit community with 3M+ members discussing ML research and applications",
+            "tags": [
+              "Community & Networking/Online Communities/High-Engagement"
+            ]
+          },
+          {
+            "name": "OpenAI Discord",
+            "url": "https://discord.gg/openai",
+            "description": "Official Discord server for OpenAI community discussions",
+            "tags": [
+              "Community & Networking/Online Communities/High-Engagement"
+            ]
+          },
+          {
+            "name": "Hugging Face Community",
+            "url": "https://huggingface.co/join/discord",
+            "description": "Active community around open source NLP and ML models",
+            "tags": [
+              "Community & Networking/Online Communities/High-Engagement"
+            ]
+          }
+        ]
+      },
+      "Specialized": {
+        "_items": [
+          {
+            "name": "Kaggle Community",
+            "url": "https://www.kaggle.com/discussions",
+            "description": "Data science competition platform with active forums",
+            "tags": [
+              "Community & Networking/Online Communities/Specialized"
+            ]
+          },
+          {
+            "name": "AI Village (DEF CON)",
+            "url": "https://aivillage.org/",
+            "description": "Community focused on AI security and safety research",
+            "tags": [
+              "Community & Networking/Online Communities/Specialized"
+            ]
+          },
+          {
+            "name": "MLOps Community",
+            "url": "https://mlops.community/",
+            "description": "Community focused on machine learning operations",
+            "tags": [
+              "Community & Networking/Online Communities/Specialized"
+            ]
+          },
+          {
+            "name": "Deep Learning Papers Reading Group",
+            "url": "https://www.facebook.com/groups/DeepNetGroup",
+            "description": "Facebook group for discussing latest deep learning research",
+            "tags": [
+              "Community & Networking/Online Communities/Specialized"
+            ]
+          }
+        ]
+      },
+      "Platform-Specific": {
+        "_items": [
+          {
+            "name": "AI Discord servers",
+            "url": "https://www.digitalocean.com/resources/articles/ai-discord-servers",
+            "description": "Collection of Discord servers focused on AI and ML topics",
+            "tags": [
+              "Community & Networking/Online Communities/Platform-Specific"
+            ]
+          },
+          {
+            "name": "Stack Overflow AI",
+            "url": "https://stackoverflow.com/questions/tagged/artificial-intelligence",
+            "description": "Q&A platform for AI and ML programming questions",
+            "tags": [
+              "Community & Networking/Online Communities/Platform-Specific"
+            ]
+          },
+          {
+            "name": "Reddit AI Communities",
+            "url": "https://www.reddit.com/r/artificial/",
+            "description": "Various Reddit communities focused on AI topics",
+            "tags": [
+              "Community & Networking/Online Communities/Platform-Specific"
+            ]
+          },
+          {
+            "name": "Slack AI Workspaces",
+            "url": "https://mlops.community/",
+            "description": "Professional Slack workspaces for AI practitioners",
+            "tags": [
+              "Community & Networking/Online Communities/Platform-Specific"
+            ]
+          }
+        ]
+      }
+    },
+    "Events & Conferences": {
+      "_items": [],
+      "Premier Academic": {
+        "_items": [
+          {
+            "name": "ICLR (International Conference on Learning Representations)",
+            "url": "https://iclr.cc/",
+            "description": "Premier venue for deep learning research",
+            "tags": [
+              "Community & Networking/Events & Conferences/Premier Academic"
+            ]
+          },
+          {
+            "name": "CVPR (Computer Vision and Pattern Recognition)",
+            "url": "https://cvpr.thecvf.com/",
+            "description": "Top computer vision conference",
+            "tags": [
+              "Community & Networking/Events & Conferences/Premier Academic"
+            ]
+          }
+        ]
+      },
+      "Specialized": {
+        "_items": [
+          {
+            "name": "ICRA (International Conference on Robotics and Automation)",
+            "url": "https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra",
+            "description": "Premier robotics conference with AI applications",
+            "tags": [
+              "Community & Networking/Events & Conferences/Specialized"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Career & Professional Development": {
+    "_items": [],
+    "Job Resources": {
+      "_items": [],
+      "Specialized Job Boards": {
+        "_items": [
+          {
+            "name": "AIJobs.ai",
+            "url": "https://aijobs.ai/",
+            "description": "Leading job board for AI, ML, and data science positions",
+            "tags": [
+              "Career & Professional Development/Job Resources/Specialized Job Boards"
+            ]
+          },
+          {
+            "name": "DataScienceJobs.com",
+            "url": "https://datasciencejobs.com/",
+            "description": "Curated job board for data science and analytics roles",
+            "tags": [
+              "Career & Professional Development/Job Resources/Specialized Job Boards"
+            ]
+          },
+          {
+            "name": "Machine Learning Jobs",
+            "url": "https://www.machinelearningjobs.com/",
+            "description": "Job board specifically for machine learning positions",
+            "tags": [
+              "Career & Professional Development/Job Resources/Specialized Job Boards"
+            ]
+          },
+          {
+            "name": "AI-Jobs.net",
+            "url": "https://aijobs.net/",
+            "description": "Global job board for artificial intelligence careers",
+            "tags": [
+              "Career & Professional Development/Job Resources/Specialized Job Boards"
+            ]
+          }
+        ]
+      },
+      "AI-Enhanced Tools": {
+        "_items": [
+          {
+            "name": "Jobright AI",
+            "url": "https://jobright.ai/",
+            "description": "AI-powered job search copilot for personalized career guidance",
+            "tags": [
+              "Career & Professional Development/Job Resources/AI-Enhanced Tools"
+            ]
+          },
+          {
+            "name": "AIApply",
+            "url": "https://aiapply.co/",
+            "description": "AI tool for optimizing job applications and cover letters",
+            "tags": [
+              "Career & Professional Development/Job Resources/AI-Enhanced Tools"
+            ]
+          },
+          {
+            "name": "Careerflow",
+            "url": "https://www.careerflow.ai/",
+            "description": "AI-powered job search tools and career guidance",
+            "tags": [
+              "Career & Professional Development/Job Resources/AI-Enhanced Tools"
+            ]
+          },
+          {
+            "name": "Teal",
+            "url": "https://www.tealhq.com/",
+            "description": "AI-powered career development and job search platform",
+            "tags": [
+              "Career & Professional Development/Job Resources/AI-Enhanced Tools"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Media & Information": {
+    "_items": [],
+    "Newsletters": {
+      "_items": [],
+      "High-Impact": {
+        "_items": [
+          {
+            "name": "The Rundown AI",
+            "url": "https://www.therundown.ai/",
+            "description": "Daily AI newsletter with 750K+ subscribers covering latest developments",
+            "tags": [
+              "Media & Information/Newsletters/High-Impact"
+            ]
+          },
+          {
+            "name": "The Batch by Andrew Ng",
+            "url": "https://www.deeplearning.ai/the-batch/",
+            "description": "Weekly AI newsletter by DeepLearning.AI founder",
+            "tags": [
+              "Media & Information/Newsletters/High-Impact"
+            ]
+          },
+          {
+            "name": "AI Supremacy",
+            "url": "https://www.ai-supremacy.com/",
+            "description": "Newsletter covering AI industry trends and analysis",
+            "tags": [
+              "Media & Information/Newsletters/High-Impact"
+            ]
+          }
+        ]
+      }
+    },
+    "Podcasts": {
+      "_items": [],
+      "Technical": {
+        "_items": [
+          {
+            "name": "TWIML AI Podcast",
+            "url": "https://twimlai.com/",
+            "description": "Technical podcast covering machine learning and AI research",
+            "tags": [
+              "Media & Information/Podcasts/Technical"
+            ]
+          },
+          {
+            "name": "Machine Learning Street Talk",
+            "url": "https://www.youtube.com/c/MachineLearningStreetTalk",
+            "description": "Deep technical discussions on ML research and papers",
+            "tags": [
+              "Media & Information/Podcasts/Technical"
+            ]
+          },
+          {
+            "name": "Practical AI",
+            "url": "https://changelog.com/practicalai",
+            "description": "Podcast focused on practical AI applications and implementation",
+            "tags": [
+              "Media & Information/Podcasts/Technical"
+            ]
+          }
+        ]
+      },
+      "General Audience": {
+        "_items": [
+          {
+            "name": "Lex Fridman Podcast",
+            "url": "https://lexfridman.com/podcast/",
+            "description": "Long-form conversations with AI researchers and thought leaders",
+            "tags": [
+              "Media & Information/Podcasts/General Audience"
+            ]
+          },
+          {
+            "name": "The Cognitive Revolution",
+            "url": "https://www.cognitiverevolution.ai/",
+            "description": "Podcast exploring AI's impact on society and the future",
+            "tags": [
+              "Media & Information/Podcasts/General Audience"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Academic & Research": {
+    "_items": [],
+    "Research Infrastructure": {
+      "_items": [],
+      "Academic Institutions": {
+        "_items": [
+          {
+            "name": "Stanford AI Lab (SAIL)",
+            "url": "https://ai.stanford.edu/",
+            "description": "Leading academic research laboratory in artificial intelligence",
+            "tags": [
+              "Academic & Research/Research Infrastructure/Academic Institutions"
+            ]
+          },
+          {
+            "name": "MIT CSAIL",
+            "url": "https://www.csail.mit.edu/",
+            "description": "MIT Computer Science and Artificial Intelligence Laboratory",
+            "tags": [
+              "Academic & Research/Research Infrastructure/Academic Institutions"
+            ]
+          },
+          {
+            "name": "Berkeley AI Research (BAIR)",
+            "url": "https://bair.berkeley.edu/",
+            "description": "UC Berkeley's artificial intelligence research lab",
+            "tags": [
+              "Academic & Research/Research Infrastructure/Academic Institutions"
+            ]
+          },
+          {
+            "name": "CMU Machine Learning Department",
+            "url": "https://www.ml.cmu.edu/",
+            "description": "Carnegie Mellon's School of Computer Science ML department",
+            "tags": [
+              "Academic & Research/Research Infrastructure/Academic Institutions"
+            ]
+          }
+        ]
+      },
+      "Corporate Research": {
+        "_items": [
+          {
+            "name": "DeepMind",
+            "url": "https://deepmind.com/",
+            "description": "AI research company focusing on artificial general intelligence",
+            "tags": [
+              "Academic & Research/Research Infrastructure/Corporate Research"
+            ]
+          },
+          {
+            "name": "OpenAI",
+            "url": "https://openai.com/",
+            "description": "AI research company developing safe and beneficial AI",
+            "tags": [
+              "Academic & Research/Research Infrastructure/Corporate Research"
+            ]
+          },
+          {
+            "name": "Anthropic",
+            "url": "https://www.anthropic.com/",
+            "description": "AI safety company developing reliable and interpretable AI systems",
+            "tags": [
+              "Academic & Research/Research Infrastructure/Corporate Research"
+            ]
+          },
+          {
+            "name": "Meta AI (FAIR)",
+            "url": "https://ai.meta.com/",
+            "description": "Facebook AI Research division advancing AI understanding",
+            "tags": [
+              "Academic & Research/Research Infrastructure/Corporate Research"
+            ]
+          },
+          {
+            "name": "Google Research",
+            "url": "https://research.google/",
+            "description": "Google's research division covering AI and machine learning",
+            "tags": [
+              "Academic & Research/Research Infrastructure/Corporate Research"
+            ]
+          },
+          {
+            "name": "Microsoft Research AI",
+            "url": "https://www.microsoft.com/en-us/research/research-area/artificial-intelligence/",
+            "description": "Microsoft's AI research across multiple domains",
+            "tags": [
+              "Academic & Research/Research Infrastructure/Corporate Research"
+            ]
+          }
+        ]
+      },
+      "Government": {
+        "_items": [
+          {
+            "name": "NSF AI Research Institutes",
+            "url": "https://www.nsf.gov/focus-areas/artificial-intelligence",
+            "description": "National Science Foundation AI research funding and institutes",
+            "tags": [
+              "Academic & Research/Research Infrastructure/Government"
+            ]
+          },
+          {
+            "name": "NIH AI/ML Consortium",
+            "url": "https://datascience.nih.gov/artificial-intelligence",
+            "description": "National Institutes of Health AI and ML research programs",
+            "tags": [
+              "Academic & Research/Research Infrastructure/Government"
+            ]
+          }
+        ]
+      }
+    },
+    "Funding & Grants": {
+      "_items": [],
+      "Federal Funding": {
+        "_items": [
+          {
+            "name": "NSF Computer and Information Science",
+            "url": "https://www.nsf.gov/funding/programs.jsp?org=CISE",
+            "description": "NSF funding opportunities for computer and information science",
+            "tags": [
+              "Academic & Research/Funding & Grants/Federal Funding"
+            ]
+          },
+          {
+            "name": "NIH Data Science Programs",
+            "url": "https://datascience.nih.gov/funding",
+            "description": "National Institutes of Health data science funding opportunities",
+            "tags": [
+              "Academic & Research/Funding & Grants/Federal Funding"
+            ]
+          }
+        ]
+      },
+      "Private Funding": {
+        "_items": [
+          {
+            "name": "Chan Zuckerberg Initiative",
+            "url": "https://chanzuckerberg.com/science/",
+            "description": "Private foundation funding AI applications in science",
+            "tags": [
+              "Academic & Research/Funding & Grants/Private Funding"
+            ]
+          },
+          {
+            "name": "Schmidt Futures",
+            "url": "https://schmidtfutures.com/",
+            "description": "Philanthropic initiative supporting emerging technologies",
+            "tags": [
+              "Academic & Research/Funding & Grants/Private Funding"
+            ]
+          },
+          {
+            "name": "OpenPhilanthropy AI Grants",
+            "url": "https://www.openphilanthropy.org/focus/global-catastrophic-risks/potential-risks-advanced-artificial-intelligence/",
+            "description": "Grant-making focused on AI safety and alignment",
+            "tags": [
+              "Academic & Research/Funding & Grants/Private Funding"
+            ]
+          }
+        ]
+      },
+      "International": {
+        "_items": [
+          {
+            "name": "European Research Council AI",
+            "url": "https://erc.europa.eu/",
+            "description": "European funding for frontier AI research",
+            "tags": [
+              "Academic & Research/Funding & Grants/International"
+            ]
+          },
+          {
+            "name": "Horizon Europe AI",
+            "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/programmes/horizon",
+            "description": "EU's key funding programme for research and innovation",
+            "tags": [
+              "Academic & Research/Funding & Grants/International"
+            ]
+          },
+          {
+            "name": "CIFAR AI Chairs",
+            "url": "https://cifar.ca/ai/",
+            "description": "Canadian Institute for Advanced Research AI program",
+            "tags": [
+              "Academic & Research/Funding & Grants/International"
+            ]
+          }
+        ]
+      }
+    },
+    "Academic Services": {
+      "_items": [],
+      "Resources": {
+        "_items": [
+          {
+            "name": "AI Index Report",
+            "url": "https://aiindex.stanford.edu/",
+            "description": "Annual comprehensive report on AI progress, trends, and impact",
+            "tags": [
+              "Industry & Market Intelligence/Market Analysis/Industry Reports",
+              "Academic & Research/Academic Services/Resources"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Ethics, Safety & Governance": {
+    "_items": [],
+    "Ethical AI Resources": {
+      "_items": [],
+      "Organizations": {
+        "_items": [
+          {
+            "name": "Partnership on AI",
+            "url": "https://www.partnershiponai.org/",
+            "description": "Multi-stakeholder organization addressing AI's benefits and challenges",
+            "tags": [
+              "Ethics, Safety & Governance/Ethical AI Resources/Organizations"
+            ]
+          },
+          {
+            "name": "Future of Humanity Institute",
+            "url": "https://www.fhi.ox.ac.uk/",
+            "description": "Oxford research institute studying existential risks including AI",
+            "tags": [
+              "Ethics, Safety & Governance/Ethical AI Resources/Organizations"
+            ]
+          },
+          {
+            "name": "Center for AI Safety",
+            "url": "https://www.safe.ai/",
+            "description": "Research organization focused on reducing AI risks",
+            "tags": [
+              "Ethics, Safety & Governance/Ethical AI Resources/Organizations"
+            ]
+          }
+        ]
+      },
+      "Frameworks": {
+        "_items": [
+          {
+            "name": "Google AI Principles",
+            "url": "https://ai.google/principles/",
+            "description": "Google's framework for responsible AI development",
+            "tags": [
+              "Ethics, Safety & Governance/Ethical AI Resources/Frameworks"
+            ]
+          },
+          {
+            "name": "Microsoft Responsible AI",
+            "url": "https://www.microsoft.com/en-us/ai/responsible-ai",
+            "description": "Microsoft's responsible AI framework and tools",
+            "tags": [
+              "Ethics, Safety & Governance/Ethical AI Resources/Frameworks"
+            ]
+          },
+          {
+            "name": "IBM AI Ethics Board",
+            "url": "https://www.ibm.com/artificial-intelligence/ethics",
+            "description": "IBM's approach to trustworthy AI and ethics",
+            "tags": [
+              "Ethics, Safety & Governance/Ethical AI Resources/Frameworks"
+            ]
+          }
+        ]
+      }
+    },
+    "Regulatory & Compliance": {
+      "_items": [],
+      "Government Policies": {
+        "_items": [
+          {
+            "name": "NIST AI Risk Management Framework",
+            "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+            "description": "US government framework for managing AI risks and governance",
+            "tags": [
+              "Ethics, Safety & Governance/Regulatory & Compliance/Government Policies"
+            ]
+          },
+          {
+            "name": "EU AI Act",
+            "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+            "description": "European Union's comprehensive AI regulation framework",
+            "tags": [
+              "Ethics, Safety & Governance/Regulatory & Compliance/Government Policies"
+            ]
+          },
+          {
+            "name": "UK AI White Paper",
+            "url": "https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach",
+            "description": "UK government's approach to AI regulation and governance",
+            "tags": [
+              "Ethics, Safety & Governance/Regulatory & Compliance/Government Policies"
+            ]
+          }
+        ]
+      },
+      "Compliance Tools": {
+        "_items": [
+          {
+            "name": "Credo AI Governance Platform",
+            "url": "https://www.credo.ai/",
+            "description": "Enterprise platform for responsible AI governance and compliance",
+            "tags": [
+              "Ethics, Safety & Governance/Regulatory & Compliance/Compliance Tools"
+            ]
+          },
+          {
+            "name": "Holistic AI Platform",
+            "url": "https://www.holisticai.com/",
+            "description": "AI risk management and governance platform",
+            "tags": [
+              "Ethics, Safety & Governance/Regulatory & Compliance/Compliance Tools"
+            ]
+          },
+          {
+            "name": "Arthur AI",
+            "url": "https://www.arthur.ai/",
+            "description": "Model monitoring platform with bias detection capabilities",
+            "tags": [
+              "Ethics, Safety & Governance/Regulatory & Compliance/Compliance Tools"
+            ]
+          }
+        ]
+      }
+    },
+    "Safety & Security": {
+      "_items": [],
+      "AI Safety Research": {
+        "_items": [
+          {
+            "name": "Alignment Research Center",
+            "url": "https://alignment.org/",
+            "description": "Research organization focused on AI alignment problems",
+            "tags": [
+              "Ethics, Safety & Governance/Safety & Security/AI Safety Research"
+            ]
+          },
+          {
+            "name": "Machine Intelligence Research Institute",
+            "url": "https://intelligence.org/",
+            "description": "Research institute focused on AI safety and alignment",
+            "tags": [
+              "Ethics, Safety & Governance/Safety & Security/AI Safety Research"
+            ]
+          },
+          {
+            "name": "Center for Human-Compatible AI",
+            "url": "https://humancompatible.ai/",
+            "description": "UC Berkeley research center for beneficial AI",
+            "tags": [
+              "Ethics, Safety & Governance/Safety & Security/AI Safety Research"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Industry & Market Intelligence": {
+    "_items": [],
+    "Market Analysis": {
+      "_items": [],
+      "Industry Reports": {
+        "_items": [
+          {
+            "name": "McKinsey AI Analysis",
+            "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights",
+            "description": "Strategic insights on AI adoption and business transformation",
+            "tags": [
+              "Industry & Market Intelligence/Market Analysis/Industry Reports"
+            ]
+          },
+          {
+            "name": "PwC AI and Workforce Report",
+            "url": "https://www.pwc.com/us/en/tech-effect/ai-analytics.html",
+            "description": "Analysis of AI's impact on workforce and business",
+            "tags": [
+              "Industry & Market Intelligence/Market Analysis/Industry Reports"
+            ]
+          },
+          {
+            "name": "AI Index Report",
+            "url": "https://aiindex.stanford.edu/",
+            "description": "Annual comprehensive report on AI progress, trends, and impact",
+            "tags": [
+              "Industry & Market Intelligence/Market Analysis/Industry Reports",
+              "Academic & Research/Academic Services/Resources"
+            ]
+          }
+        ]
+      }
+    },
+    "Standards & Benchmarks": {
+      "_items": [],
+      "Performance Benchmarks": {
+        "_items": [
+          {
+            "name": "HELM Benchmark",
+            "url": "https://crfm.stanford.edu/helm/",
+            "description": "Holistic evaluation of language models across scenarios",
+            "tags": [
+              "Industry & Market Intelligence/Standards & Benchmarks/Performance Benchmarks"
+            ]
+          },
+          {
+            "name": "Artificial Analysis",
+            "url": "https://artificialanalysis.ai/",
+            "description": "Independent analysis and benchmarking of AI models",
+            "tags": [
+              "Industry & Market Intelligence/Standards & Benchmarks/Performance Benchmarks"
+            ]
+          },
+          {
+            "name": "MLPerf Benchmarks",
+            "url": "https://mlperf.org/",
+            "description": "Industry standard benchmarks for ML training and inference",
+            "tags": [
+              "Industry & Market Intelligence/Standards & Benchmarks/Performance Benchmarks"
+            ]
+          },
+          {
+            "name": "Big-Bench",
+            "url": "https://github.com/google/BIG-bench",
+            "description": "Beyond the Imitation Game benchmark for large language models",
+            "tags": [
+              "Industry & Market Intelligence/Standards & Benchmarks/Performance Benchmarks"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

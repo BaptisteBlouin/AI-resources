@@ -1,0 +1,3259 @@
+{
+  "https://arxiv.org/list/cs.AI/recent": {
+    "name": "ArXiv Computer Science - Artificial Intelligence",
+    "original_url": "https://arxiv.org/list/cs.AI/recent",
+    "tags": [
+      "Reading/Papers/Preprint Servers"
+    ],
+    "added_date": null
+  },
+  "https://biorxiv.org/": {
+    "name": "bioRxiv",
+    "original_url": "https://www.biorxiv.org/",
+    "tags": [
+      "Reading/Papers/Preprint Servers"
+    ],
+    "added_date": null
+  },
+  "https://chemrxiv.org/": {
+    "name": "ChemRxiv",
+    "original_url": "https://chemrxiv.org/",
+    "tags": [
+      "Reading/Papers/Preprint Servers"
+    ],
+    "added_date": null
+  },
+  "https://medrxiv.org/": {
+    "name": "medRxiv",
+    "original_url": "https://www.medrxiv.org/",
+    "tags": [
+      "Reading/Papers/Preprint Servers"
+    ],
+    "added_date": null
+  },
+  "https://nature.com/natmachintell": {
+    "name": "Nature Machine Intelligence",
+    "original_url": "https://www.nature.com/natmachintell/",
+    "tags": [
+      "Reading/Papers/Academic Journals"
+    ],
+    "added_date": null
+  },
+  "https://jmlr.org/": {
+    "name": "Journal of Machine Learning Research (JMLR)",
+    "original_url": "https://www.jmlr.org/",
+    "tags": [
+      "Reading/Papers/Academic Journals"
+    ],
+    "added_date": null
+  },
+  "https://computer.org/csdl/journal/tp": {
+    "name": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "original_url": "https://www.computer.org/csdl/journal/tp",
+    "tags": [
+      "Reading/Papers/Academic Journals"
+    ],
+    "added_date": null
+  },
+  "https://ai.jmir.org/": {
+    "name": "JMIR AI",
+    "original_url": "https://ai.jmir.org/",
+    "tags": [
+      "Reading/Papers/Academic Journals"
+    ],
+    "added_date": null
+  },
+  "https://neurips.cc/": {
+    "name": "NeurIPS Proceedings",
+    "original_url": "https://neurips.cc/",
+    "tags": [
+      "Reading/Papers/Conference Proceedings"
+    ],
+    "added_date": null
+  },
+  "https://icml.cc/": {
+    "name": "ICML Proceedings",
+    "original_url": "https://icml.cc/",
+    "tags": [
+      "Reading/Papers/Conference Proceedings"
+    ],
+    "added_date": null
+  },
+  "https://iclr.cc/": {
+    "name": "ICLR (International Conference on Learning Representations)",
+    "original_url": "https://iclr.cc/",
+    "tags": [
+      "Community & Networking/Events & Conferences/Premier Academic"
+    ],
+    "added_date": null
+  },
+  "https://aclanthology.org/": {
+    "name": "ACL Anthology",
+    "original_url": "https://aclanthology.org/",
+    "tags": [
+      "Reading/Papers/Conference Proceedings"
+    ],
+    "added_date": null
+  },
+  "https://paperswithcode.com/": {
+    "name": "Papers with Code",
+    "original_url": "https://paperswithcode.com/",
+    "tags": [
+      "Reading/Papers/Research Repositories"
+    ],
+    "added_date": null
+  },
+  "https://semanticscholar.org/": {
+    "name": "Semantic Scholar",
+    "original_url": "https://www.semanticscholar.org/",
+    "tags": [
+      "Reading/Papers/Research Repositories"
+    ],
+    "added_date": null
+  },
+  "https://scholar.google.com/": {
+    "name": "Google Scholar",
+    "original_url": "https://scholar.google.com/",
+    "tags": [
+      "Reading/Papers/Research Repositories"
+    ],
+    "added_date": null
+  },
+  "https://paperdigest.org/": {
+    "name": "Paper Digest",
+    "original_url": "https://www.paperdigest.org/",
+    "tags": [
+      "Reading/Papers/Research Repositories"
+    ],
+    "added_date": null
+  },
+  "https://aima.cs.berkeley.edu/": {
+    "name": "Artificial Intelligence: A Modern Approach by Russell & Norvig",
+    "original_url": "https://aima.cs.berkeley.edu/",
+    "tags": [
+      "Reading/Books/Foundational Texts"
+    ],
+    "added_date": null
+  },
+  "https://deeplearningbook.org/": {
+    "name": "Deep Learning by Goodfellow, Bengio, and Courville",
+    "original_url": "https://www.deeplearningbook.org/",
+    "tags": [
+      "Reading/Books/Foundational Texts"
+    ],
+    "added_date": null
+  },
+  "https://microsoft.com/en-us/research/people/cmbishop/prml-book": {
+    "name": "Pattern Recognition and Machine Learning by Bishop",
+    "original_url": "https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/",
+    "tags": [
+      "Reading/Books/Foundational Texts"
+    ],
+    "added_date": null
+  },
+  "https://web.stanford.edu/~hastie/ElemStatLearn": {
+    "name": "The Elements of Statistical Learning by Hastie, Tibshirani & Friedman",
+    "original_url": "https://web.stanford.edu/~hastie/ElemStatLearn/",
+    "tags": [
+      "Reading/Books/Foundational Texts"
+    ],
+    "added_date": null
+  },
+  "https://nltk.org/book": {
+    "name": "Natural Language Processing with Python by Bird, Klein & Loper",
+    "original_url": "https://www.nltk.org/book/",
+    "tags": [
+      "Reading/Books/Domain-Specific"
+    ],
+    "added_date": null
+  },
+  "https://szeliski.org/Book": {
+    "name": "Computer Vision: Algorithms and Applications by Szeliski",
+    "original_url": "https://szeliski.org/Book/",
+    "tags": [
+      "Reading/Books/Domain-Specific"
+    ],
+    "added_date": null
+  },
+  "https://incompleteideas.net/book/the-book.html": {
+    "name": "Reinforcement Learning: An Introduction by Sutton & Barto",
+    "original_url": "http://incompleteideas.net/book/the-book.html",
+    "tags": [
+      "Reading/Books/Domain-Specific"
+    ],
+    "added_date": null
+  },
+  "https://web.stanford.edu/~jurafsky/slp3": {
+    "name": "Speech and Language Processing by Jurafsky & Martin",
+    "original_url": "https://web.stanford.edu/~jurafsky/slp3/",
+    "tags": [
+      "Reading/Books/Domain-Specific"
+    ],
+    "added_date": null
+  },
+  "https://oreilly.com/library/view/hands-on-machine-learning/9781492032632": {
+    "name": "Hands-On Machine Learning by Aurélien Géron",
+    "original_url": "https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/",
+    "tags": [
+      "Reading/Books/Practical Guides"
+    ],
+    "added_date": null
+  },
+  "https://sebastianraschka.com/books": {
+    "name": "Python Machine Learning by Sebastian Raschka",
+    "original_url": "https://sebastianraschka.com/books/",
+    "tags": [
+      "Reading/Books/Practical Guides"
+    ],
+    "added_date": null
+  },
+  "https://mlebook.com/": {
+    "name": "Machine Learning Engineering by Andriy Burkov",
+    "original_url": "http://www.mlebook.com/",
+    "tags": [
+      "Reading/Books/Practical Guides"
+    ],
+    "added_date": null
+  },
+  "https://course.fast.ai/Resources/book.html": {
+    "name": "Practical Deep Learning for Coders by Howard & Gugger",
+    "original_url": "https://course.fast.ai/Resources/book.html",
+    "tags": [
+      "Reading/Books/Practical Guides"
+    ],
+    "added_date": null
+  },
+  "https://weaponsofmathdestructionbook.com/": {
+    "name": "Weapons of Math Destruction by Cathy O'Neil",
+    "original_url": "https://weaponsofmathdestructionbook.com/",
+    "tags": [
+      "Reading/Books/Ethics & Society"
+    ],
+    "added_date": null
+  },
+  "https://ruhabenjamin.com/race-after-technology": {
+    "name": "Race After Technology by Ruha Benjamin",
+    "original_url": "https://www.ruhabenjamin.com/race-after-technology",
+    "tags": [
+      "Reading/Books/Ethics & Society"
+    ],
+    "added_date": null
+  },
+  "https://humancompatible.ai/": {
+    "name": "Center for Human-Compatible AI",
+    "original_url": "https://humancompatible.ai/",
+    "tags": [
+      "Ethics, Safety & Governance/Safety & Security/AI Safety Research"
+    ],
+    "added_date": null
+  },
+  "https://distill.pub/": {
+    "name": "Distill.pub",
+    "original_url": "https://distill.pub/",
+    "tags": [
+      "Reading/Blogs/Technical Blogs"
+    ],
+    "added_date": null
+  },
+  "https://openai.com/blog": {
+    "name": "OpenAI Blog",
+    "original_url": "https://openai.com/blog/",
+    "tags": [
+      "Reading/Blogs/Technical Blogs"
+    ],
+    "added_date": null
+  },
+  "https://deepmind.com/blog": {
+    "name": "DeepMind Blog",
+    "original_url": "https://deepmind.com/blog",
+    "tags": [
+      "Reading/Blogs/Technical Blogs"
+    ],
+    "added_date": null
+  },
+  "https://ai.googleblog.com/": {
+    "name": "Google AI Blog",
+    "original_url": "https://ai.googleblog.com/",
+    "tags": [
+      "Reading/Blogs/Technical Blogs"
+    ],
+    "added_date": null
+  },
+  "https://ai.meta.com/blog": {
+    "name": "Meta AI Blog",
+    "original_url": "https://ai.meta.com/blog/",
+    "tags": [
+      "Reading/Blogs/Technical Blogs"
+    ],
+    "added_date": null
+  },
+  "https://towardsdatascience.com/": {
+    "name": "Towards Data Science",
+    "original_url": "https://towardsdatascience.com/",
+    "tags": [
+      "Reading/Blogs/Industry Analysis"
+    ],
+    "added_date": null
+  },
+  "https://thegradient.pub/": {
+    "name": "The Gradient",
+    "original_url": "https://thegradient.pub/",
+    "tags": [
+      "Reading/Blogs/Industry Analysis"
+    ],
+    "added_date": null
+  },
+  "https://venturebeat.com/ai": {
+    "name": "VentureBeat AI",
+    "original_url": "https://venturebeat.com/ai/",
+    "tags": [
+      "Reading/Blogs/Industry Analysis"
+    ],
+    "added_date": null
+  },
+  "https://karpathy.github.io/": {
+    "name": "Andrej Karpathy's Blog",
+    "original_url": "https://karpathy.github.io/",
+    "tags": [
+      "Reading/Blogs/Personal Blogs"
+    ],
+    "added_date": null
+  },
+  "https://sebastianraschka.com/": {
+    "name": "Sebastian Raschka's Blog",
+    "original_url": "https://sebastianraschka.com/",
+    "tags": [
+      "Reading/Blogs/Personal Blogs"
+    ],
+    "added_date": null
+  },
+  "https://jeremy.org/": {
+    "name": "Jeremy Howard's Blog",
+    "original_url": "https://www.jeremy.org/",
+    "tags": [
+      "Reading/Blogs/Personal Blogs"
+    ],
+    "added_date": null
+  },
+  "https://kozyrkov.medium.com/": {
+    "name": "Cassie Kozyrkov's Blog",
+    "original_url": "https://kozyrkov.medium.com/",
+    "tags": [
+      "Reading/Blogs/Personal Blogs"
+    ],
+    "added_date": null
+  },
+  "https://mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai": {
+    "name": "McKinsey AI Report 2025",
+    "original_url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
+    "tags": [
+      "Reading/Other/White Papers"
+    ],
+    "added_date": null
+  },
+  "https://tensorflow.org/guide": {
+    "name": "TensorFlow Documentation",
+    "original_url": "https://www.tensorflow.org/guide",
+    "tags": [
+      "Reading/Other/Technical Documentation"
+    ],
+    "added_date": null
+  },
+  "https://pytorch.org/docs": {
+    "name": "PyTorch Documentation",
+    "original_url": "https://pytorch.org/docs/",
+    "tags": [
+      "Reading/Other/Technical Documentation"
+    ],
+    "added_date": null
+  },
+  "https://huggingface.co/docs": {
+    "name": "Hugging Face Documentation",
+    "original_url": "https://huggingface.co/docs",
+    "tags": [
+      "Reading/Other/Technical Documentation"
+    ],
+    "added_date": null
+  },
+  "https://docs.anthropic.com/": {
+    "name": "Anthropic Claude Documentation",
+    "original_url": "https://docs.anthropic.com/",
+    "tags": [
+      "Reading/Other/Technical Documentation"
+    ],
+    "added_date": null
+  },
+  "https://customers.microsoft.com/en-us/search?sq=AI&ff=&p=0": {
+    "name": "Microsoft AI Customer Stories",
+    "original_url": "https://customers.microsoft.com/en-us/search?sq=AI&ff=&p=0",
+    "tags": [
+      "Reading/Other/Case Studies"
+    ],
+    "added_date": null
+  },
+  "https://aws.amazon.com/machine-learning/customers": {
+    "name": "AWS AI/ML Case Studies",
+    "original_url": "https://aws.amazon.com/machine-learning/customers/",
+    "tags": [
+      "Reading/Other/Case Studies"
+    ],
+    "added_date": null
+  },
+  "https://nist.gov/itl/ai-risk-management-framework": {
+    "name": "NIST AI Risk Management Framework",
+    "original_url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "tags": [
+      "Ethics, Safety & Governance/Regulatory & Compliance/Government Policies"
+    ],
+    "added_date": null
+  },
+  "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai": {
+    "name": "EU AI Act",
+    "original_url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+    "tags": [
+      "Ethics, Safety & Governance/Regulatory & Compliance/Government Policies"
+    ],
+    "added_date": null
+  },
+  "https://unesco.org/en/artificial-intelligence/recommendation-ethics": {
+    "name": "UNESCO AI Ethics Recommendation",
+    "original_url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics",
+    "tags": [
+      "Reading/Other/Policy Documents"
+    ],
+    "added_date": null
+  },
+  "https://gluebenchmark.com/": {
+    "name": "GLUE Benchmark",
+    "original_url": "https://gluebenchmark.com/",
+    "tags": [
+      "Datasets/NLP/Foundational"
+    ],
+    "added_date": null
+  },
+  "https://super.gluebenchmark.com/": {
+    "name": "SuperGLUE",
+    "original_url": "https://super.gluebenchmark.com/",
+    "tags": [
+      "Datasets/NLP/Foundational"
+    ],
+    "added_date": null
+  },
+  "https://rajpurkar.github.io/SQuAD-explorer": {
+    "name": "SQuAD 2.0",
+    "original_url": "https://rajpurkar.github.io/SQuAD-explorer/",
+    "tags": [
+      "Datasets/NLP/Foundational"
+    ],
+    "added_date": null
+  },
+  "https://commoncrawl.org/": {
+    "name": "Common Crawl",
+    "original_url": "https://commoncrawl.org/",
+    "tags": [
+      "Datasets/NLP/Foundational"
+    ],
+    "added_date": null
+  },
+  "https://opus.nlpl.eu/": {
+    "name": "OPUS Collection",
+    "original_url": "https://opus.nlpl.eu/",
+    "tags": [
+      "Datasets/NLP/Multilingual"
+    ],
+    "added_date": null
+  },
+  "https://github.com/google-research/xtreme": {
+    "name": "XTREME Benchmark",
+    "original_url": "https://github.com/google-research/xtreme",
+    "tags": [
+      "Datasets/NLP/Multilingual"
+    ],
+    "added_date": null
+  },
+  "https://github.com/facebookresearch/flores": {
+    "name": "FLORES-101",
+    "original_url": "https://github.com/facebookresearch/flores",
+    "tags": [
+      "Datasets/NLP/Multilingual"
+    ],
+    "added_date": null
+  },
+  "https://github.com/google-research/bert/blob/master/multilingual.md": {
+    "name": "mBERT Evaluation Datasets",
+    "original_url": "https://github.com/google-research/bert/blob/master/multilingual.md",
+    "tags": [
+      "Datasets/NLP/Multilingual"
+    ],
+    "added_date": null
+  },
+  "https://pubmed.ncbi.nlm.nih.gov/": {
+    "name": "PubMed Abstracts",
+    "original_url": "https://pubmed.ncbi.nlm.nih.gov/",
+    "tags": [
+      "Datasets/NLP/Domain-Specific"
+    ],
+    "added_date": null
+  },
+  "https://case.law/": {
+    "name": "CaseLaw Access Project",
+    "original_url": "https://case.law/",
+    "tags": [
+      "Datasets/NLP/Domain-Specific"
+    ],
+    "added_date": null
+  },
+  "https://reddit.com/r/datasets/comments/3bxlg7/i_have_every_publicly_available_reddit_comment": {
+    "name": "Reddit Comments Dataset",
+    "original_url": "https://www.reddit.com/r/datasets/comments/3bxlg7/i_have_every_publicly_available_reddit_comment/",
+    "tags": [
+      "Datasets/NLP/Domain-Specific"
+    ],
+    "added_date": null
+  },
+  "https://business.yelp.com/data/resources/open-dataset": {
+    "name": "Yelp Reviews Dataset",
+    "original_url": "https://business.yelp.com/data/resources/open-dataset/",
+    "tags": [
+      "Datasets/NLP/Domain-Specific"
+    ],
+    "added_date": null
+  },
+  "https://github.com/tatsu-lab/stanford_alpaca": {
+    "name": "Alpaca Dataset",
+    "original_url": "https://github.com/tatsu-lab/stanford_alpaca",
+    "tags": [
+      "Datasets/NLP/Instruction Following"
+    ],
+    "added_date": null
+  },
+  "https://github.com/lm-sys/FastChat": {
+    "name": "Vicuna Dataset",
+    "original_url": "https://github.com/lm-sys/FastChat",
+    "tags": [
+      "Datasets/NLP/Instruction Following"
+    ],
+    "added_date": null
+  },
+  "https://github.com/google-research/flan": {
+    "name": "FLAN Collection",
+    "original_url": "https://github.com/google-research/flan",
+    "tags": [
+      "Datasets/NLP/Instruction Following"
+    ],
+    "added_date": null
+  },
+  "https://github.com/anthropics/hh-rlhf": {
+    "name": "Anthropic HH-RLHF",
+    "original_url": "https://github.com/anthropics/hh-rlhf",
+    "tags": [
+      "Datasets/NLP/Instruction Following"
+    ],
+    "added_date": null
+  },
+  "https://image-net.org/": {
+    "name": "ImageNet",
+    "original_url": "https://www.image-net.org/",
+    "tags": [
+      "Datasets/Computer Vision/Core Datasets"
+    ],
+    "added_date": null
+  },
+  "https://cocodataset.org/": {
+    "name": "COCO Dataset",
+    "original_url": "https://cocodataset.org/",
+    "tags": [
+      "Datasets/Computer Vision/Core Datasets"
+    ],
+    "added_date": null
+  },
+  "https://cityscapes-dataset.com/": {
+    "name": "Cityscapes",
+    "original_url": "https://www.cityscapes-dataset.com/",
+    "tags": [
+      "Datasets/Computer Vision/Core Datasets"
+    ],
+    "added_date": null
+  },
+  "https://laion.ai/blog/laion-5b": {
+    "name": "LAION-5B",
+    "original_url": "https://laion.ai/blog/laion-5b/",
+    "tags": [
+      "Datasets/Computer Vision/Specialized"
+    ],
+    "added_date": null
+  },
+  "https://storage.googleapis.com/openimages/web/index.html": {
+    "name": "Open Images Dataset",
+    "original_url": "https://storage.googleapis.com/openimages/web/index.html",
+    "tags": [
+      "Datasets/Computer Vision/Specialized"
+    ],
+    "added_date": null
+  },
+  "https://groups.csail.mit.edu/vision/SUN": {
+    "name": "SUN Database",
+    "original_url": "https://groups.csail.mit.edu/vision/SUN/",
+    "tags": [
+      "Datasets/Computer Vision/Specialized"
+    ],
+    "added_date": null
+  },
+  "https://places2.csail.mit.edu/": {
+    "name": "Places365",
+    "original_url": "http://places2.csail.mit.edu/",
+    "tags": [
+      "Datasets/Computer Vision/Specialized"
+    ],
+    "added_date": null
+  },
+  "https://deepmind.com/research/open-source/kinetics": {
+    "name": "Kinetics-700",
+    "original_url": "https://deepmind.com/research/open-source/kinetics",
+    "tags": [
+      "Datasets/Computer Vision/Video"
+    ],
+    "added_date": null
+  },
+  "https://developer.qualcomm.com/software/ai-datasets/something-something": {
+    "name": "Something-Something V2",
+    "original_url": "https://developer.qualcomm.com/software/ai-datasets/something-something",
+    "tags": [
+      "Datasets/Computer Vision/Video"
+    ],
+    "added_date": null
+  },
+  "https://research.google.com/ava": {
+    "name": "AVA Dataset",
+    "original_url": "https://research.google.com/ava/",
+    "tags": [
+      "Datasets/Computer Vision/Video"
+    ],
+    "added_date": null
+  },
+  "https://research.google.com/youtube8m": {
+    "name": "YouTube-8M",
+    "original_url": "https://research.google.com/youtube8m/",
+    "tags": [
+      "Datasets/Computer Vision/Video"
+    ],
+    "added_date": null
+  },
+  "https://modelnet.cs.princeton.edu/": {
+    "name": "ModelNet",
+    "original_url": "https://modelnet.cs.princeton.edu/",
+    "tags": [
+      "Datasets/Computer Vision/3D Vision"
+    ],
+    "added_date": null
+  },
+  "https://scan-net.org/": {
+    "name": "ScanNet",
+    "original_url": "http://www.scan-net.org/",
+    "tags": [
+      "Datasets/Computer Vision/3D Vision"
+    ],
+    "added_date": null
+  },
+  "https://cvlibs.net/datasets/kitti": {
+    "name": "KITTI Dataset",
+    "original_url": "http://www.cvlibs.net/datasets/kitti/",
+    "tags": [
+      "Datasets/Computer Vision/3D Vision"
+    ],
+    "added_date": null
+  },
+  "https://laion.ai/blog/laion-400-open-dataset": {
+    "name": "LAION-400M",
+    "original_url": "https://laion.ai/blog/laion-400-open-dataset/",
+    "tags": [
+      "Datasets/Multimodal/Vision-Language"
+    ],
+    "added_date": null
+  },
+  "https://ai.google.com/research/ConceptualCaptions": {
+    "name": "Conceptual Captions",
+    "original_url": "https://ai.google.com/research/ConceptualCaptions/",
+    "tags": [
+      "Datasets/Multimodal/Vision-Language"
+    ],
+    "added_date": null
+  },
+  "https://visualqa.org/": {
+    "name": "Visual Question Answering (VQA) 2.0",
+    "original_url": "https://visualqa.org/",
+    "tags": [
+      "Datasets/Multimodal/Vision-Language"
+    ],
+    "added_date": null
+  },
+  "https://research.google.com/audioset": {
+    "name": "AudioSet",
+    "original_url": "https://research.google.com/audioset/",
+    "tags": [
+      "Datasets/Multimodal/Audio-Visual"
+    ],
+    "added_date": null
+  },
+  "https://robots.ox.ac.uk/~vgg/data/vggsound": {
+    "name": "VGGSound",
+    "original_url": "https://www.robots.ox.ac.uk/~vgg/data/vggsound/",
+    "tags": [
+      "Datasets/Multimodal/Audio-Visual"
+    ],
+    "added_date": null
+  },
+  "https://looking-to-listen.github.io/avspeech": {
+    "name": "AVSpeech",
+    "original_url": "https://looking-to-listen.github.io/avspeech/",
+    "tags": [
+      "Datasets/Multimodal/Audio-Visual"
+    ],
+    "added_date": null
+  },
+  "https://github.com/roudimit/MUSIC_dataset": {
+    "name": "MUSIC Dataset",
+    "original_url": "https://github.com/roudimit/MUSIC_dataset",
+    "tags": [
+      "Datasets/Multimodal/Audio-Visual"
+    ],
+    "added_date": null
+  },
+  "https://huggingface.co/datasets/codeparrot/github-code": {
+    "name": "GitHub Code Dataset",
+    "original_url": "https://huggingface.co/datasets/codeparrot/github-code",
+    "tags": [
+      "Datasets/Multimodal/Text-Code"
+    ],
+    "added_date": null
+  },
+  "https://archive.org/details/stackexchange": {
+    "name": "Stack Overflow Data Dump",
+    "original_url": "https://archive.org/details/stackexchange",
+    "tags": [
+      "Datasets/Multimodal/Text-Code"
+    ],
+    "added_date": null
+  },
+  "https://github.com/github/CodeSearchNet": {
+    "name": "CodeSearchNet",
+    "original_url": "https://github.com/github/CodeSearchNet",
+    "tags": [
+      "Datasets/Multimodal/Text-Code"
+    ],
+    "added_date": null
+  },
+  "https://cloud.google.com/bigquery/public-data": {
+    "name": "BigQuery Public Datasets",
+    "original_url": "https://cloud.google.com/bigquery/public-data",
+    "tags": [
+      "Datasets/Multimodal/Text-Code"
+    ],
+    "added_date": null
+  },
+  "https://arxiv.org/abs/2403.00231": {
+    "name": "Multimodal ArXiv",
+    "original_url": "https://arxiv.org/abs/2403.00231",
+    "tags": [
+      "Datasets/Multimodal/Scientific"
+    ],
+    "added_date": null
+  },
+  "https://github.com/vis-nlp/ChartQA": {
+    "name": "ChartQA",
+    "original_url": "https://github.com/vis-nlp/ChartQA",
+    "tags": [
+      "Datasets/Multimodal/Scientific"
+    ],
+    "added_date": null
+  },
+  "https://robots.ros.org/": {
+    "name": "ROS Datasets Collection",
+    "original_url": "https://robots.ros.org/",
+    "tags": [
+      "Datasets/Robotics"
+    ],
+    "added_date": null
+  },
+  "https://mimic.mit.edu/": {
+    "name": "MIMIC-III",
+    "original_url": "https://mimic.mit.edu/",
+    "tags": [
+      "Datasets/Healthcare"
+    ],
+    "added_date": null
+  },
+  "https://arxiv.org/abs/2108.06661": {
+    "name": "QDataSet",
+    "original_url": "https://arxiv.org/abs/2108.06661",
+    "tags": [
+      "Datasets/Quantum ML"
+    ],
+    "added_date": null
+  },
+  "https://finance.yahoo.com/": {
+    "name": "Financial Data from Yahoo Finance",
+    "original_url": "https://finance.yahoo.com/",
+    "tags": [
+      "Datasets/Finance"
+    ],
+    "added_date": null
+  },
+  "https://cds.climate.copernicus.eu/": {
+    "name": "Climate Data Store",
+    "original_url": "https://cds.climate.copernicus.eu/",
+    "tags": [
+      "Datasets/Climate"
+    ],
+    "added_date": null
+  },
+  "https://tensorflow.org/": {
+    "name": "TensorFlow",
+    "original_url": "https://www.tensorflow.org/",
+    "tags": [
+      "Tools/Libraries/Deep Learning"
+    ],
+    "added_date": null
+  },
+  "https://pytorch.org/": {
+    "name": "PyTorch",
+    "original_url": "https://pytorch.org/",
+    "tags": [
+      "Tools/Libraries/Deep Learning"
+    ],
+    "added_date": null
+  },
+  "https://jax.readthedocs.io/": {
+    "name": "JAX",
+    "original_url": "https://jax.readthedocs.io/",
+    "tags": [
+      "Tools/Libraries/Deep Learning"
+    ],
+    "added_date": null
+  },
+  "https://mxnet.apache.org/": {
+    "name": "MXNet",
+    "original_url": "https://mxnet.apache.org/",
+    "tags": [
+      "Tools/Libraries/Deep Learning"
+    ],
+    "added_date": null
+  },
+  "https://keras.io/": {
+    "name": "Keras",
+    "original_url": "https://keras.io/",
+    "tags": [
+      "Tools/Libraries/Deep Learning"
+    ],
+    "added_date": null
+  },
+  "https://pytorchlightning.ai/": {
+    "name": "PyTorch Lightning",
+    "original_url": "https://www.pytorchlightning.ai/",
+    "tags": [
+      "Tools/Libraries/Deep Learning"
+    ],
+    "added_date": null
+  },
+  "https://github.com/google/flax": {
+    "name": "Flax",
+    "original_url": "https://github.com/google/flax",
+    "tags": [
+      "Tools/Libraries/Deep Learning"
+    ],
+    "added_date": null
+  },
+  "https://scikit-learn.org/": {
+    "name": "scikit-learn",
+    "original_url": "https://scikit-learn.org/",
+    "tags": [
+      "Tools/Libraries/Traditional ML"
+    ],
+    "added_date": null
+  },
+  "https://xgboost.readthedocs.io/": {
+    "name": "XGBoost",
+    "original_url": "https://xgboost.readthedocs.io/",
+    "tags": [
+      "Tools/Libraries/Traditional ML"
+    ],
+    "added_date": null
+  },
+  "https://lightgbm.readthedocs.io/": {
+    "name": "LightGBM",
+    "original_url": "https://lightgbm.readthedocs.io/",
+    "tags": [
+      "Tools/Libraries/Traditional ML"
+    ],
+    "added_date": null
+  },
+  "https://catboost.ai/": {
+    "name": "CatBoost",
+    "original_url": "https://catboost.ai/",
+    "tags": [
+      "Tools/Libraries/Traditional ML"
+    ],
+    "added_date": null
+  },
+  "https://spark.apache.org/mllib": {
+    "name": "Apache Spark MLlib",
+    "original_url": "https://spark.apache.org/mllib/",
+    "tags": [
+      "Tools/Libraries/Traditional ML"
+    ],
+    "added_date": null
+  },
+  "https://langchain.com/": {
+    "name": "LangChain",
+    "original_url": "https://langchain.com/",
+    "tags": [
+      "Tools/Libraries/Generative AI"
+    ],
+    "added_date": null
+  },
+  "https://llamaindex.ai/": {
+    "name": "LlamaIndex",
+    "original_url": "https://www.llamaindex.ai/",
+    "tags": [
+      "Tools/Libraries/Generative AI"
+    ],
+    "added_date": null
+  },
+  "https://github.com/microsoft/semantic-kernel": {
+    "name": "Semantic Kernel",
+    "original_url": "https://github.com/microsoft/semantic-kernel",
+    "tags": [
+      "Tools/Libraries/Generative AI"
+    ],
+    "added_date": null
+  },
+  "https://github.com/joaomdmoura/crewAI": {
+    "name": "CrewAI",
+    "original_url": "https://github.com/joaomdmoura/crewAI",
+    "tags": [
+      "Tools/Libraries/Generative AI"
+    ],
+    "added_date": null
+  },
+  "https://github.com/microsoft/autogen": {
+    "name": "AutoGen",
+    "original_url": "https://github.com/microsoft/autogen",
+    "tags": [
+      "Tools/Libraries/Generative AI"
+    ],
+    "added_date": null
+  },
+  "https://github.com/langchain-ai/langgraph": {
+    "name": "LangGraph",
+    "original_url": "https://github.com/langchain-ai/langgraph",
+    "tags": [
+      "Tools/Libraries/Generative AI"
+    ],
+    "added_date": null
+  },
+  "https://spacy.io/": {
+    "name": "spaCy",
+    "original_url": "https://spacy.io/",
+    "tags": [
+      "Tools/Libraries/Domain-Specific"
+    ],
+    "added_date": null
+  },
+  "https://opencv.org/": {
+    "name": "OpenCV",
+    "original_url": "https://opencv.org/",
+    "tags": [
+      "Tools/Libraries/Domain-Specific"
+    ],
+    "added_date": null
+  },
+  "https://ros.org/": {
+    "name": "ROS (Robot Operating System)",
+    "original_url": "https://www.ros.org/",
+    "tags": [
+      "Tools/Libraries/Domain-Specific"
+    ],
+    "added_date": null
+  },
+  "https://gym.openai.com/": {
+    "name": "OpenAI Gym",
+    "original_url": "https://gym.openai.com/",
+    "tags": [
+      "Tools/Libraries/Domain-Specific"
+    ],
+    "added_date": null
+  },
+  "https://nltk.org/": {
+    "name": "NLTK",
+    "original_url": "https://www.nltk.org/",
+    "tags": [
+      "Tools/Libraries/Domain-Specific"
+    ],
+    "added_date": null
+  },
+  "https://openvino.ai/": {
+    "name": "OpenVINO",
+    "original_url": "https://www.openvino.ai/",
+    "tags": [
+      "Tools/Libraries/Domain-Specific"
+    ],
+    "added_date": null
+  },
+  "https://mediapipe.dev/": {
+    "name": "MediaPipe",
+    "original_url": "https://mediapipe.dev/",
+    "tags": [
+      "Tools/Libraries/Domain-Specific"
+    ],
+    "added_date": null
+  },
+  "https://pandas.pydata.org/": {
+    "name": "Pandas",
+    "original_url": "https://pandas.pydata.org/",
+    "tags": [
+      "Tools/Libraries/Data Processing"
+    ],
+    "added_date": null
+  },
+  "https://numpy.org/": {
+    "name": "NumPy",
+    "original_url": "https://numpy.org/",
+    "tags": [
+      "Tools/Libraries/Data Processing"
+    ],
+    "added_date": null
+  },
+  "https://spark.apache.org/": {
+    "name": "Apache Spark",
+    "original_url": "https://spark.apache.org/",
+    "tags": [
+      "Tools/Libraries/Data Processing"
+    ],
+    "added_date": null
+  },
+  "https://kafka.apache.org/": {
+    "name": "Apache Kafka",
+    "original_url": "https://kafka.apache.org/",
+    "tags": [
+      "Tools/Libraries/Data Processing"
+    ],
+    "added_date": null
+  },
+  "https://dask.org/": {
+    "name": "Dask",
+    "original_url": "https://dask.org/",
+    "tags": [
+      "Tools/Libraries/Data Processing"
+    ],
+    "added_date": null
+  },
+  "https://pola.rs/": {
+    "name": "Polars",
+    "original_url": "https://pola.rs/",
+    "tags": [
+      "Tools/Libraries/Data Processing"
+    ],
+    "added_date": null
+  },
+  "https://mlflow.org/": {
+    "name": "MLflow",
+    "original_url": "https://mlflow.org/",
+    "tags": [
+      "Tools/Libraries/MLOps"
+    ],
+    "added_date": null
+  },
+  "https://kubeflow.org/": {
+    "name": "Kubeflow",
+    "original_url": "https://www.kubeflow.org/",
+    "tags": [
+      "Tools/Libraries/MLOps"
+    ],
+    "added_date": null
+  },
+  "https://zenml.io/": {
+    "name": "ZenML",
+    "original_url": "https://zenml.io/",
+    "tags": [
+      "Tools/Libraries/MLOps"
+    ],
+    "added_date": null
+  },
+  "https://dagster.io/": {
+    "name": "Dagster",
+    "original_url": "https://dagster.io/",
+    "tags": [
+      "Tools/Libraries/MLOps"
+    ],
+    "added_date": null
+  },
+  "https://prefect.io/": {
+    "name": "Prefect",
+    "original_url": "https://www.prefect.io/",
+    "tags": [
+      "Tools/Libraries/MLOps"
+    ],
+    "added_date": null
+  },
+  "https://airflow.apache.org/": {
+    "name": "Apache Airflow",
+    "original_url": "https://airflow.apache.org/",
+    "tags": [
+      "Tools/Libraries/MLOps"
+    ],
+    "added_date": null
+  },
+  "https://kedro.org/": {
+    "name": "Kedro",
+    "original_url": "https://kedro.org/",
+    "tags": [
+      "Tools/Libraries/MLOps"
+    ],
+    "added_date": null
+  },
+  "https://wandb.ai/": {
+    "name": "Weights & Biases",
+    "original_url": "https://wandb.ai/",
+    "tags": [
+      "Tools/Libraries/Tracking"
+    ],
+    "added_date": null
+  },
+  "https://neptune.ai/": {
+    "name": "Neptune.ai",
+    "original_url": "https://neptune.ai/",
+    "tags": [
+      "Tools/Libraries/Tracking"
+    ],
+    "added_date": null
+  },
+  "https://comet.ml/": {
+    "name": "Comet ML",
+    "original_url": "https://www.comet.ml/",
+    "tags": [
+      "Tools/Libraries/Tracking"
+    ],
+    "added_date": null
+  },
+  "https://tensorflow.org/tensorboard": {
+    "name": "TensorBoard",
+    "original_url": "https://www.tensorflow.org/tensorboard",
+    "tags": [
+      "Tools/Libraries/Tracking"
+    ],
+    "added_date": null
+  },
+  "https://clear.ml/": {
+    "name": "ClearML",
+    "original_url": "https://clear.ml/",
+    "tags": [
+      "Tools/Libraries/Tracking"
+    ],
+    "added_date": null
+  },
+  "https://aws.amazon.com/bedrock": {
+    "name": "AWS Bedrock",
+    "original_url": "https://aws.amazon.com/bedrock/",
+    "tags": [
+      "Tools/Cloud Platforms/Major Cloud"
+    ],
+    "added_date": null
+  },
+  "https://cloud.google.com/vertex-ai": {
+    "name": "Google Vertex AI",
+    "original_url": "https://cloud.google.com/vertex-ai",
+    "tags": [
+      "Tools/Cloud Platforms/Major Cloud"
+    ],
+    "added_date": null
+  },
+  "https://azure.microsoft.com/en-us/products/ai-services/openai-service": {
+    "name": "Azure OpenAI Service",
+    "original_url": "https://azure.microsoft.com/en-us/products/ai-services/openai-service",
+    "tags": [
+      "Tools/Cloud Platforms/Major Cloud"
+    ],
+    "added_date": null
+  },
+  "https://aws.amazon.com/sagemaker": {
+    "name": "AWS SageMaker",
+    "original_url": "https://aws.amazon.com/sagemaker/",
+    "tags": [
+      "Tools/Cloud Platforms/Major Cloud"
+    ],
+    "added_date": null
+  },
+  "https://cloud.google.com/ai-platform": {
+    "name": "Google Cloud AI Platform",
+    "original_url": "https://cloud.google.com/ai-platform",
+    "tags": [
+      "Tools/Cloud Platforms/Major Cloud"
+    ],
+    "added_date": null
+  },
+  "https://azure.microsoft.com/en-us/products/machine-learning": {
+    "name": "Azure Machine Learning",
+    "original_url": "https://azure.microsoft.com/en-us/products/machine-learning/",
+    "tags": [
+      "Tools/Cloud Platforms/Major Cloud"
+    ],
+    "added_date": null
+  },
+  "https://lambdalabs.com/": {
+    "name": "Lambda Labs",
+    "original_url": "https://lambdalabs.com/",
+    "tags": [
+      "Tools/Cloud Platforms/GPU Providers"
+    ],
+    "added_date": null
+  },
+  "https://paperspace.com/": {
+    "name": "Paperspace",
+    "original_url": "https://www.paperspace.com/",
+    "tags": [
+      "Tools/Cloud Platforms/GPU Providers"
+    ],
+    "added_date": null
+  },
+  "https://runpod.io/": {
+    "name": "RunPod",
+    "original_url": "https://www.runpod.io/",
+    "tags": [
+      "Tools/Cloud Platforms/GPU Providers"
+    ],
+    "added_date": null
+  },
+  "https://together.ai/": {
+    "name": "Together AI",
+    "original_url": "https://www.together.ai/",
+    "tags": [
+      "Tools/Cloud Platforms/GPU Providers"
+    ],
+    "added_date": null
+  },
+  "https://vast.ai/": {
+    "name": "Vast.ai",
+    "original_url": "https://vast.ai/",
+    "tags": [
+      "Tools/Cloud Platforms/GPU Providers"
+    ],
+    "added_date": null
+  },
+  "https://coreweave.com/": {
+    "name": "CoreWeave",
+    "original_url": "https://www.coreweave.com/",
+    "tags": [
+      "Tools/Cloud Platforms/GPU Providers"
+    ],
+    "added_date": null
+  },
+  "https://huggingface.co/spaces": {
+    "name": "Hugging Face Spaces",
+    "original_url": "https://huggingface.co/spaces",
+    "tags": [
+      "Tools/Cloud Platforms/Specialized"
+    ],
+    "added_date": null
+  },
+  "https://replicate.com/": {
+    "name": "Replicate",
+    "original_url": "https://replicate.com/",
+    "tags": [
+      "Tools/Cloud Platforms/Specialized"
+    ],
+    "added_date": null
+  },
+  "https://modal.com/": {
+    "name": "Modal",
+    "original_url": "https://modal.com/",
+    "tags": [
+      "Tools/Cloud Platforms/Specialized"
+    ],
+    "added_date": null
+  },
+  "https://banana.dev/": {
+    "name": "Banana",
+    "original_url": "https://www.banana.dev/",
+    "tags": [
+      "Tools/Cloud Platforms/Specialized"
+    ],
+    "added_date": null
+  },
+  "https://octoml.ai/": {
+    "name": "OctoML",
+    "original_url": "https://octoml.ai/",
+    "tags": [
+      "Tools/Cloud Platforms/Specialized"
+    ],
+    "added_date": null
+  },
+  "https://bentoml.org/": {
+    "name": "BentoML",
+    "original_url": "https://bentoml.org/",
+    "tags": [
+      "Tools/Development Tools/Model Serving"
+    ],
+    "added_date": null
+  },
+  "https://seldon.io/": {
+    "name": "Seldon Core",
+    "original_url": "https://www.seldon.io/",
+    "tags": [
+      "Tools/Development Tools/Model Serving"
+    ],
+    "added_date": null
+  },
+  "https://developer.nvidia.com/nvidia-triton-inference-server": {
+    "name": "NVIDIA Triton",
+    "original_url": "https://developer.nvidia.com/nvidia-triton-inference-server",
+    "tags": [
+      "Tools/Development Tools/Model Serving"
+    ],
+    "added_date": null
+  },
+  "https://pytorch.org/serve": {
+    "name": "TorchServe",
+    "original_url": "https://pytorch.org/serve/",
+    "tags": [
+      "Tools/Development Tools/Model Serving"
+    ],
+    "added_date": null
+  },
+  "https://kserve.github.io/website": {
+    "name": "KServe",
+    "original_url": "https://kserve.github.io/website/",
+    "tags": [
+      "Tools/Development Tools/Model Serving"
+    ],
+    "added_date": null
+  },
+  "https://scale.com/": {
+    "name": "Scale AI",
+    "original_url": "https://scale.com/",
+    "tags": [
+      "Tools/Development Tools/Data Labeling"
+    ],
+    "added_date": null
+  },
+  "https://labelbox.com/": {
+    "name": "Labelbox",
+    "original_url": "https://labelbox.com/",
+    "tags": [
+      "Tools/Development Tools/Data Labeling"
+    ],
+    "added_date": null
+  },
+  "https://superannotate.com/": {
+    "name": "SuperAnnotate",
+    "original_url": "https://www.superannotate.com/",
+    "tags": [
+      "Tools/Development Tools/Data Labeling"
+    ],
+    "added_date": null
+  },
+  "https://labelstud.io/": {
+    "name": "Label Studio",
+    "original_url": "https://labelstud.io/",
+    "tags": [
+      "Tools/Development Tools/Data Labeling"
+    ],
+    "added_date": null
+  },
+  "https://cvat.ai/": {
+    "name": "CVAT",
+    "original_url": "https://cvat.ai/",
+    "tags": [
+      "Tools/Development Tools/Data Labeling"
+    ],
+    "added_date": null
+  },
+  "https://greatexpectations.io/": {
+    "name": "Great Expectations",
+    "original_url": "https://greatexpectations.io/",
+    "tags": [
+      "Tools/Development Tools/Data Quality"
+    ],
+    "added_date": null
+  },
+  "https://montecarlodata.com/": {
+    "name": "Monte Carlo",
+    "original_url": "https://www.montecarlodata.com/",
+    "tags": [
+      "Tools/Development Tools/Data Quality"
+    ],
+    "added_date": null
+  },
+  "https://metaplane.dev/": {
+    "name": "Metaplane",
+    "original_url": "https://www.metaplane.dev/",
+    "tags": [
+      "Tools/Development Tools/Data Quality"
+    ],
+    "added_date": null
+  },
+  "https://anomalo.com/": {
+    "name": "Anomalo",
+    "original_url": "https://www.anomalo.com/",
+    "tags": [
+      "Tools/Development Tools/Data Quality"
+    ],
+    "added_date": null
+  },
+  "https://dvc.org/": {
+    "name": "DVC (Data Version Control)",
+    "original_url": "https://dvc.org/",
+    "tags": [
+      "Tools/Development Tools/Version Control"
+    ],
+    "added_date": null
+  },
+  "https://lakefs.io/": {
+    "name": "LakeFS",
+    "original_url": "https://lakefs.io/",
+    "tags": [
+      "Tools/Development Tools/Version Control"
+    ],
+    "added_date": null
+  },
+  "https://pachyderm.com/": {
+    "name": "Pachyderm",
+    "original_url": "https://www.pachyderm.com/",
+    "tags": [
+      "Tools/Development Tools/Version Control"
+    ],
+    "added_date": null
+  },
+  "https://delta.io/": {
+    "name": "Delta Lake",
+    "original_url": "https://delta.io/",
+    "tags": [
+      "Tools/Development Tools/Version Control"
+    ],
+    "added_date": null
+  },
+  "https://nvidia.com/en-us/data-center/a100": {
+    "name": "NVIDIA A100",
+    "original_url": "https://www.nvidia.com/en-us/data-center/a100/",
+    "tags": [
+      "Tools/Hardware/AI Chips"
+    ],
+    "added_date": null
+  },
+  "https://nvidia.com/en-us/data-center/h100": {
+    "name": "NVIDIA H100",
+    "original_url": "https://www.nvidia.com/en-us/data-center/h100/",
+    "tags": [
+      "Tools/Hardware/AI Chips"
+    ],
+    "added_date": null
+  },
+  "https://cloud.google.com/tpu": {
+    "name": "Google TPUs",
+    "original_url": "https://cloud.google.com/tpu",
+    "tags": [
+      "Tools/Hardware/AI Chips"
+    ],
+    "added_date": null
+  },
+  "https://aws.amazon.com/machine-learning/trainium": {
+    "name": "AWS Trainium",
+    "original_url": "https://aws.amazon.com/machine-learning/trainium/",
+    "tags": [
+      "Tools/Hardware/AI Chips"
+    ],
+    "added_date": null
+  },
+  "https://aws.amazon.com/machine-learning/inferentia": {
+    "name": "AWS Inferentia",
+    "original_url": "https://aws.amazon.com/machine-learning/inferentia/",
+    "tags": [
+      "Tools/Hardware/AI Chips"
+    ],
+    "added_date": null
+  },
+  "https://cerebras.net/": {
+    "name": "Cerebras Wafer-Scale Engine",
+    "original_url": "https://www.cerebras.net/",
+    "tags": [
+      "Tools/Hardware/AI Chips"
+    ],
+    "added_date": null
+  },
+  "https://nvidia.com/en-us/autonomous-machines/embedded-systems": {
+    "name": "NVIDIA Jetson",
+    "original_url": "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/",
+    "tags": [
+      "Tools/Hardware/Edge Hardware"
+    ],
+    "added_date": null
+  },
+  "https://coral.ai/": {
+    "name": "Google Coral Edge TPU",
+    "original_url": "https://coral.ai/",
+    "tags": [
+      "Tools/Hardware/Edge Hardware"
+    ],
+    "added_date": null
+  },
+  "https://intel.com/content/www/us/en/products/details/processors/movidius-vpu.html": {
+    "name": "Intel Movidius",
+    "original_url": "https://www.intel.com/content/www/us/en/products/details/processors/movidius-vpu.html",
+    "tags": [
+      "Tools/Hardware/Edge Hardware"
+    ],
+    "added_date": null
+  },
+  "https://raspberrypi.com/products/ai-kit": {
+    "name": "Raspberry Pi AI Kit",
+    "original_url": "https://www.raspberrypi.com/products/ai-kit/",
+    "tags": [
+      "Tools/Hardware/Edge Hardware"
+    ],
+    "added_date": null
+  },
+  "https://quantum-computing.ibm.com/": {
+    "name": "IBM Quantum",
+    "original_url": "https://quantum-computing.ibm.com/",
+    "tags": [
+      "Tools/Hardware/Quantum"
+    ],
+    "added_date": null
+  },
+  "https://quantumai.google/": {
+    "name": "Google Quantum AI",
+    "original_url": "https://quantumai.google/",
+    "tags": [
+      "Tools/Hardware/Quantum"
+    ],
+    "added_date": null
+  },
+  "https://aws.amazon.com/braket": {
+    "name": "Amazon Braket",
+    "original_url": "https://aws.amazon.com/braket/",
+    "tags": [
+      "Tools/Hardware/Quantum"
+    ],
+    "added_date": null
+  },
+  "https://rigetti.com/": {
+    "name": "Rigetti Quantum Cloud Services",
+    "original_url": "https://www.rigetti.com/",
+    "tags": [
+      "Tools/Hardware/Quantum"
+    ],
+    "added_date": null
+  },
+  "https://chat.openai.com/": {
+    "name": "ChatGPT",
+    "original_url": "https://chat.openai.com/",
+    "tags": [
+      "Applications/Conversational AI/ChatBots"
+    ],
+    "added_date": null
+  },
+  "https://claude.ai/": {
+    "name": "Claude",
+    "original_url": "https://claude.ai/",
+    "tags": [
+      "Applications/Conversational AI/ChatBots"
+    ],
+    "added_date": null
+  },
+  "https://gemini.google.com/": {
+    "name": "Google Gemini",
+    "original_url": "https://gemini.google.com/",
+    "tags": [
+      "Applications/Conversational AI/ChatBots"
+    ],
+    "added_date": null
+  },
+  "https://copilot.microsoft.com/": {
+    "name": "Microsoft Copilot",
+    "original_url": "https://copilot.microsoft.com/",
+    "tags": [
+      "Applications/Conversational AI/ChatBots"
+    ],
+    "added_date": null
+  },
+  "https://perplexity.ai/": {
+    "name": "Perplexity AI",
+    "original_url": "https://www.perplexity.ai/",
+    "tags": [
+      "Applications/Conversational AI/ChatBots"
+    ],
+    "added_date": null
+  },
+  "https://assistant.google.com/": {
+    "name": "Google Assistant",
+    "original_url": "https://assistant.google.com/",
+    "tags": [
+      "Applications/Conversational AI/Voice Assistants"
+    ],
+    "added_date": null
+  },
+  "https://developer.amazon.com/alexa": {
+    "name": "Amazon Alexa",
+    "original_url": "https://developer.amazon.com/alexa",
+    "tags": [
+      "Applications/Conversational AI/Voice Assistants"
+    ],
+    "added_date": null
+  },
+  "https://apple.com/siri": {
+    "name": "Apple Siri",
+    "original_url": "https://www.apple.com/siri/",
+    "tags": [
+      "Applications/Conversational AI/Voice Assistants"
+    ],
+    "added_date": null
+  },
+  "https://microsoft.com/en-us/cortana": {
+    "name": "Microsoft Cortana",
+    "original_url": "https://www.microsoft.com/en-us/cortana",
+    "tags": [
+      "Applications/Conversational AI/Voice Assistants"
+    ],
+    "added_date": null
+  },
+  "https://github.com/features/copilot": {
+    "name": "GitHub Copilot",
+    "original_url": "https://github.com/features/copilot",
+    "tags": [
+      "Applications/Content Generation/Code"
+    ],
+    "added_date": null
+  },
+  "https://harvey.ai/": {
+    "name": "Harvey AI",
+    "original_url": "https://www.harvey.ai/",
+    "tags": [
+      "Applications/Conversational AI/Specialized"
+    ],
+    "added_date": null
+  },
+  "https://cursor.sh/": {
+    "name": "Cursor IDE",
+    "original_url": "https://cursor.sh/",
+    "tags": [
+      "Applications/Conversational AI/Specialized"
+    ],
+    "added_date": null
+  },
+  "https://qodo.ai/": {
+    "name": "Qodo (formerly CodiumAI)",
+    "original_url": "https://www.qodo.ai/",
+    "tags": [
+      "Applications/Conversational AI/Specialized"
+    ],
+    "added_date": null
+  },
+  "https://github.com/paul-gauthier/aider": {
+    "name": "Aider",
+    "original_url": "https://github.com/paul-gauthier/aider",
+    "tags": [
+      "Applications/Conversational AI/Specialized"
+    ],
+    "added_date": null
+  },
+  "https://openai.com/gpt-4": {
+    "name": "GPT-4",
+    "original_url": "https://openai.com/gpt-4",
+    "tags": [
+      "Applications/Content Generation/Text"
+    ],
+    "added_date": null
+  },
+  "https://copy.ai/": {
+    "name": "Copy.ai",
+    "original_url": "https://www.copy.ai/",
+    "tags": [
+      "Applications/Content Generation/Text"
+    ],
+    "added_date": null
+  },
+  "https://jasper.ai/": {
+    "name": "Jasper",
+    "original_url": "https://www.jasper.ai/",
+    "tags": [
+      "Applications/Content Generation/Text"
+    ],
+    "added_date": null
+  },
+  "https://grammarly.com/": {
+    "name": "Grammarly",
+    "original_url": "https://www.grammarly.com/",
+    "tags": [
+      "Applications/Content Generation/Text"
+    ],
+    "added_date": null
+  },
+  "https://notion.so/product/ai": {
+    "name": "Notion AI",
+    "original_url": "https://www.notion.so/product/ai",
+    "tags": [
+      "Applications/Industry-Specific/Productivity"
+    ],
+    "added_date": null
+  },
+  "https://midjourney.com/": {
+    "name": "Midjourney",
+    "original_url": "https://www.midjourney.com/",
+    "tags": [
+      "Applications/Content Generation/Images"
+    ],
+    "added_date": null
+  },
+  "https://openai.com/dall-e-3": {
+    "name": "DALL-E 3",
+    "original_url": "https://openai.com/dall-e-3",
+    "tags": [
+      "Applications/Content Generation/Images"
+    ],
+    "added_date": null
+  },
+  "https://stability.ai/stable-diffusion": {
+    "name": "Stable Diffusion",
+    "original_url": "https://stability.ai/stable-diffusion",
+    "tags": [
+      "Applications/Content Generation/Images"
+    ],
+    "added_date": null
+  },
+  "https://adobe.com/products/firefly.html": {
+    "name": "Adobe Firefly",
+    "original_url": "https://www.adobe.com/products/firefly.html",
+    "tags": [
+      "Applications/Content Generation/Images"
+    ],
+    "added_date": null
+  },
+  "https://leonardo.ai/": {
+    "name": "Leonardo AI",
+    "original_url": "https://leonardo.ai/",
+    "tags": [
+      "Applications/Content Generation/Images"
+    ],
+    "added_date": null
+  },
+  "https://synthesia.io/": {
+    "name": "Synthesia",
+    "original_url": "https://www.synthesia.io/",
+    "tags": [
+      "Applications/Content Generation/Video"
+    ],
+    "added_date": null
+  },
+  "https://runwayml.com/": {
+    "name": "RunwayML",
+    "original_url": "https://runwayml.com/",
+    "tags": [
+      "Applications/Content Generation/Creative Tools"
+    ],
+    "added_date": null
+  },
+  "https://pika.art/": {
+    "name": "Pika Labs",
+    "original_url": "https://www.pika.art/",
+    "tags": [
+      "Applications/Content Generation/Video"
+    ],
+    "added_date": null
+  },
+  "https://heygen.com/": {
+    "name": "HeyGen",
+    "original_url": "https://www.heygen.com/",
+    "tags": [
+      "Applications/Content Generation/Video"
+    ],
+    "added_date": null
+  },
+  "https://lumalabs.ai/dream-machine": {
+    "name": "Luma Dream Machine",
+    "original_url": "https://lumalabs.ai/dream-machine",
+    "tags": [
+      "Applications/Content Generation/Video"
+    ],
+    "added_date": null
+  },
+  "https://suno.ai/": {
+    "name": "Suno",
+    "original_url": "https://suno.ai/",
+    "tags": [
+      "Applications/Content Generation/Audio"
+    ],
+    "added_date": null
+  },
+  "https://elevenlabs.io/": {
+    "name": "ElevenLabs",
+    "original_url": "https://elevenlabs.io/",
+    "tags": [
+      "Applications/Content Generation/Audio"
+    ],
+    "added_date": null
+  },
+  "https://mubert.com/": {
+    "name": "Mubert",
+    "original_url": "https://mubert.com/",
+    "tags": [
+      "Applications/Content Generation/Audio"
+    ],
+    "added_date": null
+  },
+  "https://speechify.com/": {
+    "name": "Speechify",
+    "original_url": "https://speechify.com/",
+    "tags": [
+      "Applications/Content Generation/Audio"
+    ],
+    "added_date": null
+  },
+  "https://udio.com/": {
+    "name": "Udio",
+    "original_url": "https://www.udio.com/",
+    "tags": [
+      "Applications/Content Generation/Audio"
+    ],
+    "added_date": null
+  },
+  "https://aws.amazon.com/codewhisperer": {
+    "name": "Amazon CodeWhisperer",
+    "original_url": "https://aws.amazon.com/codewhisperer/",
+    "tags": [
+      "Applications/Content Generation/Code"
+    ],
+    "added_date": null
+  },
+  "https://tabnine.com/": {
+    "name": "Tabnine",
+    "original_url": "https://www.tabnine.com/",
+    "tags": [
+      "Applications/Content Generation/Code"
+    ],
+    "added_date": null
+  },
+  "https://replit.com/site/ghostwriter": {
+    "name": "Replit Ghostwriter",
+    "original_url": "https://replit.com/site/ghostwriter",
+    "tags": [
+      "Applications/Content Generation/Code"
+    ],
+    "added_date": null
+  },
+  "https://sourcery.ai/": {
+    "name": "Sourcery",
+    "original_url": "https://sourcery.ai/",
+    "tags": [
+      "Applications/Content Generation/Code"
+    ],
+    "added_date": null
+  },
+  "https://ibm.com/watson-health": {
+    "name": "IBM Watson Health",
+    "original_url": "https://www.ibm.com/watson-health",
+    "tags": [
+      "Applications/Industry-Specific/Healthcare"
+    ],
+    "added_date": null
+  },
+  "https://pathai.com/": {
+    "name": "PathAI",
+    "original_url": "https://www.pathai.com/",
+    "tags": [
+      "Applications/Industry-Specific/Healthcare"
+    ],
+    "added_date": null
+  },
+  "https://tempus.com/": {
+    "name": "Tempus",
+    "original_url": "https://www.tempus.com/",
+    "tags": [
+      "Applications/Industry-Specific/Healthcare"
+    ],
+    "added_date": null
+  },
+  "https://aidoc.com/": {
+    "name": "Aidoc",
+    "original_url": "https://www.aidoc.com/",
+    "tags": [
+      "Applications/Industry-Specific/Healthcare"
+    ],
+    "added_date": null
+  },
+  "https://stripe.com/radar": {
+    "name": "Stripe Radar",
+    "original_url": "https://stripe.com/radar",
+    "tags": [
+      "Applications/Industry-Specific/Finance"
+    ],
+    "added_date": null
+  },
+  "https://palantir.com/platforms/foundry": {
+    "name": "Palantir Foundry",
+    "original_url": "https://www.palantir.com/platforms/foundry/",
+    "tags": [
+      "Applications/Industry-Specific/Finance"
+    ],
+    "added_date": null
+  },
+  "https://datarobot.com/": {
+    "name": "DataRobot",
+    "original_url": "https://www.datarobot.com/",
+    "tags": [
+      "Applications/Industry-Specific/Finance"
+    ],
+    "added_date": null
+  },
+  "https://tesla.com/autopilot": {
+    "name": "Tesla Autopilot",
+    "original_url": "https://www.tesla.com/autopilot",
+    "tags": [
+      "Applications/Industry-Specific/Automotive"
+    ],
+    "added_date": null
+  },
+  "https://waymo.com/": {
+    "name": "Waymo",
+    "original_url": "https://waymo.com/",
+    "tags": [
+      "Applications/Industry-Specific/Automotive"
+    ],
+    "added_date": null
+  },
+  "https://developer.nvidia.com/drive": {
+    "name": "NVIDIA DRIVE",
+    "original_url": "https://developer.nvidia.com/drive",
+    "tags": [
+      "Applications/Industry-Specific/Automotive"
+    ],
+    "added_date": null
+  },
+  "https://mobileye.com/": {
+    "name": "Mobileye",
+    "original_url": "https://www.mobileye.com/",
+    "tags": [
+      "Applications/Industry-Specific/Automotive"
+    ],
+    "added_date": null
+  },
+  "https://aws.amazon.com/personalize": {
+    "name": "Amazon Personalize",
+    "original_url": "https://aws.amazon.com/personalize/",
+    "tags": [
+      "Applications/Industry-Specific/Retail"
+    ],
+    "added_date": null
+  },
+  "https://dynamicyield.com/": {
+    "name": "Dynamic Yield",
+    "original_url": "https://www.dynamicyield.com/",
+    "tags": [
+      "Applications/Industry-Specific/Retail"
+    ],
+    "added_date": null
+  },
+  "https://yotpo.com/": {
+    "name": "Yotpo",
+    "original_url": "https://www.yotpo.com/",
+    "tags": [
+      "Applications/Industry-Specific/Retail"
+    ],
+    "added_date": null
+  },
+  "https://coursera.org/": {
+    "name": "Coursera AI",
+    "original_url": "https://www.coursera.org/",
+    "tags": [
+      "Applications/Industry-Specific/Education"
+    ],
+    "added_date": null
+  },
+  "https://khanacademy.org/khan-labs": {
+    "name": "Khan Academy Khanmigo",
+    "original_url": "https://www.khanacademy.org/khan-labs",
+    "tags": [
+      "Applications/Industry-Specific/Education"
+    ],
+    "added_date": null
+  },
+  "https://grammarly.com/edu": {
+    "name": "Grammarly for Education",
+    "original_url": "https://www.grammarly.com/edu",
+    "tags": [
+      "Applications/Industry-Specific/Education"
+    ],
+    "added_date": null
+  },
+  "https://century.tech/": {
+    "name": "Century Tech",
+    "original_url": "https://www.century.tech/",
+    "tags": [
+      "Applications/Industry-Specific/Education"
+    ],
+    "added_date": null
+  },
+  "https://bostondynamics.com/products/spot": {
+    "name": "Boston Dynamics Spot",
+    "original_url": "https://www.bostondynamics.com/products/spot",
+    "tags": [
+      "Applications/Specialized Domains/Autonomous Systems"
+    ],
+    "added_date": null
+  },
+  "https://skydio.com/": {
+    "name": "Skydio Drones",
+    "original_url": "https://www.skydio.com/",
+    "tags": [
+      "Applications/Specialized Domains/Autonomous Systems"
+    ],
+    "added_date": null
+  },
+  "https://getcruise.com/": {
+    "name": "Cruise",
+    "original_url": "https://getcruise.com/",
+    "tags": [
+      "Applications/Specialized Domains/Autonomous Systems"
+    ],
+    "added_date": null
+  },
+  "https://edgeimpulse.com/": {
+    "name": "Edge Impulse",
+    "original_url": "https://edgeimpulse.com/",
+    "tags": [
+      "Applications/Specialized Domains/Edge AI"
+    ],
+    "added_date": null
+  },
+  "https://ai.google.dev/edge": {
+    "name": "Google AI Edge",
+    "original_url": "https://ai.google.dev/edge",
+    "tags": [
+      "Applications/Specialized Domains/Edge AI"
+    ],
+    "added_date": null
+  },
+  "https://tensorflow.org/lite": {
+    "name": "TensorFlow Lite",
+    "original_url": "https://www.tensorflow.org/lite",
+    "tags": [
+      "Applications/Specialized Domains/Edge AI"
+    ],
+    "added_date": null
+  },
+  "https://onnxruntime.ai/": {
+    "name": "ONNX Runtime",
+    "original_url": "https://onnxruntime.ai/",
+    "tags": [
+      "Applications/Specialized Domains/Edge AI"
+    ],
+    "added_date": null
+  },
+  "https://deepmind.com/research/case-studies/alphafold": {
+    "name": "DeepMind AlphaFold",
+    "original_url": "https://deepmind.com/research/case-studies/alphafold",
+    "tags": [
+      "Applications/Specialized Domains/Scientific AI"
+    ],
+    "added_date": null
+  },
+  "https://openai.com/research": {
+    "name": "OpenAI GPT for Science",
+    "original_url": "https://openai.com/research",
+    "tags": [
+      "Applications/Specialized Domains/Scientific AI"
+    ],
+    "added_date": null
+  },
+  "https://research.ibm.com/artificial-intelligence": {
+    "name": "IBM Research AI",
+    "original_url": "https://research.ibm.com/artificial-intelligence",
+    "tags": [
+      "Applications/Specialized Domains/Scientific AI"
+    ],
+    "added_date": null
+  },
+  "https://cs229.stanford.edu/": {
+    "name": "Stanford CS229 - Machine Learning",
+    "original_url": "http://cs229.stanford.edu/",
+    "tags": [
+      "Courses & Training/Courses/University"
+    ],
+    "added_date": null
+  },
+  "https://cs231n.stanford.edu/": {
+    "name": "CS231n - Computer Vision",
+    "original_url": "http://cs231n.stanford.edu/",
+    "tags": [
+      "Courses & Training/Courses/Domain-Specific"
+    ],
+    "added_date": null
+  },
+  "https://ocw.mit.edu/courses/6-034-artificial-intelligence-fall-2010": {
+    "name": "MIT 6.034 - Artificial Intelligence",
+    "original_url": "https://ocw.mit.edu/courses/6-034-artificial-intelligence-fall-2010/",
+    "tags": [
+      "Courses & Training/Courses/University"
+    ],
+    "added_date": null
+  },
+  "https://cs.cmu.edu/~tom/10701_sp11": {
+    "name": "CMU 10-701 - Machine Learning",
+    "original_url": "http://www.cs.cmu.edu/~tom/10701_sp11/",
+    "tags": [
+      "Courses & Training/Courses/University"
+    ],
+    "added_date": null
+  },
+  "https://inst.eecs.berkeley.edu/~cs188": {
+    "name": "Berkeley CS188 - Artificial Intelligence",
+    "original_url": "https://inst.eecs.berkeley.edu/~cs188/",
+    "tags": [
+      "Courses & Training/Courses/University"
+    ],
+    "added_date": null
+  },
+  "https://coursera.org/learn/ai-for-everyone": {
+    "name": "Coursera AI for Everyone",
+    "original_url": "https://www.coursera.org/learn/ai-for-everyone",
+    "tags": [
+      "Courses & Training/Courses/MOOC Platforms"
+    ],
+    "added_date": null
+  },
+  "https://udacity.com/course/machine-learning-engineer-nanodegree--nd009t": {
+    "name": "Udacity Machine Learning Nanodegree",
+    "original_url": "https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009t",
+    "tags": [
+      "Courses & Training/Courses/MOOC Platforms"
+    ],
+    "added_date": null
+  },
+  "https://coursera.org/specializations/deep-learning": {
+    "name": "Coursera Deep Learning Specialization",
+    "original_url": "https://www.coursera.org/specializations/deep-learning",
+    "tags": [
+      "Courses & Training/Courses/MOOC Platforms"
+    ],
+    "added_date": null
+  },
+  "https://deeplearning.ai/": {
+    "name": "DeepLearning.AI Courses",
+    "original_url": "https://www.deeplearning.ai/",
+    "tags": [
+      "Courses & Training/Courses/Platform-Specific"
+    ],
+    "added_date": null
+  },
+  "https://course.fast.ai/": {
+    "name": "Fast.ai Practical Deep Learning",
+    "original_url": "https://course.fast.ai/",
+    "tags": [
+      "Courses & Training/Courses/Platform-Specific"
+    ],
+    "added_date": null
+  },
+  "https://ai.google/education": {
+    "name": "Google AI Education",
+    "original_url": "https://ai.google/education/",
+    "tags": [
+      "Courses & Training/Courses/Platform-Specific"
+    ],
+    "added_date": null
+  },
+  "https://docs.microsoft.com/en-us/learn/browse?products=azure&subjects=artificial-intelligence": {
+    "name": "Microsoft Learn AI",
+    "original_url": "https://docs.microsoft.com/en-us/learn/browse/?products=azure&subjects=artificial-intelligence",
+    "tags": [
+      "Courses & Training/Courses/Platform-Specific"
+    ],
+    "added_date": null
+  },
+  "https://web.stanford.edu/class/cs224n": {
+    "name": "CS224N - Natural Language Processing",
+    "original_url": "http://web.stanford.edu/class/cs224n/",
+    "tags": [
+      "Courses & Training/Courses/Domain-Specific"
+    ],
+    "added_date": null
+  },
+  "https://web.stanford.edu/class/cs234": {
+    "name": "CS234 - Reinforcement Learning",
+    "original_url": "http://web.stanford.edu/class/cs234/",
+    "tags": [
+      "Courses & Training/Courses/Domain-Specific"
+    ],
+    "added_date": null
+  },
+  "https://introtodeeplearning.com/": {
+    "name": "MIT 6.S191 - Introduction to Deep Learning",
+    "original_url": "http://introtodeeplearning.com/",
+    "tags": [
+      "Courses & Training/Courses/Domain-Specific"
+    ],
+    "added_date": null
+  },
+  "https://fullstackacademy.com/programs/ai-machine-learning-bootcamp": {
+    "name": "Fullstack Academy AI Bootcamp",
+    "original_url": "https://www.fullstackacademy.com/programs/ai-machine-learning-bootcamp",
+    "tags": [
+      "Courses & Training/Bootcamps/Premium"
+    ],
+    "added_date": null
+  },
+  "https://professional.mit.edu/course-catalog/artificial-intelligence": {
+    "name": "MIT Professional Education AI",
+    "original_url": "https://professional.mit.edu/course-catalog/artificial-intelligence",
+    "tags": [
+      "Courses & Training/Certificates/Academic"
+    ],
+    "added_date": null
+  },
+  "https://brainstation.io/course/artificial-intelligence": {
+    "name": "BrainStation AI Course",
+    "original_url": "https://brainstation.io/course/artificial-intelligence",
+    "tags": [
+      "Courses & Training/Bootcamps/Mid-Range"
+    ],
+    "added_date": null
+  },
+  "https://simplilearn.com/artificial-intelligence-masters-program-training-course": {
+    "name": "Simplilearn AI Engineer",
+    "original_url": "https://www.simplilearn.com/artificial-intelligence-masters-program-training-course",
+    "tags": [
+      "Courses & Training/Bootcamps/Mid-Range"
+    ],
+    "added_date": null
+  },
+  "https://coursera.org/professional-certificates/applied-artifical-intelligence-ibm-watson-ai": {
+    "name": "IBM AI Professional Certificate",
+    "original_url": "https://www.coursera.org/professional-certificates/applied-artifical-intelligence-ibm-watson-ai",
+    "tags": [
+      "Courses & Training/Bootcamps/Affordable"
+    ],
+    "added_date": null
+  },
+  "https://mlops.community/": {
+    "name": "Slack AI Workspaces",
+    "original_url": "https://mlops.community/",
+    "tags": [
+      "Community & Networking/Online Communities/Platform-Specific"
+    ],
+    "added_date": null
+  },
+  "https://professional.mit.edu/course-catalog/ethics-ai-building-responsible-ai-machine-learning-and-gpts": {
+    "name": "AI Ethics Course",
+    "original_url": "https://professional.mit.edu/course-catalog/ethics-ai-building-responsible-ai-machine-learning-and-gpts",
+    "tags": [
+      "Courses & Training/Bootcamps/Specialized"
+    ],
+    "added_date": null
+  },
+  "https://pyimagesearch.com/pyimagesearch-gurus": {
+    "name": "Computer Vision Bootcamp",
+    "original_url": "https://www.pyimagesearch.com/pyimagesearch-gurus/",
+    "tags": [
+      "Courses & Training/Bootcamps/Specialized"
+    ],
+    "added_date": null
+  },
+  "https://aws.amazon.com/certification/certified-machine-learning-specialty": {
+    "name": "AWS Machine Learning Specialty",
+    "original_url": "https://aws.amazon.com/certification/certified-machine-learning-specialty/",
+    "tags": [
+      "Courses & Training/Certificates/Cloud Providers"
+    ],
+    "added_date": null
+  },
+  "https://cloud.google.com/certification/machine-learning-engineer": {
+    "name": "Google Cloud AI Engineer",
+    "original_url": "https://cloud.google.com/certification/machine-learning-engineer",
+    "tags": [
+      "Courses & Training/Certificates/Cloud Providers"
+    ],
+    "added_date": null
+  },
+  "https://docs.microsoft.com/en-us/learn/certifications/azure-ai-engineer": {
+    "name": "Azure AI Engineer Associate",
+    "original_url": "https://docs.microsoft.com/en-us/learn/certifications/azure-ai-engineer/",
+    "tags": [
+      "Courses & Training/Certificates/Cloud Providers"
+    ],
+    "added_date": null
+  },
+  "https://ibm.com/training/certification/watson": {
+    "name": "IBM Watson Certification",
+    "original_url": "https://www.ibm.com/training/certification/watson",
+    "tags": [
+      "Courses & Training/Certificates/Cloud Providers"
+    ],
+    "added_date": null
+  },
+  "https://nvidia.com/en-us/training": {
+    "name": "NVIDIA Deep Learning Institute",
+    "original_url": "https://www.nvidia.com/en-us/training/",
+    "tags": [
+      "Courses & Training/Certificates/Industry Standard"
+    ],
+    "added_date": null
+  },
+  "https://tensorflow.org/certificate": {
+    "name": "TensorFlow Developer Certificate",
+    "original_url": "https://www.tensorflow.org/certificate",
+    "tags": [
+      "Courses & Training/Certificates/Industry Standard"
+    ],
+    "added_date": null
+  },
+  "https://online.stanford.edu/programs/artificial-intelligence-graduate-certificate": {
+    "name": "Stanford AI Graduate Certificate",
+    "original_url": "https://online.stanford.edu/programs/artificial-intelligence-graduate-certificate",
+    "tags": [
+      "Courses & Training/Certificates/Academic"
+    ],
+    "added_date": null
+  },
+  "https://extension.harvard.edu/academics/graduate-degrees/artificial-intelligence-graduate-certificate": {
+    "name": "Harvard Extension AI",
+    "original_url": "https://www.extension.harvard.edu/academics/graduate-degrees/artificial-intelligence-graduate-certificate",
+    "tags": [
+      "Courses & Training/Certificates/Academic"
+    ],
+    "added_date": null
+  },
+  "https://aie.org/": {
+    "name": "AIE Certification Program",
+    "original_url": "https://www.aie.org/",
+    "tags": [
+      "Courses & Training/Certificates/Professional"
+    ],
+    "added_date": null
+  },
+  "https://kaggle.com/learn": {
+    "name": "Kaggle Learn",
+    "original_url": "https://www.kaggle.com/learn",
+    "tags": [
+      "Courses & Training/Examples/Interactive Platforms"
+    ],
+    "added_date": null
+  },
+  "https://colab.research.google.com/": {
+    "name": "Google Colab",
+    "original_url": "https://colab.research.google.com/",
+    "tags": [
+      "Courses & Training/Examples/Interactive Platforms"
+    ],
+    "added_date": null
+  },
+  "https://jupyter.org/try": {
+    "name": "Jupyter Notebooks Gallery",
+    "original_url": "https://jupyter.org/try",
+    "tags": [
+      "Courses & Training/Examples/Interactive Platforms"
+    ],
+    "added_date": null
+  },
+  "https://observablehq.com/": {
+    "name": "Observable",
+    "original_url": "https://observablehq.com/",
+    "tags": [
+      "Courses & Training/Examples/Interactive Platforms"
+    ],
+    "added_date": null
+  },
+  "https://github.com/josephmisiti/awesome-machine-learning": {
+    "name": "Awesome Machine Learning",
+    "original_url": "https://github.com/josephmisiti/awesome-machine-learning",
+    "tags": [
+      "Courses & Training/Examples/Code Repositories"
+    ],
+    "added_date": null
+  },
+  "https://github.com/eriklindernoren/ML-From-Scratch": {
+    "name": "ML From Scratch",
+    "original_url": "https://github.com/eriklindernoren/ML-From-Scratch",
+    "tags": [
+      "Courses & Training/Examples/Code Repositories"
+    ],
+    "added_date": null
+  },
+  "https://github.com/tensorflow/examples": {
+    "name": "TensorFlow Examples",
+    "original_url": "https://github.com/tensorflow/examples",
+    "tags": [
+      "Courses & Training/Examples/Code Repositories"
+    ],
+    "added_date": null
+  },
+  "https://github.com/pytorch/examples": {
+    "name": "PyTorch Examples",
+    "original_url": "https://github.com/pytorch/examples",
+    "tags": [
+      "Courses & Training/Examples/Code Repositories"
+    ],
+    "added_date": null
+  },
+  "https://youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi": {
+    "name": "3Blue1Brown Neural Networks",
+    "original_url": "https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi",
+    "tags": [
+      "Courses & Training/Examples/Video Tutorials"
+    ],
+    "added_date": null
+  },
+  "https://youtube.com/user/sentdex": {
+    "name": "Sentdex ML Tutorials",
+    "original_url": "https://www.youtube.com/user/sentdex",
+    "tags": [
+      "Courses & Training/Examples/Video Tutorials"
+    ],
+    "added_date": null
+  },
+  "https://youtube.com/user/keeroyz": {
+    "name": "Two Minute Papers",
+    "original_url": "https://www.youtube.com/user/keeroyz",
+    "tags": [
+      "Courses & Training/Examples/Video Tutorials"
+    ],
+    "added_date": null
+  },
+  "https://youtube.com/user/joshstarmer": {
+    "name": "StatQuest",
+    "original_url": "https://www.youtube.com/user/joshstarmer",
+    "tags": [
+      "Courses & Training/Examples/Video Tutorials"
+    ],
+    "added_date": null
+  },
+  "https://machinelearningmastery.com/": {
+    "name": "Machine Learning Mastery",
+    "original_url": "https://machinelearningmastery.com/",
+    "tags": [
+      "Courses & Training/Examples/Hands-on Projects"
+    ],
+    "added_date": null
+  },
+  "https://realpython.com/tutorials/machine-learning": {
+    "name": "Real Python ML Tutorials",
+    "original_url": "https://realpython.com/tutorials/machine-learning/",
+    "tags": [
+      "Courses & Training/Examples/Hands-on Projects"
+    ],
+    "added_date": null
+  },
+  "https://linkedin.com/groups": {
+    "name": "LinkedIn AI Groups",
+    "original_url": "https://www.linkedin.com/groups/",
+    "tags": [
+      "Community & Networking/Professional Networks/General Professional"
+    ],
+    "added_date": null
+  },
+  "https://acm.org/": {
+    "name": "Association for Computing Machinery (ACM)",
+    "original_url": "https://www.acm.org/",
+    "tags": [
+      "Community & Networking/Professional Networks/General Professional"
+    ],
+    "added_date": null
+  },
+  "https://computer.org/": {
+    "name": "IEEE Computer Society",
+    "original_url": "https://www.computer.org/",
+    "tags": [
+      "Community & Networking/Professional Networks/General Professional"
+    ],
+    "added_date": null
+  },
+  "https://meetup.com/topics/artificial-intelligence": {
+    "name": "AI Meetup Groups",
+    "original_url": "https://www.meetup.com/topics/artificial-intelligence/",
+    "tags": [
+      "Community & Networking/Professional Networks/Local Communities"
+    ],
+    "added_date": null
+  },
+  "https://meetup.com/topics/data-science": {
+    "name": "Data Science Societies",
+    "original_url": "https://www.meetup.com/topics/data-science/",
+    "tags": [
+      "Community & Networking/Professional Networks/Local Communities"
+    ],
+    "added_date": null
+  },
+  "https://meetup.com/topics/tech": {
+    "name": "Tech Industry Groups",
+    "original_url": "https://www.meetup.com/topics/tech/",
+    "tags": [
+      "Community & Networking/Professional Networks/Local Communities"
+    ],
+    "added_date": null
+  },
+  "https://reddit.com/r/MachineLearning": {
+    "name": "r/MachineLearning",
+    "original_url": "https://www.reddit.com/r/MachineLearning/",
+    "tags": [
+      "Community & Networking/Online Communities/High-Engagement"
+    ],
+    "added_date": null
+  },
+  "https://discord.gg/openai": {
+    "name": "OpenAI Discord",
+    "original_url": "https://discord.gg/openai",
+    "tags": [
+      "Community & Networking/Online Communities/High-Engagement"
+    ],
+    "added_date": null
+  },
+  "https://huggingface.co/join/discord": {
+    "name": "Hugging Face Community",
+    "original_url": "https://huggingface.co/join/discord",
+    "tags": [
+      "Community & Networking/Online Communities/High-Engagement"
+    ],
+    "added_date": null
+  },
+  "https://kaggle.com/discussions": {
+    "name": "Kaggle Community",
+    "original_url": "https://www.kaggle.com/discussions",
+    "tags": [
+      "Community & Networking/Online Communities/Specialized"
+    ],
+    "added_date": null
+  },
+  "https://aivillage.org/": {
+    "name": "AI Village (DEF CON)",
+    "original_url": "https://aivillage.org/",
+    "tags": [
+      "Community & Networking/Online Communities/Specialized"
+    ],
+    "added_date": null
+  },
+  "https://facebook.com/groups/DeepNetGroup": {
+    "name": "Deep Learning Papers Reading Group",
+    "original_url": "https://www.facebook.com/groups/DeepNetGroup",
+    "tags": [
+      "Community & Networking/Online Communities/Specialized"
+    ],
+    "added_date": null
+  },
+  "https://digitalocean.com/resources/articles/ai-discord-servers": {
+    "name": "AI Discord servers",
+    "original_url": "https://www.digitalocean.com/resources/articles/ai-discord-servers",
+    "tags": [
+      "Community & Networking/Online Communities/Platform-Specific"
+    ],
+    "added_date": null
+  },
+  "https://stackoverflow.com/questions/tagged/artificial-intelligence": {
+    "name": "Stack Overflow AI",
+    "original_url": "https://stackoverflow.com/questions/tagged/artificial-intelligence",
+    "tags": [
+      "Community & Networking/Online Communities/Platform-Specific"
+    ],
+    "added_date": null
+  },
+  "https://reddit.com/r/artificial": {
+    "name": "Reddit AI Communities",
+    "original_url": "https://www.reddit.com/r/artificial/",
+    "tags": [
+      "Community & Networking/Online Communities/Platform-Specific"
+    ],
+    "added_date": null
+  },
+  "https://aijobs.ai/": {
+    "name": "AIJobs.ai",
+    "original_url": "https://aijobs.ai/",
+    "tags": [
+      "Career & Professional Development/Job Resources/Specialized Job Boards"
+    ],
+    "added_date": null
+  },
+  "https://datasciencejobs.com/": {
+    "name": "DataScienceJobs.com",
+    "original_url": "https://datasciencejobs.com/",
+    "tags": [
+      "Career & Professional Development/Job Resources/Specialized Job Boards"
+    ],
+    "added_date": null
+  },
+  "https://machinelearningjobs.com/": {
+    "name": "Machine Learning Jobs",
+    "original_url": "https://www.machinelearningjobs.com/",
+    "tags": [
+      "Career & Professional Development/Job Resources/Specialized Job Boards"
+    ],
+    "added_date": null
+  },
+  "https://aijobs.net/": {
+    "name": "AI-Jobs.net",
+    "original_url": "https://aijobs.net/",
+    "tags": [
+      "Career & Professional Development/Job Resources/Specialized Job Boards"
+    ],
+    "added_date": null
+  },
+  "https://jobright.ai/": {
+    "name": "Jobright AI",
+    "original_url": "https://jobright.ai/",
+    "tags": [
+      "Career & Professional Development/Job Resources/AI-Enhanced Tools"
+    ],
+    "added_date": null
+  },
+  "https://aiapply.co/": {
+    "name": "AIApply",
+    "original_url": "https://aiapply.co/",
+    "tags": [
+      "Career & Professional Development/Job Resources/AI-Enhanced Tools"
+    ],
+    "added_date": null
+  },
+  "https://careerflow.ai/": {
+    "name": "Careerflow",
+    "original_url": "https://www.careerflow.ai/",
+    "tags": [
+      "Career & Professional Development/Job Resources/AI-Enhanced Tools"
+    ],
+    "added_date": null
+  },
+  "https://tealhq.com/": {
+    "name": "Teal",
+    "original_url": "https://www.tealhq.com/",
+    "tags": [
+      "Career & Professional Development/Job Resources/AI-Enhanced Tools"
+    ],
+    "added_date": null
+  },
+  "https://therundown.ai/": {
+    "name": "The Rundown AI",
+    "original_url": "https://www.therundown.ai/",
+    "tags": [
+      "Media & Information/Newsletters/High-Impact"
+    ],
+    "added_date": null
+  },
+  "https://deeplearning.ai/the-batch": {
+    "name": "The Batch by Andrew Ng",
+    "original_url": "https://www.deeplearning.ai/the-batch/",
+    "tags": [
+      "Media & Information/Newsletters/High-Impact"
+    ],
+    "added_date": null
+  },
+  "https://ai-supremacy.com/": {
+    "name": "AI Supremacy",
+    "original_url": "https://www.ai-supremacy.com/",
+    "tags": [
+      "Media & Information/Newsletters/High-Impact"
+    ],
+    "added_date": null
+  },
+  "https://twimlai.com/": {
+    "name": "TWIML AI Podcast",
+    "original_url": "https://twimlai.com/",
+    "tags": [
+      "Media & Information/Podcasts/Technical"
+    ],
+    "added_date": null
+  },
+  "https://youtube.com/c/MachineLearningStreetTalk": {
+    "name": "Machine Learning Street Talk",
+    "original_url": "https://www.youtube.com/c/MachineLearningStreetTalk",
+    "tags": [
+      "Media & Information/Podcasts/Technical"
+    ],
+    "added_date": null
+  },
+  "https://changelog.com/practicalai": {
+    "name": "Practical AI",
+    "original_url": "https://changelog.com/practicalai",
+    "tags": [
+      "Media & Information/Podcasts/Technical"
+    ],
+    "added_date": null
+  },
+  "https://lexfridman.com/podcast": {
+    "name": "Lex Fridman Podcast",
+    "original_url": "https://lexfridman.com/podcast/",
+    "tags": [
+      "Media & Information/Podcasts/General Audience"
+    ],
+    "added_date": null
+  },
+  "https://cognitiverevolution.ai/": {
+    "name": "The Cognitive Revolution",
+    "original_url": "https://www.cognitiverevolution.ai/",
+    "tags": [
+      "Media & Information/Podcasts/General Audience"
+    ],
+    "added_date": null
+  },
+  "https://ai.stanford.edu/": {
+    "name": "Stanford AI Lab (SAIL)",
+    "original_url": "https://ai.stanford.edu/",
+    "tags": [
+      "Academic & Research/Research Infrastructure/Academic Institutions"
+    ],
+    "added_date": null
+  },
+  "https://csail.mit.edu/": {
+    "name": "MIT CSAIL",
+    "original_url": "https://www.csail.mit.edu/",
+    "tags": [
+      "Academic & Research/Research Infrastructure/Academic Institutions"
+    ],
+    "added_date": null
+  },
+  "https://bair.berkeley.edu/": {
+    "name": "Berkeley AI Research (BAIR)",
+    "original_url": "https://bair.berkeley.edu/",
+    "tags": [
+      "Academic & Research/Research Infrastructure/Academic Institutions"
+    ],
+    "added_date": null
+  },
+  "https://ml.cmu.edu/": {
+    "name": "CMU Machine Learning Department",
+    "original_url": "https://www.ml.cmu.edu/",
+    "tags": [
+      "Academic & Research/Research Infrastructure/Academic Institutions"
+    ],
+    "added_date": null
+  },
+  "https://deepmind.com/": {
+    "name": "DeepMind",
+    "original_url": "https://deepmind.com/",
+    "tags": [
+      "Academic & Research/Research Infrastructure/Corporate Research"
+    ],
+    "added_date": null
+  },
+  "https://openai.com/": {
+    "name": "OpenAI",
+    "original_url": "https://openai.com/",
+    "tags": [
+      "Academic & Research/Research Infrastructure/Corporate Research"
+    ],
+    "added_date": null
+  },
+  "https://anthropic.com/": {
+    "name": "Anthropic",
+    "original_url": "https://www.anthropic.com/",
+    "tags": [
+      "Academic & Research/Research Infrastructure/Corporate Research"
+    ],
+    "added_date": null
+  },
+  "https://ai.meta.com/": {
+    "name": "Meta AI (FAIR)",
+    "original_url": "https://ai.meta.com/",
+    "tags": [
+      "Academic & Research/Research Infrastructure/Corporate Research"
+    ],
+    "added_date": null
+  },
+  "https://research.google/": {
+    "name": "Google Research",
+    "original_url": "https://research.google/",
+    "tags": [
+      "Academic & Research/Research Infrastructure/Corporate Research"
+    ],
+    "added_date": null
+  },
+  "https://microsoft.com/en-us/research/research-area/artificial-intelligence": {
+    "name": "Microsoft Research AI",
+    "original_url": "https://www.microsoft.com/en-us/research/research-area/artificial-intelligence/",
+    "tags": [
+      "Academic & Research/Research Infrastructure/Corporate Research"
+    ],
+    "added_date": null
+  },
+  "https://nsf.gov/focus-areas/artificial-intelligence": {
+    "name": "NSF AI Research Institutes",
+    "original_url": "https://www.nsf.gov/focus-areas/artificial-intelligence",
+    "tags": [
+      "Academic & Research/Research Infrastructure/Government"
+    ],
+    "added_date": null
+  },
+  "https://datascience.nih.gov/artificial-intelligence": {
+    "name": "NIH AI/ML Consortium",
+    "original_url": "https://datascience.nih.gov/artificial-intelligence",
+    "tags": [
+      "Academic & Research/Research Infrastructure/Government"
+    ],
+    "added_date": null
+  },
+  "https://nsf.gov/funding/programs.jsp?org=CISE": {
+    "name": "NSF Computer and Information Science",
+    "original_url": "https://www.nsf.gov/funding/programs.jsp?org=CISE",
+    "tags": [
+      "Academic & Research/Funding & Grants/Federal Funding"
+    ],
+    "added_date": null
+  },
+  "https://datascience.nih.gov/funding": {
+    "name": "NIH Data Science Programs",
+    "original_url": "https://datascience.nih.gov/funding",
+    "tags": [
+      "Academic & Research/Funding & Grants/Federal Funding"
+    ],
+    "added_date": null
+  },
+  "https://chanzuckerberg.com/science": {
+    "name": "Chan Zuckerberg Initiative",
+    "original_url": "https://chanzuckerberg.com/science/",
+    "tags": [
+      "Academic & Research/Funding & Grants/Private Funding"
+    ],
+    "added_date": null
+  },
+  "https://schmidtfutures.com/": {
+    "name": "Schmidt Futures",
+    "original_url": "https://schmidtfutures.com/",
+    "tags": [
+      "Academic & Research/Funding & Grants/Private Funding"
+    ],
+    "added_date": null
+  },
+  "https://openphilanthropy.org/focus/global-catastrophic-risks/potential-risks-advanced-artificial-intelligence": {
+    "name": "OpenPhilanthropy AI Grants",
+    "original_url": "https://www.openphilanthropy.org/focus/global-catastrophic-risks/potential-risks-advanced-artificial-intelligence/",
+    "tags": [
+      "Academic & Research/Funding & Grants/Private Funding"
+    ],
+    "added_date": null
+  },
+  "https://erc.europa.eu/": {
+    "name": "European Research Council AI",
+    "original_url": "https://erc.europa.eu/",
+    "tags": [
+      "Academic & Research/Funding & Grants/International"
+    ],
+    "added_date": null
+  },
+  "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/programmes/horizon": {
+    "name": "Horizon Europe AI",
+    "original_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/programmes/horizon",
+    "tags": [
+      "Academic & Research/Funding & Grants/International"
+    ],
+    "added_date": null
+  },
+  "https://cifar.ca/ai": {
+    "name": "CIFAR AI Chairs",
+    "original_url": "https://cifar.ca/ai/",
+    "tags": [
+      "Academic & Research/Funding & Grants/International"
+    ],
+    "added_date": null
+  },
+  "https://partnershiponai.org/": {
+    "name": "Partnership on AI",
+    "original_url": "https://www.partnershiponai.org/",
+    "tags": [
+      "Ethics, Safety & Governance/Ethical AI Resources/Organizations"
+    ],
+    "added_date": null
+  },
+  "https://fhi.ox.ac.uk/": {
+    "name": "Future of Humanity Institute",
+    "original_url": "https://www.fhi.ox.ac.uk/",
+    "tags": [
+      "Ethics, Safety & Governance/Ethical AI Resources/Organizations"
+    ],
+    "added_date": null
+  },
+  "https://safe.ai/": {
+    "name": "Center for AI Safety",
+    "original_url": "https://www.safe.ai/",
+    "tags": [
+      "Ethics, Safety & Governance/Ethical AI Resources/Organizations"
+    ],
+    "added_date": null
+  },
+  "https://ai.google/principles": {
+    "name": "Google AI Principles",
+    "original_url": "https://ai.google/principles/",
+    "tags": [
+      "Ethics, Safety & Governance/Ethical AI Resources/Frameworks"
+    ],
+    "added_date": null
+  },
+  "https://microsoft.com/en-us/ai/responsible-ai": {
+    "name": "Microsoft Responsible AI",
+    "original_url": "https://www.microsoft.com/en-us/ai/responsible-ai",
+    "tags": [
+      "Ethics, Safety & Governance/Ethical AI Resources/Frameworks"
+    ],
+    "added_date": null
+  },
+  "https://ibm.com/artificial-intelligence/ethics": {
+    "name": "IBM AI Ethics Board",
+    "original_url": "https://www.ibm.com/artificial-intelligence/ethics",
+    "tags": [
+      "Ethics, Safety & Governance/Ethical AI Resources/Frameworks"
+    ],
+    "added_date": null
+  },
+  "https://gov.uk/government/publications/ai-regulation-a-pro-innovation-approach": {
+    "name": "UK AI White Paper",
+    "original_url": "https://www.gov.uk/government/publications/ai-regulation-a-pro-innovation-approach",
+    "tags": [
+      "Ethics, Safety & Governance/Regulatory & Compliance/Government Policies"
+    ],
+    "added_date": null
+  },
+  "https://credo.ai/": {
+    "name": "Credo AI Governance Platform",
+    "original_url": "https://www.credo.ai/",
+    "tags": [
+      "Ethics, Safety & Governance/Regulatory & Compliance/Compliance Tools"
+    ],
+    "added_date": null
+  },
+  "https://holisticai.com/": {
+    "name": "Holistic AI Platform",
+    "original_url": "https://www.holisticai.com/",
+    "tags": [
+      "Ethics, Safety & Governance/Regulatory & Compliance/Compliance Tools"
+    ],
+    "added_date": null
+  },
+  "https://arthur.ai/": {
+    "name": "Arthur AI",
+    "original_url": "https://www.arthur.ai/",
+    "tags": [
+      "Ethics, Safety & Governance/Regulatory & Compliance/Compliance Tools"
+    ],
+    "added_date": null
+  },
+  "https://mckinsey.com/capabilities/quantumblack/our-insights": {
+    "name": "McKinsey AI Analysis",
+    "original_url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights",
+    "tags": [
+      "Industry & Market Intelligence/Market Analysis/Industry Reports"
+    ],
+    "added_date": null
+  },
+  "https://pwc.com/us/en/tech-effect/ai-analytics.html": {
+    "name": "PwC AI and Workforce Report",
+    "original_url": "https://www.pwc.com/us/en/tech-effect/ai-analytics.html",
+    "tags": [
+      "Industry & Market Intelligence/Market Analysis/Industry Reports"
+    ],
+    "added_date": null
+  },
+  "https://crfm.stanford.edu/helm": {
+    "name": "HELM Benchmark",
+    "original_url": "https://crfm.stanford.edu/helm/",
+    "tags": [
+      "Industry & Market Intelligence/Standards & Benchmarks/Performance Benchmarks"
+    ],
+    "added_date": null
+  },
+  "https://artificialanalysis.ai/": {
+    "name": "Artificial Analysis",
+    "original_url": "https://artificialanalysis.ai/",
+    "tags": [
+      "Industry & Market Intelligence/Standards & Benchmarks/Performance Benchmarks"
+    ],
+    "added_date": null
+  },
+  "https://mlperf.org/": {
+    "name": "MLPerf Benchmarks",
+    "original_url": "https://mlperf.org/",
+    "tags": [
+      "Industry & Market Intelligence/Standards & Benchmarks/Performance Benchmarks"
+    ],
+    "added_date": null
+  },
+  "https://github.com/google/BIG-bench": {
+    "name": "Big-Bench",
+    "original_url": "https://github.com/google/BIG-bench",
+    "tags": [
+      "Industry & Market Intelligence/Standards & Benchmarks/Performance Benchmarks"
+    ],
+    "added_date": null
+  },
+  "https://cursor.com/": {
+    "name": "Cursor IDE",
+    "original_url": "https://cursor.com/",
+    "tags": [
+      "Tools/Development Tools/AI Coding"
+    ],
+    "added_date": null
+  },
+  "https://codeium.com/windsurf": {
+    "name": "Windsurf",
+    "original_url": "https://codeium.com/windsurf",
+    "tags": [
+      "Tools/Development Tools/AI Coding"
+    ],
+    "added_date": null
+  },
+  "https://zed.dev/": {
+    "name": "Zed Editor",
+    "original_url": "https://zed.dev/",
+    "tags": [
+      "Tools/Development Tools/AI Coding"
+    ],
+    "added_date": null
+  },
+  "https://docs.anthropic.com/en/docs/claude-code": {
+    "name": "Claude for Code",
+    "original_url": "https://docs.anthropic.com/en/docs/claude-code",
+    "tags": [
+      "Tools/Development Tools/AI Coding"
+    ],
+    "added_date": null
+  },
+  "https://v0.dev/": {
+    "name": "v0 by Vercel",
+    "original_url": "https://v0.dev/",
+    "tags": [
+      "Tools/Development Tools/AI Coding"
+    ],
+    "added_date": null
+  },
+  "https://snowflake.com/": {
+    "name": "Snowflake",
+    "original_url": "https://www.snowflake.com/",
+    "tags": [
+      "Tools/Data Processing/Modern Data Stack"
+    ],
+    "added_date": null
+  },
+  "https://databricks.com/": {
+    "name": "Databricks",
+    "original_url": "https://databricks.com/",
+    "tags": [
+      "Tools/Data Processing/Modern Data Stack"
+    ],
+    "added_date": null
+  },
+  "https://fivetran.com/": {
+    "name": "Fivetran",
+    "original_url": "https://fivetran.com/",
+    "tags": [
+      "Tools/Data Processing/Modern Data Stack"
+    ],
+    "added_date": null
+  },
+  "https://getdbt.com/": {
+    "name": "dbt (data build tool)",
+    "original_url": "https://www.getdbt.com/",
+    "tags": [
+      "Tools/Data Processing/Modern Data Stack"
+    ],
+    "added_date": null
+  },
+  "https://arize.com/": {
+    "name": "Arize AI",
+    "original_url": "https://arize.com/",
+    "tags": [
+      "Tools/Monitoring/ML Observability"
+    ],
+    "added_date": null
+  },
+  "https://whylabs.ai/": {
+    "name": "WhyLabs",
+    "original_url": "https://whylabs.ai/",
+    "tags": [
+      "Tools/Monitoring/ML Observability"
+    ],
+    "added_date": null
+  },
+  "https://evidentlyai.com/": {
+    "name": "Evidently AI",
+    "original_url": "https://www.evidentlyai.com/",
+    "tags": [
+      "Tools/Monitoring/ML Observability"
+    ],
+    "added_date": null
+  },
+  "https://fiddler.ai/": {
+    "name": "Fiddler AI",
+    "original_url": "https://www.fiddler.ai/",
+    "tags": [
+      "Tools/Monitoring/ML Observability"
+    ],
+    "added_date": null
+  },
+  "https://pinecone.io/": {
+    "name": "Pinecone",
+    "original_url": "https://www.pinecone.io/",
+    "tags": [
+      "Tools/Data Storage/Vector Databases"
+    ],
+    "added_date": null
+  },
+  "https://weaviate.io/": {
+    "name": "Weaviate",
+    "original_url": "https://weaviate.io/",
+    "tags": [
+      "Tools/Data Storage/Vector Databases"
+    ],
+    "added_date": null
+  },
+  "https://trychroma.com/": {
+    "name": "Chroma",
+    "original_url": "https://www.trychroma.com/",
+    "tags": [
+      "Tools/Data Storage/Vector Databases"
+    ],
+    "added_date": null
+  },
+  "https://qdrant.tech/": {
+    "name": "Qdrant",
+    "original_url": "https://qdrant.tech/",
+    "tags": [
+      "Tools/Data Storage/Vector Databases"
+    ],
+    "added_date": null
+  },
+  "https://alignment.org/": {
+    "name": "Alignment Research Center",
+    "original_url": "https://alignment.org/",
+    "tags": [
+      "Ethics, Safety & Governance/Safety & Security/AI Safety Research"
+    ],
+    "added_date": null
+  },
+  "https://intelligence.org/": {
+    "name": "Machine Intelligence Research Institute",
+    "original_url": "https://intelligence.org/",
+    "tags": [
+      "Ethics, Safety & Governance/Safety & Security/AI Safety Research"
+    ],
+    "added_date": null
+  },
+  "https://xanadu.ai/": {
+    "name": "Xanadu Quantum AI",
+    "original_url": "https://www.xanadu.ai/",
+    "tags": [
+      "Tools/Hardware/Quantum"
+    ],
+    "added_date": null
+  },
+  "https://ionq.com/": {
+    "name": "IonQ",
+    "original_url": "https://ionq.com/",
+    "tags": [
+      "Tools/Hardware/Quantum"
+    ],
+    "added_date": null
+  },
+  "https://pennylane.ai/": {
+    "name": "PennyLane",
+    "original_url": "https://pennylane.ai/",
+    "tags": [
+      "Tools/Libraries/Quantum ML"
+    ],
+    "added_date": null
+  },
+  "https://bostondynamics.com/": {
+    "name": "Boston Dynamics AI",
+    "original_url": "https://www.bostondynamics.com/",
+    "tags": [
+      "Applications/Specialized Domains/Robotics"
+    ],
+    "added_date": null
+  },
+  "https://tesla.com/AI": {
+    "name": "Tesla Bot (Optimus)",
+    "original_url": "https://www.tesla.com/AI",
+    "tags": [
+      "Applications/Specialized Domains/Robotics"
+    ],
+    "added_date": null
+  },
+  "https://stability.ai/": {
+    "name": "Stability AI",
+    "original_url": "https://stability.ai/",
+    "tags": [
+      "Applications/Content Generation/Creative Tools"
+    ],
+    "added_date": null
+  },
+  "https://artbreeder.com/": {
+    "name": "Artbreeder",
+    "original_url": "https://www.artbreeder.com/",
+    "tags": [
+      "Applications/Content Generation/Creative Tools"
+    ],
+    "added_date": null
+  },
+  "https://cvpr.thecvf.com/": {
+    "name": "CVPR (Computer Vision and Pattern Recognition)",
+    "original_url": "https://cvpr.thecvf.com/",
+    "tags": [
+      "Community & Networking/Events & Conferences/Premier Academic"
+    ],
+    "added_date": null
+  },
+  "https://ieee-ras.org/conferences-workshops/fully-sponsored/icra": {
+    "name": "ICRA (International Conference on Robotics and Automation)",
+    "original_url": "https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra",
+    "tags": [
+      "Community & Networking/Events & Conferences/Specialized"
+    ],
+    "added_date": null
+  },
+  "https://otter.ai/": {
+    "name": "Otter.ai",
+    "original_url": "https://otter.ai/",
+    "tags": [
+      "Applications/Industry-Specific/Productivity"
+    ],
+    "added_date": null
+  },
+  "https://zapier.com/": {
+    "name": "Zapier",
+    "original_url": "https://zapier.com/",
+    "tags": [
+      "Applications/Industry-Specific/Productivity"
+    ],
+    "added_date": null
+  },
+  "https://aiindex.stanford.edu/": {
+    "name": "AI Index Report",
+    "original_url": "https://aiindex.stanford.edu/",
+    "tags": [
+      "Industry & Market Intelligence/Market Analysis/Industry Reports",
+      "Academic & Research/Academic Services/Resources"
+    ],
+    "added_date": null
+  },
+  "https://github.com/NVIDIA/apex": {
+    "name": "NVIDIA / apex",
+    "original_url": "https://github.com/NVIDIA/apex",
+    "tags": [
+      "Tools/Libraries/Deep Learning"
+    ],
+    "added_date": null
+  },
+  "https://github.com/tensorflow/tensorboard": {
+    "name": "tensorflow / tensorboard",
+    "original_url": "https://github.com/tensorflow/tensorboard",
+    "tags": [
+      "Tools/Libraries/MLOps"
+    ],
+    "added_date": null
+  },
+  "https://github.com/hyperopt/hyperopt": {
+    "name": "hyperopt",
+    "original_url": "https://github.com/hyperopt/hyperopt",
+    "tags": [
+      "Tools/Libraries/Deep Learning"
+    ],
+    "added_date": null
+  },
+  "https://github.com/hpcaitech/ColossalAI": {
+    "name": "ColossalAI",
+    "original_url": "https://github.com/hpcaitech/ColossalAI",
+    "tags": [
+      "Tools/Libraries/Deep Learning"
+    ],
+    "added_date": null
+  }
+}
