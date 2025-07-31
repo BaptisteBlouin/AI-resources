@@ -1031,6 +1031,14 @@
             "tags": [
               "Tools/Libraries/Deep Learning"
             ]
+          },
+          {
+            "name": "hyperopt",
+            "url": "https://github.com/hyperopt/hyperopt",
+            "description": "Distributed Asynchronous Hyperparameter Optimization in Python ",
+            "tags": [
+              "Tools/Libraries/Deep Learning"
+            ]
           }
         ]
       },

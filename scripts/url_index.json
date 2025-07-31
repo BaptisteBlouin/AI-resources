@@ -3239,5 +3239,13 @@
       "Tools/Libraries/MLOps"
     ],
     "added_date": null
+  },
+  "https://github.com/hyperopt/hyperopt": {
+    "name": "hyperopt",
+    "original_url": "https://github.com/hyperopt/hyperopt",
+    "tags": [
+      "Tools/Libraries/Deep Learning"
+    ],
+    "added_date": null
   }
 }
