@@ -1,0 +1,361 @@
+name: 🚀 Auto-Add Resource v2
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  add-resource:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 🔍 Debug event information
+        run: |
+          echo "=== Event Debug Information ==="
+          echo "Event name: ${{ github.event_name }}"
+          echo "Action: ${{ github.event.action }}"
+          echo "Label name: '${{ github.event.label.name }}'"
+          echo "Issue number: ${{ github.event.issue.number }}"
+          echo "Issue title: ${{ github.event.issue.title }}"
+          echo "Issue labels:"
+          echo '${{ toJSON(github.event.issue.labels) }}'
+          echo "=============================="
+          
+      - name: ✋ Check if we should proceed
+        run: |
+          if [[ "${{ github.event.action }}" != "labeled" ]]; then
+            echo "❌ Skipping: Action is '${{ github.event.action }}', not 'labeled'"
+            exit 1
+          fi
+          
+          if [[ "${{ github.event.label.name }}" != "approved" ]]; then
+            echo "❌ Skipping: Label is '${{ github.event.label.name }}', not 'approved'"
+            exit 1
+          fi
+          
+          echo "✅ Proceeding: Action is 'labeled' and label is 'approved'"
+          
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+          fetch-depth: 0
+          
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          
+      - name: 📦 Install dependencies
+        run: |
+          pip install pyyaml
+          
+      - name: 🔧 Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+      - name: 🔍 Debug Git and Token permissions
+        run: |
+          echo "Git config:"
+          git config --list
+          echo "Current branch:"
+          git branch
+          echo "Remote:"
+          git remote -v
+          echo "Token permissions test:"
+          curl -H "Authorization: token $PERSONAL_GITHUB_TOKEN" -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/$GITHUB_REPOSITORY
+        env:
+          PERSONAL_GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+          
+      - name: 📋 Parse issue and extract resource data
+        id: parse-issue
+        run: |
+          python3 << 'EOF'
+          import os
+          import re
+          import json
+          import yaml
+          
+          # Get issue body from environment
+          issue_body = """${{ github.event.issue.body }}"""
+          issue_number = "${{ github.event.issue.number }}"
+          issue_title = "${{ github.event.issue.title }}"
+          
+          print("=== Issue Body ===")
+          print(issue_body)
+          print("==================")
+          
+          # Parse issue body to extract resource data from GitHub form
+          def extract_field(body, field_name):
+              # GitHub form creates content in this format:
+              # ### Resource Name *
+              # 
+              # Value here
+              # 
+              # ### Next Field
+              pattern = rf"### {field_name}.*?\n\s*\n(.*?)(?=\n\s*\n###|\n\s*\n---|\Z)"
+              match = re.search(pattern, body, re.DOTALL | re.IGNORECASE)
+              if match:
+                  value = match.group(1).strip()
+                  # Remove any _No response_ placeholder
+                  if value == "_No response_":
+                      return ""
+                  return value
+              return ""
+          
+          # Extract resource data
+          name = extract_field(issue_body, "Resource Name")
+          url = extract_field(issue_body, "URL") 
+          description = extract_field(issue_body, "Description")
+          tags_raw = extract_field(issue_body, "Tags")
+          
+          # Clean and parse tags
+          if tags_raw:
+              tags = [tag.strip() for tag in tags_raw.split(',') if tag.strip()]
+          else:
+              tags = []
+          
+          # Validate required fields
+          if not all([name, url, description, tags]):
+              print("❌ Missing required fields:")
+              print("Name: " + str(name))
+              print("URL: " + str(url))
+              print("Description: " + str(description))
+              print("Tags: " + str(tags))
+              exit(1)
+          
+          # Create resource YAML entry
+          resource = {
+              'name': name,
+              'url': url,
+              'description': description,
+              'tags': tags
+          }
+          
+          # Generate YAML entry manually to match the exact format of the file
+          tags_json = json.dumps(tags)
+          yaml_entry = '  - name: "' + name + '"\n    url: "' + url + '"\n    description: "' + description + '"\n    tags: ' + tags_json + '\n    '
+          
+          print("=== Generated YAML ===")
+          print(yaml_entry)
+          print("======================")
+          
+          # Write outputs for next steps
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+              f.write("resource-name=" + name + "\n")
+              f.write("resource-url=" + url + "\n")
+              f.write("resource-description=" + description + "\n")
+              f.write("resource-tags=" + ','.join(tags) + "\n")
+              f.write("yaml-entry<<EOF\n" + yaml_entry + "\nEOF\n")
+              f.write("issue-number=" + issue_number + "\n")
+          
+          print("✅ Resource data extracted successfully")
+          EOF
+          
+      - name: 📝 Add resource to resources.yml
+        run: |
+          echo "Adding resource to resources.yml..."
+          
+          # Append the new resource to the end of resources.yml
+          cat >> resources.yml << 'EOF'
+          ${{ steps.parse-issue.outputs.yaml-entry }}
+          EOF
+          
+          echo "✅ Resource added to resources.yml"
+          
+      - name: 🔄 Generate README and update resources
+        run: |
+          echo "Running generate_readme.py..."
+          cd scripts
+          python3 generate_readme.py
+          cd ..
+          echo "✅ README and resources updated"
+          
+      - name: 🧹 Clean workspace and prepare files
+        run: |
+          echo "Resetting all changes first..."
+          git reset --hard HEAD
+          git clean -fd
+          
+          echo "Re-adding the resource to resources.yml..."
+          cat >> resources.yml << 'EOF'
+          ${{ steps.parse-issue.outputs.yaml-entry }}
+          EOF
+          
+          echo "Re-running generate_readme.py..."
+          cd scripts
+          python3 generate_readme.py
+          cd ..
+          
+          # Force reset any workflow file changes
+          git checkout HEAD -- .github/workflows/ || true
+          git reset HEAD -- .github/workflows/ || true
+          
+          echo "=== Final status check ==="
+          git status --porcelain
+          echo "=========================="
+          
+      - name: 🔄 Manual commit and push
+        run: |
+          # Create new branch
+          BRANCH_NAME="add-resource-${{ steps.parse-issue.outputs.issue-number }}"
+          git checkout -b $BRANCH_NAME
+          
+          # Aggressively reset all workflow changes
+          echo "Resetting workflow files..."
+          git checkout HEAD -- '.github/**' || true
+          git reset HEAD -- '.github/**' || true
+          git clean -fd .github/ || true
+          
+          # Check what files have changed after reset
+          echo "=== Git Status After Reset ==="
+          git status --porcelain
+          echo "=============================="
+          
+          # Stage only the specific files we want to commit, one by one
+          echo "Staging target files individually..."
+          
+          if [ -f "resources.yml" ]; then
+            git add resources.yml
+            echo "✓ Staged resources.yml"
+          fi
+          
+          if [ -f "README.md" ]; then
+            git add README.md
+            echo "✓ Staged README.md"
+          fi
+          
+          if [ -f "docs/resources.json" ]; then
+            git add docs/resources.json
+            echo "✓ Staged docs/resources.json"
+          fi
+          
+          if [ -f "scripts/url_index.json" ]; then
+            git add scripts/url_index.json
+            echo "✓ Staged scripts/url_index.json"
+          fi
+          
+          # Final check - make sure no workflow files are staged
+          echo "=== Final staged files check ==="
+          STAGED_FILES=$(git diff --cached --name-only)
+          echo "$STAGED_FILES"
+          
+          # Abort if any .github files are staged
+          if echo "$STAGED_FILES" | grep -q "^\.github/"; then
+            echo "❌ ERROR: Workflow files detected in staged changes!"
+            echo "Staged .github files:"
+            echo "$STAGED_FILES" | grep "^\.github/"
+            exit 1
+          fi
+          echo "✓ No workflow files in staged changes"
+          echo "====================================="
+          
+          # Commit changes
+          git commit -m "Add resource: ${{ steps.parse-issue.outputs.resource-name }}
+
+          - Name: ${{ steps.parse-issue.outputs.resource-name }}
+          - URL: ${{ steps.parse-issue.outputs.resource-url }}
+          - Tags: ${{ steps.parse-issue.outputs.resource-tags }}
+
+          Auto-generated from issue #${{ steps.parse-issue.outputs.issue-number }}"
+          
+          # Push branch
+          git push https://x-access-token:${{ secrets.PERSONAL_GITHUB_TOKEN }}@github.com/${{ github.repository }} $BRANCH_NAME
+
+          
+          echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_OUTPUT
+        env:
+          PERSONAL_GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+          
+      - name: 📊 Create Pull Request via API
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const resourceName = `${{ steps.parse-issue.outputs.resource-name }}`;
+            const resourceUrl = `${{ steps.parse-issue.outputs.resource-url }}`;
+            const resourceDescription = `${{ steps.parse-issue.outputs.resource-description }}`;
+            const resourceTags = `${{ steps.parse-issue.outputs.resource-tags }}`;
+            const issueNumber = `${{ steps.parse-issue.outputs.issue-number }}`;
+            const runId = `${{ github.run_id }}`;
+            
+            const { data: pullRequest } = await github.rest.pulls.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Add resource: ${resourceName}`,
+              head: `add-resource-${issueNumber}`,
+              base: "main",
+              body: `## 🚀 Auto-generated resource addition
+              
+              This PR automatically adds a new resource based on the approved submission in issue #${issueNumber}.
+              
+              ### 📋 Resource Details
+              - **Name**: ${resourceName}
+              - **URL**: ${resourceUrl}
+              - **Description**: ${resourceDescription}
+              - **Tags**: ${resourceTags}
+              
+              ### ✅ Automated Actions Completed
+              - [x] Resource added to resources.yml
+              - [x] README.md regenerated
+              - [x] Resources index updated
+              - [x] URL validation completed
+              
+              **Source**: Issue #${issueNumber}
+              **Auto-generated**: ${runId}`
+            });
+            
+            console.log('Created PR #' + pullRequest.number);
+            
+            // Auto-merge the PR since it was generated from an approved issue
+            console.log('Auto-merging PR #' + pullRequest.number);
+            await github.rest.pulls.merge({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: pullRequest.number,
+              commit_title: `Add resource: ${resourceName}`,
+              commit_message: `Auto-merged from approved issue #${issueNumber}`,
+              merge_method: 'squash'
+            });
+            
+            console.log('Successfully auto-merged PR #' + pullRequest.number);
+            return pullRequest.number;
+          
+      - name: 📝 Comment on issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: ${{ steps.parse-issue.outputs.issue-number }},
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `## 🚀 Resource Successfully Added!
+              
+              ✅ Your resource has been automatically processed and **merged into the main collection**!
+              
+              **What happened:**
+              - Resource added to \`resources.yml\`
+              - README.md regenerated
+              - Pull request created and automatically merged
+              - Resource is now live in the collection
+              
+              **Your resource is now available at:**
+              - Web interface: [AI Resources Collection](https://baptisteblouin.github.io/AI-resources/)
+              - GitHub: [resources.yml](https://github.com/BaptisteBlouin/AI-resources/blob/main/resources.yml)
+              
+              Thank you for contributing to the AI Resources collection! 🎉`
+            });
+            
+            // Close the issue as it's been processed
+            github.rest.issues.update({
+              issue_number: ${{ steps.parse-issue.outputs.issue-number }},
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'closed',
+              labels: ['approved', 'processed']
+            });
