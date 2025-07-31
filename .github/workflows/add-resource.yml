@@ -38,7 +38,13 @@ jobs:
             exit 1
           fi
           
-          echo "✅ Proceeding: Action is 'labeled' and label is 'approved'"
+          # Accept both [Resource] and [Batch] format issues
+          if [[ "${{ github.event.issue.title }}" != *"[Resource]"* && "${{ github.event.issue.title }}" != *"[Batch]"* ]]; then
+            echo "❌ Skipping: Issue title doesn't contain [Resource] or [Batch]"
+            exit 1
+          fi
+          
+          echo "✅ Proceeding: Action is 'labeled', label is 'approved', and issue is resource submission"
           
       - name: 📥 Checkout repository
         uses: actions/checkout@v4
@@ -91,56 +97,107 @@ jobs:
           print(issue_body)
           print("==================")
           
-          # Parse issue body to extract resource data from GitHub form
+          # Determine if this is batch format or single resource format
           def extract_field(body, field_name):
-              # GitHub form creates content in this format:
-              # ### Resource Name *
-              # 
-              # Value here
-              # 
-              # ### Next Field
               pattern = rf"### {field_name}.*?\n\s*\n(.*?)(?=\n\s*\n###|\n\s*\n---|\Z)"
               match = re.search(pattern, body, re.DOTALL | re.IGNORECASE)
               if match:
                   value = match.group(1).strip()
-                  # Remove any _No response_ placeholder
                   if value == "_No response_":
                       return ""
                   return value
               return ""
           
-          # Extract resource data
-          name = extract_field(issue_body, "Resource Name")
-          url = extract_field(issue_body, "URL") 
-          description = extract_field(issue_body, "Description")
-          tags_raw = extract_field(issue_body, "Tags")
+          # Check if this is batch format (has YAML section)
+          yaml_section = extract_field(issue_body, "Resources YAML")
           
-          # Clean and parse tags
-          if tags_raw:
-              tags = [tag.strip() for tag in tags_raw.split(',') if tag.strip()]
+          if yaml_section and yaml_section.strip():
+              print("=== Processing Batch Format ===")
+              # Extract YAML from code block
+              yaml_match = re.search(r'```yaml\s*\n(.*?)\n```', yaml_section, re.DOTALL)
+              if yaml_match:
+                  yaml_content = yaml_match.group(1)
+              else:
+                  yaml_content = yaml_section
+              
+              print("=== YAML Content ===")
+              print(yaml_content)
+              print("====================")
+              
+              # Parse YAML resources
+              try:
+                  resources_data = yaml.safe_load(yaml_content)
+                  if isinstance(resources_data, list):
+                      resources = resources_data
+                  else:
+                      print("❌ YAML content is not a list")
+                      exit(1)
+              except yaml.YAMLError as e:
+                  print(f"❌ YAML parsing error: {e}")
+                  exit(1)
+              
+              # Validate resources
+              valid_resources = []
+              for i, resource in enumerate(resources):
+                  if not isinstance(resource, dict):
+                      continue
+                  
+                  required_fields = ['name', 'url', 'description', 'tags']
+                  if all(field in resource and resource[field] for field in required_fields):
+                      valid_resources.append(resource)
+                      print(f"✅ Resource {i+1}: {resource['name']}")
+                  else:
+                      print(f"❌ Resource {i+1} missing required fields")
+              
+              if not valid_resources:
+                  print("❌ No valid resources found")
+                  exit(1)
+              
+              # Generate YAML for all resources
+              batch_yaml = ""
+              resource_names = []
+              for resource in valid_resources:
+                  # Format tags as proper YAML array
+                  tags_yaml = '[' + ', '.join([f'"{tag}"' for tag in resource['tags']]) + ']'
+                  yaml_entry = f'  - name: "{resource["name"]}"\n    url: "{resource["url"]}"\n    description: "{resource["description"]}"\n    tags: {tags_yaml}\n    \n'
+                  batch_yaml += yaml_entry
+                  resource_names.append(resource['name'])
+              
+              yaml_entry = batch_yaml
+              resource_count = len(valid_resources)
+              main_resource_name = f"{resource_count} Resource{'s' if resource_count > 1 else ''}"
+              all_names = ", ".join(resource_names[:3]) + ("..." if len(resource_names) > 3 else "")
+              
           else:
-              tags = []
-          
-          # Validate required fields
-          if not all([name, url, description, tags]):
-              print("❌ Missing required fields:")
-              print("Name: " + str(name))
-              print("URL: " + str(url))
-              print("Description: " + str(description))
-              print("Tags: " + str(tags))
-              exit(1)
-          
-          # Create resource YAML entry
-          resource = {
-              'name': name,
-              'url': url,
-              'description': description,
-              'tags': tags
-          }
-          
-          # Generate YAML entry manually to match the exact format of the file
-          tags_json = json.dumps(tags)
-          yaml_entry = '  - name: "' + name + '"\n    url: "' + url + '"\n    description: "' + description + '"\n    tags: ' + tags_json + '\n    '
+              print("=== Processing Single Resource Format ===")
+              # Extract single resource data
+              name = extract_field(issue_body, "Resource Name")
+              url = extract_field(issue_body, "URL") 
+              description = extract_field(issue_body, "Description")
+              tags_raw = extract_field(issue_body, "Tags")
+              
+              # Clean and parse tags
+              if tags_raw:
+                  tags = [tag.strip() for tag in tags_raw.split(',') if tag.strip()]
+              else:
+                  tags = []
+              
+              # Validate required fields
+              if not all([name, url, description, tags]):
+                  print("❌ Missing required fields:")
+                  print("Name: " + str(name))
+                  print("URL: " + str(url))
+                  print("Description: " + str(description))
+                  print("Tags: " + str(tags))
+                  exit(1)
+              
+              # Generate YAML entry for single resource
+              tags_yaml = '[' + ', '.join([f'"{tag}"' for tag in tags]) + ']'
+              yaml_entry = f'  - name: "{name}"\n    url: "{url}"\n    description: "{description}"\n    tags: {tags_yaml}\n    '
+              
+              resource_count = 1
+              main_resource_name = name
+              all_names = name
           
           print("=== Generated YAML ===")
           print(yaml_entry)
@@ -148,10 +205,9 @@ jobs:
           
           # Write outputs for next steps
           with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
-              f.write("resource-name=" + name + "\n")
-              f.write("resource-url=" + url + "\n")
-              f.write("resource-description=" + description + "\n")
-              f.write("resource-tags=" + ','.join(tags) + "\n")
+              f.write("resource-name=" + main_resource_name + "\n")
+              f.write("resource-names=" + all_names + "\n")
+              f.write("resource-count=" + str(resource_count) + "\n")
               f.write("yaml-entry<<EOF\n" + yaml_entry + "\nEOF\n")
               f.write("issue-number=" + issue_number + "\n")
           
@@ -259,9 +315,8 @@ jobs:
           # Commit changes
           git commit -m "Add resource: ${{ steps.parse-issue.outputs.resource-name }}
 
-          - Name: ${{ steps.parse-issue.outputs.resource-name }}
-          - URL: ${{ steps.parse-issue.outputs.resource-url }}
-          - Tags: ${{ steps.parse-issue.outputs.resource-tags }}
+          Resources: ${{ steps.parse-issue.outputs.resource-names }}
+          Count: ${{ steps.parse-issue.outputs.resource-count }}
 
           Auto-generated from issue #${{ steps.parse-issue.outputs.issue-number }}"
           
@@ -278,9 +333,8 @@ jobs:
         with:
           script: |
             const resourceName = `${{ steps.parse-issue.outputs.resource-name }}`;
-            const resourceUrl = `${{ steps.parse-issue.outputs.resource-url }}`;
-            const resourceDescription = `${{ steps.parse-issue.outputs.resource-description }}`;
-            const resourceTags = `${{ steps.parse-issue.outputs.resource-tags }}`;
+            const resourceNames = `${{ steps.parse-issue.outputs.resource-names }}`;
+            const resourceCount = `${{ steps.parse-issue.outputs.resource-count }}`;
             const issueNumber = `${{ steps.parse-issue.outputs.issue-number }}`;
             const runId = `${{ github.run_id }}`;
             
@@ -292,16 +346,14 @@ jobs:
               base: "main",
               body: `## 🚀 Auto-generated resource addition
               
-              This PR automatically adds a new resource based on the approved submission in issue #${issueNumber}.
+              This PR automatically adds ${resourceCount} resource${resourceCount > 1 ? 's' : ''} based on the approved submission in issue #${issueNumber}.
               
               ### 📋 Resource Details
-              - **Name**: ${resourceName}
-              - **URL**: ${resourceUrl}
-              - **Description**: ${resourceDescription}
-              - **Tags**: ${resourceTags}
+              - **Resources**: ${resourceNames}
+              - **Count**: ${resourceCount}
               
               ### ✅ Automated Actions Completed
-              - [x] Resource added to resources.yml
+              - [x] ${resourceCount} resource${resourceCount > 1 ? 's' : ''} added to resources.yml
               - [x] README.md regenerated
               - [x] Resources index updated
               - [x] URL validation completed
@@ -330,25 +382,30 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
+            const resourceCount = `${{ steps.parse-issue.outputs.resource-count }}`;
+            const resourceNames = `${{ steps.parse-issue.outputs.resource-names }}`;
+            
             github.rest.issues.createComment({
               issue_number: ${{ steps.parse-issue.outputs.issue-number }},
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `## 🚀 Resource Successfully Added!
+              body: `## 🚀 Resource${resourceCount > 1 ? 's' : ''} Successfully Added!
               
-              ✅ Your resource has been automatically processed and **merged into the main collection**!
+              ✅ Your ${resourceCount} resource${resourceCount > 1 ? 's have' : ' has'} been automatically processed and **merged into the main collection**!
+              
+              **Resources added:** ${resourceNames}
               
               **What happened:**
-              - Resource added to \`resources.yml\`
-              - README.md regenerated
+              - ${resourceCount} resource${resourceCount > 1 ? 's' : ''} added to \`resources.yml\`
+              - README.md regenerated with all new resources
               - Pull request created and automatically merged
-              - Resource is now live in the collection
+              - Resource${resourceCount > 1 ? 's are' : ' is'} now live in the collection
               
-              **Your resource is now available at:**
+              **Your resource${resourceCount > 1 ? 's are' : ' is'} now available at:**
               - Web interface: [AI Resources Collection](https://baptisteblouin.github.io/AI-resources/)
               - GitHub: [resources.yml](https://github.com/BaptisteBlouin/AI-resources/blob/main/resources.yml)
               
-              Thank you for contributing to the AI Resources collection! 🎉`
+              Thank you for contributing ${resourceCount} resource${resourceCount > 1 ? 's' : ''} to the AI Resources collection! 🎉`
             });
             
             // Close the issue as it's been processed

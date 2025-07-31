@@ -1000,11 +1000,8 @@
                     return;
                 }
                 
-                if (resources.length === 1) {
-                    this.submitSingleResource(resources[0]);
-                } else {
-                    this.submitBatchResources(resources);
-                }
+                // Always use batch format
+                this.submitBatchResources(resources);
             }
 
             handleTagInput(resourceId, value) {
@@ -1360,42 +1357,8 @@
                     return;
                 }
 
-                if (validResources.length === 1) {
-                    // Single resource - use existing single resource workflow
-                    this.submitSingleResource(validResources[0]);
-                } else {
-                    // Multiple resources - use batch workflow
-                    this.submitBatchResources(validResources);
-                }
-            }
-
-            submitSingleResource(resource) {
-                const title = `[Resource] ${resource.name}`;
-                const body = `### Resource Name *
-
-${resource.name}
-
-### URL *
-
-${resource.url}
-
-### Description *
-
-${resource.description}
-
-### Tags *
-
-${resource.tags.join(', ')}
-
-### Submission Checklist
-
-- [x] The URL is accessible and working
-- [x] The resource is not already in the collection  
-- [x] The description is clear and helpful
-- [x] The tags follow the format: category/subcategory/item`;
-
-                const githubUrl = `https://github.com/BaptisteBlouin/AI-resources/issues/new?labels=resource-submission,pending-review&title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
-                window.open(githubUrl, '_blank');
+                // Always use batch format for consistency, even for single resources
+                this.submitBatchResources(validResources);
             }
 
             submitBatchResources(resources) {
@@ -1407,7 +1370,7 @@ ${resource.tags.join(', ')}
                     yaml += `  tags: [${resource.tags.map(tag => `"${tag}"`).join(', ')}]\n\n`;
                 });
 
-                const title = `[Batch] ${resources.length} AI Resources`;
+                const title = `[Batch] ${resources.length} AI Resource${resources.length > 1 ? 's' : ''}`;
                 const body = `### Resources YAML *
 
 \`\`\`yaml
