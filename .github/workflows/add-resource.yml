@@ -311,6 +311,19 @@ jobs:
             });
             
             console.log('Created PR #' + pullRequest.number);
+            
+            // Auto-merge the PR since it was generated from an approved issue
+            console.log('Auto-merging PR #' + pullRequest.number);
+            await github.rest.pulls.merge({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: pullRequest.number,
+              commit_title: `Add resource: ${resourceName}`,
+              commit_message: `Auto-merged from approved issue #${issueNumber}`,
+              merge_method: 'squash'
+            });
+            
+            console.log('Successfully auto-merged PR #' + pullRequest.number);
             return pullRequest.number;
           
       - name: 📝 Comment on issue
@@ -321,18 +334,19 @@ jobs:
               issue_number: ${{ steps.parse-issue.outputs.issue-number }},
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `## 🚀 Resource Processing Complete!
+              body: `## 🚀 Resource Successfully Added!
               
-              ✅ Your resource has been automatically processed and a pull request has been created.
+              ✅ Your resource has been automatically processed and **merged into the main collection**!
               
               **What happened:**
               - Resource added to \`resources.yml\`
               - README.md regenerated
-              - Pull request created for review
+              - Pull request created and automatically merged
+              - Resource is now live in the collection
               
-              **Next steps:**
-              - The pull request will be reviewed and merged
-              - Your resource will appear in the collection shortly
+              **Your resource is now available at:**
+              - Web interface: [AI Resources Collection](https://baptisteblouin.github.io/AI-resources/)
+              - GitHub: [resources.yml](https://github.com/BaptisteBlouin/AI-resources/blob/main/resources.yml)
               
               Thank you for contributing to the AI Resources collection! 🎉`
             });
