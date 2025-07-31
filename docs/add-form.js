@@ -170,9 +170,22 @@ class AddResourceForm {
             console.error('Browse tags button not found');
         }
 
-        // Close suggestions
+        // Close suggestions and handle tag suggestion clicks with event delegation
         document.addEventListener('click', (e) => {
             if (e.target.classList.contains('close-suggestions')) {
+                this.hideTagSuggestions();
+            } else if (e.target.closest('.tag-suggestion')) {
+                // Handle tag suggestion clicks with event delegation
+                e.preventDefault();
+                e.stopPropagation();
+                
+                const suggestionEl = e.target.closest('.tag-suggestion');
+                const tagName = suggestionEl.dataset.tag;
+                
+                console.log('*** TAG SUGGESTION CLICKED (delegation) ***:', tagName);
+                
+                this.addTag(tagName);
+                document.getElementById('tag-input').value = '';
                 this.hideTagSuggestions();
             } else if (!e.target.closest('.tag-suggestions-dropdown') && !e.target.closest('#tag-input')) {
                 this.hideTagSuggestions();
@@ -219,8 +232,12 @@ class AddResourceForm {
 
         // Add click handlers
         popularTagsList.querySelectorAll('.popular-tag').forEach(el => {
-            el.addEventListener('click', () => {
-                this.addTag(el.dataset.tag);
+            el.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                const tagName = el.dataset.tag;
+                console.log('Popular tag clicked:', tagName);
+                this.addTag(tagName);
             });
         });
     }
@@ -490,8 +507,12 @@ class AddResourceForm {
 
         // Add click handlers
         suggestionsContent.querySelectorAll('.tag-suggestion').forEach(el => {
-            el.addEventListener('click', () => {
-                this.addTag(el.dataset.tag);
+            el.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                const tagName = el.dataset.tag;
+                console.log('Category tag suggestion clicked:', tagName);
+                this.addTag(tagName);
                 this.hideTagSuggestions();
             });
         });
@@ -668,12 +689,19 @@ class AddResourceForm {
         const suggestionsDiv = document.getElementById('tag-suggestions');
         const suggestionsContent = document.getElementById('suggestions-content');
         
+        if (!suggestionsDiv || !suggestionsContent) {
+            console.error('Suggestions elements not found');
+            return;
+        }
+        
         if (!input || input.length < 1) {
             if (input === '') {
                 this.hideTagSuggestions();
             }
             return;
         }
+
+        console.log('Updating tag suggestions for:', input);
 
         const matchingTags = Array.from(this.existingTags)
             .filter(tag => 
@@ -691,6 +719,8 @@ class AddResourceForm {
                 return bUsage - aUsage;
             })
             .slice(0, 8);
+
+        console.log('Found matching tags:', matchingTags.length);
 
         if (matchingTags.length === 0) {
             // Show option to create new tag
@@ -720,14 +750,43 @@ class AddResourceForm {
                 ` : '');
         }
 
-        // Add click handlers
-        suggestionsContent.querySelectorAll('.tag-suggestion').forEach(el => {
-            el.addEventListener('click', () => {
-                this.addTag(el.dataset.tag);
-                document.getElementById('tag-input').value = '';
-                this.hideTagSuggestions();
+        // Wait for DOM to be ready, then add click handlers
+        setTimeout(() => {
+            const suggestionElements = suggestionsContent.querySelectorAll('.tag-suggestion');
+            console.log('Attaching click handlers to', suggestionElements.length, 'suggestions');
+            
+            suggestionElements.forEach((el, index) => {
+                const tagName = el.dataset.tag;
+                console.log(`Attaching handler ${index + 1}: ${tagName}`);
+                
+                // Remove any existing listeners first
+                el.replaceWith(el.cloneNode(true));
+                const newEl = suggestionsContent.querySelectorAll('.tag-suggestion')[index];
+                
+                newEl.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    console.log('*** TAG SUGGESTION CLICKED ***:', tagName);
+                    
+                    // Call addTag with explicit context
+                    if (window.addForm && window.addForm.addTag) {
+                        window.addForm.addTag(tagName);
+                    } else {
+                        this.addTag(tagName);
+                    }
+                    
+                    const tagInput = document.getElementById('tag-input');
+                    if (tagInput) tagInput.value = '';
+                    this.hideTagSuggestions();
+                });
+                
+                // Also add mousedown for backup
+                newEl.addEventListener('mousedown', (e) => {
+                    e.preventDefault();
+                    console.log('*** TAG SUGGESTION MOUSEDOWN ***:', tagName);
+                });
             });
-        });
+        }, 10);
 
         this.showTagSuggestions();
     }
@@ -764,7 +823,11 @@ class AddResourceForm {
     }
 
     addTag(tagName) {
-        if (!tagName || this.selectedTags.has(tagName)) return;
+        console.log('addTag called with:', tagName);
+        if (!tagName || this.selectedTags.has(tagName)) {
+            console.log('Tag rejected:', !tagName ? 'empty' : 'already selected');
+            return;
+        }
 
         // Validate tag format
         if (!/^[a-z0-9\-]+([\/][a-z0-9\-]+)*$/.test(tagName)) {

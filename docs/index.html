@@ -188,6 +188,42 @@
             margin-top: 0.5rem;
         }
 
+        .search-results-info {
+            text-align: center;
+            padding: 1rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .search-results-info.hidden {
+            display: none;
+        }
+
+        .search-results-count {
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .clear-search {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: var(--radius);
+            font-size: 0.875rem;
+            cursor: pointer;
+            margin-left: 0.5rem;
+            transition: background-color 0.2s ease;
+        }
+
+        .clear-search:hover {
+            background: var(--primary-dark);
+        }
+
         /* Resources Grid */
         .resources {
             padding: 2rem 0;
@@ -531,6 +567,11 @@
             <div class="loading" id="loading">
                 <div class="spinner"></div>
                 <p>Loading resources...</p>
+            </div>
+            
+            <div class="search-results-info hidden" id="search-results-info">
+                Found <span class="search-results-count" id="search-results-count">0</span> resources matching "<span id="search-term"></span>"
+                <button class="clear-search" id="clear-search">Clear Search</button>
             </div>
             
             <div class="resources-grid" id="resources-grid">

@@ -159,11 +159,6 @@ resources:
     description: "Analysis of racial bias in algorithmic design and technology"
     tags: ["Reading/Books/Ethics & Society"]
     
-  - name: "Life 3.0: Being Human in the Age of AI by Max Tegmark"
-    url: "https://life3point0.com/"
-    description: "Exploration of AI's future impact on humanity and society"
-    tags: ["Reading/Books/Ethics & Society"]
-    
   - name: "Human Compatible by Stuart Russell"
     url: "https://humancompatible.ai/"
     description: "AI safety and the challenge of creating beneficial artificial intelligence"
@@ -206,11 +201,6 @@ resources:
     description: "Digital magazine for research and perspectives on AI"
     tags: ["Reading/Blogs/Industry Analysis"]
     
-  - name: "AI Research"
-    url: "https://airesearch.com/"
-    description: "Analysis and insights on AI industry trends and developments"
-    tags: ["Reading/Blogs/Industry Analysis"]
-    
   - name: "VentureBeat AI"
     url: "https://venturebeat.com/ai/"
     description: "AI industry news, analysis, and business applications"
@@ -237,42 +227,12 @@ resources:
     description: "Former Google Chief Decision Scientist's perspectives on AI and data"
     tags: ["Reading/Blogs/Personal Blogs"]
 
-  # Reading - Blogs - Company Engineering Blogs
-  - name: "Netflix Tech Blog"
-    url: "https://netflixtechblog.com/"
-    description: "Engineering insights including ML applications at Netflix"
-    tags: ["Reading/Blogs/Company Engineering Blogs"]
-    
-  - name: "Uber Engineering"
-    url: "https://www.uber.com/blog/engineering/"
-    description: "Engineering blog covering AI/ML applications at Uber"
-    tags: ["Reading/Blogs/Company Engineering Blogs"]
-    
-  - name: "Airbnb Engineering"
-    url: "https://medium.com/airbnb-engineering"
-    description: "Technical blog covering data science and ML at Airbnb"
-    tags: ["Reading/Blogs/Company Engineering Blogs"]
-    
-  - name: "Spotify Engineering"
-    url: "https://engineering.atspotify.com/"
-    description: "Technical insights on ML applications in music recommendation"
-    tags: ["Reading/Blogs/Company Engineering Blogs"]
-
   # Reading - Other - White Papers
   - name: "McKinsey AI Report 2025"
     url: "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai"
     description: "Annual comprehensive analysis of AI adoption and impact across industries"
     tags: ["Reading/Other/White Papers"]
     
-  - name: "PwC AI Analysis"
-    url: "https://www.pwc.com/gx/en/issues/analytics/assets/pwc-ai-and-workforce-evolution-report.pdf"
-    description: "Analysis of AI's impact on workforce and economic transformation"
-    tags: ["Reading/Other/White Papers"]
-    
-  - name: "Deloitte State of AI Report"
-    url: "https://www2.deloitte.com/us/en/insights/focus/cognitive-technologies/state-of-ai-and-intelligent-automation-in-business-survey.html"
-    description: "Enterprise AI adoption trends and business transformation insights"
-    tags: ["Reading/Other/White Papers"]
 
   # Reading - Other - Technical Documentation
   - name: "TensorFlow Documentation"
@@ -296,10 +256,6 @@ resources:
     tags: ["Reading/Other/Technical Documentation"]
 
   # Reading - Other - Case Studies
-  - name: "Google AI Case Studies"
-    url: "https://ai.google/discover/case-studies/"
-    description: "Real-world AI implementation stories from Google"
-    tags: ["Reading/Other/Case Studies"]
     
   - name: "Microsoft AI Customer Stories"
     url: "https://customers.microsoft.com/en-us/search?sq=AI&ff=&p=0"
@@ -388,7 +344,7 @@ resources:
     tags: ["Datasets/NLP/Domain-Specific"]
     
   - name: "Yelp Reviews Dataset"
-    url: "https://www.yelp.com/dataset"
+    url: "https://business.yelp.com/data/resources/open-dataset/"
     description: "Restaurant and business reviews for sentiment analysis"
     tags: ["Datasets/NLP/Domain-Specific"]
 
@@ -422,11 +378,6 @@ resources:
   - name: "COCO Dataset"
     url: "https://cocodataset.org/"
     description: "Common Objects in Context dataset for object detection and segmentation"
-    tags: ["Datasets/Computer Vision/Core Datasets"]
-    
-  - name: "PASCAL VOC"
-    url: "http://host.robots.ox.ac.uk/pascal/VOC/"
-    description: "Visual Object Classes dataset for object detection and classification"
     tags: ["Datasets/Computer Vision/Core Datasets"]
     
   - name: "Cityscapes"
@@ -477,11 +428,6 @@ resources:
     tags: ["Datasets/Computer Vision/Video"]
 
   # Datasets - Computer Vision - 3D Vision
-  - name: "ShapeNet"
-    url: "https://shapenet.org/"
-    description: "Large-scale repository of 3D CAD models for 3D object understanding"
-    tags: ["Datasets/Computer Vision/3D Vision"]
-    
   - name: "ModelNet"
     url: "https://modelnet.cs.princeton.edu/"
     description: "3D CAD model dataset for 3D object recognition"
@@ -511,11 +457,6 @@ resources:
   - name: "Visual Question Answering (VQA) 2.0"
     url: "https://visualqa.org/"
     description: "Dataset for visual question answering with natural language"
-    tags: ["Datasets/Multimodal/Vision-Language"]
-    
-  - name: "Visual Genome"
-    url: "https://visualgenome.org/"
-    description: "Dense annotations of objects, attributes, and relationships in images"
     tags: ["Datasets/Multimodal/Vision-Language"]
 
   # Datasets - Multimodal - Audio-Visual
@@ -566,11 +507,6 @@ resources:
     description: "Dataset combining scientific papers with figures and text for multimodal understanding"
     tags: ["Datasets/Multimodal/Scientific"]
     
-  - name: "SciCap"
-    url: "https://github.com/tinglyfeng/SciCap"
-    description: "Scientific figure captioning dataset from research papers"
-    tags: ["Datasets/Multimodal/Scientific"]
-    
   - name: "ChartQA"
     url: "https://github.com/vis-nlp/ChartQA"
     description: "Question answering dataset for charts and scientific figures"
@@ -587,20 +523,10 @@ resources:
     description: "Medical Information Mart for Intensive Care containing healthcare data"
     tags: ["Datasets/Healthcare"]
     
-  - name: "NIH Clinical Center Datasets"
-    url: "https://www.cc.nih.gov/drd/datasets.html"
-    description: "Clinical datasets from National Institutes of Health"
-    tags: ["Datasets/Healthcare"]
-    
   - name: "QDataSet"
     url: "https://arxiv.org/abs/2108.06661"
     description: "Quantum datasets for machine learning applications"
     tags: ["Datasets/Quantum ML"]
-    
-  - name: "Atari 2600 Games"
-    url: "https://gym.openai.com/envs/#atari"
-    description: "Classic video games environment for reinforcement learning"
-    tags: ["Datasets/Reinforcement Learning"]
     
   - name: "Financial Data from Yahoo Finance"
     url: "https://finance.yahoo.com/"
@@ -1328,11 +1254,6 @@ resources:
     description: "Data integration and analytics platform for financial institutions"
     tags: ["Applications/Industry-Specific/Finance"]
     
-  - name: "Kensho"
-    url: "https://www.kensho.com/"
-    description: "AI analytics platform for financial markets"
-    tags: ["Applications/Industry-Specific/Finance"]
-    
   - name: "DataRobot"
     url: "https://www.datarobot.com/"
     description: "Automated machine learning platform for financial services"
@@ -1482,11 +1403,6 @@ resources:
     description: "Non-technical introduction to AI by Andrew Ng"
     tags: ["Courses & Training/Courses/MOOC Platforms"]
     
-  - name: "edX MIT Introduction to Machine Learning"
-    url: "https://www.edx.org/course/introduction-to-machine-learning"
-    description: "Machine learning fundamentals from MIT"
-    tags: ["Courses & Training/Courses/MOOC Platforms"]
-    
   - name: "Udacity Machine Learning Nanodegree"
     url: "https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009t"
     description: "Project-based machine learning program"
@@ -1539,58 +1455,33 @@ resources:
     description: "MIT's introductory course on deep learning"
     tags: ["Courses & Training/Courses/Domain-Specific"]
 
-  # Courses & Training - Bootcamps - Premium ($8K+)
-  - name: "Caltech AI Bootcamp"
-    url: "https://www.cpe.caltech.edu/computer-science/ai-machine-learning"
-    description: "Premium AI and machine learning bootcamp from Caltech"
-    tags: ["Courses & Training/Bootcamps/Premium ($8K+)"]
-    
-  - name: "Columbia Engineering AI Bootcamp"
-    url: "https://bootcamp.cvn.columbia.edu/artificial-intelligence/"
-    description: "Comprehensive AI bootcamp from Columbia University"
-    tags: ["Courses & Training/Bootcamps/Premium ($8K+)"]
-    
+  # Courses & Training - Bootcamps - Premium 
   - name: "Fullstack Academy AI Bootcamp"
     url: "https://www.fullstackacademy.com/programs/ai-machine-learning-bootcamp"
     description: "Comprehensive AI and machine learning bootcamp program"
-    tags: ["Courses & Training/Bootcamps/Premium ($8K+)"]
+    tags: ["Courses & Training/Bootcamps/Premium"]
     
   - name: "MIT Professional Education AI"
     url: "https://professional.mit.edu/course-catalog/artificial-intelligence"
     description: "Executive education programs in AI from MIT"
-    tags: ["Courses & Training/Bootcamps/Premium ($8K+)"]
+    tags: ["Courses & Training/Bootcamps/Premium"]
 
-  # Courses & Training - Bootcamps - Mid-Range ($4K-$8K)
+  # Courses & Training - Bootcamps - Mid-Range
   - name: "BrainStation AI Course"
     url: "https://brainstation.io/course/artificial-intelligence"
     description: "Part-time AI course focusing on practical applications"
-    tags: ["Courses & Training/Bootcamps/Mid-Range ($4K-$8K)"]
+    tags: ["Courses & Training/Bootcamps/Mid-Range"]
     
   - name: "Simplilearn AI Engineer"
     url: "https://www.simplilearn.com/artificial-intelligence-masters-program-training-course"
     description: "AI Engineer Master's Program with hands-on projects"
-    tags: ["Courses & Training/Bootcamps/Mid-Range ($4K-$8K)"]
-    
-  - name: "Constructor Academy Data Science"
-    url: "https://www.constructor.org/data-science-bootcamp"
-    description: "Intensive data science and ML bootcamp"
-    tags: ["Courses & Training/Bootcamps/Mid-Range ($4K-$8K)"]
+    tags: ["Courses & Training/Bootcamps/Mid-Range"]
 
-  # Courses & Training - Bootcamps - Affordable (<$4K)
+  # Courses & Training - Bootcamps - Affordable
   - name: "IBM AI Professional Certificate"
     url: "https://www.coursera.org/professional-certificates/applied-artifical-intelligence-ibm-watson-ai"
     description: "Professional certificate program in AI applications"
-    tags: ["Courses & Training/Bootcamps/Affordable (<$4K)"]
-    
-  - name: "NoCode.ai Bootcamp"
-    url: "https://www.nocode.ai/"
-    description: "AI bootcamp focusing on no-code/low-code solutions"
-    tags: ["Courses & Training/Bootcamps/Affordable (<$4K)"]
-    
-  - name: "365 Careers AI Course"
-    url: "https://365careers.com/courses/artificial-intelligence/"
-    description: "Comprehensive AI course with practical projects"
-    tags: ["Courses & Training/Bootcamps/Affordable (<$4K)"]
+    tags: ["Courses & Training/Bootcamps/Affordable"]
 
   # Courses & Training - Bootcamps - Specialized
   - name: "MLOps Bootcamp"
@@ -1639,11 +1530,7 @@ resources:
     url: "https://www.tensorflow.org/certificate"
     description: "Google's certification for TensorFlow proficiency"
     tags: ["Courses & Training/Certificates/Industry Standard"]
-    
-  - name: "PyTorch Certification"
-    url: "https://pytorch.org/certifications"
-    description: "Official certification program for PyTorch framework"
-    tags: ["Courses & Training/Certificates/Industry Standard"]
+
 
   # Courses & Training - Certificates - Academic
   - name: "Stanford AI Graduate Certificate"
@@ -1665,16 +1552,6 @@ resources:
   - name: "AIE Certification Program"
     url: "https://www.aie.org/"
     description: "Professional AI Engineer certification tracks"
-    tags: ["Courses & Training/Certificates/Professional"]
-    
-  - name: "Data Science Council Certification"
-    url: "https://www.datasciencecouncil.org/"
-    description: "Professional data science and AI certifications"
-    tags: ["Courses & Training/Certificates/Professional"]
-    
-  - name: "International Association of AI Practitioners"
-    url: "https://www.iaaip.org/"
-    description: "Professional certification for AI practitioners"
     tags: ["Courses & Training/Certificates/Professional"]
 
   # Courses & Training - Examples - Interactive Platforms
@@ -1746,11 +1623,6 @@ resources:
     description: "Step-by-step tutorials and project walkthroughs"
     tags: ["Courses & Training/Examples/Hands-on Projects"]
     
-  - name: "Towards Data Science Projects"
-    url: "https://towardsdatascience.com/tagged/project"
-    description: "End-to-end project tutorials and case studies"
-    tags: ["Courses & Training/Examples/Hands-on Projects"]
-    
   - name: "Real Python ML Tutorials"
     url: "https://realpython.com/tutorials/machine-learning/"
     description: "Practical machine learning tutorials in Python"
@@ -1804,11 +1676,6 @@ resources:
   - name: "Hugging Face Community"
     url: "https://huggingface.co/join/discord"
     description: "Active community around open source NLP and ML models"
-    tags: ["Community & Networking/Online Communities/High-Engagement"]
-    
-  - name: "AI Twitter Community"
-    url: "https://twitter.com/hashtag/MachineLearning"
-    description: "Active AI research and industry discussions on Twitter"
     tags: ["Community & Networking/Online Communities/High-Engagement"]
 
   # Community & Networking - Online Communities - Specialized
@@ -1872,7 +1739,7 @@ resources:
     tags: ["Career & Professional Development/Job Resources/Specialized Job Boards"]
     
   - name: "AI-Jobs.net"
-    url: "https://ai-jobs.net/"
+    url: "https://aijobs.net/"
     description: "Global job board for artificial intelligence careers"
     tags: ["Career & Professional Development/Job Resources/Specialized Job Boards"]
 
@@ -1941,11 +1808,6 @@ resources:
     url: "https://www.cognitiverevolution.ai/"
     description: "Podcast exploring AI's impact on society and the future"
     tags: ["Media & Information/Podcasts/General Audience"]
-    
-  - name: "AI Today"
-    url: "https://www.aitodaypodcast.com/"
-    description: "Business-focused AI podcast covering industry applications"
-    tags: ["Media & Information/Podcasts/General Audience"]
 
   # ===== RESEARCH INFRASTRUCTURE =====
 
@@ -2007,11 +1869,6 @@ resources:
     description: "National Science Foundation AI research funding and institutes"
     tags: ["Academic & Research/Research Infrastructure/Government"]
     
-  - name: "DARPA AI Programs"
-    url: "https://www.darpa.mil/work-with-us/ai-next-campaign"
-    description: "Defense Advanced Research Projects Agency AI initiatives"
-    tags: ["Academic & Research/Research Infrastructure/Government"]
-    
   - name: "NIH AI/ML Consortium"
     url: "https://datascience.nih.gov/artificial-intelligence"
     description: "National Institutes of Health AI and ML research programs"
@@ -2022,12 +1879,7 @@ resources:
     url: "https://www.nsf.gov/funding/programs.jsp?org=CISE"
     description: "NSF funding opportunities for computer and information science"
     tags: ["Academic & Research/Funding & Grants/Federal Funding"]
-    
-  - name: "DOE Office of Science AI"
-    url: "https://www.energy.gov/science/artificial-intelligence-and-machine-learning"
-    description: "Department of Energy AI and ML research funding"
-    tags: ["Academic & Research/Funding & Grants/Federal Funding"]
-    
+
   - name: "NIH Data Science Programs"
     url: "https://datascience.nih.gov/funding"
     description: "National Institutes of Health data science funding opportunities"
@@ -2073,11 +1925,6 @@ resources:
     description: "Multi-stakeholder organization addressing AI's benefits and challenges"
     tags: ["Ethics, Safety & Governance/Ethical AI Resources/Organizations"]
     
-  - name: "AI Ethics Institute"
-    url: "https://www.aiethicsinstitute.org/"
-    description: "Research institute focused on AI ethics and responsible development"
-    tags: ["Ethics, Safety & Governance/Ethical AI Resources/Organizations"]
-    
   - name: "Future of Humanity Institute"
     url: "https://www.fhi.ox.ac.uk/"
     description: "Oxford research institute studying existential risks including AI"
@@ -2102,11 +1949,6 @@ resources:
   - name: "IBM AI Ethics Board"
     url: "https://www.ibm.com/artificial-intelligence/ethics"
     description: "IBM's approach to trustworthy AI and ethics"
-    tags: ["Ethics, Safety & Governance/Ethical AI Resources/Frameworks"]
-    
-  - name: "Fairness 360 Toolkit"
-    url: "https://aif360.mybluemix.net/"
-    description: "Open source library for detecting and mitigating bias in ML"
     tags: ["Ethics, Safety & Governance/Ethical AI Resources/Frameworks"]
 
   # Ethics, Safety & Governance - Regulatory & Compliance - Government Policies
@@ -2153,11 +1995,6 @@ resources:
     url: "https://www.pwc.com/us/en/tech-effect/ai-analytics.html"
     description: "Analysis of AI's impact on workforce and business"
     tags: ["Industry & Market Intelligence/Market Analysis/Industry Reports"]
-    
-  - name: "Deloitte State of AI Report"
-    url: "https://www2.deloitte.com/us/en/insights/focus/cognitive-technologies.html"
-    description: "Enterprise AI adoption trends and insights"
-    tags: ["Industry & Market Intelligence/Market Analysis/Industry Reports"]
 
   # Industry & Market Intelligence - Standards & Benchmarks - Performance Benchmarks
   - name: "HELM Benchmark"
@@ -2184,7 +2021,7 @@ resources:
 
   # Development Tools - AI Coding Assistants
   - name: "Cursor IDE"
-    url: "https://cursor.sh/"
+    url: "https://cursor.com/"
     description: "AI-powered code editor with built-in AI assistance"
     tags: ["Tools/Development Tools/AI Coding"]
     
@@ -2311,10 +2148,6 @@ resources:
     description: "Advanced robotics with AI-powered movement and navigation"
     tags: ["Applications/Specialized Domains/Robotics"]
     
-  - name: "OpenAI Robotics"
-    url: "https://openai.com/research/tags/robotics"
-    description: "OpenAI's research in robotics and embodied AI"
-    tags: ["Applications/Specialized Domains/Robotics"]
     
   - name: "Tesla Bot (Optimus)"
     url: "https://www.tesla.com/AI"
@@ -2367,11 +2200,6 @@ resources:
   - name: "Zapier"
     url: "https://zapier.com/"
     description: "Automation platform connecting apps and workflows"
-    tags: ["Applications/Industry-Specific/Productivity"]
-    
-  - name: "Monday.com AI"
-    url: "https://monday.com/ai/"
-    description: "Work management platform with AI capabilities"
     tags: ["Applications/Industry-Specific/Productivity"]
 
   # Final comprehensive resource

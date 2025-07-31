@@ -11,6 +11,10 @@ class AIResourcesApp {
         this.loading = document.getElementById('loading');
         this.totalResourcesEl = document.getElementById('total-resources');
         this.totalCategoriesEl = document.getElementById('total-categories');
+        this.searchResultsInfo = document.getElementById('search-results-info');
+        this.searchResultsCount = document.getElementById('search-results-count');
+        this.searchTermEl = document.getElementById('search-term');
+        this.clearSearchBtn = document.getElementById('clear-search');
         
         this.init();
     }
@@ -71,47 +75,89 @@ class AIResourcesApp {
                 this.toggleCategory(categoryId);
             }
         });
+
+        // Clear search button
+        this.clearSearchBtn.addEventListener('click', () => {
+            this.searchInput.value = '';
+            this.handleSearch('');
+            this.searchInput.focus();
+        });
     }
 
     handleSearch(query) {
-        const searchTerm = query.toLowerCase().trim();
-        const allItems = this.resourcesGrid.querySelectorAll('.search-item');
-        const allCategories = this.resourcesGrid.querySelectorAll('.category-section');
-
-        // Hide/show individual items based on search
-        allItems.forEach(item => {
-            const text = item.textContent.toLowerCase();
-            const shouldShow = !searchTerm || text.includes(searchTerm);
-            item.style.display = shouldShow ? '' : 'none';
-        });
-
-        if (searchTerm) {
-            // Auto-expand all categories to show search results
-            allCategories.forEach(categorySection => {
-                const categoryToggle = categorySection.querySelector('.category-toggle');
-                if (categoryToggle) {
-                    const categoryId = categoryToggle.dataset.category;
-                    if (categoryId) {
-                        this.expandCategory(categoryId);
-                    }
-                }
-            });
-        } else {
-            // When search is cleared, collapse subcategories but keep main categories expanded
-            allCategories.forEach(categorySection => {
-                const isMainCategory = categorySection.classList.contains('depth-0');
-                const categoryToggle = categorySection.querySelector('.category-toggle');
-                if (categoryToggle) {
-                    const categoryId = categoryToggle.dataset.category;
-                    if (categoryId) {
-                        if (isMainCategory) {
-                            this.expandCategory(categoryId);
-                        }
-                    }
-                }
-            });
+        const q = query.toLowerCase().trim();
+        const grid = this.resourcesGrid;
+        const sections = Array.from(grid.querySelectorAll('.category-section'));
+        const items = Array.from(grid.querySelectorAll('.search-item'));
+      
+        // If no query, just reset to default:
+        if (!q) {
+          items.forEach(i => i.style.display = '');
+          sections.forEach(sec => {
+            sec.style.display = '';
+            const toggle = sec.querySelector('.category-toggle');
+            const id     = toggle?.dataset.category;
+            if (!id) return;
+            if (sec.classList.contains('depth-0')) this.expandCategory(id);
+            else                                   this.collapseCategory(id);
+          });
+          this.updateCategoryCounts();
+          this.hideSearchResults();
+          return;
         }
+      
+        // 1️⃣ Collapse every category-content and reset arrows
+        grid.querySelectorAll('.category-content.expanded').forEach(content => {
+          content.classList.remove('expanded');
+          const section = content.closest('.category-section');
+          const arrow   = section?.querySelector('.expand-arrow');
+          if (arrow) arrow.textContent = '▶';
+        });
+      
+        // 2️⃣ Hide every category-section
+        sections.forEach(sec => sec.style.display = 'none');
+      
+        // 3️⃣ Show only items that match, and collect their category IDs
+        const matchedCats = new Set();
+        items.forEach(item => {
+          if (item.textContent.toLowerCase().includes(q)) {
+            item.style.display = '';
+            // walk up and record every ancestor category
+            let sec = item.closest('.category-section');
+            while (sec) {
+              const id = sec.querySelector('.category-toggle')?.dataset.category;
+              if (id) matchedCats.add(id);
+              sec = sec.parentElement.closest('.category-section');
+            }
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      
+        // helper: for "cat-A-B-C" → ["cat-A","cat-A-B","cat-A-B-C"]
+        const expandChain = id => {
+          const parts = id.replace(/^cat-/, '').split('-');
+          return parts.map((_,i) => 'cat-' + parts.slice(0,i+1).join('-'));
+        };
+      
+        // 4️⃣ Un-hide & expand only the branches leading to matches
+        matchedCats.forEach(catId => {
+          expandChain(catId).forEach(id => {
+            const sec = grid.querySelector(`[data-category="${id}"]`)
+                            ?.closest('.category-section');
+            if (!sec) return;
+            sec.style.display = '';
+            this.expandCategory(id);
+          });
+        });
+      
+        // 5️⃣ Update counts & show summary
+        const total = items.filter(i => i.style.display !== 'none').length;
+        this.updateCategoryCounts(q, total);
+        this.showSearchResults(q, total);
     }
+      
+      
 
     toggleCategory(categoryId) {
         const content = document.getElementById(`content-${categoryId}`);
@@ -120,13 +166,14 @@ class AIResourcesApp {
         if (!content || !toggle) return;
 
         const isExpanded = content.classList.contains('expanded');
+        const arrow = toggle.querySelector('.expand-arrow');
         
         if (isExpanded) {
             content.classList.remove('expanded');
-            toggle.textContent = toggle.textContent.replace('▼', '▶');
+            if (arrow) arrow.textContent = '▶';
         } else {
             content.classList.add('expanded');
-            toggle.textContent = toggle.textContent.replace('▶', '▼');
+            if (arrow) arrow.textContent = '▼';
         }
     }
 
@@ -137,7 +184,19 @@ class AIResourcesApp {
         if (!content || !toggle) return;
 
         content.classList.add('expanded');
-        toggle.textContent = toggle.textContent.replace('▶', '▼');
+        const arrow = toggle.querySelector('.expand-arrow');
+        if (arrow) arrow.textContent = '▼';
+    }
+
+    collapseCategory(categoryId) {
+        const content = document.getElementById(`content-${categoryId}`);
+        const toggle = document.querySelector(`[data-category="${categoryId}"]`);
+        
+        if (!content || !toggle) return;
+
+        content.classList.remove('expanded');
+        const arrow = toggle.querySelector('.expand-arrow');
+        if (arrow) arrow.textContent = '▶';
     }
 
     renderResources() {
@@ -277,6 +336,59 @@ class AIResourcesApp {
         
         this.totalResourcesEl.textContent = totalResources;
         this.totalCategoriesEl.textContent = totalCategories;
+    }
+
+    updateCategoryCounts(searchTerm = '', totalMatches = 0) {
+        const allCategories = this.resourcesGrid.querySelectorAll('.category-section');
+        
+        allCategories.forEach(categorySection => {
+            const categoryToggle = categorySection.querySelector('.category-toggle');
+            const countElement = categoryToggle?.querySelector('.category-count');
+            
+            if (!countElement) return;
+            
+            if (searchTerm) {
+                // Count visible items in this category during search
+                const visibleItems = categorySection.querySelectorAll('.search-item:not([style*="display: none"])');
+                const count = visibleItems.length;
+                countElement.textContent = `(${count})`;
+                
+                // Add search styling to indicate filtered results
+                countElement.style.background = count > 0 ? '#059669' : 'rgba(255, 255, 255, 0.2)';
+            } else {
+                // Reset to original counts
+                const categoryId = categoryToggle.dataset.category;
+                const originalCount = this.getOriginalCategoryCount(categoryId);
+                countElement.textContent = `(${originalCount})`;
+                countElement.style.background = '';
+            }
+        });
+    }
+
+    getOriginalCategoryCount(categoryId) {
+        // Extract the category path from the ID and calculate original count
+        const pathParts = categoryId.replace('cat-', '').split('-');
+        let currentData = this.resources;
+        
+        for (const part of pathParts) {
+            if (currentData && currentData[part]) {
+                currentData = currentData[part];
+            } else {
+                return 0;
+            }
+        }
+        
+        return this.countItems(currentData);
+    }
+
+    showSearchResults(searchTerm, totalMatches) {
+        this.searchResultsCount.textContent = totalMatches;
+        this.searchTermEl.textContent = searchTerm;
+        this.searchResultsInfo.classList.remove('hidden');
+    }
+
+    hideSearchResults() {
+        this.searchResultsInfo.classList.add('hidden');
     }
 
     formatTitle(key) {

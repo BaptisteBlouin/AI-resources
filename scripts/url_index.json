@@ -239,14 +239,6 @@
     ],
     "added_date": null
   },
-  "https://life3point0.com/": {
-    "name": "Life 3.0: Being Human in the Age of AI by Max Tegmark",
-    "original_url": "https://life3point0.com/",
-    "tags": [
-      "Reading/Books/Ethics & Society"
-    ],
-    "added_date": null
-  },
   "https://humancompatible.ai/": {
     "name": "Center for Human-Compatible AI",
     "original_url": "https://humancompatible.ai/",
@@ -311,14 +303,6 @@
     ],
     "added_date": null
   },
-  "https://airesearch.com/": {
-    "name": "AI Research",
-    "original_url": "https://airesearch.com/",
-    "tags": [
-      "Reading/Blogs/Industry Analysis"
-    ],
-    "added_date": null
-  },
   "https://venturebeat.com/ai": {
     "name": "VentureBeat AI",
     "original_url": "https://venturebeat.com/ai/",
@@ -359,57 +343,9 @@
     ],
     "added_date": null
   },
-  "https://netflixtechblog.com/": {
-    "name": "Netflix Tech Blog",
-    "original_url": "https://netflixtechblog.com/",
-    "tags": [
-      "Reading/Blogs/Company Engineering Blogs"
-    ],
-    "added_date": null
-  },
-  "https://uber.com/blog/engineering": {
-    "name": "Uber Engineering",
-    "original_url": "https://www.uber.com/blog/engineering/",
-    "tags": [
-      "Reading/Blogs/Company Engineering Blogs"
-    ],
-    "added_date": null
-  },
-  "https://medium.com/airbnb-engineering": {
-    "name": "Airbnb Engineering",
-    "original_url": "https://medium.com/airbnb-engineering",
-    "tags": [
-      "Reading/Blogs/Company Engineering Blogs"
-    ],
-    "added_date": null
-  },
-  "https://engineering.atspotify.com/": {
-    "name": "Spotify Engineering",
-    "original_url": "https://engineering.atspotify.com/",
-    "tags": [
-      "Reading/Blogs/Company Engineering Blogs"
-    ],
-    "added_date": null
-  },
   "https://mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai": {
     "name": "McKinsey AI Report 2025",
     "original_url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
-    "tags": [
-      "Reading/Other/White Papers"
-    ],
-    "added_date": null
-  },
-  "https://pwc.com/gx/en/issues/analytics/assets/pwc-ai-and-workforce-evolution-report.pdf": {
-    "name": "PwC AI Analysis",
-    "original_url": "https://www.pwc.com/gx/en/issues/analytics/assets/pwc-ai-and-workforce-evolution-report.pdf",
-    "tags": [
-      "Reading/Other/White Papers"
-    ],
-    "added_date": null
-  },
-  "https://www2.deloitte.com/us/en/insights/focus/cognitive-technologies/state-of-ai-and-intelligent-automation-in-business-survey.html": {
-    "name": "Deloitte State of AI Report",
-    "original_url": "https://www2.deloitte.com/us/en/insights/focus/cognitive-technologies/state-of-ai-and-intelligent-automation-in-business-survey.html",
     "tags": [
       "Reading/Other/White Papers"
     ],
@@ -444,14 +380,6 @@
     "original_url": "https://docs.anthropic.com/",
     "tags": [
       "Reading/Other/Technical Documentation"
-    ],
-    "added_date": null
-  },
-  "https://ai.google/discover/case-studies": {
-    "name": "Google AI Case Studies",
-    "original_url": "https://ai.google/discover/case-studies/",
-    "tags": [
-      "Reading/Other/Case Studies"
     ],
     "added_date": null
   },
@@ -583,9 +511,9 @@
     ],
     "added_date": null
   },
-  "https://yelp.com/dataset": {
+  "https://business.yelp.com/data/resources/open-dataset": {
     "name": "Yelp Reviews Dataset",
-    "original_url": "https://www.yelp.com/dataset",
+    "original_url": "https://business.yelp.com/data/resources/open-dataset/",
     "tags": [
       "Datasets/NLP/Domain-Specific"
     ],
@@ -634,14 +562,6 @@
   "https://cocodataset.org/": {
     "name": "COCO Dataset",
     "original_url": "https://cocodataset.org/",
-    "tags": [
-      "Datasets/Computer Vision/Core Datasets"
-    ],
-    "added_date": null
-  },
-  "https://host.robots.ox.ac.uk/pascal/VOC": {
-    "name": "PASCAL VOC",
-    "original_url": "http://host.robots.ox.ac.uk/pascal/VOC/",
     "tags": [
       "Datasets/Computer Vision/Core Datasets"
     ],
@@ -719,14 +639,6 @@
     ],
     "added_date": null
   },
-  "https://shapenet.org/": {
-    "name": "ShapeNet",
-    "original_url": "https://shapenet.org/",
-    "tags": [
-      "Datasets/Computer Vision/3D Vision"
-    ],
-    "added_date": null
-  },
   "https://modelnet.cs.princeton.edu/": {
     "name": "ModelNet",
     "original_url": "https://modelnet.cs.princeton.edu/",
@@ -770,14 +682,6 @@
   "https://visualqa.org/": {
     "name": "Visual Question Answering (VQA) 2.0",
     "original_url": "https://visualqa.org/",
-    "tags": [
-      "Datasets/Multimodal/Vision-Language"
-    ],
-    "added_date": null
-  },
-  "https://visualgenome.org/": {
-    "name": "Visual Genome",
-    "original_url": "https://visualgenome.org/",
     "tags": [
       "Datasets/Multimodal/Vision-Language"
     ],
@@ -855,14 +759,6 @@
     ],
     "added_date": null
   },
-  "https://github.com/tinglyfeng/SciCap": {
-    "name": "SciCap",
-    "original_url": "https://github.com/tinglyfeng/SciCap",
-    "tags": [
-      "Datasets/Multimodal/Scientific"
-    ],
-    "added_date": null
-  },
   "https://github.com/vis-nlp/ChartQA": {
     "name": "ChartQA",
     "original_url": "https://github.com/vis-nlp/ChartQA",
@@ -887,27 +783,11 @@
     ],
     "added_date": null
   },
-  "https://cc.nih.gov/drd/datasets.html": {
-    "name": "NIH Clinical Center Datasets",
-    "original_url": "https://www.cc.nih.gov/drd/datasets.html",
-    "tags": [
-      "Datasets/Healthcare"
-    ],
-    "added_date": null
-  },
   "https://arxiv.org/abs/2108.06661": {
     "name": "QDataSet",
     "original_url": "https://arxiv.org/abs/2108.06661",
     "tags": [
       "Datasets/Quantum ML"
-    ],
-    "added_date": null
-  },
-  "https://gym.openai.com/envs": {
-    "name": "Atari 2600 Games",
-    "original_url": "https://gym.openai.com/envs/#atari",
-    "tags": [
-      "Datasets/Reinforcement Learning"
     ],
     "added_date": null
   },
@@ -1755,7 +1635,7 @@
     "name": "Cursor IDE",
     "original_url": "https://cursor.sh/",
     "tags": [
-      "Tools/Development Tools/AI Coding"
+      "Applications/Conversational AI/Specialized"
     ],
     "added_date": null
   },
@@ -2015,14 +1895,6 @@
     ],
     "added_date": null
   },
-  "https://kensho.com/": {
-    "name": "Kensho",
-    "original_url": "https://www.kensho.com/",
-    "tags": [
-      "Applications/Industry-Specific/Finance"
-    ],
-    "added_date": null
-  },
   "https://datarobot.com/": {
     "name": "DataRobot",
     "original_url": "https://www.datarobot.com/",
@@ -2247,14 +2119,6 @@
     ],
     "added_date": null
   },
-  "https://edx.org/course/introduction-to-machine-learning": {
-    "name": "edX MIT Introduction to Machine Learning",
-    "original_url": "https://www.edx.org/course/introduction-to-machine-learning",
-    "tags": [
-      "Courses & Training/Courses/MOOC Platforms"
-    ],
-    "added_date": null
-  },
   "https://udacity.com/course/machine-learning-engineer-nanodegree--nd009t": {
     "name": "Udacity Machine Learning Nanodegree",
     "original_url": "https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009t",
@@ -2327,27 +2191,11 @@
     ],
     "added_date": null
   },
-  "https://cpe.caltech.edu/computer-science/ai-machine-learning": {
-    "name": "Caltech AI Bootcamp",
-    "original_url": "https://www.cpe.caltech.edu/computer-science/ai-machine-learning",
-    "tags": [
-      "Courses & Training/Bootcamps/Premium ($8K+)"
-    ],
-    "added_date": null
-  },
-  "https://bootcamp.cvn.columbia.edu/artificial-intelligence": {
-    "name": "Columbia Engineering AI Bootcamp",
-    "original_url": "https://bootcamp.cvn.columbia.edu/artificial-intelligence/",
-    "tags": [
-      "Courses & Training/Bootcamps/Premium ($8K+)"
-    ],
-    "added_date": null
-  },
   "https://fullstackacademy.com/programs/ai-machine-learning-bootcamp": {
     "name": "Fullstack Academy AI Bootcamp",
     "original_url": "https://www.fullstackacademy.com/programs/ai-machine-learning-bootcamp",
     "tags": [
-      "Courses & Training/Bootcamps/Premium ($8K+)"
+      "Courses & Training/Bootcamps/Premium"
     ],
     "added_date": null
   },
@@ -2363,7 +2211,7 @@
     "name": "BrainStation AI Course",
     "original_url": "https://brainstation.io/course/artificial-intelligence",
     "tags": [
-      "Courses & Training/Bootcamps/Mid-Range ($4K-$8K)"
+      "Courses & Training/Bootcamps/Mid-Range"
     ],
     "added_date": null
   },
@@ -2371,15 +2219,7 @@
     "name": "Simplilearn AI Engineer",
     "original_url": "https://www.simplilearn.com/artificial-intelligence-masters-program-training-course",
     "tags": [
-      "Courses & Training/Bootcamps/Mid-Range ($4K-$8K)"
-    ],
-    "added_date": null
-  },
-  "https://constructor.org/data-science-bootcamp": {
-    "name": "Constructor Academy Data Science",
-    "original_url": "https://www.constructor.org/data-science-bootcamp",
-    "tags": [
-      "Courses & Training/Bootcamps/Mid-Range ($4K-$8K)"
+      "Courses & Training/Bootcamps/Mid-Range"
     ],
     "added_date": null
   },
@@ -2387,23 +2227,7 @@
     "name": "IBM AI Professional Certificate",
     "original_url": "https://www.coursera.org/professional-certificates/applied-artifical-intelligence-ibm-watson-ai",
     "tags": [
-      "Courses & Training/Bootcamps/Affordable (<$4K)"
-    ],
-    "added_date": null
-  },
-  "https://nocode.ai/": {
-    "name": "NoCode.ai Bootcamp",
-    "original_url": "https://www.nocode.ai/",
-    "tags": [
-      "Courses & Training/Bootcamps/Affordable (<$4K)"
-    ],
-    "added_date": null
-  },
-  "https://365careers.com/courses/artificial-intelligence": {
-    "name": "365 Careers AI Course",
-    "original_url": "https://365careers.com/courses/artificial-intelligence/",
-    "tags": [
-      "Courses & Training/Bootcamps/Affordable (<$4K)"
+      "Courses & Training/Bootcamps/Affordable"
     ],
     "added_date": null
   },
@@ -2479,14 +2303,6 @@
     ],
     "added_date": null
   },
-  "https://pytorch.org/certifications": {
-    "name": "PyTorch Certification",
-    "original_url": "https://pytorch.org/certifications",
-    "tags": [
-      "Courses & Training/Certificates/Industry Standard"
-    ],
-    "added_date": null
-  },
   "https://online.stanford.edu/programs/artificial-intelligence-graduate-certificate": {
     "name": "Stanford AI Graduate Certificate",
     "original_url": "https://online.stanford.edu/programs/artificial-intelligence-graduate-certificate",
@@ -2506,22 +2322,6 @@
   "https://aie.org/": {
     "name": "AIE Certification Program",
     "original_url": "https://www.aie.org/",
-    "tags": [
-      "Courses & Training/Certificates/Professional"
-    ],
-    "added_date": null
-  },
-  "https://datasciencecouncil.org/": {
-    "name": "Data Science Council Certification",
-    "original_url": "https://www.datasciencecouncil.org/",
-    "tags": [
-      "Courses & Training/Certificates/Professional"
-    ],
-    "added_date": null
-  },
-  "https://iaaip.org/": {
-    "name": "International Association of AI Practitioners",
-    "original_url": "https://www.iaaip.org/",
     "tags": [
       "Courses & Training/Certificates/Professional"
     ],
@@ -2631,14 +2431,6 @@
     ],
     "added_date": null
   },
-  "https://towardsdatascience.com/tagged/project": {
-    "name": "Towards Data Science Projects",
-    "original_url": "https://towardsdatascience.com/tagged/project",
-    "tags": [
-      "Courses & Training/Examples/Hands-on Projects"
-    ],
-    "added_date": null
-  },
   "https://realpython.com/tutorials/machine-learning": {
     "name": "Real Python ML Tutorials",
     "original_url": "https://realpython.com/tutorials/machine-learning/",
@@ -2719,14 +2511,6 @@
     ],
     "added_date": null
   },
-  "https://twitter.com/hashtag/MachineLearning": {
-    "name": "AI Twitter Community",
-    "original_url": "https://twitter.com/hashtag/MachineLearning",
-    "tags": [
-      "Community & Networking/Online Communities/High-Engagement"
-    ],
-    "added_date": null
-  },
   "https://kaggle.com/discussions": {
     "name": "Kaggle Community",
     "original_url": "https://www.kaggle.com/discussions",
@@ -2799,9 +2583,9 @@
     ],
     "added_date": null
   },
-  "https://ai-jobs.net/": {
+  "https://aijobs.net/": {
     "name": "AI-Jobs.net",
-    "original_url": "https://ai-jobs.net/",
+    "original_url": "https://aijobs.net/",
     "tags": [
       "Career & Professional Development/Job Resources/Specialized Job Boards"
     ],
@@ -2903,14 +2687,6 @@
     ],
     "added_date": null
   },
-  "https://aitodaypodcast.com/": {
-    "name": "AI Today",
-    "original_url": "https://www.aitodaypodcast.com/",
-    "tags": [
-      "Media & Information/Podcasts/General Audience"
-    ],
-    "added_date": null
-  },
   "https://ai.stanford.edu/": {
     "name": "Stanford AI Lab (SAIL)",
     "original_url": "https://ai.stanford.edu/",
@@ -2999,14 +2775,6 @@
     ],
     "added_date": null
   },
-  "https://darpa.mil/work-with-us/ai-next-campaign": {
-    "name": "DARPA AI Programs",
-    "original_url": "https://www.darpa.mil/work-with-us/ai-next-campaign",
-    "tags": [
-      "Academic & Research/Research Infrastructure/Government"
-    ],
-    "added_date": null
-  },
   "https://datascience.nih.gov/artificial-intelligence": {
     "name": "NIH AI/ML Consortium",
     "original_url": "https://datascience.nih.gov/artificial-intelligence",
@@ -3018,14 +2786,6 @@
   "https://nsf.gov/funding/programs.jsp?org=CISE": {
     "name": "NSF Computer and Information Science",
     "original_url": "https://www.nsf.gov/funding/programs.jsp?org=CISE",
-    "tags": [
-      "Academic & Research/Funding & Grants/Federal Funding"
-    ],
-    "added_date": null
-  },
-  "https://energy.gov/science/artificial-intelligence-and-machine-learning": {
-    "name": "DOE Office of Science AI",
-    "original_url": "https://www.energy.gov/science/artificial-intelligence-and-machine-learning",
     "tags": [
       "Academic & Research/Funding & Grants/Federal Funding"
     ],
@@ -3095,14 +2855,6 @@
     ],
     "added_date": null
   },
-  "https://aiethicsinstitute.org/": {
-    "name": "AI Ethics Institute",
-    "original_url": "https://www.aiethicsinstitute.org/",
-    "tags": [
-      "Ethics, Safety & Governance/Ethical AI Resources/Organizations"
-    ],
-    "added_date": null
-  },
   "https://fhi.ox.ac.uk/": {
     "name": "Future of Humanity Institute",
     "original_url": "https://www.fhi.ox.ac.uk/",
@@ -3138,14 +2890,6 @@
   "https://ibm.com/artificial-intelligence/ethics": {
     "name": "IBM AI Ethics Board",
     "original_url": "https://www.ibm.com/artificial-intelligence/ethics",
-    "tags": [
-      "Ethics, Safety & Governance/Ethical AI Resources/Frameworks"
-    ],
-    "added_date": null
-  },
-  "https://aif360.mybluemix.net/": {
-    "name": "Fairness 360 Toolkit",
-    "original_url": "https://aif360.mybluemix.net/",
     "tags": [
       "Ethics, Safety & Governance/Ethical AI Resources/Frameworks"
     ],
@@ -3199,14 +2943,6 @@
     ],
     "added_date": null
   },
-  "https://www2.deloitte.com/us/en/insights/focus/cognitive-technologies.html": {
-    "name": "Deloitte State of AI Report",
-    "original_url": "https://www2.deloitte.com/us/en/insights/focus/cognitive-technologies.html",
-    "tags": [
-      "Industry & Market Intelligence/Market Analysis/Industry Reports"
-    ],
-    "added_date": null
-  },
   "https://crfm.stanford.edu/helm": {
     "name": "HELM Benchmark",
     "original_url": "https://crfm.stanford.edu/helm/",
@@ -3236,6 +2972,14 @@
     "original_url": "https://github.com/google/BIG-bench",
     "tags": [
       "Industry & Market Intelligence/Standards & Benchmarks/Performance Benchmarks"
+    ],
+    "added_date": null
+  },
+  "https://cursor.com/": {
+    "name": "Cursor IDE",
+    "original_url": "https://cursor.com/",
+    "tags": [
+      "Tools/Development Tools/AI Coding"
     ],
     "added_date": null
   },
@@ -3415,14 +3159,6 @@
     ],
     "added_date": null
   },
-  "https://openai.com/research/tags/robotics": {
-    "name": "OpenAI Robotics",
-    "original_url": "https://openai.com/research/tags/robotics",
-    "tags": [
-      "Applications/Specialized Domains/Robotics"
-    ],
-    "added_date": null
-  },
   "https://tesla.com/AI": {
     "name": "Tesla Bot (Optimus)",
     "original_url": "https://www.tesla.com/AI",
@@ -3474,14 +3210,6 @@
   "https://zapier.com/": {
     "name": "Zapier",
     "original_url": "https://zapier.com/",
-    "tags": [
-      "Applications/Industry-Specific/Productivity"
-    ],
-    "added_date": null
-  },
-  "https://monday.com/ai": {
-    "name": "Monday.com AI",
-    "original_url": "https://monday.com/ai/",
     "tags": [
       "Applications/Industry-Specific/Productivity"
     ],
