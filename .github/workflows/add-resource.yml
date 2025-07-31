@@ -18,7 +18,7 @@ jobs:
       - name: 📥 Checkout repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
           fetch-depth: 0
           
       - name: 🐍 Set up Python
@@ -44,9 +44,9 @@ jobs:
           echo "Remote:"
           git remote -v
           echo "Token permissions test:"
-          curl -H "Authorization: token $GITHUB_TOKEN" -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/$GITHUB_REPOSITORY
+          curl -H "Authorization: token $PERSONAL_GITHUB_TOKEN" -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/$GITHUB_REPOSITORY
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PERSONAL_GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
           
       - name: 📋 Parse issue and extract resource data
         id: parse-issue
@@ -240,7 +240,7 @@ jobs:
           
           echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_OUTPUT
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PERSONAL_GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
           
       - name: 📊 Create Pull Request via API
         uses: actions/github-script@v7
