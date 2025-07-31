@@ -257,24 +257,87 @@ class AIResourcesApp {
     }
 
     generateResourceItems(items, categoryId) {
-        return items.map(item => {
-            const name = item.name || item.title || 'Unnamed Resource';
-            const url = item.url || '#';
-            const description = item.description || item.summary || 'No description available';
-            const badges = this.generateBadges(url, item);
+        const ITEMS_PER_PAGE = 20;
+        const totalItems = items.length;
+        
+        if (totalItems <= ITEMS_PER_PAGE) {
+            return items.map(item => this.generateSingleResourceItem(item, categoryId)).join('');
+        }
 
-            return `
-                <div class="resource-item search-item" data-category="${categoryId}">
-                    <div class="resource-header">
-                        <h4 class="resource-name">
-                            <a href="${url}" target="_blank" rel="noopener noreferrer">${name}</a>
-                        </h4>
-                        <div class="resource-badges">${badges}</div>
+        // Generate paginated view for large lists
+        const firstPageItems = items.slice(0, ITEMS_PER_PAGE);
+        const remainingCount = totalItems - ITEMS_PER_PAGE;
+        
+        let html = firstPageItems.map(item => this.generateSingleResourceItem(item, categoryId)).join('');
+        
+        if (remainingCount > 0) {
+            html += `
+                <div class="pagination-controls" data-category="${categoryId}">
+                    <div class="pagination-info">
+                        Showing ${ITEMS_PER_PAGE} of ${totalItems} items
                     </div>
-                    <p class="resource-description">${description}</p>
+                    <button class="load-more-btn" onclick="window.aiApp.loadMoreItems('${categoryId}', ${ITEMS_PER_PAGE})">
+                        Load ${Math.min(remainingCount, ITEMS_PER_PAGE)} more items
+                    </button>
+                </div>
+                <div class="hidden-items" data-category="${categoryId}" style="display: none;">
+                    ${items.slice(ITEMS_PER_PAGE).map(item => this.generateSingleResourceItem(item, categoryId)).join('')}
                 </div>
             `;
-        }).join('');
+        }
+        
+        return html;
+    }
+
+    generateSingleResourceItem(item, categoryId) {
+        const name = item.name || item.title || 'Unnamed Resource';
+        const url = item.url || '#';
+        const description = item.description || item.summary || 'No description available';
+        const badges = this.generateBadges(url, item);
+
+        return `
+            <div class="resource-item search-item" data-category="${categoryId}">
+                <div class="resource-header">
+                    <h4 class="resource-name">
+                        <a href="${url}" target="_blank" rel="noopener noreferrer">${name}</a>
+                    </h4>
+                    <div class="resource-badges">${badges}</div>
+                </div>
+                <p class="resource-description">${description}</p>
+            </div>
+        `;
+    }
+
+    loadMoreItems(categoryId, currentCount) {
+        const hiddenItemsContainer = document.querySelector(`[data-category="${categoryId}"].hidden-items`);
+        const paginationControls = document.querySelector(`[data-category="${categoryId}"].pagination-controls`);
+        
+        if (hiddenItemsContainer && paginationControls) {
+            const hiddenItems = Array.from(hiddenItemsContainer.children);
+            const ITEMS_PER_PAGE = 20;
+            const itemsToShow = hiddenItems.slice(0, ITEMS_PER_PAGE);
+            
+            // Move items from hidden container to visible area
+            const targetContainer = paginationControls.parentElement;
+            itemsToShow.forEach(item => {
+                targetContainer.insertBefore(item, paginationControls);
+            });
+            
+            // Update pagination controls
+            const remainingItems = hiddenItems.length - ITEMS_PER_PAGE;
+            if (remainingItems <= 0) {
+                paginationControls.remove();
+                hiddenItemsContainer.remove();
+            } else {
+                const infoDiv = paginationControls.querySelector('.pagination-info');
+                const loadMoreBtn = paginationControls.querySelector('.load-more-btn');
+                const newCurrentCount = currentCount + ITEMS_PER_PAGE;
+                
+                infoDiv.textContent = `Showing ${newCurrentCount} of ${newCurrentCount + remainingItems} items`;
+                loadMoreBtn.textContent = `Load ${Math.min(remainingItems, ITEMS_PER_PAGE)} more items`;
+                loadMoreBtn.onclick = () => this.loadMoreItems(categoryId, newCurrentCount);
+            }
+        }
     }
 
     generateBadges(url, item) {
@@ -448,5 +511,5 @@ class AIResourcesApp {
 
 // Initialize the app when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    new AIResourcesApp();
+    window.aiApp = new AIResourcesApp();
 });

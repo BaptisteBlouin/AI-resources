@@ -333,7 +333,7 @@
         }
 
         .category-content.expanded {
-            max-height: 2000px;
+            max-height: none;
         }
 
         /* Nested category styling */
@@ -416,6 +416,43 @@
 
         .resource-badges img:hover {
             opacity: 0.8;
+        }
+
+        /* Pagination controls */
+        .pagination-controls {
+            padding: 1.5rem;
+            text-align: center;
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+        }
+
+        .pagination-info {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .load-more-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius);
+            font-size: 0.95rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .load-more-btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .load-more-btn:active {
+            transform: translateY(0);
         }
 
         /* Footer */
