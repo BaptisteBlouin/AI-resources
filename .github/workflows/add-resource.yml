@@ -277,33 +277,40 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
+            const resourceName = `${{ steps.parse-issue.outputs.resource-name }}`;
+            const resourceUrl = `${{ steps.parse-issue.outputs.resource-url }}`;
+            const resourceDescription = `${{ steps.parse-issue.outputs.resource-description }}`;
+            const resourceTags = `${{ steps.parse-issue.outputs.resource-tags }}`;
+            const issueNumber = `${{ steps.parse-issue.outputs.issue-number }}`;
+            const runId = `${{ github.run_id }}`;
+            
             const { data: pullRequest } = await github.rest.pulls.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: "Add resource: ${{ steps.parse-issue.outputs.resource-name }}",
-              head: "add-resource-${{ steps.parse-issue.outputs.issue-number }}",
+              title: `Add resource: ${resourceName}`,
+              head: `add-resource-${issueNumber}`,
               base: "main",
               body: `## 🚀 Auto-generated resource addition
               
-              This PR automatically adds a new resource based on the approved submission in issue #${{ steps.parse-issue.outputs.issue-number }}.
+              This PR automatically adds a new resource based on the approved submission in issue #${issueNumber}.
               
               ### 📋 Resource Details
-              - **Name**: ${{ steps.parse-issue.outputs.resource-name }}
-              - **URL**: ${{ steps.parse-issue.outputs.resource-url }}
-              - **Description**: ${{ steps.parse-issue.outputs.resource-description }}
-              - **Tags**: ${{ steps.parse-issue.outputs.resource-tags }}
+              - **Name**: ${resourceName}
+              - **URL**: ${resourceUrl}
+              - **Description**: ${resourceDescription}
+              - **Tags**: ${resourceTags}
               
               ### ✅ Automated Actions Completed
-              - [x] Resource added to \`resources.yml\`
+              - [x] Resource added to resources.yml
               - [x] README.md regenerated
               - [x] Resources index updated
               - [x] URL validation completed
               
-              **Source**: Issue #${{ steps.parse-issue.outputs.issue-number }}
-              **Auto-generated**: ${{ github.run_id }}`
+              **Source**: Issue #${issueNumber}
+              **Auto-generated**: ${runId}`
             });
             
-            console.log(\`Created PR #\${pullRequest.number}\`);
+            console.log('Created PR #' + pullRequest.number);
             return pullRequest.number;
           
       - name: 📝 Comment on issue
