@@ -157,7 +157,7 @@ class ResourceAdder:
                 continue
             
             # Validate tag format (should be like category/subcategory/item)
-            if not re.match(r'^[a-z0-9\-]+(/[a-z0-9\-]+)*$', tag_name):
+            if not re.match(r'^[A-Za-z0-9\-]+(/[A-Za-z0-9\-]+)*', tag_name):
                 print("❌ Invalid tag format. Use lowercase letters, numbers, hyphens, and forward slashes.")
                 print("   Examples: tools/development, libraries/python/ml, datasets/images")
                 continue

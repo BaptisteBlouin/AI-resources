@@ -56,7 +56,7 @@ class BatchImporter:
                 return False, "Empty tag found"
             # Check tag format (lowercase, hyphens, slashes)
             import re
-            if not re.match(r'^[a-z0-9\-]+(/[a-z0-9\-]+)*$', tag):
+            if not re.match(r'^[A-Za-z0-9\-]+(/[A-Za-z0-9\-]+)*', tag):
                 return False, f"Invalid tag format: {tag}"
         
         return True, "Valid"
