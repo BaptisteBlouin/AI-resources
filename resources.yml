@@ -2225,3 +2225,10 @@ resources:
     tags: ["Tools/Libraries/Deep Learning"]
     
 
+
+  - name: "ColossalAI"
+    url: "https://github.com/hpcaitech/ColossalAI"
+    description: "Making large AI models cheaper, faster and more accessible "
+    tags: ["Tools/Libraries/Deep Learning"]
+    
+

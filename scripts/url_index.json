@@ -3247,5 +3247,13 @@
       "Tools/Libraries/Deep Learning"
     ],
     "added_date": null
+  },
+  "https://github.com/hpcaitech/ColossalAI": {
+    "name": "ColossalAI",
+    "original_url": "https://github.com/hpcaitech/ColossalAI",
+    "tags": [
+      "Tools/Libraries/Deep Learning"
+    ],
+    "added_date": null
   }
 }
