@@ -2,40 +2,17 @@
 
 # 🤖 AI Resources Hub
 
-### A collection of cutting-edge AI tools, libraries, papers, and learning resources
+### A collection of AI tools, libraries, papers, learning resources, and more.
 
 [![Made with ❤️](https://img.shields.io/badge/Made%20with-❤️-red.svg)](https://github.com/BaptisteBlouin/AI-resources)
 [![Community Driven](https://img.shields.io/badge/Community-Driven-blue.svg)](CONTRIBUTING.md)
 [![Auto Updated](https://img.shields.io/badge/Auto-Updated-green.svg)](scripts/generate_readme.py)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-*Empowering developers, researchers, and AI enthusiasts with the best resources in artificial intelligence*
-
 ---
 
 </div>
 
-## ✨ What Makes This Special?
-
-<table>
-<tr>
-<td width="33%" align="center">
-<img src="https://img.icons8.com/clouds/100/000000/artificial-intelligence.png" alt="AI Icon"/>
-<h3>🎯 Curated Quality</h3>
-<p>Every resource is carefully vetted by the community to ensure high quality and relevance</p>
-</td>
-<td width="33%" align="center">
-<img src="https://img.icons8.com/clouds/100/000000/search.png" alt="Search Icon"/>
-<h3>🔍 Smart Discovery</h3>
-<p>Advanced search and filtering capabilities to find exactly what you need</p>
-</td>
-<td width="33%" align="center">
-<img src="https://img.icons8.com/clouds/100/000000/update.png" alt="Update Icon"/>
-<h3>⚡ Always Fresh</h3>
-<p>Automatically updated content with the latest tools and research</p>
-</td>
-</tr>
-</table>
 
 ## 🚀 Key Features
 
@@ -61,15 +38,33 @@
 # Clone this repository for offline access
 git clone https://github.com/BaptisteBlouin/AI-resources.git
 
-# Generate an updated README with the latest resources
 cd AI-resources
-python scripts/generate_readme.py
 
 # Add new resources easily
-echo "  - name: 'Your Amazing AI Tool'
-    url: 'https://github.com/you/amazing-tool'
-    description: 'Brief description of what it does'
-    tags: ['tools/machine-learning']" >> resources.yml
+python scripts/add_resource.py
+
+# Or 
+python scripts/add_resource.py --batch import.yml
+
+# Generate an updated README with the latest resources
+python scripts/generate_readme.py
+
+```
+
+###  import.yml  
+
+
+```yaml
+resources:
+  - name: "Example AI Tool"
+    url: "https://example.com/ai-tool"
+    description: "An example AI tool for demonstration"
+    tags: ["tools/example", "tutorials/demo"]
+  - name: "Another Example"
+    url: "https://github.com/example/repo"
+    description: "Another example resource"
+    tags: ["libraries/python/ml", "tools/development"]
+
 ```
 
 ## 📚 Resources
@@ -77,15 +72,15 @@ echo "  - name: 'Your Amazing AI Tool'
 The following list is automatically generated from `resources.yml`.
 
 <!-- START AUTO -->
-<!-- Generated on 2025-07-30 22:42:43 UTC by generate_readme.py -->
+<!-- Generated on 2025-07-31 09:52:23 UTC by generate_readme.py -->
 
 ## 🌐 View the Interactive AI Resources Hub
 
-**[👆 Click here to explore all 99 AI resources →](https://baptisteblouin.github.io/AI-resources/)**
+**[👆 Click here to explore all 450 AI resources →](https://baptisteblouin.github.io/AI-resources/)**
 
-This repository contains a curated collection of **99 AI resources** across **11 categories**, including:
+This repository contains a curated collection of **450 AI resources** across **11 categories**, including:
 
-**Books** (8) • **Certificates** (1) • **Community** (5) • **Datasets** (15) • **Libraries** (19)...
+**Academic & Research** (23) • **Applications** (78) • **Career & Professional Development** (8) • **Community & Networking** (21) • **Courses & Training** (58)...
 
 ### ✨ Features
 
@@ -109,7 +104,7 @@ This repository contains a curated collection of **99 AI resources** across **11
 
 **[⭐ Star this repository](https://github.com/BaptisteBlouin/AI-resources/stargazers) • [🍴 Fork it](https://github.com/BaptisteBlouin/AI-resources/fork) • [📖 View on GitHub Pages](https://baptisteblouin.github.io/AI-resources/)**
 
-*Automatically updated from [`resources.yml`](resources.yml) • Last updated: July 30, 2025*
+*Automatically updated from [`resources.yml`](resources.yml) • Last updated: July 31, 2025*
 
 </div>
 <!-- END AUTO -->

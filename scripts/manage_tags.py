@@ -170,6 +170,79 @@ class TagManager:
         
         return issues
     
+    def display_tree_hierarchy(self) -> str:
+        """Display tags in a tree format with ASCII art"""
+        try:
+            with open(self.resources_file, 'r', encoding='utf-8') as f:
+                data = yaml.safe_load(f)
+        except Exception as e:
+            return f"Error loading resources: {e}"
+        
+        # Build hierarchy structure - only collect unique tag paths
+        hierarchy = defaultdict(lambda: defaultdict(set))
+        
+        for resource in data.get('resources', []):
+            for tag in resource.get('tags', []):
+                parts = tag.split('/')
+                if len(parts) >= 1:
+                    level1 = parts[0].strip()
+                    level2 = parts[1].strip() if len(parts) >= 2 else None
+                    level3 = parts[2].strip() if len(parts) >= 3 else None
+                    
+                    if level2:
+                        if level3:
+                            hierarchy[level1][level2].add(level3)
+                        else:
+                            # Mark that level2 exists as a direct tag
+                            hierarchy[level1][level2].add('_direct')
+                    else:
+                        # Mark that level1 exists as a direct tag
+                        hierarchy[level1]['_direct'].add('_direct')
+        
+        # Convert to tree display
+        output = []
+        
+        def add_tree_line(text, depth=0, is_last=False, parent_is_last=None):
+            if depth == 0:
+                output.append(text)
+            else:
+                prefix = ""
+                if parent_is_last is not None:
+                    for i in range(depth - 1):
+                        if i < len(parent_is_last) and parent_is_last[i]:
+                            prefix += "    "
+                        else:
+                            prefix += "│   "
+                
+                if is_last:
+                    prefix += "└── "
+                else:
+                    prefix += "├── "
+                
+                output.append(prefix + text)
+        
+        # Sort top-level categories
+        sorted_level1 = sorted(hierarchy.keys())
+        
+        for i, level1 in enumerate(sorted_level1):
+            is_last_level1 = (i == len(sorted_level1) - 1)
+            add_tree_line(level1, 0)
+            
+            level2_data = hierarchy[level1]
+            sorted_level2 = sorted([k for k in level2_data.keys() if k != '_direct'])
+            
+            for j, level2 in enumerate(sorted_level2):
+                is_last_level2 = (j == len(sorted_level2) - 1)
+                add_tree_line(level2, 1, is_last_level2, [is_last_level1])
+                
+                level3_items = sorted([item for item in level2_data[level2] if item != '_direct'])
+                
+                for k, level3 in enumerate(level3_items):
+                    is_last_level3 = (k == len(level3_items) - 1) and is_last_level2
+                    add_tree_line(level3, 2, is_last_level3, [is_last_level1, is_last_level2])
+        
+        return '\n'.join(output)
+
     def export_tags(self, format_type: str = 'json') -> str:
         """Export tags in various formats"""
         analysis = self.analyze_tags()
@@ -200,6 +273,7 @@ def main():
     parser.add_argument('--analyze', action='store_true', help='Analyze current tag usage')
     parser.add_argument('--suggest', action='store_true', help='Suggest tag improvements')
     parser.add_argument('--hierarchy', action='store_true', help='Show tag hierarchy')
+    parser.add_argument('--tree', action='store_true', help='Display tags in tree format')
     parser.add_argument('--validate', action='store_true', help='Validate tag formats')
     parser.add_argument('--export', choices=['json', 'csv'], help='Export tag data')
     parser.add_argument('--resources-file', type=Path, help='Path to resources.yml file')
@@ -234,6 +308,12 @@ def main():
         print("🌳 TAG HIERARCHY")
         print("=" * 50)
         print(json.dumps(hierarchy, indent=2, ensure_ascii=False))
+    
+    elif args.tree:
+        tree_display = manager.display_tree_hierarchy()
+        print("🌳 TAG TREE")
+        print("=" * 50)
+        print(tree_display)
     
     elif args.validate:
         issues = manager.validate_tag_format()
