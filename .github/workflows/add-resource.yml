@@ -153,11 +153,11 @@ jobs:
                   print("❌ No valid resources found")
                   exit(1)
               
-              # Generate YAML for all resources
+              # Generate YAML for all resources with proper indentation
               batch_yaml = ""
               resource_names = []
               for resource in valid_resources:
-                  # Format tags as proper YAML array
+                  # Format tags as proper YAML array with quotes around each tag
                   tags_yaml = '[' + ', '.join([f'"{tag}"' for tag in resource['tags']]) + ']'
                   yaml_entry = f'  - name: "{resource["name"]}"\n    url: "{resource["url"]}"\n    description: "{resource["description"]}"\n    tags: {tags_yaml}\n    \n'
                   batch_yaml += yaml_entry
@@ -191,8 +191,8 @@ jobs:
                   print("Tags: " + str(tags))
                   exit(1)
               
-              # Generate YAML entry for single resource
-              tags_yaml = '[' + ', '.join([f'"{tag}"' for tag in tags]) + ']'
+              # Generate YAML entry for single resource with proper indentation
+              tags_yaml = '[' + ', '.join([f'"{tag}"' for tag in tags]) + ']'  
               yaml_entry = f'  - name: "{name}"\n    url: "{url}"\n    description: "{description}"\n    tags: {tags_yaml}\n    '
               
               resource_count = 1
@@ -218,6 +218,9 @@ jobs:
         run: |
           echo "Adding resource to resources.yml..."
           
+          # Ensure resources.yml ends with a newline before appending
+          echo "" >> resources.yml
+          
           # Append the new resource to the end of resources.yml
           cat >> resources.yml << 'EOF'
           ${{ steps.parse-issue.outputs.yaml-entry }}
@@ -240,6 +243,8 @@ jobs:
           git clean -fd
           
           echo "Re-adding the resource to resources.yml..."
+          # Ensure resources.yml ends with a newline before appending
+          echo "" >> resources.yml
           cat >> resources.yml << 'EOF'
           ${{ steps.parse-issue.outputs.yaml-entry }}
           EOF
