@@ -3953,5 +3953,20 @@
         ]
       }
     }
+  },
+  "Lists": {
+    "_items": [],
+    "GitHub": {
+      "_items": [
+        {
+          "name": "awesome-llm-apps",
+          "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+          "description": "Collection of awesome LLM apps with AI Agents and RAG using OpenAI, Anthropic, Gemini and opensource models.",
+          "tags": [
+            "Lists/GitHub"
+          ]
+        }
+      ]
+    }
   }
 }

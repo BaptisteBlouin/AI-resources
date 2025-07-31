@@ -34,13 +34,13 @@ Access it here : https://baptisteblouin.github.io/AI-resources/
 The following list is automatically generated from `resources.yml`.
 
 <!-- START AUTO -->
-<!-- Generated on 2025-07-31 13:06:17 UTC by generate_readme.py -->
+<!-- Generated on 2025-07-31 16:10:09 UTC by generate_readme.py -->
 
 ## 🌐 View the Interactive AI Resources Hub
 
-**[👆 Click here to explore all 419 AI resources →](https://baptisteblouin.github.io/AI-resources/)**
+**[👆 Click here to explore all 420 AI resources →](https://baptisteblouin.github.io/AI-resources/)**
 
-This repository contains a curated collection of **419 AI resources** across **11 categories**, including:
+This repository contains a curated collection of **420 AI resources** across **12 categories**, including:
 
 **Academic & Research** (21) • **Applications** (75) • **Career & Professional Development** (8) • **Community & Networking** (20) • **Courses & Training** (48)...
 
