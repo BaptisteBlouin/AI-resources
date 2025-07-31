@@ -4,6 +4,11 @@ on:
   issues:
     types: [labeled]
 
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
 jobs:
   add-resource:
     if: contains(github.event.label.name, 'approved')
@@ -14,6 +19,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
           
       - name: 🐍 Set up Python
         uses: actions/setup-python@v4
@@ -23,6 +29,11 @@ jobs:
       - name: 📦 Install dependencies
         run: |
           pip install pyyaml
+          
+      - name: 🔧 Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
       - name: 📋 Parse issue and extract resource data
         id: parse-issue
@@ -124,6 +135,11 @@ jobs:
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          add-paths: |
+            resources.yml
+            README.md
+            docs/resources.json
+            scripts/url_index.json
           commit-message: |
             Add resource: ${{ steps.parse-issue.outputs.resource-name }}
             
@@ -160,6 +176,8 @@ jobs:
             **Auto-generated**: ${{ github.run_id }}
           branch: add-resource-${{ steps.parse-issue.outputs.issue-number }}
           delete-branch: true
+          author: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
+          committer: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
           
       - name: 📝 Comment on issue
         uses: actions/github-script@v7
