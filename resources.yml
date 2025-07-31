@@ -6978,3 +6978,4562 @@ resources:
   description: A high-level framework for building MCP servers in TypeScript
   tags:
   - Tools/MCP/VersionControl
+- name: PyTorch
+  url: https://github.com/pytorch/pytorch
+  description: Tensors and Dynamic neural networks in Python with strong GPU..
+  tags:
+  - Python/Machine Learning Frameworks
+- name: Tensorflow
+  url: https://github.com/tensorflow/tensorflow
+  description: An Open Source Machine Learning Framework for Everyone.
+  tags:
+  - Python/Machine Learning Frameworks
+- name: scikit-learn
+  url: https://github.com/scikit-learn/scikit-learn
+  description: 'scikit-learn: machine learning in Python.'
+  tags:
+  - Python/Machine Learning Frameworks
+- name: Keras
+  url: https://github.com/keras-team/keras
+  description: Deep Learning for humans.
+  tags:
+  - Python/Machine Learning Frameworks
+- name: XGBoost
+  url: https://github.com/dmlc/xgboost
+  description: Scalable, Portable and Distributed Gradient Boosting (GBDT, GBRT or..
+  tags:
+  - Python/Machine Learning Frameworks
+- name: PaddlePaddle
+  url: https://github.com/PaddlePaddle/Paddle
+  description: 'PArallel Distributed Deep LEarning: Machine Learning..'
+  tags:
+  - Python/Machine Learning Frameworks
+- name: jax
+  url: https://github.com/jax-ml/jax
+  description: 'Composable transformations of Python+NumPy programs: differentiate,..'
+  tags:
+  - Python/Machine Learning Frameworks
+- name: PySpark
+  url: https://github.com/apache/spark
+  description: Apache Spark Python API.
+  tags:
+  - Python/Machine Learning Frameworks
+- name: pytorch-lightning
+  url: https://github.com/Lightning-AI/pytorch-lightning
+  description: Pretrain, finetune ANY AI model of ANY size on..
+  tags:
+  - Python/Machine Learning Frameworks
+- name: StatsModels
+  url: https://github.com/statsmodels/statsmodels
+  description: 'Statsmodels: statistical modeling and econometrics in Python.'
+  tags:
+  - Python/Machine Learning Frameworks
+- name: LightGBM
+  url: https://github.com/microsoft/LightGBM
+  description: A fast, distributed, high performance gradient boosting (GBT, GBDT,
+    GBRT,..
+  tags:
+  - Python/Machine Learning Frameworks
+- name: Fastai
+  url: https://github.com/fastai/fastai
+  description: The fastai deep learning library.
+  tags:
+  - Python/Machine Learning Frameworks
+- name: Catboost
+  url: https://github.com/catboost/catboost
+  description: A fast, scalable, high performance Gradient Boosting on Decision..
+  tags:
+  - Python/Machine Learning Frameworks
+- name: PyFlink
+  url: https://github.com/apache/flink
+  description: Apache Flink Python API.
+  tags:
+  - Python/Machine Learning Frameworks
+- name: ivy
+  url: https://github.com/ivy-llc/ivy
+  description: Convert Machine Learning Code Between Frameworks.
+  tags:
+  - Python/Machine Learning Frameworks
+- name: einops
+  url: https://github.com/arogozhnikov/einops
+  description: Flexible and powerful tensor operations for readable and reliable code..
+  tags:
+  - Python/Machine Learning Frameworks
+- name: Ignite
+  url: https://github.com/pytorch/ignite
+  description: High-level library to help with training and evaluating neural..
+  tags:
+  - Python/Machine Learning Frameworks
+- name: Thinc
+  url: https://github.com/explosion/thinc
+  description: A refreshing functional take on deep learning, compatible with your
+    favorite..
+  tags:
+  - Python/Machine Learning Frameworks
+- name: Jina
+  url: https://github.com/jina-ai/serve
+  description: Build multimodal AI applications with cloud-native stack.
+  tags:
+  - Python/Machine Learning Frameworks
+- name: mlpack
+  url: https://github.com/mlpack/mlpack
+  description: 'mlpack: a fast, header-only C++ machine learning library.'
+  tags:
+  - Python/Machine Learning Frameworks
+- name: Ludwig
+  url: https://github.com/ludwig-ai/ludwig
+  description: Low-code framework for building custom LLMs, neural networks,..
+  tags:
+  - Python/Machine Learning Frameworks
+- name: Vowpal Wabbit
+  url: https://github.com/VowpalWabbit/vowpal_wabbit
+  description: Vowpal Wabbit is a machine learning system which pushes the..
+  tags:
+  - Python/Machine Learning Frameworks
+- name: Sonnet
+  url: https://github.com/google-deepmind/sonnet
+  description: TensorFlow-based neural network library.
+  tags:
+  - Python/Machine Learning Frameworks
+- name: skorch
+  url: https://github.com/skorch-dev/skorch
+  description: A scikit-learn compatible neural network library that wraps..
+  tags:
+  - Python/Machine Learning Frameworks
+- name: Haiku
+  url: https://github.com/google-deepmind/dm-haiku
+  description: JAX-based neural network library.
+  tags:
+  - Python/Machine Learning Frameworks
+- name: tensorflow-upstream
+  url: https://github.com/ROCm/tensorflow-upstream
+  description: TensorFlow ROCm port.
+  tags:
+  - Python/Machine Learning Frameworks
+- name: Geomstats
+  url: https://github.com/geomstats/geomstats
+  description: Computations and statistics on manifolds with geometric structures.
+  tags:
+  - Python/Machine Learning Frameworks
+- name: NuPIC
+  url: https://github.com/numenta/nupic-legacy
+  description: Numenta Platform for Intelligent Computing is an implementation of..
+  tags:
+  - Python/Machine Learning Frameworks
+- name: Determined
+  url: https://github.com/determined-ai/determined
+  description: Determined is an open-source machine learning platform..
+  tags:
+  - Python/Machine Learning Frameworks
+- name: pyRiemann
+  url: https://github.com/pyRiemann/pyRiemann
+  description: Machine learning for multivariate data through the Riemannian..
+  tags:
+  - Python/Machine Learning Frameworks
+- name: Neural Network Libraries
+  url: https://github.com/sony/nnabla
+  description: Neural Network Libraries.
+  tags:
+  - Python/Machine Learning Frameworks
+- name: ktrain
+  url: https://github.com/amaiya/ktrain
+  description: ktrain is a Python library that makes deep learning and AI..
+  tags:
+  - Python/Machine Learning Frameworks
+- name: Towhee
+  url: https://github.com/towhee-io/towhee
+  description: Towhee is a framework that is dedicated to making neural data..
+  tags:
+  - Python/Machine Learning Frameworks
+- name: fklearn
+  url: https://github.com/nubank/fklearn
+  description: 'fklearn: Functional Machine Learning.'
+  tags:
+  - Python/Machine Learning Frameworks
+- name: Runhouse
+  url: https://github.com/run-house/runhouse
+  description: Distribute and run AI workloads magically in Python, like PyTorch for..
+  tags:
+  - Python/Machine Learning Frameworks
+- name: NeoML
+  url: https://github.com/neoml-lib/neoml
+  description: Machine learning framework for both deep learning and traditional..
+  tags:
+  - Python/Machine Learning Frameworks
+- name: chefboost
+  url: https://github.com/serengil/chefboost
+  description: A Lightweight Decision Tree Framework supporting regular algorithms:..
+  tags:
+  - Python/Machine Learning Frameworks
+- name: ThunderGBM
+  url: https://github.com/Xtra-Computing/thundergbm
+  description: 'ThunderGBM: Fast GBDTs and Random Forests on GPUs.'
+  tags:
+  - Python/Machine Learning Frameworks
+- name: Matplotlib
+  url: https://github.com/matplotlib/matplotlib
+  description: 'matplotlib: plotting with Python.'
+  tags:
+  - Python/Data Visualization
+- name: Plotly
+  url: https://github.com/plotly/plotly.py
+  description: The interactive graphing library for Python.
+  tags:
+  - Python/Data Visualization
+- name: dash
+  url: https://github.com/plotly/dash
+  description: Data Apps & Dashboards for Python. No JavaScript Required.
+  tags:
+  - Python/Data Visualization
+- name: Bokeh
+  url: https://github.com/bokeh/bokeh
+  description: Interactive Data Visualization in the browser, from Python.
+  tags:
+  - Python/Data Visualization
+- name: Seaborn
+  url: https://github.com/mwaskom/seaborn
+  description: Statistical data visualization in Python.
+  tags:
+  - Python/Data Visualization
+- name: Altair
+  url: https://github.com/vega/altair
+  description: Declarative visualization library for Python.
+  tags:
+  - Python/Data Visualization
+- name: FiftyOne
+  url: https://github.com/voxel51/fiftyone
+  description: Visualize, create, and debug image and video datasets..
+  tags:
+  - Python/Data Visualization
+- name: HoloViews
+  url: https://github.com/holoviz/holoviews
+  description: With Holoviews, your data visualizes itself.
+  tags:
+  - Python/Data Visualization
+- name: PyVista
+  url: https://github.com/pyvista/pyvista
+  description: 3D plotting and mesh analysis through a streamlined interface for..
+  tags:
+  - Python/Data Visualization
+- name: PyQtGraph
+  url: https://github.com/pyqtgraph/pyqtgraph
+  description: Fast data visualization and GUI tools for scientific / engineering..
+  tags:
+  - Python/Data Visualization
+- name: Graphviz
+  url: https://github.com/xflr6/graphviz
+  description: Simple Python interface for Graphviz.
+  tags:
+  - Python/Data Visualization
+- name: pyecharts
+  url: https://github.com/pyecharts/pyecharts
+  description: Python Echarts Plotting Library.
+  tags:
+  - Python/Data Visualization
+- name: pandas-profiling
+  url: https://github.com/ydataai/ydata-profiling
+  description: 1 Line of code data quality profiling & exploratory..
+  tags:
+  - Python/Data Visualization
+- name: plotnine
+  url: https://github.com/has2k1/plotnine
+  description: A Grammar of Graphics for Python.
+  tags:
+  - Python/Data Visualization
+- name: VisPy
+  url: https://github.com/vispy/vispy
+  description: High-performance interactive 2D/3D data visualization library.
+  tags:
+  - Python/Data Visualization
+- name: Perspective
+  url: https://github.com/finos/perspective
+  description: A data visualization and analytics component, especially..
+  tags:
+  - Python/Data Visualization
+- name: lets-plot
+  url: https://github.com/JetBrains/lets-plot
+  description: Multiplatform plotting library based on the Grammar of Graphics.
+  tags:
+  - Python/Data Visualization
+- name: cartopy
+  url: https://github.com/SciTools/cartopy
+  description: Cartopy - a cartographic python library with matplotlib support.
+  tags:
+  - Python/Data Visualization
+- name: UMAP
+  url: https://github.com/lmcinnes/umap
+  description: Uniform Manifold Approximation and Projection.
+  tags:
+  - Python/Data Visualization
+- name: datashader
+  url: https://github.com/holoviz/datashader
+  description: Quickly and accurately render even the largest data.
+  tags:
+  - Python/Data Visualization
+- name: wordcloud
+  url: https://github.com/amueller/word_cloud
+  description: A little word cloud generator in Python.
+  tags:
+  - Python/Data Visualization
+- name: mpld3
+  url: https://github.com/mpld3/mpld3
+  description: An interactive data visualization tool which brings matplotlib..
+  tags:
+  - Python/Data Visualization
+- name: hvPlot
+  url: https://github.com/holoviz/hvplot
+  description: A high-level plotting API for pandas, dask, xarray, and networkx built..
+  tags:
+  - Python/Data Visualization
+- name: D-Tale
+  url: https://github.com/man-group/dtale
+  description: Visualizer for pandas data structures.
+  tags:
+  - Python/Data Visualization
+- name: bqplot
+  url: https://github.com/bqplot/bqplot
+  description: Plotting library for IPython/Jupyter notebooks.
+  tags:
+  - Python/Data Visualization
+- name: HyperTools
+  url: https://github.com/ContextLab/hypertools
+  description: A Python toolbox for gaining geometric insights into high-dimensional..
+  tags:
+  - Python/Data Visualization
+- name: openTSNE
+  url: https://github.com/pavlin-policar/openTSNE
+  description: Extensible, parallel implementations of t-SNE.
+  tags:
+  - Python/Data Visualization
+- name: Plotly-Resampler
+  url: https://github.com/predict-idlab/plotly-resampler
+  description: Visualize large time series data with plotly.py.
+  tags:
+  - Python/Data Visualization
+- name: data-validation
+  url: https://github.com/tensorflow/data-validation
+  description: Library for exploring and validating machine learning..
+  tags:
+  - Python/Data Visualization
+- name: Chartify
+  url: https://github.com/spotify/chartify
+  description: Python library that makes it easy for data scientists to create..
+  tags:
+  - Python/Data Visualization
+- name: vega
+  url: https://github.com/vega/ipyvega
+  description: IPython/Jupyter notebook module for Vega and Vega-Lite.
+  tags:
+  - Python/Data Visualization
+- name: vegafusion
+  url: https://github.com/vega/vegafusion
+  description: Serverside scaling for Vega and Altair visualizations.
+  tags:
+  - Python/Data Visualization
+- name: Popmon
+  url: https://github.com/ing-bank/popmon
+  description: Monitor the stability of a Pandas or Spark dataframe.
+  tags:
+  - Python/Data Visualization
+- name: animatplot
+  url: https://github.com/t-makaro/animatplot
+  description: A python package for animating plots build on matplotlib.
+  tags:
+  - Python/Data Visualization
+- name: ivis
+  url: https://github.com/beringresearch/ivis
+  description: Dimensionality reduction in very large datasets using Siamese..
+  tags:
+  - Python/Data Visualization
+- name: transformers
+  url: https://github.com/huggingface/transformers
+  description: 'Transformers: the model-definition framework for..'
+  tags:
+  - Python/Text Data & NLP
+- name: litellm
+  url: https://github.com/BerriAI/litellm
+  description: Python SDK, Proxy Server (LLM Gateway) to call 100+..
+  tags:
+  - Python/Text Data & NLP
+- name: nltk
+  url: https://github.com/nltk/nltk
+  description: Suite of libraries and programs for symbolic and statistical natural..
+  tags:
+  - Python/Text Data & NLP
+- name: spaCy
+  url: https://github.com/explosion/spaCy
+  description: Industrial-strength Natural Language Processing (NLP) in Python.
+  tags:
+  - Python/Text Data & NLP
+- name: sentence-transformers
+  url: https://github.com/UKPLab/sentence-transformers
+  description: State-of-the-Art Text Embeddings.
+  tags:
+  - Python/Text Data & NLP
+- name: gensim
+  url: https://github.com/piskvorky/gensim
+  description: Topic Modelling for Humans.
+  tags:
+  - Python/Text Data & NLP
+- name: Tokenizers
+  url: https://github.com/huggingface/tokenizers
+  description: Fast State-of-the-Art Tokenizers optimized for Research and..
+  tags:
+  - Python/Text Data & NLP
+- name: flair
+  url: https://github.com/flairNLP/flair
+  description: A very simple framework for state-of-the-art Natural Language Processing..
+  tags:
+  - Python/Text Data & NLP
+- name: sentencepiece
+  url: https://github.com/google/sentencepiece
+  description: Unsupervised text tokenizer for Neural Network-based text..
+  tags:
+  - Python/Text Data & NLP
+- name: NeMo
+  url: https://github.com/NVIDIA/NeMo
+  description: A scalable generative AI framework built for researchers and..
+  tags:
+  - Python/Text Data & NLP
+- name: haystack
+  url: https://github.com/deepset-ai/haystack
+  description: AI orchestration framework to build customizable, production-ready..
+  tags:
+  - Python/Text Data & NLP
+- name: fairseq
+  url: https://github.com/facebookresearch/fairseq
+  description: Facebook AI Research Sequence-to-Sequence Toolkit written in Python.
+  tags:
+  - Python/Text Data & NLP
+- name: ChatterBot
+  url: https://github.com/gunthercox/ChatterBot
+  description: ChatterBot is a machine learning, conversational dialog engine for..
+  tags:
+  - Python/Text Data & NLP
+- name: TextBlob
+  url: https://github.com/sloria/TextBlob
+  description: Simple, Pythonic, text processing--Sentiment analysis, part-of-speech..
+  tags:
+  - Python/Text Data & NLP
+- name: qdrant
+  url: https://github.com/qdrant/qdrant
+  description: Qdrant - High-performance, massive-scale Vector Database and Vector..
+  tags:
+  - Python/Text Data & NLP
+- name: Rasa
+  url: https://github.com/RasaHQ/rasa
+  description: Open source machine learning framework to automate text- and..
+  tags:
+  - Python/Text Data & NLP
+- name: spark-nlp
+  url: https://github.com/JohnSnowLabs/spark-nlp
+  description: State of the Art Natural Language Processing.
+  tags:
+  - Python/Text Data & NLP
+- name: TensorFlow Text
+  url: https://github.com/tensorflow/text
+  description: Making text a first-class citizen in TensorFlow.
+  tags:
+  - Python/Text Data & NLP
+- name: Opik
+  url: https://github.com/comet-ml/opik
+  description: Debug, evaluate, and monitor your LLM applications, RAG systems, and..
+  tags:
+  - Python/Text Data & NLP
+- name: stanza
+  url: https://github.com/stanfordnlp/stanza
+  description: Stanford NLP Python library for tokenization, sentence..
+  tags:
+  - Python/Text Data & NLP
+- name: torchtext
+  url: https://github.com/pytorch/text
+  description: Models, data loaders and abstractions for language processing,..
+  tags:
+  - Python/Text Data & NLP
+- name: snowballstemmer
+  url: https://github.com/snowballstem/snowball
+  description: Snowball compiler and stemming algorithms.
+  tags:
+  - Python/Text Data & NLP
+- name: DeepPavlov
+  url: https://github.com/deeppavlov/DeepPavlov
+  description: An open source library for deep learning end-to-end..
+  tags:
+  - Python/Text Data & NLP
+- name: rubrix
+  url: https://github.com/argilla-io/argilla
+  description: Argilla is a collaboration tool for AI engineers and domain experts..
+  tags:
+  - Python/Text Data & NLP
+- name: ftfy
+  url: https://github.com/rspeer/python-ftfy
+  description: Fixes mojibake and other glitches in Unicode text, after the fact.
+  tags:
+  - Python/Text Data & NLP
+- name: jellyfish
+  url: https://github.com/jamesturk/jellyfish
+  description: a python library for doing approximate and phonetic matching of strings.
+  tags:
+  - Python/Text Data & NLP
+- name: Dedupe
+  url: https://github.com/dedupeio/dedupe
+  description: A python library for accurate and scalable fuzzy matching, record..
+  tags:
+  - Python/Text Data & NLP
+- name: TextDistance
+  url: https://github.com/life4/textdistance
+  description: Compute distance between sequences. 30+ algorithms, pure python..
+  tags:
+  - Python/Text Data & NLP
+- name: SciSpacy
+  url: https://github.com/allenai/scispacy
+  description: A full spaCy pipeline and models for scientific/biomedical..
+  tags:
+  - Python/Text Data & NLP
+- name: spacy-transformers
+  url: https://github.com/explosion/spacy-transformers
+  description: Use pretrained transformers like BERT, XLNet and GPT-2..
+  tags:
+  - Python/Text Data & NLP
+- name: CLTK
+  url: https://github.com/cltk/cltk
+  description: The Classical Language Toolkit.
+  tags:
+  - Python/Text Data & NLP
+- name: english-words
+  url: https://github.com/dwyl/english-words
+  description: A text file containing 479k English words for all your..
+  tags:
+  - Python/Text Data & NLP
+- name: DeepKE
+  url: https://github.com/zjunlp/DeepKE
+  description: '[EMNLP 2022] An Open Toolkit for Knowledge Graph Extraction and..'
+  tags:
+  - Python/Text Data & NLP
+- name: scattertext
+  url: https://github.com/JasonKessler/scattertext
+  description: Beautiful visualizations of how language differs among document..
+  tags:
+  - Python/Text Data & NLP
+- name: sense2vec
+  url: https://github.com/explosion/sense2vec
+  description: Contextually-keyed word vectors.
+  tags:
+  - Python/Text Data & NLP
+- name: detoxify
+  url: https://github.com/unitaryai/detoxify
+  description: Trained models & code to predict toxic comments on all 3 Jigsaw..
+  tags:
+  - Python/Text Data & NLP
+- name: T5
+  url: https://github.com/google-research/text-to-text-transfer-transformer
+  description: Code for the paper Exploring the Limits of Transfer Learning with a..
+  tags:
+  - Python/Text Data & NLP
+- name: happy-transformer
+  url: https://github.com/EricFillion/happy-transformer
+  description: Happy Transformer makes it easy to fine-tune and..
+  tags:
+  - Python/Text Data & NLP
+- name: Sockeye
+  url: https://github.com/awslabs/sockeye
+  description: Sequence-to-sequence framework with a focus on Neural..
+  tags:
+  - Python/Text Data & NLP
+- name: fast-bert
+  url: https://github.com/appvision-ai/fast-bert
+  description: Super easy library for BERT based NLP models.
+  tags:
+  - Python/Text Data & NLP
+- name: UForm
+  url: https://github.com/unum-cloud/uform
+  description: Pocket-Sized Multimodal AI for content understanding and..
+  tags:
+  - Python/Text Data & NLP
+- name: finetune
+  url: https://github.com/IndicoDataSolutions/finetune
+  description: Scikit-learn style model finetuning for NLP.
+  tags:
+  - Python/Text Data & NLP
+- name: small-text
+  url: https://github.com/webis-de/small-text
+  description: Active Learning for Text Classification in Python.
+  tags:
+  - Python/Text Data & NLP
+- name: VizSeq
+  url: https://github.com/facebookresearch/vizseq
+  description: An Analysis Toolkit for Natural Language Generation (Translation,..
+  tags:
+  - Python/Text Data & NLP
+- name: Pillow
+  url: https://github.com/python-pillow/Pillow
+  description: Python Imaging Library (Fork).
+  tags:
+  - Python/Image Data
+- name: MoviePy
+  url: https://github.com/Zulko/moviepy
+  description: Video editing with Python.
+  tags:
+  - Python/Image Data
+- name: PyTorch Image Models
+  url: https://github.com/huggingface/pytorch-image-models
+  description: The largest collection of PyTorch image encoders /..
+  tags:
+  - Python/Image Data
+- name: torchvision
+  url: https://github.com/pytorch/vision
+  description: Datasets, Transforms and Models specific to Computer Vision.
+  tags:
+  - Python/Image Data
+- name: deepface
+  url: https://github.com/serengil/deepface
+  description: A Lightweight Face Recognition and Facial Attribute Analysis (Age,..
+  tags:
+  - Python/Image Data
+- name: Albumentations
+  url: https://github.com/albumentations-team/albumentations
+  description: Fast and flexible image augmentation library. Paper about..
+  tags:
+  - Python/Image Data
+- name: InsightFace
+  url: https://github.com/deepinsight/insightface
+  description: State-of-the-art 2D and 3D Face Analysis Project.
+  tags:
+  - Python/Image Data
+- name: Kornia
+  url: https://github.com/kornia/kornia
+  description: Geometric Computer Vision Library for Spatial AI.
+  tags:
+  - Python/Image Data
+- name: opencv-python
+  url: https://github.com/opencv/opencv-python
+  description: Automated CI toolchain to produce precompiled opencv-python,..
+  tags:
+  - Python/Image Data
+- name: imageio
+  url: https://github.com/imageio/imageio
+  description: Python library for reading and writing image data.
+  tags:
+  - Python/Image Data
+- name: detectron2
+  url: https://github.com/facebookresearch/detectron2
+  description: Detectron2 is a platform for object detection, segmentation..
+  tags:
+  - Python/Image Data
+- name: Wand
+  url: https://github.com/emcconville/wand
+  description: The ctypes-based simple ImageMagick binding for Python.
+  tags:
+  - Python/Image Data
+- name: PaddleSeg
+  url: https://github.com/PaddlePaddle/PaddleSeg
+  description: Easy-to-use image segmentation library with awesome pre-..
+  tags:
+  - Python/Image Data
+- name: ImageHash
+  url: https://github.com/JohannesBuchner/imagehash
+  description: A Python Perceptual Image Hashing Module.
+  tags:
+  - Python/Image Data
+- name: lightly
+  url: https://github.com/lightly-ai/lightly
+  description: A python library for self-supervised learning on images.
+  tags:
+  - Python/Image Data
+- name: sahi
+  url: https://github.com/obss/sahi
+  description: Framework agnostic sliced/tiled inference + interactive ui + error
+    analysis..
+  tags:
+  - Python/Image Data
+- name: vit-pytorch
+  url: https://github.com/lucidrains/vit-pytorch
+  description: Implementation of Vision Transformer, a simple way to achieve..
+  tags:
+  - Python/Image Data
+- name: PaddleDetection
+  url: https://github.com/PaddlePaddle/PaddleDetection
+  description: Object Detection toolkit based on PaddlePaddle. It..
+  tags:
+  - Python/Image Data
+- name: doctr
+  url: https://github.com/mindee/doctr
+  description: docTR (Document Text Recognition) - a seamless, high-..
+  tags:
+  - Python/Image Data
+- name: Face Alignment
+  url: https://github.com/1adrianb/face-alignment
+  description: 2D and 3D Face alignment library build using pytorch.
+  tags:
+  - Python/Image Data
+- name: CellProfiler
+  url: https://github.com/CellProfiler/CellProfiler
+  description: An open-source application for biological image analysis.
+  tags:
+  - Python/Image Data
+- name: Image Deduplicator
+  url: https://github.com/idealo/imagededup
+  description: Finding duplicate images made easy!.
+  tags:
+  - Python/Image Data
+- name: Norfair
+  url: https://github.com/tryolabs/norfair
+  description: Lightweight Python library for adding real-time multi-object tracking..
+  tags:
+  - Python/Image Data
+- name: mtcnn
+  url: https://github.com/ipazc/mtcnn
+  description: MTCNN face detection implementation for TensorFlow, as a PIP..
+  tags:
+  - Python/Image Data
+- name: mahotas
+  url: https://github.com/luispedro/mahotas
+  description: Computer Vision in Python.
+  tags:
+  - Python/Image Data
+- name: pyvips
+  url: https://github.com/libvips/pyvips
+  description: python binding for libvips using cffi.
+  tags:
+  - Python/Image Data
+- name: pytorchvideo
+  url: https://github.com/facebookresearch/pytorchvideo
+  description: A deep learning library for video understanding research.
+  tags:
+  - Python/Image Data
+- name: facenet-pytorch
+  url: https://github.com/timesler/facenet-pytorch
+  description: Pretrained Pytorch face detection (MTCNN) and facial..
+  tags:
+  - Python/Image Data
+- name: tensorflow-graphics
+  url: https://github.com/tensorflow/graphics
+  description: 'TensorFlow Graphics: Differentiable Graphics Layers..'
+  tags:
+  - Python/Image Data
+- name: MMF
+  url: https://github.com/facebookresearch/mmf
+  description: A modular framework for vision & language multimodal research from..
+  tags:
+  - Python/Image Data
+- name: segmentation_models
+  url: https://github.com/qubvel/segmentation_models
+  description: Segmentation models with pretrained backbones. Keras..
+  tags:
+  - Python/Image Data
+- name: kubric
+  url: https://github.com/google-research/kubric
+  description: A data generation pipeline for creating semi-realistic synthetic..
+  tags:
+  - Python/Image Data
+- name: icevision
+  url: https://github.com/airctic/icevision
+  description: An Agnostic Computer Vision Framework - Pluggable to any..
+  tags:
+  - Python/Image Data
+- name: PySlowFast
+  url: https://github.com/facebookresearch/SlowFast
+  description: 'PySlowFast: video understanding codebase from FAIR for..'
+  tags:
+  - Python/Image Data
+- name: Image Super-Resolution
+  url: https://github.com/idealo/image-super-resolution
+  description: Super-scale your images and run experiments with..
+  tags:
+  - Python/Image Data
+- name: scenic
+  url: https://github.com/google-research/scenic
+  description: 'Scenic: A Jax Library for Computer Vision Research and Beyond.'
+  tags:
+  - Python/Image Data
+- name: networkx
+  url: https://github.com/networkx/networkx
+  description: Network Analysis in Python.
+  tags:
+  - Python/Graph Data
+- name: PyTorch Geometric
+  url: https://github.com/pyg-team/pytorch_geometric
+  description: Graph Neural Network Library for PyTorch.
+  tags:
+  - Python/Graph Data
+- name: dgl
+  url: https://github.com/dmlc/dgl
+  description: Python package built to ease deep learning on graph, on top of existing
+    DL..
+  tags:
+  - Python/Graph Data
+- name: pygraphistry
+  url: https://github.com/graphistry/pygraphistry
+  description: PyGraphistry is a Python library to quickly load, shape,..
+  tags:
+  - Python/Graph Data
+- name: PyKEEN
+  url: https://github.com/pykeen/pykeen
+  description: A Python library for learning and evaluating knowledge graph embeddings.
+  tags:
+  - Python/Graph Data
+- name: pytorch_geometric_temporal
+  url: https://github.com/benedekrozemberczki/pytorch_geometric_temporal
+  description: 'PyTorch Geometric Temporal: Spatiotemporal Signal..'
+  tags:
+  - Python/Graph Data
+- name: ogb
+  url: https://github.com/snap-stanford/ogb
+  description: Benchmark datasets, data loaders, and evaluators for graph machine
+    learning.
+  tags:
+  - Python/Graph Data
+- name: torch-cluster
+  url: https://github.com/rusty1s/pytorch_cluster
+  description: PyTorch Extension Library of Optimized Graph Cluster..
+  tags:
+  - Python/Graph Data
+- name: Node2Vec
+  url: https://github.com/eliorc/node2vec
+  description: Implementation of the node2vec algorithm.
+  tags:
+  - Python/Graph Data
+- name: speechbrain
+  url: https://github.com/speechbrain/speechbrain
+  description: A PyTorch-based Speech Toolkit.
+  tags:
+  - Python/Audio Data
+- name: espnet
+  url: https://github.com/espnet/espnet
+  description: End-to-End Speech Processing Toolkit.
+  tags:
+  - Python/Audio Data
+- name: torchaudio
+  url: https://github.com/pytorch/audio
+  description: Data manipulation and transformation for audio signal..
+  tags:
+  - Python/Audio Data
+- name: SpeechRecognition
+  url: https://github.com/Uberi/speech_recognition
+  description: Speech recognition module for Python, supporting several..
+  tags:
+  - Python/Audio Data
+- name: librosa
+  url: https://github.com/librosa/librosa
+  description: Python library for audio and music analysis.
+  tags:
+  - Python/Audio Data
+- name: spleeter
+  url: https://github.com/deezer/spleeter
+  description: Deezer source separation library including pretrained models.
+  tags:
+  - Python/Audio Data
+- name: Coqui TTS
+  url: https://github.com/idiap/coqui-ai-TTS
+  description: '- a deep learning toolkit for Text-to-Speech, battle-..'
+  tags:
+  - Python/Audio Data
+- name: Magenta
+  url: https://github.com/magenta/magenta
+  description: 'Magenta: Music and Art Generation with Machine Intelligence.'
+  tags:
+  - Python/Audio Data
+- name: audiomentations
+  url: https://github.com/iver56/audiomentations
+  description: A Python library for audio data augmentation. Useful for..
+  tags:
+  - Python/Audio Data
+- name: Porcupine
+  url: https://github.com/Picovoice/porcupine
+  description: On-device wake word detection powered by deep learning.
+  tags:
+  - Python/Audio Data
+- name: tinytag
+  url: https://github.com/tinytag/tinytag
+  description: Python library for reading audio file metadata.
+  tags:
+  - Python/Audio Data
+- name: pyAudioAnalysis
+  url: https://github.com/tyiannak/pyAudioAnalysis
+  description: 'Python Audio Analysis Library: Feature Extraction,..'
+  tags:
+  - Python/Audio Data
+- name: Madmom
+  url: https://github.com/CPJKU/madmom
+  description: Python audio and music signal processing library.
+  tags:
+  - Python/Audio Data
+- name: python-soundfile
+  url: https://github.com/bastibe/python-soundfile
+  description: SoundFile is an audio library based on libsndfile, CFFI, and..
+  tags:
+  - Python/Audio Data
+- name: DDSP
+  url: https://github.com/magenta/ddsp
+  description: 'DDSP: Differentiable Digital Signal Processing.'
+  tags:
+  - Python/Audio Data
+- name: nnAudio
+  url: https://github.com/KinWaiCheuk/nnAudio
+  description: Audio processing by using pytorch 1D convolution network.
+  tags:
+  - Python/Audio Data
+- name: DeepSpeech
+  url: https://github.com/mozilla/DeepSpeech
+  description: DeepSpeech is an open source embedded (offline, on-device)..
+  tags:
+  - Python/Audio Data
+- name: Julius
+  url: https://github.com/adefossez/julius
+  description: Fast PyTorch based DSP for audio and 1D signals.
+  tags:
+  - Python/Audio Data
+- name: pydeck
+  url: https://github.com/visgl/deck.gl
+  description: WebGL2 powered visualization framework.
+  tags:
+  - Python/Geospatial Data
+- name: folium
+  url: https://github.com/python-visualization/folium
+  description: Python Data. Leaflet.js Maps.
+  tags:
+  - Python/Geospatial Data
+- name: Shapely
+  url: https://github.com/shapely/shapely
+  description: Manipulation and analysis of geometric objects.
+  tags:
+  - Python/Geospatial Data
+- name: GeoPandas
+  url: https://github.com/geopandas/geopandas
+  description: Python tools for geographic data.
+  tags:
+  - Python/Geospatial Data
+- name: Rasterio
+  url: https://github.com/rasterio/rasterio
+  description: Rasterio reads and writes geospatial raster datasets.
+  tags:
+  - Python/Geospatial Data
+- name: pyproj
+  url: https://github.com/pyproj4/pyproj
+  description: Python interface to PROJ (cartographic projections and coordinate..
+  tags:
+  - Python/Geospatial Data
+- name: ArcGIS API
+  url: https://github.com/Esri/arcgis-python-api
+  description: Documentation and samples for ArcGIS API for Python.
+  tags:
+  - Python/Geospatial Data
+- name: ipyleaflet
+  url: https://github.com/jupyter-widgets/ipyleaflet
+  description: A Jupyter - Leaflet.js bridge.
+  tags:
+  - Python/Geospatial Data
+- name: Fiona
+  url: https://github.com/Toblerity/Fiona
+  description: Fiona reads and writes geographic data files.
+  tags:
+  - Python/Geospatial Data
+- name: geojson
+  url: https://github.com/jazzband/geojson
+  description: Python bindings and utilities for GeoJSON.
+  tags:
+  - Python/Geospatial Data
+- name: PySAL
+  url: https://github.com/pysal/pysal
+  description: 'PySAL: Python Spatial Analysis Library Meta-Package.'
+  tags:
+  - Python/Geospatial Data
+- name: EarthPy
+  url: https://github.com/earthlab/earthpy
+  description: A package built to support working with spatial data using open source..
+  tags:
+  - Python/Geospatial Data
+- name: pymap3d
+  url: https://github.com/geospace-code/pymap3d
+  description: pure-Python (Numpy optional) 3D coordinate conversions for geospace
+    ecef..
+  tags:
+  - Python/Geospatial Data
+- name: GeoViews
+  url: https://github.com/holoviz/geoviews
+  description: Simple, concise geographical visualization in Python.
+  tags:
+  - Python/Geospatial Data
+- name: Mapbox GL
+  url: https://github.com/mapbox/mapboxgl-jupyter
+  description: Use Mapbox GL JS to visualize data in a Python Jupyter notebook.
+  tags:
+  - Python/Geospatial Data
+- name: yfinance
+  url: https://github.com/ranaroussi/yfinance
+  description: Download market data from Yahoo! Finances API.
+  tags:
+  - Python/Financial Data
+- name: Qlib
+  url: https://github.com/microsoft/qlib
+  description: Qlib is an AI-oriented Quant investment platform that aims to use AI
+    tech..
+  tags:
+  - Python/Financial Data
+- name: bt
+  url: https://github.com/pmorissette/bt
+  description: bt - flexible backtesting for Python.
+  tags:
+  - Python/Financial Data
+- name: Alpha Vantage
+  url: https://github.com/RomelTorres/alpha_vantage
+  description: A python wrapper for Alpha Vantage API for financial data.
+  tags:
+  - Python/Financial Data
+- name: ffn
+  url: https://github.com/pmorissette/ffn
+  description: ffn - a financial function library for Python.
+  tags:
+  - Python/Financial Data
+- name: stockstats
+  url: https://github.com/jealous/stockstats
+  description: Supply a wrapper ``StockDataFrame`` based on the..
+  tags:
+  - Python/Financial Data
+- name: tf-quant-finance
+  url: https://github.com/google/tf-quant-finance
+  description: High-performance TensorFlow library for quantitative..
+  tags:
+  - Python/Financial Data
+- name: finmarketpy
+  url: https://github.com/cuemacro/finmarketpy
+  description: Python library for backtesting trading strategies & analyzing..
+  tags:
+  - Python/Financial Data
+- name: sktime
+  url: https://github.com/sktime/sktime
+  description: A unified framework for machine learning with time series.
+  tags:
+  - Python/Time Series Data
+- name: Prophet
+  url: https://github.com/facebook/prophet
+  description: Tool for producing high quality forecasts for time series data that
+    has..
+  tags:
+  - Python/Time Series Data
+- name: StatsForecast
+  url: https://github.com/Nixtla/statsforecast
+  description: Lightning fast forecasting with statistical and econometric..
+  tags:
+  - Python/Time Series Data
+- name: pytorch-forecasting
+  url: https://github.com/sktime/pytorch-forecasting
+  description: Time series forecasting with PyTorch.
+  tags:
+  - Python/Time Series Data
+- name: tslearn
+  url: https://github.com/tslearn-team/tslearn
+  description: The machine learning toolkit for time series analysis in Python.
+  tags:
+  - Python/Time Series Data
+- name: Darts
+  url: https://github.com/unit8co/darts
+  description: A python library for user-friendly forecasting and anomaly detection..
+  tags:
+  - Python/Time Series Data
+- name: NeuralForecast
+  url: https://github.com/Nixtla/neuralforecast
+  description: Scalable and user friendly neural forecasting algorithms.
+  tags:
+  - Python/Time Series Data
+- name: pmdarima
+  url: https://github.com/alkaline-ml/pmdarima
+  description: A statistical library designed to fill the void in Pythons time..
+  tags:
+  - Python/Time Series Data
+- name: tsfresh
+  url: https://github.com/blue-yonder/tsfresh
+  description: Automatic extraction of relevant features from time series:.
+  tags:
+  - Python/Time Series Data
+- name: STUMPY
+  url: https://github.com/stumpy-dev/stumpy
+  description: STUMPY is a powerful and scalable Python library for modern time series..
+  tags:
+  - Python/Time Series Data
+- name: GluonTS
+  url: https://github.com/awslabs/gluonts
+  description: Probabilistic time series modeling in Python.
+  tags:
+  - Python/Time Series Data
+- name: skforecast
+  url: https://github.com/skforecast/skforecast
+  description: Time series forecasting with machine learning models.
+  tags:
+  - Python/Time Series Data
+- name: pyts
+  url: https://github.com/johannfaouzi/pyts
+  description: A Python package for time series classification.
+  tags:
+  - Python/Time Series Data
+- name: Streamz
+  url: https://github.com/python-streamz/streamz
+  description: Real-time stream processing for python.
+  tags:
+  - Python/Time Series Data
+- name: NeuralProphet
+  url: https://github.com/ourownstory/neural_prophet
+  description: 'NeuralProphet: A simple forecasting package.'
+  tags:
+  - Python/Time Series Data
+- name: TSFEL
+  url: https://github.com/fraunhoferportugal/tsfel
+  description: An intuitive library to extract features from time series.
+  tags:
+  - Python/Time Series Data
+- name: greykite
+  url: https://github.com/linkedin/greykite
+  description: A flexible, intuitive and fast forecasting library.
+  tags:
+  - Python/Time Series Data
+- name: pydlm
+  url: https://github.com/wwrechard/pydlm
+  description: A python library for Bayesian time series modeling.
+  tags:
+  - Python/Time Series Data
+- name: tsflex
+  url: https://github.com/predict-idlab/tsflex
+  description: Flexible time series feature extraction & processing.
+  tags:
+  - Python/Time Series Data
+- name: Nilearn
+  url: https://github.com/nilearn/nilearn
+  description: Machine learning for NeuroImaging in Python.
+  tags:
+  - Python/Medical Data
+- name: MONAI
+  url: https://github.com/Project-MONAI/MONAI
+  description: AI Toolkit for Healthcare Imaging.
+  tags:
+  - Python/Medical Data
+- name: MNE
+  url: https://github.com/mne-tools/mne-python
+  description: 'MNE: Magnetoencephalography (MEG) and Electroencephalography (EEG)
+    in Python.'
+  tags:
+  - Python/Medical Data
+- name: NIPYPE
+  url: https://github.com/nipy/nipype
+  description: Workflows and interfaces for neuroimaging packages.
+  tags:
+  - Python/Medical Data
+- name: NiBabel
+  url: https://github.com/nipy/nibabel
+  description: Python package to access a cacophony of neuro-imaging file formats.
+  tags:
+  - Python/Medical Data
+- name: Hail
+  url: https://github.com/hail-is/hail
+  description: Cloud-native genomic dataframes and batch computing.
+  tags:
+  - Python/Medical Data
+- name: Lifelines
+  url: https://github.com/CamDavidsonPilon/lifelines
+  description: Survival analysis in Python.
+  tags:
+  - Python/Medical Data
+- name: DeepVariant
+  url: https://github.com/google/deepvariant
+  description: DeepVariant is an analysis pipeline that uses a deep neural..
+  tags:
+  - Python/Medical Data
+- name: Brainiak
+  url: https://github.com/brainiak/brainiak
+  description: Brain Imaging Analysis Kit.
+  tags:
+  - Python/Medical Data
+- name: skrub
+  url: https://github.com/skrub-data/skrub
+  description: Machine learning with dataframes.
+  tags:
+  - Python/Tabular Data
+- name: pytorch_tabular
+  url: https://github.com/manujosephv/pytorch_tabular
+  description: A standard framework for modelling Deep Learning Models..
+  tags:
+  - Python/Tabular Data
+- name: upgini
+  url: https://github.com/upgini/upgini
+  description: Data search & enrichment library for Machine Learning Easily find and
+    add..
+  tags:
+  - Python/Tabular Data
+- name: miceforest
+  url: https://github.com/AnotherSamWilson/miceforest
+  description: Multiple Imputation with LightGBM in Python.
+  tags:
+  - Python/Tabular Data
+- name: PaddleOCR
+  url: https://github.com/PaddlePaddle/PaddleOCR
+  description: Awesome multilingual OCR and Document Parsing toolkits based..
+  tags:
+  - Python/Optical Character Recognition
+- name: OCRmyPDF
+  url: https://github.com/ocrmypdf/OCRmyPDF
+  description: OCRmyPDF adds an OCR text layer to scanned PDF files, allowing them..
+  tags:
+  - Python/Optical Character Recognition
+- name: EasyOCR
+  url: https://github.com/JaidedAI/EasyOCR
+  description: Ready-to-use OCR with 80+ supported languages and all popular..
+  tags:
+  - Python/Optical Character Recognition
+- name: Tesseract
+  url: https://github.com/madmaze/pytesseract
+  description: Python-tesseract is an optical character recognition (OCR) tool..
+  tags:
+  - Python/Optical Character Recognition
+- name: tesserocr
+  url: https://github.com/sirfz/tesserocr
+  description: A Python wrapper for the tesseract-ocr API.
+  tags:
+  - Python/Optical Character Recognition
+- name: MMOCR
+  url: https://github.com/open-mmlab/mmocr
+  description: OpenMMLab Text Detection, Recognition and Understanding Toolbox.
+  tags:
+  - Python/Optical Character Recognition
+- name: Ray
+  url: https://github.com/ray-project/ray
+  description: Ray is an AI compute engine. Ray consists of a core distributed runtime..
+  tags:
+  - Python/Distributed Machine Learning
+- name: dask
+  url: https://github.com/dask/dask
+  description: Parallel computing with task scheduling.
+  tags:
+  - Python/Distributed Machine Learning
+- name: DeepSpeed
+  url: https://github.com/deepspeedai/DeepSpeed
+  description: DeepSpeed is a deep learning optimization library that makes..
+  tags:
+  - Python/Distributed Machine Learning
+- name: dask.distributed
+  url: https://github.com/dask/distributed
+  description: A distributed task scheduler for Dask.
+  tags:
+  - Python/Distributed Machine Learning
+- name: metrics
+  url: https://github.com/Lightning-AI/torchmetrics
+  description: Machine learning metrics for distributed, scalable PyTorch..
+  tags:
+  - Python/Distributed Machine Learning
+- name: horovod
+  url: https://github.com/horovod/horovod
+  description: Distributed training framework for TensorFlow, Keras, PyTorch, and..
+  tags:
+  - Python/Distributed Machine Learning
+- name: H2O-3
+  url: https://github.com/h2oai/h2o-3
+  description: H2O is an Open Source, Distributed, Fast & Scalable Machine Learning..
+  tags:
+  - Python/Distributed Machine Learning
+- name: BigDL
+  url: https://github.com/intel/ipex-llm
+  description: Accelerate local LLM inference and finetuning (LLaMA, Mistral,..
+  tags:
+  - Python/Distributed Machine Learning
+- name: mpi4py
+  url: https://github.com/mpi4py/mpi4py
+  description: Python bindings for MPI.
+  tags:
+  - Python/Distributed Machine Learning
+- name: FairScale
+  url: https://github.com/facebookresearch/fairscale
+  description: PyTorch extensions for high performance and large scale training.
+  tags:
+  - Python/Distributed Machine Learning
+- name: SynapseML
+  url: https://github.com/microsoft/SynapseML
+  description: Simple and Distributed Machine Learning.
+  tags:
+  - Python/Distributed Machine Learning
+- name: Submit it
+  url: https://github.com/facebookincubator/submitit
+  description: Python 3.8+ toolbox for submitting jobs to Slurm.
+  tags:
+  - Python/Distributed Machine Learning
+- name: dask-ml
+  url: https://github.com/dask/dask-ml
+  description: Scalable Machine Learning with Dask.
+  tags:
+  - Python/Distributed Machine Learning
+- name: Hivemind
+  url: https://github.com/learning-at-home/hivemind
+  description: Decentralized deep learning in PyTorch. Built to train models on..
+  tags:
+  - Python/Distributed Machine Learning
+- name: MMLSpark
+  url: https://github.com/microsoft/SynapseML
+  description: Simple and Distributed Machine Learning.
+  tags:
+  - Python/Distributed Machine Learning
+- name: Apache Singa
+  url: https://github.com/apache/singa
+  description: a distributed deep learning platform.
+  tags:
+  - Python/Distributed Machine Learning
+- name: analytics-zoo
+  url: https://github.com/intel/analytics-zoo
+  description: Distributed Tensorflow, Keras and PyTorch on Apache..
+  tags:
+  - Python/Distributed Machine Learning
+- name: Optuna
+  url: https://github.com/optuna/optuna
+  description: A hyperparameter optimization framework.
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: AutoGluon
+  url: https://github.com/autogluon/autogluon
+  description: Fast and Accurate ML in 3 Lines of Code.
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: Ax
+  url: https://github.com/facebook/Ax
+  description: Adaptive Experimentation Platform.
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: Bayesian Optimization
+  url: https://github.com/bayesian-optimization/BayesianOptimization
+  description: A Python implementation of global optimization with..
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: BoTorch
+  url: https://github.com/pytorch/botorch
+  description: Bayesian optimization in PyTorch.
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: AutoKeras
+  url: https://github.com/keras-team/autokeras
+  description: AutoML library for deep learning.
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: featuretools
+  url: https://github.com/alteryx/featuretools
+  description: An open source python library for automated feature..
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: nevergrad
+  url: https://github.com/facebookresearch/nevergrad
+  description: A Python toolbox for performing gradient-free optimization.
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: mljar-supervised
+  url: https://github.com/mljar/mljar-supervised
+  description: Python package for AutoML on Tabular Data with Feature..
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: lazypredict
+  url: https://github.com/shankarpandala/lazypredict
+  description: Lazy Predict help build a lot of basic models without much code..
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: Hyperactive
+  url: https://github.com/SimonBlanke/Hyperactive
+  description: An optimization and data collection toolbox for convenient and fast..
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: FEDOT
+  url: https://github.com/aimclub/FEDOT
+  description: Automated modeling and machine learning framework FEDOT.
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: AlphaPy
+  url: https://github.com/ScottfreeLLC/AlphaPy
+  description: Python AutoML for Trading Systems and Sports Betting.
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: Auto ViML
+  url: https://github.com/AutoViML/Auto_ViML
+  description: Automatically Build Multiple ML Models with a Single Line of Code...
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: featurewiz
+  url: https://github.com/AutoViML/featurewiz
+  description: Use advanced feature engineering strategies and select best..
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: opytimizer
+  url: https://github.com/gugarosa/opytimizer
+  description: Opytimizer is a Python library consisting of meta-heuristic..
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: FinRL
+  url: https://github.com/AI4Finance-Foundation/FinRL
+  description: 'FinRL: Financial Reinforcement Learning.'
+  tags:
+  - Python/Reinforcement Learning
+- name: ViZDoom
+  url: https://github.com/Farama-Foundation/ViZDoom
+  description: Reinforcement Learning environments based on the 1993 game Doom.
+  tags:
+  - Python/Reinforcement Learning
+- name: Acme
+  url: https://github.com/google-deepmind/acme
+  description: A library of reinforcement learning components and agents.
+  tags:
+  - Python/Reinforcement Learning
+- name: TF-Agents
+  url: https://github.com/tensorflow/agents
+  description: 'TF-Agents: A reliable, scalable and easy to use TensorFlow..'
+  tags:
+  - Python/Reinforcement Learning
+- name: Dopamine
+  url: https://github.com/google/dopamine
+  description: Dopamine is a research framework for fast prototyping of..
+  tags:
+  - Python/Reinforcement Learning
+- name: TensorForce
+  url: https://github.com/tensorforce/tensorforce
+  description: 'Tensorforce: a TensorFlow library for applied..'
+  tags:
+  - Python/Reinforcement Learning
+- name: RLax
+  url: https://github.com/google-deepmind/rlax
+  description: A library of reinforcement learning building blocks in JAX.
+  tags:
+  - Python/Reinforcement Learning
+- name: PARL
+  url: https://github.com/PaddlePaddle/PARL
+  description: A high-performance distributed training framework for Reinforcement..
+  tags:
+  - Python/Reinforcement Learning
+- name: PFRL
+  url: https://github.com/pfnet/pfrl
+  description: 'PFRL: a PyTorch-based deep reinforcement learning library.'
+  tags:
+  - Python/Reinforcement Learning
+- name: ReAgent
+  url: https://github.com/facebookresearch/ReAgent
+  description: A platform for Reasoning systems (Reinforcement Learning,..
+  tags:
+  - Python/Reinforcement Learning
+- name: rliable
+  url: https://github.com/google-research/rliable
+  description: '[NeurIPS21 Outstanding Paper] Library for reliable evaluation on..'
+  tags:
+  - Python/Reinforcement Learning
+- name: Recommenders
+  url: https://github.com/recommenders-team/recommenders
+  description: Best Practices on Recommendation Systems.
+  tags:
+  - Python/Recommender Systems
+- name: torchrec
+  url: https://github.com/pytorch/torchrec
+  description: Pytorch domain library for recommendation systems.
+  tags:
+  - Python/Recommender Systems
+- name: Cornac
+  url: https://github.com/PreferredAI/cornac
+  description: A Comparative Framework for Multimodal Recommender Systems.
+  tags:
+  - Python/Recommender Systems
+- name: RecBole
+  url: https://github.com/RUCAIBox/RecBole
+  description: A unified, comprehensive and efficient recommendation library.
+  tags:
+  - Python/Recommender Systems
+- name: TF Recommenders
+  url: https://github.com/tensorflow/recommenders
+  description: TensorFlow Recommenders is a library for building..
+  tags:
+  - Python/Recommender Systems
+- name: PySyft
+  url: https://github.com/OpenMined/PySyft
+  description: Perform data science on data that remains in someone elses server.
+  tags:
+  - Python/Privacy Machine Learning
+- name: Opacus
+  url: https://github.com/pytorch/opacus
+  description: Training PyTorch models with differential privacy.
+  tags:
+  - Python/Privacy Machine Learning
+- name: TensorFlow Privacy
+  url: https://github.com/tensorflow/privacy
+  description: Library for training machine learning models with..
+  tags:
+  - Python/Privacy Machine Learning
+- name: TFEncrypted
+  url: https://github.com/tf-encrypted/tf-encrypted
+  description: A Framework for Encrypted Machine Learning in..
+  tags:
+  - Python/Privacy Machine Learning
+- name: FATE
+  url: https://github.com/FederatedAI/FATE
+  description: An Industrial Grade Federated Learning Framework.
+  tags:
+  - Python/Privacy Machine Learning
+- name: CrypTen
+  url: https://github.com/facebookresearch/CrypTen
+  description: A framework for Privacy Preserving Machine Learning.
+  tags:
+  - Python/Privacy Machine Learning
+- name: mlflow
+  url: https://github.com/mlflow/mlflow
+  description: The open source developer platform to build AI/LLM applications and..
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: wandb client
+  url: https://github.com/wandb/wandb
+  description: The AI developer platform. Use Weights & Biases to train and fine-..
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: DVC
+  url: https://github.com/iterative/dvc
+  description: Data Versioning and ML Experiments.
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: SageMaker SDK
+  url: https://github.com/aws/sagemaker-python-sdk
+  description: A library for training and deploying machine learning..
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: Metaflow
+  url: https://github.com/Netflix/metaflow
+  description: Build, Manage and Deploy AI/ML Systems.
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: PyCaret
+  url: https://github.com/pycaret/pycaret
+  description: An open-source, low-code machine learning library in Python.
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: tensorboardX
+  url: https://github.com/lanpa/tensorboardX
+  description: tensorboard for pytorch (and chainer, mxnet, numpy, ...).
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: kaggle
+  url: https://github.com/Kaggle/kaggle-api
+  description: Official Kaggle API.
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: snakemake
+  url: https://github.com/snakemake/snakemake
+  description: This is the development home of the workflow management system..
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: ClearML
+  url: https://github.com/clearml/clearml
+  description: ClearML - Auto-Magical CI/CD to streamline your AI workload...
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: aim
+  url: https://github.com/aimhubio/aim
+  description: Aim An easy-to-use & supercharged open-source experiment tracker.
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: AzureML SDK
+  url: https://github.com/Azure/MachineLearningNotebooks
+  description: Python notebooks with ML and deep learning examples with Azure..
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: Neptune.ai
+  url: https://github.com/neptune-ai/neptune-client
+  description: The experiment tracker for foundation model training.
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: VisualDL
+  url: https://github.com/PaddlePaddle/VisualDL
+  description: Deep Learning Visualization Toolkit.
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: sacred
+  url: https://github.com/IDSIA/sacred
+  description: Sacred is a tool to help you configure, organize, log and reproduce..
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: TNT
+  url: https://github.com/pytorch/tnt
+  description: A lightweight library for PyTorch training tools and utilities.
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: ml-metadata
+  url: https://github.com/google/ml-metadata
+  description: For recording and retrieving metadata associated with ML..
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: livelossplot
+  url: https://github.com/stared/livelossplot
+  description: Live training loss plot in Jupyter Notebook for Keras,..
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: quinn
+  url: https://github.com/mrpowers-io/quinn
+  description: pyspark methods to enhance developer productivity.
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: Labml
+  url: https://github.com/labmlai/labml
+  description: Monitor deep learning model training and hardware usage from your mobile..
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: gokart
+  url: https://github.com/m3dev/gokart
+  description: Gokart solves reproducibility, task dependencies, constraints of good
+    code,..
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: Guild AI
+  url: https://github.com/guildai/guildai
+  description: Experiment tracking, ML developer tools.
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: keepsake
+  url: https://github.com/replicate/keepsake
+  description: Version control for machine learning.
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: datmo
+  url: https://github.com/datmo/datmo
+  description: Open source production model management tool for data scientists.
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: triton
+  url: https://github.com/triton-lang/triton
+  description: Development repository for the Triton language and compiler.
+  tags:
+  - Python/Model Serialization & Deployment
+- name: onnx
+  url: https://github.com/onnx/onnx
+  description: Open standard for machine learning interoperability.
+  tags:
+  - Python/Model Serialization & Deployment
+- name: huggingface_hub
+  url: https://github.com/huggingface/huggingface_hub
+  description: The official Python client for the Huggingface Hub.
+  tags:
+  - Python/Model Serialization & Deployment
+- name: Core ML Tools
+  url: https://github.com/apple/coremltools
+  description: Core ML tools contain supporting tools for Core ML model..
+  tags:
+  - Python/Model Serialization & Deployment
+- name: TorchServe
+  url: https://github.com/pytorch/serve
+  description: Serve, optimize and scale PyTorch models in production.
+  tags:
+  - Python/Model Serialization & Deployment
+- name: BentoML
+  url: https://github.com/bentoml/BentoML
+  description: The easiest way to serve AI apps and models - Build Model Inference..
+  tags:
+  - Python/Model Serialization & Deployment
+- name: hls4ml
+  url: https://github.com/fastmachinelearning/hls4ml
+  description: Machine learning on FPGAs using HLS.
+  tags:
+  - Python/Model Serialization & Deployment
+- name: Hummingbird
+  url: https://github.com/microsoft/hummingbird
+  description: Hummingbird compiles trained ML models into tensor computation for..
+  tags:
+  - Python/Model Serialization & Deployment
+- name: nebullvm
+  url: https://github.com/nebuly-ai/optimate
+  description: A collection of libraries to optimise AI model performances.
+  tags:
+  - Python/Model Serialization & Deployment
+- name: tfdeploy
+  url: https://github.com/riga/tfdeploy
+  description: Deploy tensorflow graphs for fast evaluation and export to..
+  tags:
+  - Python/Model Serialization & Deployment
+- name: shap
+  url: https://github.com/shap/shap
+  description: A game theoretic approach to explain the output of any machine learning
+    model.
+  tags:
+  - Python/Model Interpretability
+- name: Netron
+  url: https://github.com/lutzroeder/netron
+  description: Visualizer for neural network, deep learning and machine learning..
+  tags:
+  - Python/Model Interpretability
+- name: arviz
+  url: https://github.com/arviz-devs/arviz
+  description: Exploratory analysis of Bayesian models with Python.
+  tags:
+  - Python/Model Interpretability
+- name: Captum
+  url: https://github.com/pytorch/captum
+  description: Model interpretability and understanding for PyTorch.
+  tags:
+  - Python/Model Interpretability
+- name: InterpretML
+  url: https://github.com/interpretml/interpret
+  description: Fit interpretable models. Explain blackbox machine learning.
+  tags:
+  - Python/Model Interpretability
+- name: evaluate
+  url: https://github.com/huggingface/evaluate
+  description: 'Evaluate: A library for easily evaluating machine learning models..'
+  tags:
+  - Python/Model Interpretability
+- name: shapash
+  url: https://github.com/MAIF/shapash
+  description: 'Shapash: User-friendly Explainability and Interpretability to..'
+  tags:
+  - Python/Model Interpretability
+- name: explainerdashboard
+  url: https://github.com/oegedijk/explainerdashboard
+  description: Quickly build Explainable AI dashboards that show the inner..
+  tags:
+  - Python/Model Interpretability
+- name: DoWhy
+  url: https://github.com/py-why/dowhy
+  description: DoWhy is a Python library for causal inference that supports explicit..
+  tags:
+  - Python/Model Interpretability
+- name: fairlearn
+  url: https://github.com/fairlearn/fairlearn
+  description: A Python package to assess and improve fairness of machine..
+  tags:
+  - Python/Model Interpretability
+- name: dtreeviz
+  url: https://github.com/parrt/dtreeviz
+  description: A python library for decision tree visualization and model interpretation.
+  tags:
+  - Python/Model Interpretability
+- name: Model Analysis
+  url: https://github.com/tensorflow/model-analysis
+  description: Model analysis tools for TensorFlow.
+  tags:
+  - Python/Model Interpretability
+- name: Fairness 360
+  url: https://github.com/Trusted-AI/AIF360
+  description: A comprehensive set of fairness metrics for datasets and..
+  tags:
+  - Python/Model Interpretability
+- name: LIT
+  url: https://github.com/PAIR-code/lit
+  description: 'The Learning Interpretability Tool: Interactively analyze ML models..'
+  tags:
+  - Python/Model Interpretability
+- name: responsible-ai-widgets
+  url: https://github.com/microsoft/responsible-ai-toolbox
+  description: Responsible AI Toolbox is a suite of tools providing..
+  tags:
+  - Python/Model Interpretability
+- name: imodels
+  url: https://github.com/csinva/imodels
+  description: Interpretable ML package for concise, transparent, and accurate..
+  tags:
+  - Python/Model Interpretability
+- name: aequitas
+  url: https://github.com/dssg/aequitas
+  description: Bias Auditing & Fair ML Toolkit.
+  tags:
+  - Python/Model Interpretability
+- name: Explainability 360
+  url: https://github.com/Trusted-AI/AIX360
+  description: Interpretability and explainability of data and..
+  tags:
+  - Python/Model Interpretability
+- name: DiCE
+  url: https://github.com/interpretml/DiCE
+  description: Generate Diverse Counterfactual Explanations for any machine..
+  tags:
+  - Python/Model Interpretability
+- name: keract
+  url: https://github.com/philipperemy/keract
+  description: Layers Outputs and Gradients in Keras. Made easy.
+  tags:
+  - Python/Model Interpretability
+- name: fairness-indicators
+  url: https://github.com/tensorflow/fairness-indicators
+  description: Tensorflows Fairness Evaluation and Visualization..
+  tags:
+  - Python/Model Interpretability
+- name: LOFO
+  url: https://github.com/aerdem4/lofo-importance
+  description: Leave One Feature Out Importance.
+  tags:
+  - Python/Model Interpretability
+- name: random-forest-importances
+  url: https://github.com/parrt/random-forest-importances
+  description: Code to compute permutation and drop-column..
+  tags:
+  - Python/Model Interpretability
+- name: ecco
+  url: https://github.com/jalammar/ecco
+  description: Explain, analyze, and visualize NLP language models. Ecco creates..
+  tags:
+  - Python/Model Interpretability
+- name: ExplainX.ai
+  url: https://github.com/explainX/explainx
+  description: Explainable AI framework for data scientists. Explain & debug any..
+  tags:
+  - Python/Model Interpretability
+- name: Milvus
+  url: https://github.com/milvus-io/milvus
+  description: Milvus is a high-performance, cloud-native vector database built for..
+  tags:
+  - Python/Vector Similarity Search (ANN)
+- name: Faiss
+  url: https://github.com/facebookresearch/faiss
+  description: A library for efficient similarity search and clustering of dense vectors.
+  tags:
+  - Python/Vector Similarity Search (ANN)
+- name: Annoy
+  url: https://github.com/spotify/annoy
+  description: Approximate Nearest Neighbors in C++/Python optimized for memory..
+  tags:
+  - Python/Vector Similarity Search (ANN)
+- name: USearch
+  url: https://github.com/unum-cloud/usearch
+  description: Fast Open-Source Search & Clustering engine for Vectors & Arbitrary..
+  tags:
+  - Python/Vector Similarity Search (ANN)
+- name: NMSLIB
+  url: https://github.com/nmslib/nmslib
+  description: 'Non-Metric Space Library (NMSLIB): An efficient similarity search..'
+  tags:
+  - Python/Vector Similarity Search (ANN)
+- name: PyNNDescent
+  url: https://github.com/lmcinnes/pynndescent
+  description: A Python nearest neighbor descent for approximate nearest..
+  tags:
+  - Python/Vector Similarity Search (ANN)
+- name: NGT
+  url: https://github.com/yahoojapan/NGT
+  description: Nearest Neighbor Search with Neighborhood Graph and Tree for High-..
+  tags:
+  - Python/Vector Similarity Search (ANN)
+- name: PyMC3
+  url: https://github.com/pymc-devs/pymc
+  description: Bayesian Modeling and Probabilistic Programming in Python.
+  tags:
+  - Python/Probabilistics & Statistics
+- name: tensorflow-probability
+  url: https://github.com/tensorflow/probability
+  description: Probabilistic reasoning and statistical analysis in..
+  tags:
+  - Python/Probabilistics & Statistics
+- name: pgmpy
+  url: https://github.com/pgmpy/pgmpy
+  description: Python Library for Causal and Probabilistic Modeling using Bayesian
+    Networks.
+  tags:
+  - Python/Probabilistics & Statistics
+- name: Pyro
+  url: https://github.com/pyro-ppl/pyro
+  description: Deep universal probabilistic programming with Python and PyTorch.
+  tags:
+  - Python/Probabilistics & Statistics
+- name: patsy
+  url: https://github.com/pydata/patsy
+  description: Describing statistical models in Python using symbolic formulas.
+  tags:
+  - Python/Probabilistics & Statistics
+- name: GPyTorch
+  url: https://github.com/cornellius-gp/gpytorch
+  description: A highly efficient implementation of Gaussian Processes in PyTorch.
+  tags:
+  - Python/Probabilistics & Statistics
+- name: hmmlearn
+  url: https://github.com/hmmlearn/hmmlearn
+  description: Hidden Markov Models in Python, with scikit-learn like API.
+  tags:
+  - Python/Probabilistics & Statistics
+- name: GPflow
+  url: https://github.com/GPflow/GPflow
+  description: Gaussian processes in TensorFlow.
+  tags:
+  - Python/Probabilistics & Statistics
+- name: emcee
+  url: https://github.com/dfm/emcee
+  description: The Python ensemble sampling toolkit for affine-invariant MCMC.
+  tags:
+  - Python/Probabilistics & Statistics
+- name: bambi
+  url: https://github.com/bambinos/bambi
+  description: BAyesian Model-Building Interface (Bambi) in Python.
+  tags:
+  - Python/Probabilistics & Statistics
+- name: SALib
+  url: https://github.com/SALib/SALib
+  description: Sensitivity Analysis Library in Python. Contains Sobol, Morris, FAST,
+    and..
+  tags:
+  - Python/Probabilistics & Statistics
+- name: pomegranate
+  url: https://github.com/jmschrei/pomegranate
+  description: Fast, flexible and easy to use probabilistic modelling in Python.
+  tags:
+  - Python/Probabilistics & Statistics
+- name: PyStan
+  url: https://github.com/stan-dev/pystan
+  description: PyStan, a Python interface to Stan, a platform for statistical..
+  tags:
+  - Python/Probabilistics & Statistics
+- name: scikit-posthocs
+  url: https://github.com/maximtrp/scikit-posthocs
+  description: Multiple Pairwise Comparisons (Post Hoc) Tests in Python.
+  tags:
+  - Python/Probabilistics & Statistics
+- name: Orbit
+  url: https://github.com/uber/orbit
+  description: A Python package for Bayesian forecasting with object-oriented design..
+  tags:
+  - Python/Probabilistics & Statistics
+- name: TorchUncertainty
+  url: https://github.com/ENSTA-U2IS-AI/torch-uncertainty
+  description: Open-source framework for uncertainty and deep..
+  tags:
+  - Python/Probabilistics & Statistics
+- name: pandas-ta
+  url: https://github.com/twopirllc/pandas-ta
+  description: Technical Analysis Indicators - Pandas TA is an easy to use..
+  tags:
+  - Python/Probabilistics & Statistics
+- name: Baal
+  url: https://github.com/baal-org/baal
+  description: Bayesian active learning library for research and industrial usecases.
+  tags:
+  - Python/Probabilistics & Statistics
+- name: pyhsmm
+  url: https://github.com/mattjj/pyhsmm
+  description: Bayesian inference in HSMMs and HMMs.
+  tags:
+  - Python/Probabilistics & Statistics
+- name: ART
+  url: https://github.com/Trusted-AI/adversarial-robustness-toolbox
+  description: Adversarial Robustness Toolbox (ART) - Python Library for Machine Learning..
+  tags:
+  - Python/Adversarial Robustness
+- name: TextAttack
+  url: https://github.com/QData/TextAttack
+  description: TextAttack is a Python framework for adversarial attacks, data..
+  tags:
+  - Python/Adversarial Robustness
+- name: optimum
+  url: https://github.com/huggingface/optimum
+  description: Accelerate inference and training of Transformers, Diffusers, TIMM
+    and..
+  tags:
+  - Python/GPU & Accelerator Utilities
+- name: cuDF
+  url: https://github.com/rapidsai/cudf
+  description: cuDF - GPU DataFrame Library.
+  tags:
+  - Python/GPU & Accelerator Utilities
+- name: PyCUDA
+  url: https://github.com/inducer/pycuda
+  description: CUDA integration for Python, plus shiny features.
+  tags:
+  - Python/GPU & Accelerator Utilities
+- name: cuML
+  url: https://github.com/rapidsai/cuml
+  description: cuML - RAPIDS Machine Learning Library.
+  tags:
+  - Python/GPU & Accelerator Utilities
+- name: gpustat
+  url: https://github.com/wookayin/gpustat
+  description: A simple command-line utility for querying and monitoring GPU status.
+  tags:
+  - Python/GPU & Accelerator Utilities
+- name: ArrayFire
+  url: https://github.com/arrayfire/arrayfire
+  description: 'ArrayFire: a general purpose GPU library.'
+  tags:
+  - Python/GPU & Accelerator Utilities
+- name: cuGraph
+  url: https://github.com/rapidsai/cugraph
+  description: cuGraph - RAPIDS Graph Analytics Library.
+  tags:
+  - Python/GPU & Accelerator Utilities
+- name: CuPy
+  url: https://github.com/cupy/cupy
+  description: NumPy & SciPy for GPU.
+  tags:
+  - Python/GPU & Accelerator Utilities
+- name: DALI
+  url: https://github.com/NVIDIA/DALI
+  description: A GPU-accelerated library containing highly optimized building blocks..
+  tags:
+  - Python/GPU & Accelerator Utilities
+- name: Vulkan Kompute
+  url: https://github.com/KomputeProject/kompute
+  description: General purpose GPU compute framework built on Vulkan to..
+  tags:
+  - Python/GPU & Accelerator Utilities
+- name: Merlin
+  url: https://github.com/NVIDIA-Merlin/Merlin
+  description: NVIDIA Merlin is an open source library providing end-to-end GPU-..
+  tags:
+  - Python/GPU & Accelerator Utilities
+- name: TensorFlow Datasets
+  url: https://github.com/tensorflow/datasets
+  description: TFDS is a collection of datasets ready to use with..
+  tags:
+  - Python/Tensorflow Utilities
+- name: tensorflow-hub
+  url: https://github.com/tensorflow/hub
+  description: A library for transfer learning by reusing parts of..
+  tags:
+  - Python/Tensorflow Utilities
+- name: TFX
+  url: https://github.com/tensorflow/tfx
+  description: TFX is an end-to-end platform for deploying production ML pipelines.
+  tags:
+  - Python/Tensorflow Utilities
+- name: TensorFlow I/O
+  url: https://github.com/tensorflow/io
+  description: Dataset, streaming, and file system extensions..
+  tags:
+  - Python/Tensorflow Utilities
+- name: TF Model Optimization
+  url: https://github.com/tensorflow/model-optimization
+  description: A toolkit to optimize ML models for deployment for..
+  tags:
+  - Python/Tensorflow Utilities
+- name: TensorFlow Transform
+  url: https://github.com/tensorflow/transform
+  description: Input pipeline framework.
+  tags:
+  - Python/Tensorflow Utilities
+- name: Neural Structured Learning
+  url: https://github.com/tensorflow/neural-structured-learning
+  description: Training neural models with structured signals.
+  tags:
+  - Python/Tensorflow Utilities
+- name: TensorFlow Cloud
+  url: https://github.com/tensorflow/cloud
+  description: The TensorFlow Cloud repository provides APIs that..
+  tags:
+  - Python/Tensorflow Utilities
+- name: TF Compression
+  url: https://github.com/tensorflow/compression
+  description: Data compression in TensorFlow.
+  tags:
+  - Python/Tensorflow Utilities
+- name: equinox
+  url: https://github.com/patrick-kidger/equinox
+  description: Elegant easy-to-use neural networks + scientific computing..
+  tags:
+  - Python/Jax Utilities
+- name: scikit-learn-intelex
+  url: https://github.com/uxlfoundation/scikit-learn-intelex
+  description: Extension for Scikit-learn is a seamless way to speed..
+  tags:
+  - Python/Sklearn Utilities
+- name: MLxtend
+  url: https://github.com/rasbt/mlxtend
+  description: A library of extension and helper modules for Pythons data analysis..
+  tags:
+  - Python/Sklearn Utilities
+- name: category_encoders
+  url: https://github.com/scikit-learn-contrib/category_encoders
+  description: A library of sklearn compatible categorical variable..
+  tags:
+  - Python/Sklearn Utilities
+- name: imbalanced-learn
+  url: https://github.com/scikit-learn-contrib/imbalanced-learn
+  description: A Python Package to Tackle the Curse of Imbalanced..
+  tags:
+  - Python/Sklearn Utilities
+- name: scikit-lego
+  url: https://github.com/koaning/scikit-lego
+  description: Extra blocks for scikit-learn pipelines.
+  tags:
+  - Python/Sklearn Utilities
+- name: iterative-stratification
+  url: https://github.com/trent-b/iterative-stratification
+  description: scikit-learn cross validators for iterative..
+  tags:
+  - Python/Sklearn Utilities
+- name: dabl
+  url: https://github.com/amueller/dabl
+  description: Data Analysis Baseline Library.
+  tags:
+  - Python/Sklearn Utilities
+- name: scikit-tda
+  url: https://github.com/scikit-tda/scikit-tda
+  description: Topological Data Analysis for Python.
+  tags:
+  - Python/Sklearn Utilities
+- name: accelerate
+  url: https://github.com/huggingface/accelerate
+  description: A simple way to launch, train, and use PyTorch models on..
+  tags:
+  - Python/Pytorch Utilities
+- name: tinygrad
+  url: https://github.com/tinygrad/tinygrad
+  description: You like pytorch? You like micrograd? You love tinygrad!.
+  tags:
+  - Python/Pytorch Utilities
+- name: PML
+  url: https://github.com/KevinMusgrave/pytorch-metric-learning
+  description: The easiest way to use deep metric learning in your application...
+  tags:
+  - Python/Pytorch Utilities
+- name: torchdiffeq
+  url: https://github.com/rtqichen/torchdiffeq
+  description: Differentiable ODE solvers with full GPU support and..
+  tags:
+  - Python/Pytorch Utilities
+- name: torchsde
+  url: https://github.com/google-research/torchsde
+  description: Differentiable SDE solvers with GPU support and efficient..
+  tags:
+  - Python/Pytorch Utilities
+- name: torch-scatter
+  url: https://github.com/rusty1s/pytorch_scatter
+  description: PyTorch Extension Library of Optimized Scatter Operations.
+  tags:
+  - Python/Pytorch Utilities
+- name: PyTorch Sparse
+  url: https://github.com/rusty1s/pytorch_sparse
+  description: PyTorch Extension Library of Optimized Autograd Sparse..
+  tags:
+  - Python/Pytorch Utilities
+- name: Pytorch Toolbelt
+  url: https://github.com/BloodAxe/pytorch-toolbelt
+  description: PyTorch extensions for fast R&D prototyping and Kaggle..
+  tags:
+  - Python/Pytorch Utilities
+- name: madgrad
+  url: https://github.com/facebookresearch/madgrad
+  description: MADGRAD Optimization Method.
+  tags:
+  - Python/Pytorch Utilities
+- name: pytorchviz
+  url: https://github.com/szagoruyko/pytorchviz
+  description: A small package to create visualizations of PyTorch execution..
+  tags:
+  - Python/Pytorch Utilities
+- name: scipy
+  url: https://github.com/scipy/scipy
+  description: Ecosystem of open-source software for mathematics, science, and engineering.
+  tags:
+  - Python/Others
+- name: SymPy
+  url: https://github.com/sympy/sympy
+  description: A computer algebra system written in pure Python.
+  tags:
+  - Python/Others
+- name: Streamlit
+  url: https://github.com/streamlit/streamlit
+  description: Streamlit A faster way to build and share data apps.
+  tags:
+  - Python/Others
+- name: Gradio
+  url: https://github.com/gradio-app/gradio
+  description: Wrap UIs around any model, share with anyone.
+  tags:
+  - Python/Others
+- name: PyOD
+  url: https://github.com/yzhao062/pyod
+  description: A Python Library for Outlier and Anomaly Detection, Integrating Classical..
+  tags:
+  - Python/Others
+- name: PennyLane
+  url: https://github.com/PennyLaneAI/pennylane
+  description: PennyLane is a cross-platform Python library for quantum..
+  tags:
+  - Python/Others
+- name: carla
+  url: https://github.com/carla-simulator/carla
+  description: Open-source simulator for autonomous driving research.
+  tags:
+  - Python/Others
+- name: Autograd
+  url: https://github.com/HIPS/autograd
+  description: Efficiently computes derivatives of NumPy code.
+  tags:
+  - Python/Others
+- name: DeepChem
+  url: https://github.com/deepchem/deepchem
+  description: Democratizing Deep-Learning for Drug Discovery, Quantum Chemistry,..
+  tags:
+  - Python/Others
+- name: agate
+  url: https://github.com/wireservice/agate
+  description: A Python data analysis library that is optimized for humans instead
+    of..
+  tags:
+  - Python/Others
+- name: Datasette
+  url: https://github.com/simonw/datasette
+  description: An open source multi-tool for exploring and publishing data.
+  tags:
+  - Python/Others
+- name: Pythran
+  url: https://github.com/serge-sans-paille/pythran
+  description: Ahead of Time compiler for numeric kernels.
+  tags:
+  - Python/Others
+- name: hdbscan
+  url: https://github.com/scikit-learn-contrib/hdbscan
+  description: A high performance implementation of HDBSCAN clustering.
+  tags:
+  - Python/Others
+- name: pyjanitor
+  url: https://github.com/pyjanitor-devs/pyjanitor
+  description: Clean APIs for data cleaning. Python implementation of R package..
+  tags:
+  - Python/Others
+- name: datalad
+  url: https://github.com/datalad/datalad
+  description: Keep code, data, containers under control with git and git-annex.
+  tags:
+  - Python/Others
+- name: anomalib
+  url: https://github.com/open-edge-platform/anomalib
+  description: An anomaly detection library comprising state-of-the-art algorithms..
+  tags:
+  - Python/Others
+- name: tensorly
+  url: https://github.com/tensorly/tensorly
+  description: 'TensorLy: Tensor Learning in Python.'
+  tags:
+  - Python/Others
+- name: causalml
+  url: https://github.com/uber/causalml
+  description: Uplift modeling and causal inference with machine learning..
+  tags:
+  - Python/Others
+- name: River
+  url: https://github.com/online-ml/river
+  description: Online machine learning in Python.
+  tags:
+  - Python/Others
+- name: dstack
+  url: https://github.com/dstackai/dstack
+  description: dstack is an open-source container orchestrator that simplifies..
+  tags:
+  - Python/Others
+- name: pycm
+  url: https://github.com/sepandhaghighi/pycm
+  description: Multi-class confusion matrix library in Python.
+  tags:
+  - Python/Others
+- name: Prince
+  url: https://github.com/MaxHalford/prince
+  description: Multivariate exploratory data analysis in Python PCA, CA, MCA, MFA,..
+  tags:
+  - Python/Others
+- name: Trax
+  url: https://github.com/google/trax
+  description: Trax Deep Learning with Clear Code and Speed.
+  tags:
+  - Python/Others
+- name: AugLy
+  url: https://github.com/facebookresearch/AugLy
+  description: A data augmentations library for audio, image, text, and video.
+  tags:
+  - Python/Others
+- name: adapter-transformers
+  url: https://github.com/adapter-hub/adapters
+  description: A Unified Library for Parameter-Efficient and Modular..
+  tags:
+  - Python/Others
+- name: avalanche
+  url: https://github.com/ContinualAI/avalanche
+  description: 'Avalanche: an End-to-End Library for Continual Learning based on..'
+  tags:
+  - Python/Others
+- name: gplearn
+  url: https://github.com/trevorstephens/gplearn
+  description: Genetic Programming in Python, with a scikit-learn inspired API.
+  tags:
+  - Python/Others
+- name: TabPy
+  url: https://github.com/tableau/TabPy
+  description: Execute Python code on the fly and display results in Tableau..
+  tags:
+  - Python/Others
+- name: metric-learn
+  url: https://github.com/scikit-learn-contrib/metric-learn
+  description: Metric learning algorithms in Python.
+  tags:
+  - Python/Others
+- name: findspark
+  url: https://github.com/minrk/findspark
+  description: Find pyspark to make it importable.
+  tags:
+  - Python/Others
+- name: apricot
+  url: https://github.com/jmschrei/apricot
+  description: apricot implements submodular optimization for the purpose of selecting..
+  tags:
+  - Python/Others
+- name: Feature Engine
+  url: https://github.com/solegalli/feature_engine
+  description: Feature engineering package with sklearn like functionality.
+  tags:
+  - Python/Others
+- name: PaddleHub
+  url: https://github.com/PaddlePaddle/PaddleHub
+  description: '400+ AI Models: Rich, high-quality AI models, including..'
+  tags:
+  - Python/Others
+- name: MONAILabel
+  url: https://github.com/Project-MONAI/MONAILabel
+  description: MONAI Label is an intelligent open source image labeling and..
+  tags:
+  - Python/Others
+- name: BioPandas
+  url: https://github.com/BioPandas/biopandas
+  description: Working with molecular structures in pandas DataFrames.
+  tags:
+  - Python/Others
+- name: pykale
+  url: https://github.com/pykale/pykale
+  description: 'Knowledge-Aware machine LEarning (KALE): accessible machine learning..'
+  tags:
+  - Python/Others
+- name: SUOD
+  url: https://github.com/yzhao062/SUOD
+  description: (MLSys 21) An Acceleration System for Large-scare Unsupervised Heterogeneous..
+  tags:
+  - Python/Others
+- name: benchmark_VAE
+  url: https://github.com/clementchadebec/benchmark_VAE
+  description: Unifying Variational Autoencoder (VAE)..
+  tags:
+  - Python/Others
+- name: pymdp
+  url: https://github.com/infer-actively/pymdp
+  description: A Python implementation of active inference for Markov Decision Processes.
+  tags:
+  - Python/Others
+- name: NeuralCompression
+  url: https://github.com/facebookresearch/NeuralCompression
+  description: A collection of tools for neural compression enthusiasts.
+  tags:
+  - Python/Others
+- name: dlib
+  url: https://github.com/davisking/dlib
+  description: A toolkit for making real world machine learning and data analysis..
+  tags:
+  - Python/Machine Learning Frameworks
+- name: MXNet
+  url: https://github.com/apache/mxnet
+  description: Lightweight, Portable, Flexible Distributed/Mobile Deep..
+  tags:
+  - Python/Machine Learning Frameworks
+- name: Theano
+  url: https://github.com/Theano/Theano
+  description: Theano was a Python library that allows you to define, optimize, and..
+  tags:
+  - Python/Machine Learning Frameworks
+- name: Chainer
+  url: https://github.com/chainer/chainer
+  description: A flexible framework of neural networks for deep learning.
+  tags:
+  - Python/Machine Learning Frameworks
+- name: Turi Create
+  url: https://github.com/apple/turicreate
+  description: Turi Create simplifies the development of custom machine..
+  tags:
+  - Python/Machine Learning Frameworks
+- name: tensorpack
+  url: https://github.com/tensorpack/tensorpack
+  description: A Neural Net Training Interface on TensorFlow, with..
+  tags:
+  - Python/Machine Learning Frameworks
+- name: TFlearn
+  url: https://github.com/tflearn/tflearn
+  description: Deep learning library featuring a higher-level API for TensorFlow.
+  tags:
+  - Python/Machine Learning Frameworks
+- name: dyNET
+  url: https://github.com/clab/dynet
+  description: 'DyNet: The Dynamic Neural Network Toolkit.'
+  tags:
+  - Python/Machine Learning Frameworks
+- name: CNTK
+  url: https://github.com/microsoft/CNTK
+  description: Microsoft Cognitive Toolkit (CNTK), an open source deep-learning toolkit.
+  tags:
+  - Python/Machine Learning Frameworks
+- name: Lasagne
+  url: https://github.com/Lasagne/Lasagne
+  description: Lightweight library to build and train neural networks in Theano.
+  tags:
+  - Python/Machine Learning Frameworks
+- name: EvaDB
+  url: https://github.com/georgia-tech-db/evadb
+  description: Database system for AI-powered apps.
+  tags:
+  - Python/Machine Learning Frameworks
+- name: SHOGUN
+  url: https://github.com/shogun-toolbox/shogun
+  description: Unified and efficient Machine Learning.
+  tags:
+  - Python/Machine Learning Frameworks
+- name: NeuPy
+  url: https://github.com/itdxer/neupy
+  description: NeuPy is a Tensorflow based python library for prototyping and building..
+  tags:
+  - Python/Machine Learning Frameworks
+- name: xLearn
+  url: https://github.com/aksnzhy/xlearn
+  description: High performance, easy-to-use, and scalable machine learning (ML)..
+  tags:
+  - Python/Machine Learning Frameworks
+- name: neon
+  url: https://github.com/NervanaSystems/neon
+  description: Intel Nervana reference deep learning framework committed to best..
+  tags:
+  - Python/Machine Learning Frameworks
+- name: mace
+  url: https://github.com/XiaoMi/mace
+  description: MACE is a deep learning inference framework optimized for mobile..
+  tags:
+  - Python/Machine Learning Frameworks
+- name: Neural Tangents
+  url: https://github.com/google/neural-tangents
+  description: Fast and Easy Infinite Neural Networks in Python.
+  tags:
+  - Python/Machine Learning Frameworks
+- name: ThunderSVM
+  url: https://github.com/Xtra-Computing/thundersvm
+  description: 'ThunderSVM: A Fast SVM Library on GPUs and CPUs.'
+  tags:
+  - Python/Machine Learning Frameworks
+- name: Torchbearer
+  url: https://github.com/pytorchbearer/torchbearer
+  description: 'torchbearer: A model fitting library for PyTorch.'
+  tags:
+  - Python/Machine Learning Frameworks
+- name: Objax
+  url: https://github.com/google/objax
+  description: Objax is a machine learning framework that provides an Object..
+  tags:
+  - Python/Machine Learning Frameworks
+- name: elegy
+  url: https://github.com/poets-ai/elegy
+  description: A High Level API for Deep Learning in JAX.
+  tags:
+  - Python/Machine Learning Frameworks
+- name: StarSpace
+  url: https://github.com/facebookresearch/StarSpace
+  description: Learning embeddings for classification, retrieval and ranking.
+  tags:
+  - Python/Machine Learning Frameworks
+- name: nanodl
+  url: https://github.com/HenryNdubuaku/nanodl
+  description: A Jax-based library for building transformers, includes..
+  tags:
+  - Python/Machine Learning Frameworks
+- name: missingno
+  url: https://github.com/ResidentMario/missingno
+  description: Missing data visualization module for Python.
+  tags:
+  - Python/Data Visualization
+- name: Facets Overview
+  url: https://github.com/PAIR-code/facets
+  description: Visualizations for machine learning datasets.
+  tags:
+  - Python/Data Visualization
+- name: Cufflinks
+  url: https://github.com/santosjorge/cufflinks
+  description: Productivity Tools for Plotly + Pandas.
+  tags:
+  - Python/Data Visualization
+- name: pythreejs
+  url: https://github.com/jupyter-widgets/pythreejs
+  description: A Jupyter - Three.js bridge.
+  tags:
+  - Python/Data Visualization
+- name: Sweetviz
+  url: https://github.com/fbdesignpro/sweetviz
+  description: Visualize and compare datasets, target values and associations, with..
+  tags:
+  - Python/Data Visualization
+- name: AutoViz
+  url: https://github.com/AutoViML/AutoViz
+  description: Automatically Visualize any dataset, any size with a single line..
+  tags:
+  - Python/Data Visualization
+- name: PandasGUI
+  url: https://github.com/adamerose/PandasGUI
+  description: A GUI for Pandas DataFrames.
+  tags:
+  - Python/Data Visualization
+- name: HiPlot
+  url: https://github.com/facebookresearch/hiplot
+  description: HiPlot makes understanding high dimensional data easy.
+  tags:
+  - Python/Data Visualization
+- name: python-ternary
+  url: https://github.com/marcharper/python-ternary
+  description: Ternary plotting library for python with matplotlib.
+  tags:
+  - Python/Data Visualization
+- name: Multicore-TSNE
+  url: https://github.com/DmitryUlyanov/Multicore-TSNE
+  description: Parallel t-SNE implementation with Python and Torch..
+  tags:
+  - Python/Data Visualization
+- name: ridgeplot
+  url: https://github.com/tpvasconcelos/ridgeplot
+  description: Beautiful ridgeline plots in Python.
+  tags:
+  - Python/Data Visualization
+- name: Pandas-Bokeh
+  url: https://github.com/PatrikHlobil/Pandas-Bokeh
+  description: Bokeh Plotting Backend for Pandas and GeoPandas.
+  tags:
+  - Python/Data Visualization
+- name: pivottablejs
+  url: https://github.com/nicolaskruchten/jupyter_pivottablejs
+  description: Dragndrop Pivot Tables and Charts for Jupyter/IPython..
+  tags:
+  - Python/Data Visualization
+- name: PyWaffle
+  url: https://github.com/gyli/PyWaffle
+  description: Make Waffle Charts in Python.
+  tags:
+  - Python/Data Visualization
+- name: joypy
+  url: https://github.com/leotac/joypy
+  description: Joyplots in Python with matplotlib & pandas.
+  tags:
+  - Python/Data Visualization
+- name: PDPbox
+  url: https://github.com/SauceCat/PDPbox
+  description: python partial dependence plot toolbox.
+  tags:
+  - Python/Data Visualization
+- name: pdvega
+  url: https://github.com/altair-viz/pdvega
+  description: Interactive plotting for Pandas using Vega-Lite.
+  tags:
+  - Python/Data Visualization
+- name: data-describe
+  url: https://github.com/data-describe/data-describe
+  description: 'datadescribe: Pythonic EDA Accelerator for Data Science.'
+  tags:
+  - Python/Data Visualization
+- name: nx-altair
+  url: https://github.com/Zsailer/nx_altair
+  description: Draw interactive NetworkX graphs with Altair.
+  tags:
+  - Python/Data Visualization
+- name: nptsne
+  url: https://github.com/biovault/nptsne
+  description: nptsne is a numpy compatible python binary package that offers a..
+  tags:
+  - Python/Data Visualization
+- name: AllenNLP
+  url: https://github.com/allenai/allennlp
+  description: An open-source NLP research library, built on PyTorch.
+  tags:
+  - Python/Text Data & NLP
+- name: fastText
+  url: https://github.com/facebookresearch/fastText
+  description: Library for fast text representation and classification.
+  tags:
+  - Python/Text Data & NLP
+- name: ParlAI
+  url: https://github.com/facebookresearch/ParlAI
+  description: A framework for training and evaluating AI models on a variety of..
+  tags:
+  - Python/Text Data & NLP
+- name: OpenNMT
+  url: https://github.com/OpenNMT/OpenNMT-py
+  description: Open Source Neural Machine Translation and (Large) Language..
+  tags:
+  - Python/Text Data & NLP
+- name: fuzzywuzzy
+  url: https://github.com/seatgeek/fuzzywuzzy
+  description: Fuzzy String Matching in Python.
+  tags:
+  - Python/Text Data & NLP
+- name: nlpaug
+  url: https://github.com/makcedward/nlpaug
+  description: Data augmentation for NLP.
+  tags:
+  - Python/Text Data & NLP
+- name: Sumy
+  url: https://github.com/miso-belica/sumy
+  description: Module for automatic summarization of text documents and HTML pages.
+  tags:
+  - Python/Text Data & NLP
+- name: Ciphey
+  url: https://github.com/bee-san/Ciphey
+  description: Automatically decrypt encryptions without knowing the key or cipher,..
+  tags:
+  - Python/Text Data & NLP
+- name: fastNLP
+  url: https://github.com/fastnlp/fastNLP
+  description: 'fastNLP: A Modularized and Extensible NLP Framework. Currently..'
+  tags:
+  - Python/Text Data & NLP
+- name: PyTextRank
+  url: https://github.com/DerwenAI/pytextrank
+  description: Python implementation of TextRank algorithms (textgraphs) for..
+  tags:
+  - Python/Text Data & NLP
+- name: vaderSentiment
+  url: https://github.com/cjhutto/vaderSentiment
+  description: VADER Sentiment Analysis. VADER (Valence Aware Dictionary..
+  tags:
+  - Python/Text Data & NLP
+- name: textacy
+  url: https://github.com/chartbeat-labs/textacy
+  description: NLP, before and after spaCy.
+  tags:
+  - Python/Text Data & NLP
+- name: underthesea
+  url: https://github.com/undertheseanlp/underthesea
+  description: Underthesea - Vietnamese NLP Toolkit.
+  tags:
+  - Python/Text Data & NLP
+- name: flashtext
+  url: https://github.com/vi3k6i5/flashtext
+  description: Extract Keywords from sentence or Replace keywords in sentences.
+  tags:
+  - Python/Text Data & NLP
+- name: langid
+  url: https://github.com/saffsd/langid.py
+  description: Stand-alone language identification system.
+  tags:
+  - Python/Text Data & NLP
+- name: polyglot
+  url: https://github.com/aboSamoor/polyglot
+  description: Multilingual text (NLP) processing toolkit.
+  tags:
+  - Python/Text Data & NLP
+- name: pySBD
+  url: https://github.com/nipunsadvilkar/pySBD
+  description: pySBD (Python Sentence Boundary Disambiguation) is a rule-based sentence..
+  tags:
+  - Python/Text Data & NLP
+- name: Snips NLU
+  url: https://github.com/snipsco/snips-nlu
+  description: Snips Python library to extract meaning from text.
+  tags:
+  - Python/Text Data & NLP
+- name: neuralcoref
+  url: https://github.com/huggingface/neuralcoref
+  description: Fast Coreference Resolution in spaCy with Neural Networks.
+  tags:
+  - Python/Text Data & NLP
+- name: GluonNLP
+  url: https://github.com/dmlc/gluon-nlp
+  description: Toolkit that enables easy text preprocessing, datasets..
+  tags:
+  - Python/Text Data & NLP
+- name: pytorch-nlp
+  url: https://github.com/PetrochukM/PyTorch-NLP
+  description: Basic Utilities for PyTorch Natural Language Processing..
+  tags:
+  - Python/Text Data & NLP
+- name: PyText
+  url: https://github.com/facebookresearch/pytext
+  description: A natural language modeling framework based on PyTorch.
+  tags:
+  - Python/Text Data & NLP
+- name: textgenrnn
+  url: https://github.com/minimaxir/textgenrnn
+  description: Easily train your own text-generating neural network of any..
+  tags:
+  - Python/Text Data & NLP
+- name: OpenPrompt
+  url: https://github.com/thunlp/OpenPrompt
+  description: An Open-Source Framework for Prompt-Learning.
+  tags:
+  - Python/Text Data & NLP
+- name: MatchZoo
+  url: https://github.com/NTMC-Community/MatchZoo
+  description: Facilitating the design, comparison and sharing of deep..
+  tags:
+  - Python/Text Data & NLP
+- name: promptsource
+  url: https://github.com/bigscience-workshop/promptsource
+  description: Toolkit for creating, sharing and using natural language..
+  tags:
+  - Python/Text Data & NLP
+- name: whoosh
+  url: https://github.com/mchaput/whoosh
+  description: Pure-Python full-text search library.
+  tags:
+  - Python/Text Data & NLP
+- name: Kashgari
+  url: https://github.com/BrikerMan/Kashgari
+  description: Kashgari is a production-level NLP Transfer learning..
+  tags:
+  - Python/Text Data & NLP
+- name: FARM
+  url: https://github.com/deepset-ai/FARM
+  description: Fast & easy transfer learning for NLP. Harvesting language..
+  tags:
+  - Python/Text Data & NLP
+- name: YouTokenToMe
+  url: https://github.com/VKCOM/YouTokenToMe
+  description: Unsupervised text tokenizer focused on computational efficiency.
+  tags:
+  - Python/Text Data & NLP
+- name: NLP Architect
+  url: https://github.com/IntelLabs/nlp-architect
+  description: A model library for exploring state-of-the-art deep..
+  tags:
+  - Python/Text Data & NLP
+- name: Texar
+  url: https://github.com/asyml/texar
+  description: Toolkit for Machine Learning, Natural Language Processing, and..
+  tags:
+  - Python/Text Data & NLP
+- name: jiant
+  url: https://github.com/nyu-mll/jiant
+  description: jiant is an nlp toolkit.
+  tags:
+  - Python/Text Data & NLP
+- name: stop-words
+  url: https://github.com/Alir3z4/python-stop-words
+  description: Get list of common stop words in various languages in Python.
+  tags:
+  - Python/Text Data & NLP
+- name: gpt-2-simple
+  url: https://github.com/minimaxir/gpt-2-simple
+  description: Python package to easily retrain OpenAIs GPT-2 text-..
+  tags:
+  - Python/Text Data & NLP
+- name: Texthero
+  url: https://github.com/jbesomi/texthero
+  description: Text preprocessing, representation and visualization from zero to..
+  tags:
+  - Python/Text Data & NLP
+- name: lightseq
+  url: https://github.com/bytedance/lightseq
+  description: 'LightSeq: A High Performance Library for Sequence Processing..'
+  tags:
+  - Python/Text Data & NLP
+- name: DELTA
+  url: https://github.com/Delta-ML/delta
+  description: DELTA is a deep learning based natural language and speech..
+  tags:
+  - Python/Text Data & NLP
+- name: anaGo
+  url: https://github.com/Hironsan/anago
+  description: Bidirectional LSTM-CRF and ELMo for Named-Entity Recognition,..
+  tags:
+  - Python/Text Data & NLP
+- name: textaugment
+  url: https://github.com/dsfsi/textaugment
+  description: 'TextAugment: Text Augmentation Library.'
+  tags:
+  - Python/Text Data & NLP
+- name: textpipe
+  url: https://github.com/textpipe/textpipe
+  description: 'Textpipe: clean and extract metadata from text.'
+  tags:
+  - Python/Text Data & NLP
+- name: numerizer
+  url: https://github.com/jaidevd/numerizer
+  description: A Python module to convert natural language numerics into ints and..
+  tags:
+  - Python/Text Data & NLP
+- name: pyfasttext
+  url: https://github.com/vrasneur/pyfasttext
+  description: Yet another Python binding for fastText.
+  tags:
+  - Python/Text Data & NLP
+- name: DeepMatcher
+  url: https://github.com/anhaidgroup/deepmatcher
+  description: Python package for performing Entity and Text Matching using..
+  tags:
+  - Python/Text Data & NLP
+- name: nboost
+  url: https://github.com/koursaros-ai/nboost
+  description: NBoost is a scalable, search-api-boosting platform for deploying..
+  tags:
+  - Python/Text Data & NLP
+- name: fastT5
+  url: https://github.com/Ki6an/fastT5
+  description: boost inference speed of T5 models by 5x & reduce the model size..
+  tags:
+  - Python/Text Data & NLP
+- name: Camphr
+  url: https://github.com/PKSHATechnology-Research/camphr
+  description: Camphr - NLP libary for creating pipeline components.
+  tags:
+  - Python/Text Data & NLP
+- name: NeuroNER
+  url: https://github.com/Franck-Dernoncourt/NeuroNER
+  description: Named-entity recognition using neural networks. Easy-to-use and..
+  tags:
+  - Python/Text Data & NLP
+- name: OpenNRE
+  url: https://github.com/thunlp/OpenNRE
+  description: An Open-Source Package for Neural Relation Extraction (NRE).
+  tags:
+  - Python/Text Data & NLP
+- name: BLINK
+  url: https://github.com/facebookresearch/BLINK
+  description: Entity Linker solution.
+  tags:
+  - Python/Text Data & NLP
+- name: TextBox
+  url: https://github.com/RUCAIBox/TextBox
+  description: TextBox 2.0 is a text generation library with pre-trained language..
+  tags:
+  - Python/Text Data & NLP
+- name: Translate
+  url: https://github.com/pytorch/translate
+  description: Translate - a PyTorch Language Library.
+  tags:
+  - Python/Text Data & NLP
+- name: skift
+  url: https://github.com/shaypal5/skift
+  description: scikit-learn wrappers for Python fastText.
+  tags:
+  - Python/Text Data & NLP
+- name: ONNX-T5
+  url: https://github.com/abelriboulot/onnxt5
+  description: Summarization, translation, sentiment-analysis, text-generation..
+  tags:
+  - Python/Text Data & NLP
+- name: NeuralQA
+  url: https://github.com/victordibia/neuralqa
+  description: 'NeuralQA: A Usable Library for Question Answering on Large Datasets..'
+  tags:
+  - Python/Text Data & NLP
+- name: Headliner
+  url: https://github.com/spring-media/headliner
+  description: Easy training and deployment of seq2seq models.
+  tags:
+  - Python/Text Data & NLP
+- name: TransferNLP
+  url: https://github.com/feedly/transfer-nlp
+  description: NLP library designed for reproducible experimentation..
+  tags:
+  - Python/Text Data & NLP
+- name: textvec
+  url: https://github.com/textvec/textvec
+  description: Text vectorization tool to outperform TFIDF for classification..
+  tags:
+  - Python/Text Data & NLP
+- name: spacy-dbpedia-spotlight
+  url: https://github.com/MartinoMensio/spacy-dbpedia-spotlight
+  description: A spaCy wrapper for DBpedia Spotlight.
+  tags:
+  - Python/Text Data & NLP
+- name: scikit-image
+  url: https://github.com/scikit-image/scikit-image
+  description: Image processing in Python.
+  tags:
+  - Python/Image Data
+- name: MMDetection
+  url: https://github.com/open-mmlab/mmdetection
+  description: OpenMMLab Detection Toolbox and Benchmark.
+  tags:
+  - Python/Image Data
+- name: glfw
+  url: https://github.com/glfw/glfw
+  description: A multi-platform library for OpenGL, OpenGL ES, Vulkan, window and
+    input.
+  tags:
+  - Python/Image Data
+- name: Face Recognition
+  url: https://github.com/ageitgey/face_recognition
+  description: The worlds simplest facial recognition api for Python..
+  tags:
+  - Python/Image Data
+- name: imgaug
+  url: https://github.com/aleju/imgaug
+  description: Image augmentation for machine learning experiments.
+  tags:
+  - Python/Image Data
+- name: PyTorch3D
+  url: https://github.com/facebookresearch/pytorch3d
+  description: PyTorch3D is FAIRs library of reusable components for..
+  tags:
+  - Python/Image Data
+- name: imageai
+  url: https://github.com/OlafenwaMoses/ImageAI
+  description: A python library built to empower developers to build applications..
+  tags:
+  - Python/Image Data
+- name: imutils
+  url: https://github.com/PyImageSearch/imutils
+  description: A series of convenience functions to make basic image processing..
+  tags:
+  - Python/Image Data
+- name: GluonCV
+  url: https://github.com/dmlc/gluon-cv
+  description: Gluon CV Toolkit.
+  tags:
+  - Python/Image Data
+- name: vidgear
+  url: https://github.com/abhiTronix/vidgear
+  description: A High-performance cross-platform Video Processing Python..
+  tags:
+  - Python/Image Data
+- name: chainercv
+  url: https://github.com/chainer/chainercv
+  description: 'ChainerCV: a Library for Deep Learning in Computer Vision.'
+  tags:
+  - Python/Image Data
+- name: Augmentor
+  url: https://github.com/mdbloice/Augmentor
+  description: Image augmentation library in Python for machine learning.
+  tags:
+  - Python/Image Data
+- name: Pillow-SIMD
+  url: https://github.com/uploadcare/pillow-simd
+  description: The friendly PIL fork.
+  tags:
+  - Python/Image Data
+- name: layout-parser
+  url: https://github.com/Layout-Parser/layout-parser
+  description: A Unified Toolkit for Deep Learning Based Document Image..
+  tags:
+  - Python/Image Data
+- name: ffcv
+  url: https://github.com/libffcv/ffcv
+  description: 'FFCV: Fast Forward Computer Vision (and other ML workloads!).'
+  tags:
+  - Python/Image Data
+- name: Classy Vision
+  url: https://github.com/facebookresearch/ClassyVision
+  description: An end-to-end PyTorch framework for image and video..
+  tags:
+  - Python/Image Data
+- name: deep-daze
+  url: https://github.com/lucidrains/deep-daze
+  description: Simple command line tool for text to image generation using..
+  tags:
+  - Python/Image Data
+- name: vissl
+  url: https://github.com/facebookresearch/vissl
+  description: VISSL is FAIRs library of extensible, modular and scalable..
+  tags:
+  - Python/Image Data
+- name: Luminoth
+  url: https://github.com/tryolabs/luminoth
+  description: Deep Learning toolkit for Computer Vision.
+  tags:
+  - Python/Image Data
+- name: solt
+  url: https://github.com/imedslab/solt
+  description: Streaming over lightweight data transformations.
+  tags:
+  - Python/Image Data
+- name: DE⫶TR
+  url: https://github.com/facebookresearch/detr
+  description: End-to-End Object Detection with Transformers.
+  tags:
+  - Python/Image Data
+- name: image-match
+  url: https://github.com/rhsimplex/image-match
+  description: Quickly search over billions of images.
+  tags:
+  - Python/Image Data
+- name: detecto
+  url: https://github.com/alankbi/detecto
+  description: Build fully-functioning computer vision models with PyTorch.
+  tags:
+  - Python/Image Data
+- name: pycls
+  url: https://github.com/facebookresearch/pycls
+  description: Codebase for Image Classification Research, written in PyTorch.
+  tags:
+  - Python/Image Data
+- name: Caer
+  url: https://github.com/jasmcaus/caer
+  description: A lightweight Computer Vision library. Scale your models, not boilerplate.
+  tags:
+  - Python/Image Data
+- name: Torch Points 3D
+  url: https://github.com/nicolas-chaulet/torch-points3d
+  description: Pytorch framework for doing deep learning on point..
+  tags:
+  - Python/Image Data
+- name: nude.py
+  url: https://github.com/hhatto/nude.py
+  description: Nudity detection with Python.
+  tags:
+  - Python/Image Data
+- name: HugsVision
+  url: https://github.com/qanastek/HugsVision
+  description: HugsVision is a easy to use huggingface wrapper for state-of-..
+  tags:
+  - Python/Image Data
+- name: igraph
+  url: https://github.com/igraph/python-igraph
+  description: Python interface for igraph.
+  tags:
+  - Python/Graph Data
+- name: Spektral
+  url: https://github.com/danielegrattarola/spektral
+  description: Graph Neural Networks with Keras and Tensorflow 2.
+  tags:
+  - Python/Graph Data
+- name: StellarGraph
+  url: https://github.com/stellargraph/stellargraph
+  description: StellarGraph - Machine Learning on Graphs.
+  tags:
+  - Python/Graph Data
+- name: pygal
+  url: https://github.com/Kozea/pygal
+  description: PYthon svg GrAph plotting Library.
+  tags:
+  - Python/Graph Data
+- name: Paddle Graph Learning
+  url: https://github.com/PaddlePaddle/PGL
+  description: Paddle Graph Learning (PGL) is an efficient and..
+  tags:
+  - Python/Graph Data
+- name: AmpliGraph
+  url: https://github.com/Accenture/AmpliGraph
+  description: Python library for Representation Learning on Knowledge..
+  tags:
+  - Python/Graph Data
+- name: PyTorch-BigGraph
+  url: https://github.com/facebookresearch/PyTorch-BigGraph
+  description: Generate embeddings from large-scale graph-structured..
+  tags:
+  - Python/Graph Data
+- name: Karate Club
+  url: https://github.com/benedekrozemberczki/karateclub
+  description: 'Karate Club: An API Oriented Open-source Python Framework..'
+  tags:
+  - Python/Graph Data
+- name: graph4nlp
+  url: https://github.com/graph4ai/graph4nlp
+  description: Graph4nlp is the library for the easy use of Graph..
+  tags:
+  - Python/Graph Data
+- name: DeepGraph
+  url: https://github.com/deepgraph/deepgraph
+  description: Analyze Data with Pandas-based Networks. Documentation:.
+  tags:
+  - Python/Graph Data
+- name: pyRDF2Vec
+  url: https://github.com/predict-idlab/pyRDF2Vec
+  description: Python Implementation and Extension of RDF2Vec.
+  tags:
+  - Python/Graph Data
+- name: DeepWalk
+  url: https://github.com/phanein/deepwalk
+  description: DeepWalk - Deep Learning for Graphs.
+  tags:
+  - Python/Graph Data
+- name: DIG
+  url: https://github.com/divelab/DIG
+  description: A library for graph deep learning research.
+  tags:
+  - Python/Graph Data
+- name: jraph
+  url: https://github.com/google-deepmind/jraph
+  description: A Graph Neural Network Library in Jax.
+  tags:
+  - Python/Graph Data
+- name: deepsnap
+  url: https://github.com/snap-stanford/deepsnap
+  description: Python library assists deep learning on graphs.
+  tags:
+  - Python/Graph Data
+- name: graph-nets
+  url: https://github.com/google-deepmind/graph_nets
+  description: Build Graph Nets in Tensorflow.
+  tags:
+  - Python/Graph Data
+- name: GraphGym
+  url: https://github.com/snap-stanford/GraphGym
+  description: Platform for designing and evaluating Graph Neural Networks (GNN).
+  tags:
+  - Python/Graph Data
+- name: Sematch
+  url: https://github.com/gsi-upm/sematch
+  description: semantic similarity framework for knowledge graph.
+  tags:
+  - Python/Graph Data
+- name: AutoGL
+  url: https://github.com/THUMNLab/AutoGL
+  description: An autoML framework & toolkit for machine learning on graphs.
+  tags:
+  - Python/Graph Data
+- name: kglib
+  url: https://github.com/typedb/typedb-ml
+  description: TypeDB-ML is the Machine Learning integrations library for TypeDB.
+  tags:
+  - Python/Graph Data
+- name: Euler
+  url: https://github.com/alibaba/euler
+  description: A distributed graph deep learning framework.
+  tags:
+  - Python/Graph Data
+- name: GraphEmbedding
+  url: https://github.com/shenweichen/GraphEmbedding
+  description: Implementation and experiments of graph embedding..
+  tags:
+  - Python/Graph Data
+- name: GraphSAGE
+  url: https://github.com/williamleif/GraphSAGE
+  description: Representation learning on large graphs using stochastic..
+  tags:
+  - Python/Graph Data
+- name: OpenNE
+  url: https://github.com/thunlp/OpenNE
+  description: An Open-Source Package for Network Embedding (NE).
+  tags:
+  - Python/Graph Data
+- name: GraphVite
+  url: https://github.com/DeepGraphLearning/graphvite
+  description: 'GraphVite: A General and High-performance Graph Embedding..'
+  tags:
+  - Python/Graph Data
+- name: ptgnn
+  url: https://github.com/microsoft/ptgnn
+  description: A PyTorch Graph Neural Network Library.
+  tags:
+  - Python/Graph Data
+- name: OpenKE
+  url: https://github.com/thunlp/OpenKE
+  description: An Open-Source Package for Knowledge Embedding (KE).
+  tags:
+  - Python/Graph Data
+- name: Pydub
+  url: https://github.com/jiaaro/pydub
+  description: Manipulate audio with a simple and easy high level interface.
+  tags:
+  - Python/Audio Data
+- name: audioread
+  url: https://github.com/beetbox/audioread
+  description: cross-library (GStreamer + Core Audio + MAD + FFmpeg) audio..
+  tags:
+  - Python/Audio Data
+- name: Essentia
+  url: https://github.com/MTG/essentia
+  description: C++ library for audio and music analysis, description and..
+  tags:
+  - Python/Audio Data
+- name: aubio
+  url: https://github.com/aubio/aubio
+  description: a library for audio and music analysis.
+  tags:
+  - Python/Audio Data
+- name: TTS
+  url: https://github.com/mozilla/TTS
+  description: Deep learning for Text to Speech (Discussion forum:..
+  tags:
+  - Python/Audio Data
+- name: python_speech_features
+  url: https://github.com/jameslyons/python_speech_features
+  description: This library provides common speech features for ASR..
+  tags:
+  - Python/Audio Data
+- name: Dejavu
+  url: https://github.com/worldveil/dejavu
+  description: Audio fingerprinting and recognition in Python.
+  tags:
+  - Python/Audio Data
+- name: kapre
+  url: https://github.com/keunwoochoi/kapre
+  description: 'kapre: Keras Audio Preprocessors.'
+  tags:
+  - Python/Audio Data
+- name: TimeSide
+  url: https://github.com/Parisson/TimeSide
+  description: scalable audio processing framework and server written in..
+  tags:
+  - Python/Audio Data
+- name: Muda
+  url: https://github.com/bmcfee/muda
+  description: A library for augmenting annotated audio data.
+  tags:
+  - Python/Audio Data
+- name: textlesslib
+  url: https://github.com/facebookresearch/textlesslib
+  description: Library for Textless Spoken Language Processing.
+  tags:
+  - Python/Audio Data
+- name: Satpy
+  url: https://github.com/pytroll/satpy
+  description: Python package for earth-observing satellite data processing.
+  tags:
+  - Python/Geospatial Data
+- name: geopy
+  url: https://github.com/geopy/geopy
+  description: Geocoding library for Python.
+  tags:
+  - Python/Geospatial Data
+- name: Geocoder
+  url: https://github.com/DenisCarriere/geocoder
+  description: Python Geocoder.
+  tags:
+  - Python/Geospatial Data
+- name: prettymaps
+  url: https://github.com/marceloprates/prettymaps
+  description: Draw pretty maps from OpenStreetMap data! Built with osmnx..
+  tags:
+  - Python/Geospatial Data
+- name: Sentinelsat
+  url: https://github.com/sentinelsat/sentinelsat
+  description: Search and download Copernicus Sentinel satellite images.
+  tags:
+  - Python/Geospatial Data
+- name: geoplotlib
+  url: https://github.com/andrea-cuttone/geoplotlib
+  description: python toolbox for visualizing geographical data and making maps.
+  tags:
+  - Python/Geospatial Data
+- name: gmaps
+  url: https://github.com/pbugnion/gmaps
+  description: Google maps for Jupyter notebooks.
+  tags:
+  - Python/Geospatial Data
+- name: zipline
+  url: https://github.com/quantopian/zipline
+  description: Zipline, a Pythonic Algorithmic Trading Library.
+  tags:
+  - Python/Financial Data
+- name: ta
+  url: https://github.com/bukosabino/ta
+  description: Technical Analysis Library using Pandas and Numpy.
+  tags:
+  - Python/Financial Data
+- name: arch
+  url: https://github.com/bashtage/arch
+  description: ARCH models in Python.
+  tags:
+  - Python/Financial Data
+- name: pyfolio
+  url: https://github.com/quantopian/pyfolio
+  description: Portfolio and risk analytics in Python.
+  tags:
+  - Python/Financial Data
+- name: backtrader
+  url: https://github.com/mementum/backtrader
+  description: Python Backtesting library for trading strategies.
+  tags:
+  - Python/Financial Data
+- name: IB-insync
+  url: https://github.com/erdewit/ib_insync
+  description: Python sync/async framework for Interactive Brokers API.
+  tags:
+  - Python/Financial Data
+- name: Backtesting.py
+  url: https://github.com/kernc/backtesting.py
+  description: Backtest trading strategies in Python.
+  tags:
+  - Python/Financial Data
+- name: Alphalens
+  url: https://github.com/quantopian/alphalens
+  description: Performance analysis of predictive (alpha) stock factors.
+  tags:
+  - Python/Financial Data
+- name: empyrical
+  url: https://github.com/quantopian/empyrical
+  description: Common financial risk and performance metrics. Used by..
+  tags:
+  - Python/Financial Data
+- name: TensorTrade
+  url: https://github.com/tensortrade-org/tensortrade
+  description: An open source reinforcement learning framework for..
+  tags:
+  - Python/Financial Data
+- name: PyAlgoTrade
+  url: https://github.com/gbeced/pyalgotrade
+  description: Python Algorithmic Trading Library.
+  tags:
+  - Python/Financial Data
+- name: Enigma Catalyst
+  url: https://github.com/scrtlabs/catalyst
+  description: An Algorithmic Trading Library for Crypto-Assets in..
+  tags:
+  - Python/Financial Data
+- name: FinTA
+  url: https://github.com/peerchemist/finta
+  description: Common financial technical indicators implemented in Pandas.
+  tags:
+  - Python/Financial Data
+- name: Crypto Signals
+  url: https://github.com/CryptoSignal/Crypto-Signal
+  description: Github.com/CryptoSignal - Trading & Technical Analysis Bot -..
+  tags:
+  - Python/Financial Data
+- name: FinQuant
+  url: https://github.com/fmilthaler/FinQuant
+  description: A program for financial portfolio management, analysis and..
+  tags:
+  - Python/Financial Data
+- name: surpriver
+  url: https://github.com/tradytics/surpriver
+  description: Find big moving stocks before they move using machine..
+  tags:
+  - Python/Financial Data
+- name: pyrtfolio
+  url: https://github.com/alvarobartt/pyrtfolio
+  description: Python package to generate stock portfolios.
+  tags:
+  - Python/Financial Data
+- name: PyFlux
+  url: https://github.com/RJT1990/pyflux
+  description: Open source time series library for Python.
+  tags:
+  - Python/Time Series Data
+- name: ADTK
+  url: https://github.com/arundo/adtk
+  description: A Python toolkit for rule-based/unsupervised anomaly detection in..
+  tags:
+  - Python/Time Series Data
+- name: luminol
+  url: https://github.com/linkedin/luminol
+  description: Anomaly Detection and Correlation library.
+  tags:
+  - Python/Time Series Data
+- name: tick
+  url: https://github.com/X-DataInitiative/tick
+  description: Module for statistical learning, with a particular emphasis on time-..
+  tags:
+  - Python/Time Series Data
+- name: matrixprofile-ts
+  url: https://github.com/target/matrixprofile-ts
+  description: A Python library for detecting patterns and anomalies..
+  tags:
+  - Python/Time Series Data
+- name: Auto TS
+  url: https://github.com/AutoViML/Auto_TS
+  description: Automatically build ARIMA, SARIMAX, VAR, FB Prophet and XGBoost..
+  tags:
+  - Python/Time Series Data
+- name: seglearn
+  url: https://github.com/dmbee/seglearn
+  description: Python module for machine learning time series:.
+  tags:
+  - Python/Time Series Data
+- name: tsaug
+  url: https://github.com/arundo/tsaug
+  description: A Python package for time series augmentation.
+  tags:
+  - Python/Time Series Data
+- name: atspy
+  url: https://github.com/firmai/atspy
+  description: 'AtsPy: Automated Time Series Models in Python (by @firmai).'
+  tags:
+  - Python/Time Series Data
+- name: tslumen
+  url: https://github.com/hsbc/tslumen
+  description: A library for Time Series EDA (exploratory data analysis).
+  tags:
+  - Python/Time Series Data
+- name: DIPY
+  url: https://github.com/dipy/dipy
+  description: DIPY is the paragon 3D/4D+ medical imaging library in Python...
+  tags:
+  - Python/Medical Data
+- name: NiftyNet
+  url: https://github.com/NifTK/NiftyNet
+  description: '[unmaintained] An open-source convolutional neural..'
+  tags:
+  - Python/Medical Data
+- name: NIPY
+  url: https://github.com/nipy/nipy
+  description: Neuroimaging in Python FMRI analysis package.
+  tags:
+  - Python/Medical Data
+- name: MedPy
+  url: https://github.com/loli/medpy
+  description: Medical image processing in Python.
+  tags:
+  - Python/Medical Data
+- name: DLTK
+  url: https://github.com/DLTK/DLTK
+  description: Deep Learning Toolkit for Medical Image Analysis.
+  tags:
+  - Python/Medical Data
+- name: Glow
+  url: https://github.com/projectglow/glow
+  description: An open-source toolkit for large-scale genomic analysis.
+  tags:
+  - Python/Medical Data
+- name: MedicalTorch
+  url: https://github.com/perone/medicaltorch
+  description: A medical imaging framework for Pytorch.
+  tags:
+  - Python/Medical Data
+- name: Medical Detection Toolkit
+  url: https://github.com/MIC-DKFZ/medicaldetectiontoolkit
+  description: The Medical Detection Toolkit contains 2D + 3D..
+  tags:
+  - Python/Medical Data
+- name: DeepNeuro
+  url: https://github.com/QTIM-Lab/DeepNeuro
+  description: A deep learning python package for neuroimaging data. Made by:.
+  tags:
+  - Python/Medical Data
+- name: MedicalNet
+  url: https://github.com/Tencent/MedicalNet
+  description: Many studies have shown that the performance on deep learning is..
+  tags:
+  - Python/Medical Data
+- name: carefree-learn
+  url: https://github.com/carefree0910/carefree-learn
+  description: Deep Learning PyTorch.
+  tags:
+  - Python/Tabular Data
+- name: deltapy
+  url: https://github.com/firmai/deltapy
+  description: DeltaPy - Tabular Data Augmentation (by @firmai).
+  tags:
+  - Python/Tabular Data
+- name: keras-ocr
+  url: https://github.com/faustomorales/keras-ocr
+  description: A packaged and flexible version of the CRAFT text detector..
+  tags:
+  - Python/Optical Character Recognition
+- name: calamari
+  url: https://github.com/Calamari-OCR/calamari
+  description: Line based ATR Engine based on OCRopy.
+  tags:
+  - Python/Optical Character Recognition
+- name: pdftabextract
+  url: https://github.com/WZBSocialScienceCenter/pdftabextract
+  description: A set of tools for extracting tables from PDF files..
+  tags:
+  - Python/Optical Character Recognition
+- name: doc2text
+  url: https://github.com/jlsutherland/doc2text
+  description: Detect text blocks and OCR poorly scanned PDFs in bulk. Python..
+  tags:
+  - Python/Optical Character Recognition
+- name: attention-ocr
+  url: https://github.com/emedvedev/attention-ocr
+  description: A Tensorflow model for text recognition (CNN + seq2seq..
+  tags:
+  - Python/Optical Character Recognition
+- name: Mozart
+  url: https://github.com/aashrafh/Mozart
+  description: An optical music recognition (OMR) system. Converts sheet..
+  tags:
+  - Python/Optical Character Recognition
+- name: pyclugen
+  url: https://github.com/clugen/pyclugen
+  description: Multidimensional cluster generation in Python.
+  tags:
+  - Python/Data Pipelines & Streaming
+- name: DEAP
+  url: https://github.com/DEAP/deap
+  description: Distributed Evolutionary Algorithms in Python.
+  tags:
+  - Python/Distributed Machine Learning
+- name: ipyparallel
+  url: https://github.com/ipython/ipyparallel
+  description: 'IPython Parallel: Interactive Parallel Computing in..'
+  tags:
+  - Python/Distributed Machine Learning
+- name: petastorm
+  url: https://github.com/uber/petastorm
+  description: Petastorm library enables single machine or distributed..
+  tags:
+  - Python/Distributed Machine Learning
+- name: TensorFlowOnSpark
+  url: https://github.com/yahoo/TensorFlowOnSpark
+  description: TensorFlowOnSpark brings TensorFlow programs to..
+  tags:
+  - Python/Distributed Machine Learning
+- name: Elephas
+  url: https://github.com/maxpumperla/elephas
+  description: Distributed Deep learning with Keras & Spark.
+  tags:
+  - Python/Distributed Machine Learning
+- name: Mesh
+  url: https://github.com/tensorflow/mesh
+  description: 'Mesh TensorFlow: Model Parallelism Made Easier.'
+  tags:
+  - Python/Distributed Machine Learning
+- name: BytePS
+  url: https://github.com/bytedance/byteps
+  description: A high performance and generic framework for distributed DNN..
+  tags:
+  - Python/Distributed Machine Learning
+- name: sk-dist
+  url: https://github.com/Ibotta/sk-dist
+  description: Distributed scikit-learn meta-estimators in PySpark.
+  tags:
+  - Python/Distributed Machine Learning
+- name: somoclu
+  url: https://github.com/peterwittek/somoclu
+  description: 'Massively parallel self-organizing maps: accelerate training on..'
+  tags:
+  - Python/Distributed Machine Learning
+- name: TensorFrames
+  url: https://github.com/databricks/tensorframes
+  description: '[DEPRECATED] Tensorflow wrapper for DataFrames on..'
+  tags:
+  - Python/Distributed Machine Learning
+- name: mesh-transformer-jax
+  url: https://github.com/kingoflolz/mesh-transformer-jax
+  description: Model parallel transformers in JAX and Haiku.
+  tags:
+  - Python/Distributed Machine Learning
+- name: launchpad
+  url: https://github.com/google-deepmind/launchpad
+  description: Launchpad is a library that simplifies writing..
+  tags:
+  - Python/Distributed Machine Learning
+- name: Fiber
+  url: https://github.com/uber/fiber
+  description: Distributed Computing for AI Made Simple.
+  tags:
+  - Python/Distributed Machine Learning
+- name: parallelformers
+  url: https://github.com/tunib-ai/parallelformers
+  description: 'Parallelformers: An Efficient Model Parallelization..'
+  tags:
+  - Python/Distributed Machine Learning
+- name: bluefog
+  url: https://github.com/Bluefog-Lib/bluefog
+  description: Distributed and decentralized training framework for PyTorch..
+  tags:
+  - Python/Distributed Machine Learning
+- name: LazyCluster
+  url: https://github.com/ml-tooling/lazycluster
+  description: Distributed machine learning made simple.
+  tags:
+  - Python/Distributed Machine Learning
+- name: autodist
+  url: https://github.com/petuum/autodist
+  description: Simple Distributed Deep Learning on TensorFlow.
+  tags:
+  - Python/Distributed Machine Learning
+- name: moolib
+  url: https://github.com/facebookresearch/moolib
+  description: A library for distributed ML training with PyTorch.
+  tags:
+  - Python/Distributed Machine Learning
+- name: scikit-optimize
+  url: https://github.com/scikit-optimize/scikit-optimize
+  description: Sequential model-based optimization with a..
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: TPOT
+  url: https://github.com/EpistasisLab/tpot
+  description: A Python Automated Machine Learning tool that optimizes machine..
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: NNI
+  url: https://github.com/microsoft/nni
+  description: An open source AutoML toolkit for automate machine learning lifecycle,..
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: auto-sklearn
+  url: https://github.com/automl/auto-sklearn
+  description: Automated Machine Learning with scikit-learn.
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: Keras Tuner
+  url: https://github.com/keras-team/keras-tuner
+  description: A Hyperparameter Tuning Library for Keras.
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: SMAC3
+  url: https://github.com/automl/SMAC3
+  description: 'SMAC3: A Versatile Bayesian Optimization Package for..'
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: Hyperas
+  url: https://github.com/maxpumperla/hyperas
+  description: 'Keras + Hyperopt: A very simple wrapper for convenient..'
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: GPyOpt
+  url: https://github.com/SheffieldML/GPyOpt
+  description: Gaussian Process Optimization using GPy.
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: Talos
+  url: https://github.com/autonomio/talos
+  description: Hyperparameter Experiments with TensorFlow and Keras.
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: lightwood
+  url: https://github.com/mindsdb/lightwood
+  description: Lightwood is Legos for Machine Learning.
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: AdaNet
+  url: https://github.com/tensorflow/adanet
+  description: Fast and flexible AutoML with learning guarantees.
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: auto_ml
+  url: https://github.com/ClimbsRocks/auto_ml
+  description: '[UNMAINTAINED] Automated machine learning for analytics & production.'
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: HpBandSter
+  url: https://github.com/automl/HpBandSter
+  description: a distributed Hyperband implementation on Steroids.
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: Orion
+  url: https://github.com/Epistimio/orion
+  description: Asynchronous Distributed Hyperparameter Optimization.
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: MLBox
+  url: https://github.com/AxeldeRomblay/MLBox
+  description: MLBox is a powerful Automated Machine Learning python library.
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: Test Tube
+  url: https://github.com/williamFalcon/test-tube
+  description: Python library to easily log experiments and parallelize..
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: Neuraxle
+  url: https://github.com/Neuraxio/Neuraxle
+  description: The worlds cleanest AutoML library - Do hyperparameter tuning..
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: igel
+  url: https://github.com/nidhaloff/igel
+  description: a delightful machine learning tool that allows you to train, test,
+    and..
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: sklearn-deap
+  url: https://github.com/rsteca/sklearn-deap
+  description: Use evolutionary algorithms instead of gridsearch in..
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: optunity
+  url: https://github.com/claesenm/optunity
+  description: optimization routines for hyperparameter tuning.
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: Dragonfly
+  url: https://github.com/dragonfly/dragonfly
+  description: An open source python library for scalable Bayesian optimisation.
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: Xcessiv
+  url: https://github.com/reiinakano/xcessiv
+  description: A web-based application for quick, scalable, and automated..
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: shap-hypetune
+  url: https://github.com/cerlymarco/shap-hypetune
+  description: A python package for simultaneous Hyperparameters Tuning and..
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: Auto Tune Models
+  url: https://github.com/HDI-Project/ATM
+  description: Auto Tune Models - A multi-tenant, multi-data system for..
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: Sherpa
+  url: https://github.com/sherpa-ai/sherpa
+  description: Hyperparameter optimization that enables researchers to..
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: Advisor
+  url: https://github.com/tobegit3hub/advisor
+  description: Open-source implementation of Google Vizier for hyper parameters..
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: HyperparameterHunter
+  url: https://github.com/HunterMcGushion/hyperparameter_hunter
+  description: Easy hyperparameter optimization and automatic result..
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: automl-gs
+  url: https://github.com/minimaxir/automl-gs
+  description: Provide an input CSV and a target field to predict, generate a..
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: Parfit
+  url: https://github.com/jmcarpenter2/parfit
+  description: A package for parallelizing the fit and flexibly scoring of..
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: ENAS
+  url: https://github.com/carpedm20/ENAS-pytorch
+  description: PyTorch implementation of Efficient Neural Architecture Search via..
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: Auptimizer
+  url: https://github.com/LGE-ARC-AdvancedAI/auptimizer
+  description: An automatic ML model optimization tool.
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: Hypermax
+  url: https://github.com/genixpro/hypermax
+  description: Better, faster hyper-parameter optimization.
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: model_search
+  url: https://github.com/google/model_search
+  description: AutoML algorithms for model architecture search at scale.
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: Devol
+  url: https://github.com/joeddav/devol
+  description: Genetic neural architecture search with Keras.
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: Hypertunity
+  url: https://github.com/gdikov/hypertunity
+  description: A toolset for black-box hyperparameter optimisation.
+  tags:
+  - Python/Hyperparameter Optimization & AutoML
+- name: OpenAI Gym
+  url: https://github.com/openai/gym
+  description: A toolkit for developing and comparing reinforcement learning..
+  tags:
+  - Python/Reinforcement Learning
+- name: baselines
+  url: https://github.com/openai/baselines
+  description: 'OpenAI Baselines: high-quality implementations of reinforcement..'
+  tags:
+  - Python/Reinforcement Learning
+- name: keras-rl
+  url: https://github.com/keras-rl/keras-rl
+  description: Deep Reinforcement Learning for Keras.
+  tags:
+  - Python/Reinforcement Learning
+- name: TensorLayer
+  url: https://github.com/tensorlayer/TensorLayer
+  description: Deep Learning and Reinforcement Learning Library for..
+  tags:
+  - Python/Reinforcement Learning
+- name: garage
+  url: https://github.com/rlworkgroup/garage
+  description: A toolkit for reproducible reinforcement learning research.
+  tags:
+  - Python/Reinforcement Learning
+- name: Stable Baselines
+  url: https://github.com/hill-a/stable-baselines
+  description: A fork of OpenAI Baselines, implementations of..
+  tags:
+  - Python/Reinforcement Learning
+- name: ChainerRL
+  url: https://github.com/chainer/chainerrl
+  description: ChainerRL is a deep reinforcement learning library built on top of..
+  tags:
+  - Python/Reinforcement Learning
+- name: TRFL
+  url: https://github.com/google-deepmind/trfl
+  description: TensorFlow Reinforcement Learning.
+  tags:
+  - Python/Reinforcement Learning
+- name: Coach
+  url: https://github.com/IntelLabs/coach
+  description: Reinforcement Learning Coach by Intel AI Lab enables easy..
+  tags:
+  - Python/Reinforcement Learning
+- name: SerpentAI
+  url: https://github.com/SerpentAI/SerpentAI
+  description: Game Agent Framework. Helping you create AIs / Bots that learn to..
+  tags:
+  - Python/Reinforcement Learning
+- name: DeepMind Lab
+  url: https://github.com/google-deepmind/lab
+  description: A customisable 3D platform for agent-based AI research.
+  tags:
+  - Python/Reinforcement Learning
+- name: Maze
+  url: https://github.com/enlite-ai/maze
+  description: Maze Applied Reinforcement Learning Framework.
+  tags:
+  - Python/Reinforcement Learning
+- name: implicit
+  url: https://github.com/benfred/implicit
+  description: Fast Python Collaborative Filtering for Implicit Feedback Datasets.
+  tags:
+  - Python/Recommender Systems
+- name: scikit-surprise
+  url: https://github.com/NicolasHug/Surprise
+  description: A Python scikit for building and analyzing recommender..
+  tags:
+  - Python/Recommender Systems
+- name: lightfm
+  url: https://github.com/lyst/lightfm
+  description: A Python implementation of LightFM, a hybrid recommendation..
+  tags:
+  - Python/Recommender Systems
+- name: lkpy
+  url: https://github.com/lenskit/lkpy
+  description: Python recommendation toolkit.
+  tags:
+  - Python/Recommender Systems
+- name: TF Ranking
+  url: https://github.com/tensorflow/ranking
+  description: Learning to Rank in TensorFlow.
+  tags:
+  - Python/Recommender Systems
+- name: fastFM
+  url: https://github.com/ibayer/fastFM
+  description: 'fastFM: A Library for Factorization Machines.'
+  tags:
+  - Python/Recommender Systems
+- name: tensorrec
+  url: https://github.com/jfkirk/tensorrec
+  description: A TensorFlow recommendation algorithm and framework in..
+  tags:
+  - Python/Recommender Systems
+- name: recmetrics
+  url: https://github.com/statisticianinstilettos/recmetrics
+  description: A library of metrics for evaluating recommender systems.
+  tags:
+  - Python/Recommender Systems
+- name: Spotlight
+  url: https://github.com/maciejkula/spotlight
+  description: Deep recommender models using PyTorch.
+  tags:
+  - Python/Recommender Systems
+- name: Case Recommender
+  url: https://github.com/caserec/CaseRecommender
+  description: 'Case Recommender: A Flexible and Extensible Python..'
+  tags:
+  - Python/Recommender Systems
+- name: OpenRec
+  url: https://github.com/ylongqi/openrec
+  description: OpenRec is an open-source and modular library for neural network-..
+  tags:
+  - Python/Recommender Systems
+- name: Collie
+  url: https://github.com/ShopRunner/collie
+  description: A library for preparing, training, and evaluating scalable deep..
+  tags:
+  - Python/Recommender Systems
+- name: PipelineDP
+  url: https://github.com/OpenMined/PipelineDP
+  description: PipelineDP is a Python framework for applying differentially..
+  tags:
+  - Python/Privacy Machine Learning
+- name: Catalyst
+  url: https://github.com/catalyst-team/catalyst
+  description: Accelerated deep learning R&D.
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: knockknock
+  url: https://github.com/huggingface/knockknock
+  description: 'Knock Knock: Get notified when your training ends with only two..'
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: hiddenlayer
+  url: https://github.com/waleedka/hiddenlayer
+  description: Neural network graphs and training metrics for..
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: SKLL
+  url: https://github.com/EducationalTestingService/skll
+  description: SciKit-Learn Laboratory (SKLL) makes it easy to run machine..
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: lore
+  url: https://github.com/instacart/lore
+  description: Lore makes machine learning approachable for Software Engineers and..
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: TensorBoard Logger
+  url: https://github.com/TeamHG-Memex/tensorboard_logger
+  description: Log TensorBoard events without touching TensorFlow.
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: Studio.ml
+  url: https://github.com/studioml/studio
+  description: 'Studio: Simplify and expedite model building process.'
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: TensorWatch
+  url: https://github.com/microsoft/tensorwatch
+  description: Debugging, monitoring and visualization for Python Machine..
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: MXBoard
+  url: https://github.com/awslabs/mxboard
+  description: Logging MXNet data for visualization in TensorBoard.
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: chitra
+  url: https://github.com/aniketmaurya/chitra
+  description: A multi-functional library for full-stack Deep Learning. Simplifies..
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: steppy
+  url: https://github.com/minerva-ml/steppy
+  description: Lightweight, Python library for fast and reproducible experimentation.
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: caliban
+  url: https://github.com/google/caliban
+  description: Research workflows made easy, locally and in the Cloud.
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: ModelChimp
+  url: https://github.com/ModelChimp/modelchimp
+  description: Experiment tracking for machine and deep learning projects.
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: traintool
+  url: https://github.com/jrieke/traintool
+  description: Train off-the-shelf machine learning models in one..
+  tags:
+  - Python/Workflow & Experiment Tracking
+- name: mmdnn
+  url: https://github.com/microsoft/MMdnn
+  description: MMdnn is a set of tools to help users inter-operate among different
+    deep..
+  tags:
+  - Python/Model Serialization & Deployment
+- name: m2cgen
+  url: https://github.com/BayesWitnesses/m2cgen
+  description: Transform ML models into a native code (Java, C, Python, Go,..
+  tags:
+  - Python/Model Serialization & Deployment
+- name: sklearn-porter
+  url: https://github.com/nok/sklearn-porter
+  description: Transpile trained scikit-learn estimators to C, Java,..
+  tags:
+  - Python/Model Serialization & Deployment
+- name: cortex
+  url: https://github.com/cortexlabs/cortex
+  description: Production infrastructure for machine learning at scale.
+  tags:
+  - Python/Model Serialization & Deployment
+- name: Larq Compute Engine
+  url: https://github.com/larq/compute-engine
+  description: Highly optimized inference engine for Binarized..
+  tags:
+  - Python/Model Serialization & Deployment
+- name: OMLT
+  url: https://github.com/cog-imperial/OMLT
+  description: Represent trained machine learning models as Pyomo optimization..
+  tags:
+  - Python/Model Serialization & Deployment
+- name: pytorch2keras
+  url: https://github.com/gmalivenko/pytorch2keras
+  description: PyTorch to Keras model convertor.
+  tags:
+  - Python/Model Serialization & Deployment
+- name: modelkit
+  url: https://github.com/Cornerstone-OnDemand/modelkit
+  description: Toolkit for developing and maintaining ML models.
+  tags:
+  - Python/Model Serialization & Deployment
+- name: backprop
+  url: https://github.com/backprop-ai/backprop
+  description: Backprop makes it simple to use, finetune, and deploy state-of-..
+  tags:
+  - Python/Model Serialization & Deployment
+- name: ml-ane-transformers
+  url: https://github.com/apple/ml-ane-transformers
+  description: Reference implementation of the Transformer..
+  tags:
+  - Python/Model Serialization & Deployment
+- name: Lime
+  url: https://github.com/marcotcr/lime
+  description: 'Lime: Explaining the predictions of any machine learning classifier.'
+  tags:
+  - Python/Model Interpretability
+- name: pyLDAvis
+  url: https://github.com/bmabey/pyLDAvis
+  description: Python library for interactive topic model visualization...
+  tags:
+  - Python/Model Interpretability
+- name: Deep Checks
+  url: https://github.com/deepchecks/deepchecks
+  description: 'Deepchecks: Tests for Continuous Validation of ML Models &..'
+  tags:
+  - Python/Model Interpretability
+- name: scikit-plot
+  url: https://github.com/reiinakano/scikit-plot
+  description: An intuitive library to add plotting functionality to..
+  tags:
+  - Python/Model Interpretability
+- name: yellowbrick
+  url: https://github.com/DistrictDataLabs/yellowbrick
+  description: Visual analysis and diagnostic tools to facilitate..
+  tags:
+  - Python/Model Interpretability
+- name: eli5
+  url: https://github.com/TeamHG-Memex/eli5
+  description: A library for debugging/inspecting machine learning classifiers and..
+  tags:
+  - Python/Model Interpretability
+- name: Alibi
+  url: https://github.com/SeldonIO/alibi
+  description: Algorithms for explaining machine learning models.
+  tags:
+  - Python/Model Interpretability
+- name: DALEX
+  url: https://github.com/ModelOriented/DALEX
+  description: moDel Agnostic Language for Exploration and eXplanation.
+  tags:
+  - Python/Model Interpretability
+- name: Lucid
+  url: https://github.com/tensorflow/lucid
+  description: A collection of infrastructure and tools for research in..
+  tags:
+  - Python/Model Interpretability
+- name: iNNvestigate
+  url: https://github.com/albermax/innvestigate
+  description: A toolbox to iNNvestigate neural networks predictions!.
+  tags:
+  - Python/Model Interpretability
+- name: keras-vis
+  url: https://github.com/raghakot/keras-vis
+  description: Neural network visualization toolkit for keras.
+  tags:
+  - Python/Model Interpretability
+- name: CausalNex
+  url: https://github.com/mckinsey/causalnex
+  description: A Python library that helps data scientists to infer..
+  tags:
+  - Python/Model Interpretability
+- name: checklist
+  url: https://github.com/marcotcr/checklist
+  description: 'Beyond Accuracy: Behavioral Testing of NLP models with CheckList.'
+  tags:
+  - Python/Model Interpretability
+- name: Quantus
+  url: https://github.com/understandable-machine-intelligence-lab/Quantus
+  description: Quantus is an eXplainable AI toolkit for responsible evaluation of..
+  tags:
+  - Python/Model Interpretability
+- name: tf-explain
+  url: https://github.com/sicara/tf-explain
+  description: Interpretability Methods for tf.keras models with Tensorflow..
+  tags:
+  - Python/Model Interpretability
+- name: What-If Tool
+  url: https://github.com/PAIR-code/what-if-tool
+  description: Source code/webpage/demos for the What-If Tool.
+  tags:
+  - Python/Model Interpretability
+- name: TreeInterpreter
+  url: https://github.com/andosa/treeinterpreter
+  description: Package for interpreting scikit-learns decision tree..
+  tags:
+  - Python/Model Interpretability
+- name: deeplift
+  url: https://github.com/kundajelab/deeplift
+  description: Public facing deeplift repo.
+  tags:
+  - Python/Model Interpretability
+- name: tcav
+  url: https://github.com/tensorflow/tcav
+  description: Code for the TCAV ML interpretability project.
+  tags:
+  - Python/Model Interpretability
+- name: XAI
+  url: https://github.com/EthicalML/xai
+  description: XAI - An eXplainability toolbox for machine learning.
+  tags:
+  - Python/Model Interpretability
+- name: sklearn-evaluation
+  url: https://github.com/edublancas/sklearn-evaluation
+  description: 'Machine learning model evaluation made easy: plots,..'
+  tags:
+  - Python/Model Interpretability
+- name: model-card-toolkit
+  url: https://github.com/tensorflow/model-card-toolkit
+  description: A toolkit that streamlines and automates the..
+  tags:
+  - Python/Model Interpretability
+- name: effector
+  url: https://github.com/givasile/effector
+  description: Effector - a Python package for global and regional effect methods.
+  tags:
+  - Python/Model Interpretability
+- name: Anchor
+  url: https://github.com/marcotcr/anchor
+  description: Code for High-Precision Model-Agnostic Explanations paper.
+  tags:
+  - Python/Model Interpretability
+- name: FlashTorch
+  url: https://github.com/MisaOgura/flashtorch
+  description: Visualization toolkit for neural networks in PyTorch! Demo --.
+  tags:
+  - Python/Model Interpretability
+- name: Skater
+  url: https://github.com/oracle/Skater
+  description: Python Library for Model Interpretation/Explanations.
+  tags:
+  - Python/Model Interpretability
+- name: interpret-text
+  url: https://github.com/interpretml/interpret-text
+  description: A library that incorporates state-of-the-art explainers..
+  tags:
+  - Python/Model Interpretability
+- name: contextual-ai
+  url: https://github.com/SAP-archive/contextual-ai
+  description: Contextual AI adds explainability to different stages of..
+  tags:
+  - Python/Model Interpretability
+- name: Attribution Priors
+  url: https://github.com/suinleelab/attributionpriors
+  description: Tools for training explainable models using..
+  tags:
+  - Python/Model Interpretability
+- name: bias-detector
+  url: https://github.com/intuit/bias-detector
+  description: Bias Detector is a python package for detecting bias in machine..
+  tags:
+  - Python/Model Interpretability
+- name: hnswlib
+  url: https://github.com/nmslib/hnswlib
+  description: Header-only C++/python library for fast approximate nearest..
+  tags:
+  - Python/Vector Similarity Search (ANN)
+- name: NearPy
+  url: https://github.com/pixelogik/NearPy
+  description: Python framework for fast (approximated) nearest neighbour search in..
+  tags:
+  - Python/Vector Similarity Search (ANN)
+- name: N2
+  url: https://github.com/kakao/n2
+  description: TOROS N2 - lightweight approximate Nearest Neighbor library which runs..
+  tags:
+  - Python/Vector Similarity Search (ANN)
+- name: Magnitude
+  url: https://github.com/plasticityai/magnitude
+  description: A fast, efficient universal vector embedding utility package.
+  tags:
+  - Python/Vector Similarity Search (ANN)
+- name: PySparNN
+  url: https://github.com/facebookresearch/pysparnn
+  description: Approximate Nearest Neighbor Search for Sparse Data in Python!.
+  tags:
+  - Python/Vector Similarity Search (ANN)
+- name: filterpy
+  url: https://github.com/rlabbe/filterpy
+  description: Python Kalman filtering and optimal estimation library. Implements..
+  tags:
+  - Python/Probabilistics & Statistics
+- name: pingouin
+  url: https://github.com/raphaelvallat/pingouin
+  description: Statistical package in Python based on Pandas.
+  tags:
+  - Python/Probabilistics & Statistics
+- name: Edward
+  url: https://github.com/blei-lab/edward
+  description: A probabilistic programming language in TensorFlow. Deep..
+  tags:
+  - Python/Probabilistics & Statistics
+- name: Funsor
+  url: https://github.com/pyro-ppl/funsor
+  description: Functional tensors for probabilistic programming.
+  tags:
+  - Python/Probabilistics & Statistics
+- name: ZhuSuan
+  url: https://github.com/thu-ml/zhusuan
+  description: A probabilistic programming library for Bayesian deep learning,..
+  tags:
+  - Python/Probabilistics & Statistics
+- name: CleverHans
+  url: https://github.com/cleverhans-lab/cleverhans
+  description: An adversarial example library for constructing attacks,..
+  tags:
+  - Python/Adversarial Robustness
+- name: Foolbox
+  url: https://github.com/bethgelab/foolbox
+  description: A Python toolbox to create adversarial examples that fool neural..
+  tags:
+  - Python/Adversarial Robustness
+- name: advertorch
+  url: https://github.com/BorealisAI/advertorch
+  description: A Toolbox for Adversarial Robustness Research.
+  tags:
+  - Python/Adversarial Robustness
+- name: AdvBox
+  url: https://github.com/advboxes/AdvBox
+  description: Advbox is a toolbox to generate adversarial examples that fool..
+  tags:
+  - Python/Adversarial Robustness
+- name: robustness
+  url: https://github.com/MadryLab/robustness
+  description: A library for experimenting with, training and evaluating neural..
+  tags:
+  - Python/Adversarial Robustness
+- name: textflint
+  url: https://github.com/textflint/textflint
+  description: Unified Multilingual Robustness Evaluation Toolkit for..
+  tags:
+  - Python/Adversarial Robustness
+- name: Adversary
+  url: https://github.com/airbnb/artificial-adversary
+  description: Tool to generate adversarial text examples and test machine..
+  tags:
+  - Python/Adversarial Robustness
+- name: GPUtil
+  url: https://github.com/anderskm/gputil
+  description: A Python module for getting the GPU status from NVIDA GPUs using..
+  tags:
+  - Python/GPU & Accelerator Utilities
+- name: scikit-cuda
+  url: https://github.com/lebedov/scikit-cuda
+  description: Python interface to GPU-powered libraries.
+  tags:
+  - Python/GPU & Accelerator Utilities
+- name: py3nvml
+  url: https://github.com/fbcotter/py3nvml
+  description: Python 3 Bindings for NVML library. Get NVIDIA GPU status inside..
+  tags:
+  - Python/GPU & Accelerator Utilities
+- name: BlazingSQL
+  url: https://github.com/BlazingDB/blazingsql
+  description: BlazingSQL is a lightweight, GPU accelerated, SQL engine for..
+  tags:
+  - Python/GPU & Accelerator Utilities
+- name: nvidia-ml-py3
+  url: https://github.com/nicolargo/nvidia-ml-py3
+  description: Python 3 Bindings for the NVIDIA Management Library.
+  tags:
+  - Python/GPU & Accelerator Utilities
+- name: ipyexperiments
+  url: https://github.com/stas00/ipyexperiments
+  description: Automatic GPU+CPU memory profiling, re-use and memory..
+  tags:
+  - Python/GPU & Accelerator Utilities
+- name: SpeedTorch
+  url: https://github.com/Santosh-Gupta/SpeedTorch
+  description: Library for faster pinned CPU - GPU transfer in Pytorch.
+  tags:
+  - Python/GPU & Accelerator Utilities
+- name: cuSignal
+  url: https://github.com/rapidsai/cusignal
+  description: GPU accelerated signal processing.
+  tags:
+  - Python/GPU & Accelerator Utilities
+- name: tensor2tensor
+  url: https://github.com/tensorflow/tensor2tensor
+  description: Library of deep learning models and datasets designed..
+  tags:
+  - Python/Tensorflow Utilities
+- name: TF Addons
+  url: https://github.com/tensorflow/addons
+  description: Useful extra functionality for TensorFlow 2.x maintained..
+  tags:
+  - Python/Tensorflow Utilities
+- name: Keras-Preprocessing
+  url: https://github.com/keras-team/keras-preprocessing
+  description: Utilities for working with image data, text data, and..
+  tags:
+  - Python/Tensorflow Utilities
+- name: efficientnet
+  url: https://github.com/qubvel/efficientnet
+  description: Implementation of EfficientNet model. Keras and..
+  tags:
+  - Python/Tensorflow Utilities
+- name: TensorNets
+  url: https://github.com/taehoonlee/tensornets
+  description: High level network definitions with pre-trained weights in..
+  tags:
+  - Python/Tensorflow Utilities
+- name: Saliency
+  url: https://github.com/PAIR-code/saliency
+  description: Framework-agnostic implementation for state-of-the-art..
+  tags:
+  - Python/Tensorflow Utilities
+- name: tffm
+  url: https://github.com/geffy/tffm
+  description: TensorFlow implementation of an arbitrary order Factorization Machine.
+  tags:
+  - Python/Tensorflow Utilities
+- name: evojax
+  url: https://github.com/google/evojax
+  description: 'EvoJAX: Hardware-accelerated Neuroevolution.'
+  tags:
+  - Python/Jax Utilities
+- name: jaxdf
+  url: https://github.com/ucl-bug/jaxdf
+  description: A JAX-based research framework for writing differentiable..
+  tags:
+  - Python/Jax Utilities
+- name: scikit-survival
+  url: https://github.com/sebp/scikit-survival
+  description: Survival analysis built on top of scikit-learn.
+  tags:
+  - Python/Sklearn Utilities
+- name: fancyimpute
+  url: https://github.com/iskandr/fancyimpute
+  description: Multivariate imputation and matrix completion..
+  tags:
+  - Python/Sklearn Utilities
+- name: scikit-multilearn
+  url: https://github.com/scikit-multilearn/scikit-multilearn
+  description: A scikit-learn based module for multi-label et. al...
+  tags:
+  - Python/Sklearn Utilities
+- name: sklearn-crfsuite
+  url: https://github.com/TeamHG-Memex/sklearn-crfsuite
+  description: scikit-learn inspired API for CRFsuite.
+  tags:
+  - Python/Sklearn Utilities
+- name: scikit-opt
+  url: https://github.com/guofei9987/scikit-opt
+  description: Genetic Algorithm, Particle Swarm Optimization, Simulated..
+  tags:
+  - Python/Sklearn Utilities
+- name: skope-rules
+  url: https://github.com/scikit-learn-contrib/skope-rules
+  description: machine learning with logical rules in Python.
+  tags:
+  - Python/Sklearn Utilities
+- name: combo
+  url: https://github.com/yzhao062/combo
+  description: (AAAI 20) A Python Toolbox for Machine Learning Model..
+  tags:
+  - Python/Sklearn Utilities
+- name: celer
+  url: https://github.com/mathurinm/celer
+  description: 'Fast solver for L1-type problems: Lasso, sparse Logisitic regression,..'
+  tags:
+  - Python/Sklearn Utilities
+- name: sklearn-contrib-lightning
+  url: https://github.com/scikit-learn-contrib/lightning
+  description: Large-scale linear classification, regression and..
+  tags:
+  - Python/Sklearn Utilities
+- name: DESlib
+  url: https://github.com/scikit-learn-contrib/DESlib
+  description: A Python library for dynamic classifier and ensemble selection.
+  tags:
+  - Python/Sklearn Utilities
+- name: skggm
+  url: https://github.com/skggm/skggm
+  description: Scikit-learn compatible estimation of general graphical models.
+  tags:
+  - Python/Sklearn Utilities
+- name: pretrainedmodels
+  url: https://github.com/Cadene/pretrained-models.pytorch
+  description: 'Pretrained ConvNets for pytorch: NASNet, ResNeXt,..'
+  tags:
+  - Python/Pytorch Utilities
+- name: EfficientNet-PyTorch
+  url: https://github.com/lukemelas/EfficientNet-PyTorch
+  description: A PyTorch implementation of EfficientNet.
+  tags:
+  - Python/Pytorch Utilities
+- name: lightning-flash
+  url: https://github.com/Lightning-Universe/lightning-flash
+  description: Your PyTorch AI Factory - Flash enables you to easily..
+  tags:
+  - Python/Pytorch Utilities
+- name: pytorch-optimizer
+  url: https://github.com/jettify/pytorch-optimizer
+  description: torch-optimizer -- collection of optimizers for..
+  tags:
+  - Python/Pytorch Utilities
+- name: TabNet
+  url: https://github.com/dreamquark-ai/tabnet
+  description: PyTorch implementation of TabNet paper :..
+  tags:
+  - Python/Pytorch Utilities
+- name: EfficientNets
+  url: https://github.com/rwightman/gen-efficientnet-pytorch
+  description: Pretrained EfficientNet, EfficientNet-Lite, MixNet,..
+  tags:
+  - Python/Pytorch Utilities
+- name: pytorch-summary
+  url: https://github.com/sksq96/pytorch-summary
+  description: Model summary in PyTorch similar to `model.summary()` in..
+  tags:
+  - Python/Pytorch Utilities
+- name: Higher
+  url: https://github.com/facebookresearch/higher
+  description: higher is a pytorch library allowing users to obtain higher..
+  tags:
+  - Python/Pytorch Utilities
+- name: micrograd
+  url: https://github.com/karpathy/micrograd
+  description: A tiny scalar-valued autograd engine and a neural net library..
+  tags:
+  - Python/Pytorch Utilities
+- name: SRU
+  url: https://github.com/asappresearch/sru
+  description: Training RNNs as Fast as CNNs (https://arxiv.org/abs/1709.02755).
+  tags:
+  - Python/Pytorch Utilities
+- name: Antialiased CNNs
+  url: https://github.com/adobe/antialiased-cnns
+  description: pip install antialiased-cnns to improve stability and..
+  tags:
+  - Python/Pytorch Utilities
+- name: AdaBound
+  url: https://github.com/Luolc/AdaBound
+  description: An optimizer that trains as fast as Adam and as good as SGD.
+  tags:
+  - Python/Pytorch Utilities
+- name: reformer-pytorch
+  url: https://github.com/lucidrains/reformer-pytorch
+  description: Reformer, the efficient Transformer, in Pytorch.
+  tags:
+  - Python/Pytorch Utilities
+- name: Torchmeta
+  url: https://github.com/tristandeleu/pytorch-meta
+  description: A collection of extensions and data-loaders for few-shot..
+  tags:
+  - Python/Pytorch Utilities
+- name: Poutyne
+  url: https://github.com/GRAAL-Research/poutyne
+  description: A simplified framework and utilities for PyTorch.
+  tags:
+  - Python/Pytorch Utilities
+- name: Torch-Struct
+  url: https://github.com/harvardnlp/pytorch-struct
+  description: Fast, general, and tested differentiable structured..
+  tags:
+  - Python/Pytorch Utilities
+- name: Performer Pytorch
+  url: https://github.com/lucidrains/performer-pytorch
+  description: An implementation of Performer, a linear attention-..
+  tags:
+  - Python/Pytorch Utilities
+- name: Lambda Networks
+  url: https://github.com/lucidrains/lambda-networks
+  description: Implementation of LambdaNetworks, a new approach to..
+  tags:
+  - Python/Pytorch Utilities
+- name: Pywick
+  url: https://github.com/achaiah/pywick
+  description: High-level batteries-included neural network training library for..
+  tags:
+  - Python/Pytorch Utilities
+- name: Tensor Sensor
+  url: https://github.com/parrt/tensor-sensor
+  description: The goal of this library is to generate more helpful..
+  tags:
+  - Python/Pytorch Utilities
+- name: TorchDrift
+  url: https://github.com/TorchDrift/TorchDrift
+  description: Drift Detection for your PyTorch Models.
+  tags:
+  - Python/Pytorch Utilities
+- name: Tez
+  url: https://github.com/abhishekkrthakur/tez
+  description: Tez is a super-simple and lightweight Trainer for PyTorch. It..
+  tags:
+  - Python/Pytorch Utilities
+- name: pyopencl
+  url: https://github.com/inducer/pyopencl
+  description: OpenCL integration for Python, plus shiny features.
+  tags:
+  - Python/Others
+- name: cleanlab
+  url: https://github.com/cleanlab/cleanlab
+  description: Cleanlabs open-source library is the standard data-centric AI..
+  tags:
+  - Python/Others
+- name: pysc2
+  url: https://github.com/google-deepmind/pysc2
+  description: StarCraft II Learning Environment.
+  tags:
+  - Python/Others
+- name: Cython BLIS
+  url: https://github.com/explosion/cython-blis
+  description: Fast matrix-multiplication as a self-contained Python library no..
+  tags:
+  - Python/Others
+- name: alibi-detect
+  url: https://github.com/SeldonIO/alibi-detect
+  description: Algorithms for outlier, adversarial and drift detection.
+  tags:
+  - Python/Others
+- name: modAL
+  url: https://github.com/modAL-python/modAL
+  description: A modular active learning framework for Python.
+  tags:
+  - Python/Others
+- name: kmodes
+  url: https://github.com/nicodv/kmodes
+  description: Python implementations of the k-modes and k-prototypes clustering..
+  tags:
+  - Python/Others
+- name: metricflow
+  url: https://github.com/dbt-labs/metricflow
+  description: MetricFlow allows you to define, build, and maintain metrics..
+  tags:
+  - Python/Others
+- name: pyclustering
+  url: https://github.com/annoviko/pyclustering
+  description: pyclustering is a Python, C++ data mining library.
+  tags:
+  - Python/Others
+- name: minisom
+  url: https://github.com/JustGlowing/minisom
+  description: MiniSom is a minimalistic implementation of the Self Organizing..
+  tags:
+  - Python/Others
+- name: PySwarms
+  url: https://github.com/ljvmiranda921/pyswarms
+  description: A research toolkit for particle swarm optimization in Python.
+  tags:
+  - Python/Others
+- name: pandas-ai
+  url: https://github.com/sinaptik-ai/pandas-ai
+  description: Chat with your database or your datalake (SQL, CSV, parquet)...
+  tags:
+  - Python/Others
+- name: Mars
+  url: https://github.com/mars-project/mars
+  description: Mars is a tensor-based unified framework for large-scale data..
+  tags:
+  - Python/Others
+- name: AstroML
+  url: https://github.com/astroML/astroML
+  description: Machine learning, statistics, and data mining for astronomy..
+  tags:
+  - Python/Others
+- name: opyrator
+  url: https://github.com/ml-tooling/opyrator
+  description: Turns your machine learning code into microservices with web API,..
+  tags:
+  - Python/Others
+- name: mlens
+  url: https://github.com/flennerhag/mlens
+  description: ML-Ensemble high performance ensemble learning.
+  tags:
+  - Python/Others
+- name: vecstack
+  url: https://github.com/vecxoz/vecstack
+  description: Python package for stacking (machine learning technique).
+  tags:
+  - Python/Others
+- name: impyute
+  url: https://github.com/eltonlaw/impyute
+  description: Data imputations library to preprocess datasets with missing data.
+  tags:
+  - Python/Others
+- name: StreamAlert
+  url: https://github.com/airbnb/streamalert
+  description: StreamAlert is a serverless, realtime data analysis..
+  tags:
+  - Python/Others
+- name: rrcf
+  url: https://github.com/kLabUM/rrcf
+  description: Implementation of the Robust Random Cut Forest algorithm for anomaly..
+  tags:
+  - Python/Others
+- name: scikit-rebate
+  url: https://github.com/EpistasisLab/scikit-rebate
+  description: A scikit-learn-compatible Python implementation of..
+  tags:
+  - Python/Others
+- name: baikal
+  url: https://github.com/alegonz/baikal
+  description: A graph-based functional API for building complex scikit-learn..
+  tags:
+  - Python/Others
+- name: pandas-ml
+  url: https://github.com/pandas-ml/pandas-ml
+  description: pandas, scikit-learn, xgboost and seaborn integration.
+  tags:
+  - Python/Others
+- name: KD-Lib
+  url: https://github.com/SforAiDl/KD_Lib
+  description: A Pytorch Knowledge Distillation library for benchmarking and..
+  tags:
+  - Python/Others
+- name: traingenerator
+  url: https://github.com/jrieke/traingenerator
+  description: A web app to generate template code for machine learning.
+  tags:
+  - Python/Others
+- name: nylon
+  url: https://github.com/Palashio/nylon
+  description: An intelligent, flexible grammar of machine learning.
+  tags:
+  - Python/Others
