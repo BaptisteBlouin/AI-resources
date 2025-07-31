@@ -1023,6 +1023,14 @@
             "tags": [
               "Tools/Libraries/Deep Learning"
             ]
+          },
+          {
+            "name": "Spark nlu",
+            "url": "https://github.com/JohnSnowLabs/nlu",
+            "description": "https://github.com/JohnSnowLabs/nlu",
+            "tags": [
+              "Tools/Libraries/Deep Learning"
+            ]
           }
         ]
       },
