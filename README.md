@@ -72,7 +72,7 @@ resources:
 The following list is automatically generated from `resources.yml`.
 
 <!-- START AUTO -->
-<!-- Generated on 2025-07-31 14:08:05 UTC by generate_readme.py -->
+<!-- Generated on 2025-07-31 11:56:34 UTC by generate_readme.py -->
 
 ## 🌐 View the Interactive AI Resources Hub
 
