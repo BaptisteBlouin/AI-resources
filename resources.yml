@@ -2207,3 +2207,14 @@ resources:
     url: "https://aiindex.stanford.edu/"
     description: "Annual comprehensive report on AI progress, trends, and impact"
     tags: ["Industry & Market Intelligence/Market Analysis/Industry Reports", "Academic & Research/Academic Services/Resources"]
+  - name: "NVIDIA / apex"
+    url: "https://github.com/NVIDIA/apex"
+    description: "NVIDIA / apex"
+    tags: ["Tools/Libraries/Deep Learning"]
+    
+  - name: "tensorflow / tensorboard"
+    url: "https://github.com/tensorflow/tensorboard"
+    description: "TensorFlow's Visualization Toolkit "
+    tags: ["Tools/Libraries/MLOps"]
+    
+

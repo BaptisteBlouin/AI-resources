@@ -1023,6 +1023,14 @@
             "tags": [
               "Tools/Libraries/Deep Learning"
             ]
+          },
+          {
+            "name": "NVIDIA / apex",
+            "url": "https://github.com/NVIDIA/apex",
+            "description": "NVIDIA / apex",
+            "tags": [
+              "Tools/Libraries/Deep Learning"
+            ]
           }
         ]
       },
@@ -1288,6 +1296,14 @@
             "name": "Kedro",
             "url": "https://kedro.org/",
             "description": "Production-ready data science framework",
+            "tags": [
+              "Tools/Libraries/MLOps"
+            ]
+          },
+          {
+            "name": "tensorflow / tensorboard",
+            "url": "https://github.com/tensorflow/tensorboard",
+            "description": "TensorFlow's Visualization Toolkit ",
             "tags": [
               "Tools/Libraries/MLOps"
             ]
