@@ -72,13 +72,13 @@ resources:
 The following list is automatically generated from `resources.yml`.
 
 <!-- START AUTO -->
-<!-- Generated on 2025-07-31 12:42:09 UTC by generate_readme.py -->
+<!-- Generated on 2025-07-31 12:57:59 UTC by generate_readme.py -->
 
 ## 🌐 View the Interactive AI Resources Hub
 
-**[👆 Click here to explore all 417 AI resources →](https://baptisteblouin.github.io/AI-resources/)**
+**[👆 Click here to explore all 418 AI resources →](https://baptisteblouin.github.io/AI-resources/)**
 
-This repository contains a curated collection of **417 AI resources** across **11 categories**, including:
+This repository contains a curated collection of **418 AI resources** across **11 categories**, including:
 
 **Academic & Research** (21) • **Applications** (75) • **Career & Professional Development** (8) • **Community & Networking** (20) • **Courses & Training** (48)...
 
