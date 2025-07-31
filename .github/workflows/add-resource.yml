@@ -104,10 +104,13 @@ jobs:
               'tags': tags
           }
           
-          # Generate YAML for the new resource
-          yaml_entry = yaml.dump([resource], default_flow_style=False, allow_unicode=True, sort_keys=False)
-          # Remove the leading "- " and adjust indentation
-          yaml_entry = yaml_entry.replace('- name:', '  - name:').replace('\n  ', '\n    ')
+          # Generate YAML entry manually to match the exact format of the file
+          tags_json = json.dumps(tags)
+          yaml_entry = f"""  - name: "{name}"
+    url: "{url}"
+    description: "{description}"
+    tags: {tags_json}
+    """
           
           print("=== Generated YAML ===")
           print(yaml_entry)
@@ -144,60 +147,99 @@ jobs:
           cd ..
           echo "✅ README and resources updated"
           
-      - name: 🧹 Reset any workflow changes
+      - name: 🧹 Clean workspace and prepare files
         run: |
-          echo "Resetting any accidental workflow changes..."
-          git checkout HEAD -- .github/workflows/ || true
-          echo "Checking git status after reset:"
+          echo "Resetting all changes first..."
+          git reset --hard HEAD
+          git clean -fd
+          
+          echo "Re-adding the resource to resources.yml..."
+          cat >> resources.yml << 'EOF'
+          ${{ steps.parse-issue.outputs.yaml-entry }}
+          EOF
+          
+          echo "Re-running generate_readme.py..."
+          cd scripts
+          python3 generate_readme.py
+          cd ..
+          
           git status --porcelain
           
-      - name: 📊 Create Pull Request
-        uses: peter-evans/create-pull-request@v5
+      - name: 🔄 Manual commit and push
+        run: |
+          # Create new branch
+          BRANCH_NAME="add-resource-${{ steps.parse-issue.outputs.issue-number }}"
+          git checkout -b $BRANCH_NAME
+          
+          # Check what files have changed
+          echo "=== Git Status ==="
+          git status --porcelain
+          echo "=================="
+          
+          # Explicitly exclude any workflow files and stage only our target files
+          git reset HEAD -- .github/ || true
+          git checkout HEAD -- .github/ || true
+          
+          # Stage only the specific files we want to commit
+          echo "Staging target files..."
+          git add resources.yml || echo "resources.yml not found or unchanged"
+          git add README.md || echo "README.md not found or unchanged"  
+          git add docs/resources.json || echo "docs/resources.json not found or unchanged"
+          git add scripts/url_index.json || echo "scripts/url_index.json not found or unchanged"
+          
+          # Show what we're about to commit
+          echo "=== Files to be committed ==="
+          git diff --cached --name-only
+          echo "============================="
+          
+          # Commit changes
+          git commit -m "Add resource: ${{ steps.parse-issue.outputs.resource-name }}
+
+          - Name: ${{ steps.parse-issue.outputs.resource-name }}
+          - URL: ${{ steps.parse-issue.outputs.resource-url }}
+          - Tags: ${{ steps.parse-issue.outputs.resource-tags }}
+
+          Auto-generated from issue #${{ steps.parse-issue.outputs.issue-number }}"
+          
+          # Push branch
+          git push origin $BRANCH_NAME
+          
+          echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_OUTPUT
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: 📊 Create Pull Request via API
+        uses: actions/github-script@v7
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          add-paths: |
-            resources.yml
-            README.md
-            docs/resources.json
-            scripts/url_index.json
-          commit-message: |
-            Add resource: ${{ steps.parse-issue.outputs.resource-name }}
+          script: |
+            const { data: pullRequest } = await github.rest.pulls.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: "Add resource: ${{ steps.parse-issue.outputs.resource-name }}",
+              head: "add-resource-${{ steps.parse-issue.outputs.issue-number }}",
+              base: "main",
+              body: `## 🚀 Auto-generated resource addition
+              
+              This PR automatically adds a new resource based on the approved submission in issue #${{ steps.parse-issue.outputs.issue-number }}.
+              
+              ### 📋 Resource Details
+              - **Name**: ${{ steps.parse-issue.outputs.resource-name }}
+              - **URL**: ${{ steps.parse-issue.outputs.resource-url }}
+              - **Description**: ${{ steps.parse-issue.outputs.resource-description }}
+              - **Tags**: ${{ steps.parse-issue.outputs.resource-tags }}
+              
+              ### ✅ Automated Actions Completed
+              - [x] Resource added to \`resources.yml\`
+              - [x] README.md regenerated
+              - [x] Resources index updated
+              - [x] URL validation completed
+              
+              **Source**: Issue #${{ steps.parse-issue.outputs.issue-number }}
+              **Auto-generated**: ${{ github.run_id }}`
+            });
             
-            - Name: ${{ steps.parse-issue.outputs.resource-name }}
-            - URL: ${{ steps.parse-issue.outputs.resource-url }}
-            - Tags: ${{ steps.parse-issue.outputs.resource-tags }}
-            
-            Auto-generated from issue #${{ steps.parse-issue.outputs.issue-number }}
-          title: "Add resource: ${{ steps.parse-issue.outputs.resource-name }}"
-          body: |
-            ## 🚀 Auto-generated resource addition
-            
-            This PR automatically adds a new resource based on the approved submission in issue #${{ steps.parse-issue.outputs.issue-number }}.
-            
-            ### 📋 Resource Details
-            - **Name**: ${{ steps.parse-issue.outputs.resource-name }}
-            - **URL**: ${{ steps.parse-issue.outputs.resource-url }}
-            - **Description**: ${{ steps.parse-issue.outputs.resource-description }}
-            - **Tags**: ${{ steps.parse-issue.outputs.resource-tags }}
-            
-            ### ✅ Automated Actions Completed
-            - [x] Resource added to `resources.yml`
-            - [x] README.md regenerated
-            - [x] Resources index updated
-            - [x] URL validation completed
-            
-            ### 🔍 Review Checklist
-            - [ ] Resource information is accurate
-            - [ ] Tags are appropriate and well-formatted
-            - [ ] No duplicate entries created
-            - [ ] Generated files look correct
-            
-            **Source**: Issue #${{ steps.parse-issue.outputs.issue-number }}
-            **Auto-generated**: ${{ github.run_id }}
-          branch: add-resource-${{ steps.parse-issue.outputs.issue-number }}
-          delete-branch: true
-          author: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
-          committer: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
+            console.log(\`Created PR #\${pullRequest.number}\`);
+            return pullRequest.number;
           
       - name: 📝 Comment on issue
         uses: actions/github-script@v7
