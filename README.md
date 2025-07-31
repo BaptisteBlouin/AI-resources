@@ -11,61 +11,23 @@
 
 ---
 
+![](docs/webpage.png)
+
+Access it here : https://baptisteblouin.github.io/AI-resources/
+
+
 </div>
 
 
 ## 🚀 Key Features
 
-- 📊 **Clean Organization**: Well-structured categories with resource counts
-- 🏷️ **Smart Categorization**: Hierarchical organization for easy navigation  
-- 🔗 **Rich Metadata**: GitHub stars, last commit dates, and resource types
+- 📊 **Organization**: Structured categories with resource counts
+- 🏷️ **Categorization**: Hierarchical organization for easy navigation  
 - 🤖 **Auto-Generated**: Always up-to-date content from `resources.yml`
 - 📱 **GitHub Native**: Perfect rendering on GitHub with markdown compatibility
-- 🔍 **Easy Browsing**: Jump to any category or search with `Ctrl+F`
 - 🤝 **Community Driven**: Open for contributions from AI enthusiasts worldwide
+- 🤝 **Contribution**: Easy contribution process from the web interface
 
-## 🎯 Who This Is For
-
-| 👨‍💻 **Developers** | 👩‍🔬 **Researchers** | 🎓 **Students** | 🏢 **Organizations** |
-|-------------------|---------------------|-----------------|---------------------|
-| Find tools and frameworks to build AI applications | Discover latest papers and cutting-edge research | Access tutorials and learning materials | Identify enterprise solutions and best practices |
-
-## 🚀 Quick Start
-
-### 💻 For Contributors
-
-```bash
-# Clone this repository for offline access
-git clone https://github.com/BaptisteBlouin/AI-resources.git
-
-cd AI-resources
-
-# Add new resources easily
-python scripts/add_resource.py
-
-# Or 
-python scripts/add_resource.py --batch import.yml
-
-# Generate an updated README with the latest resources
-python scripts/generate_readme.py
-
-```
-
-###  import.yml  
-
-
-```yaml
-resources:
-  - name: "Example AI Tool"
-    url: "https://example.com/ai-tool"
-    description: "An example AI tool for demonstration"
-    tags: ["tools/example", "tutorials/demo"]
-  - name: "Another Example"
-    url: "https://github.com/example/repo"
-    description: "Another example resource"
-    tags: ["libraries/python/ml", "tools/development"]
-
-```
 
 ## 📚 Resources
 
@@ -122,12 +84,49 @@ Your contributions help make this resource collection even better for everyone.
 | 💡 **Suggest Features** | Have ideas for improvements? Let me know! |
 | 🛠️ **Code Improvements** | Enhance the generation script or add new features |
 
-### 📋 Quick Start Guide
+## 🚀 Quick Start
 
-1. **Fork** this repository
-2. **Edit** `resources.yml` to add your resource
-3. **Test** your changes by running `python scripts/generate_readme.py`
-4. **Submit** a pull request with a clear description
+### For 💻 Contributors
+
+```bash
+# Clone this repository for offline access
+git clone https://github.com/BaptisteBlouin/AI-resources.git
+
+cd AI-resources
+
+# Add new resources easily
+python scripts/add_resource.py
+
+# Or 
+python scripts/add_resource.py --batch import.yml
+
+# Generate an updated README with the latest resources
+python scripts/generate_readme.py
+
+```
+
+###  import.yml  
+
+
+```yaml
+resources:
+  - name: "Example AI Tool"
+    url: "https://example.com/ai-tool"
+    description: "An example AI tool for demonstration"
+    tags: ["tools/example", "tutorials/demo"]
+  - name: "Another Example"
+    url: "https://github.com/example/repo"
+    description: "Another example resource"
+    tags: ["libraries/python/ml", "tools/development"]
+
+```
+
+
+**Submit** a pull request with a clear description
+
+### For 🌐 Contributors
+
+Follow the [web interface](https://baptisteblouin.github.io/AI-resources/) click on the `+ Add Resource` button and fill the form. It will create an issue with the resource information. This issue will be processed by the bot and the resource will be added to the collection.
 
 ### 📚 Documentation
 
