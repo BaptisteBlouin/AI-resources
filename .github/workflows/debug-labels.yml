@@ -1,0 +1,21 @@
+name: 🔍 Debug Label Events
+
+on:
+  issues:
+    types: [labeled, unlabeled]
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🔍 Debug all label events
+        run: |
+          echo "=== Label Event Debug ==="
+          echo "Event name: ${{ github.event_name }}"
+          echo "Action: ${{ github.event.action }}"
+          echo "Label name: '${{ github.event.label.name }}'"
+          echo "Issue number: ${{ github.event.issue.number }}"
+          echo "Issue title: ${{ github.event.issue.title }}"
+          echo "All issue labels:"
+          echo '${{ toJSON(github.event.issue.labels) }}'
+          echo "========================"

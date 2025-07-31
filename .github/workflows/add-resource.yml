@@ -11,10 +11,22 @@ permissions:
 
 jobs:
   add-resource:
-    if: contains(github.event.label.name, 'approved')
+    if: github.event.action == 'labeled' && github.event.label.name == 'approved'
     runs-on: ubuntu-latest
     
     steps:
+      - name: 🔍 Debug event information
+        run: |
+          echo "=== Event Debug Information ==="
+          echo "Event name: ${{ github.event_name }}"
+          echo "Action: ${{ github.event.action }}"
+          echo "Label name: '${{ github.event.label.name }}'"
+          echo "Issue number: ${{ github.event.issue.number }}"
+          echo "Issue title: ${{ github.event.issue.title }}"
+          echo "Issue labels:"
+          echo '${{ toJSON(github.event.issue.labels) }}'
+          echo "=============================="
+          
       - name: 📥 Checkout repository
         uses: actions/checkout@v4
         with:
