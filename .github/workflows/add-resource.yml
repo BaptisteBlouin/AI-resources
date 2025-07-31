@@ -35,6 +35,19 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
+      - name: 🔍 Debug Git and Token permissions
+        run: |
+          echo "Git config:"
+          git config --list
+          echo "Current branch:"
+          git branch
+          echo "Remote:"
+          git remote -v
+          echo "Token permissions test:"
+          curl -H "Authorization: token $GITHUB_TOKEN" -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/$GITHUB_REPOSITORY
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
       - name: 📋 Parse issue and extract resource data
         id: parse-issue
         run: |
@@ -130,6 +143,13 @@ jobs:
           python3 generate_readme.py
           cd ..
           echo "✅ README and resources updated"
+          
+      - name: 🧹 Reset any workflow changes
+        run: |
+          echo "Resetting any accidental workflow changes..."
+          git checkout HEAD -- .github/workflows/ || true
+          echo "Checking git status after reset:"
+          git status --porcelain
           
       - name: 📊 Create Pull Request
         uses: peter-evans/create-pull-request@v5
