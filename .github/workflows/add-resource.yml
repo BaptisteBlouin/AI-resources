@@ -381,6 +381,20 @@ jobs:
             });
             
             console.log('Successfully auto-merged PR #' + pullRequest.number);
+            
+            // Delete the branch after successful merge
+            console.log('Deleting branch: add-resource-' + issueNumber);
+            try {
+              await github.rest.git.deleteRef({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                ref: 'heads/add-resource-' + issueNumber
+              });
+              console.log('Successfully deleted branch: add-resource-' + issueNumber);
+            } catch (error) {
+              console.log('Warning: Could not delete branch - ' + error.message);
+            }
+            
             return pullRequest.number;
           
       - name: 📝 Comment on issue
