@@ -170,27 +170,35 @@ class AddResourceForm {
             console.error('Browse tags button not found');
         }
 
-        // Close suggestions and handle tag suggestion clicks with event delegation
+        // Close suggestions dropdown when clicking outside
         document.addEventListener('click', (e) => {
-            if (e.target.classList.contains('close-suggestions')) {
-                this.hideTagSuggestions();
-            } else if (e.target.closest('.tag-suggestion')) {
-                // Handle tag suggestion clicks with event delegation
-                e.preventDefault();
-                e.stopPropagation();
-                
-                const suggestionEl = e.target.closest('.tag-suggestion');
-                const tagName = suggestionEl.dataset.tag;
-                
-                console.log('*** TAG SUGGESTION CLICKED (delegation) ***:', tagName);
-                
-                this.addTag(tagName);
-                document.getElementById('tag-input').value = '';
-                this.hideTagSuggestions();
-            } else if (!e.target.closest('.tag-suggestions-dropdown') && !e.target.closest('#tag-input')) {
+            if (!e.target.closest('.tag-suggestions-dropdown') && !e.target.closest('#tag-input')) {
                 this.hideTagSuggestions();
             }
         });
+
+        // Handle clicks on suggestions using event delegation
+        const suggestionsContent = document.getElementById('suggestions-content');
+        if (suggestionsContent) {
+            suggestionsContent.addEventListener('click', (e) => {
+                const suggestionEl = e.target.closest('.tag-suggestion');
+                if (suggestionEl) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const tagName = suggestionEl.dataset.tag;
+                    this.addTag(tagName);
+                    document.getElementById('tag-input').value = '';
+                    this.hideTagSuggestions();
+                }
+            });
+        }
+        
+        const closeButton = document.querySelector('.close-suggestions');
+        if (closeButton) {
+            closeButton.addEventListener('click', () => {
+                this.hideTagSuggestions();
+            });
+        }
 
         // Form submission
         const form = document.getElementById('add-resource-form');
@@ -204,6 +212,13 @@ class AddResourceForm {
         // Real-time validation
         ['name', 'description'].forEach(fieldId => {
             document.getElementById(fieldId).addEventListener('input', () => this.validateField(fieldId));
+        });
+
+        // Handle removing tags
+        document.getElementById('selected-tags').addEventListener('click', (e) => {
+            if (e.target.classList.contains('tag-remove')) {
+                this.removeTag(e.target.dataset.tag);
+            }
         });
     }
 
@@ -505,18 +520,6 @@ class AddResourceForm {
             }).join('')}
         `;
 
-        // Add click handlers
-        suggestionsContent.querySelectorAll('.tag-suggestion').forEach(el => {
-            el.addEventListener('click', (e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                const tagName = el.dataset.tag;
-                console.log('Category tag suggestion clicked:', tagName);
-                this.addTag(tagName);
-                this.hideTagSuggestions();
-            });
-        });
-
         this.showTagSuggestions();
     }
 
@@ -750,44 +753,6 @@ class AddResourceForm {
                 ` : '');
         }
 
-        // Wait for DOM to be ready, then add click handlers
-        setTimeout(() => {
-            const suggestionElements = suggestionsContent.querySelectorAll('.tag-suggestion');
-            console.log('Attaching click handlers to', suggestionElements.length, 'suggestions');
-            
-            suggestionElements.forEach((el, index) => {
-                const tagName = el.dataset.tag;
-                console.log(`Attaching handler ${index + 1}: ${tagName}`);
-                
-                // Remove any existing listeners first
-                el.replaceWith(el.cloneNode(true));
-                const newEl = suggestionsContent.querySelectorAll('.tag-suggestion')[index];
-                
-                newEl.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    console.log('*** TAG SUGGESTION CLICKED ***:', tagName);
-                    
-                    // Call addTag with explicit context
-                    if (window.addForm && window.addForm.addTag) {
-                        window.addForm.addTag(tagName);
-                    } else {
-                        this.addTag(tagName);
-                    }
-                    
-                    const tagInput = document.getElementById('tag-input');
-                    if (tagInput) tagInput.value = '';
-                    this.hideTagSuggestions();
-                });
-                
-                // Also add mousedown for backup
-                newEl.addEventListener('mousedown', (e) => {
-                    e.preventDefault();
-                    console.log('*** TAG SUGGESTION MOUSEDOWN ***:', tagName);
-                });
-            });
-        }, 10);
-
         this.showTagSuggestions();
     }
 
@@ -824,13 +789,14 @@ class AddResourceForm {
 
     addTag(tagName) {
         console.log('addTag called with:', tagName);
+        console.log('this.selectedTags before:', new Set(this.selectedTags));
         if (!tagName || this.selectedTags.has(tagName)) {
             console.log('Tag rejected:', !tagName ? 'empty' : 'already selected');
             return;
         }
 
         // Validate tag format
-        if (!/^[a-z0-9\-]+([\/][a-z0-9\-]+)*$/.test(tagName)) {
+        if (!/^[a-zA-Z0-9\- ]+([\/][a-zA-Z0-9\- ]+)*$/.test(tagName)) {
             const tagInput = document.getElementById('tag-input');
             const message = 'Invalid tag format. Use lowercase letters, numbers, hyphens, and forward slashes (e.g., libraries/python/ml)';
             
@@ -847,6 +813,7 @@ class AddResourceForm {
         }
 
         this.selectedTags.add(tagName);
+        console.log('this.selectedTags after:', new Set(this.selectedTags));
         this.existingTags.add(tagName); // Add to existing for future suggestions
         
         // Update tag usage count for new tags
@@ -889,7 +856,7 @@ class AddResourceForm {
                 return `
                     <span class="tag-item ${isNewTag ? 'new-tag' : ''}" title="${isNewTag ? 'New tag' : `Used ${this.tagUsageCount.get(tag)} times`}">
                         ${isNewTag ? '✨ ' : ''}${tag}
-                        <span class="tag-remove" onclick="addForm.removeTag('${tag}')">×</span>
+                        <span class="tag-remove" data-tag="${tag}">×</span>
                     </span>
                 `;
             }).join('');
@@ -1104,19 +1071,6 @@ Submitted via web form.`;
     }
 }
 
-// Initialize the form when DOM is loaded
-let addForm;
-
 document.addEventListener('DOMContentLoaded', () => {
-    addForm = new AddResourceForm();
-    // Make it globally accessible for batch import extension
-    window.addForm = addForm;
-    console.log('AddResourceForm initialized and made globally available');
+    window.addForm = new AddResourceForm();
 });
-
-// Global functions for inline event handlers (will be overridden after initialization)
-if (!window.addForm) {
-    window.addForm = {
-        removeTag: (tagName) => addForm?.removeTag(tagName)
-    };
-}
