@@ -1023,14 +1023,6 @@
             "tags": [
               "Tools/Libraries/Deep Learning"
             ]
-          },
-          {
-            "name": "Spark nlu",
-            "url": "https://github.com/JohnSnowLabs/nlu",
-            "description": "https://github.com/JohnSnowLabs/nlu",
-            "tags": [
-              "Tools/Libraries/Deep Learning"
-            ]
           }
         ]
       },
@@ -1124,14 +1116,6 @@
             "name": "LangGraph",
             "url": "https://github.com/langchain-ai/langgraph",
             "description": "Library for building stateful, multi-actor applications with LLMs",
-            "tags": [
-              "Tools/Libraries/Generative AI"
-            ]
-          },
-          {
-            "name": "Spark Nlp",
-            "url": "https://github.com/JohnSnowLabs/spark-nlp",
-            "description": "https://github.com/JohnSnowLabs/spark-nlp",
             "tags": [
               "Tools/Libraries/Generative AI"
             ]

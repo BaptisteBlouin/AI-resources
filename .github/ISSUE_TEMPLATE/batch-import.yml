@@ -1,0 +1,75 @@
+name: 📦 Batch Import AI Resources
+description: Submit multiple AI resources to be added to the collection
+title: "[Batch] "
+labels: ["batch-submission", "pending-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📦 Batch Import AI Resources
+        
+        Submit multiple resources at once. Use YAML format below.
+        All fields marked with * are required for each resource.
+
+  - type: textarea
+    id: batch-resources
+    attributes:
+      label: "Resources YAML *"
+      description: "List of resources in YAML format (see example below)"
+      placeholder: |
+        - name: "TensorFlow"
+          url: "https://tensorflow.org"
+          description: "Open source machine learning framework"
+          tags: ["libraries/python/ml", "tools/development"]
+          
+        - name: "PyTorch"
+          url: "https://pytorch.org"
+          description: "Deep learning framework with dynamic computation graphs"
+          tags: ["libraries/python/deep-learning", "tools/research"]
+          
+        - name: "Hugging Face Transformers"
+          url: "https://huggingface.co/transformers"
+          description: "State-of-the-art natural language processing library"
+          tags: ["libraries/python/nlp", "models/pretrained"]
+      render: yaml
+    validations:
+      required: true
+
+  - type: input
+    id: batch-count
+    attributes:
+      label: "Number of Resources"
+      description: "How many resources are you submitting?"
+      placeholder: "e.g., 5"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: batch-checklist
+    attributes:
+      label: "Batch Submission Checklist"
+      description: "Please verify the following for ALL resources"
+      options:
+        - label: "All URLs are accessible and working"
+          required: true
+        - label: "No resources are already in the collection"
+          required: true
+        - label: "All descriptions are clear and helpful"
+          required: true
+        - label: "All tags follow the format: category/subcategory/item"
+          required: true
+        - label: "YAML syntax is correct"
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        
+        ### 🤖 What happens next?
+        
+        1. **Review**: A maintainer will review your batch submission
+        2. **Approval**: If approved, all resources will be automatically added
+        3. **Integration**: All resources appear in the collection within minutes
+        
+        **Note**: Large batches (>10 resources) may take longer to review.

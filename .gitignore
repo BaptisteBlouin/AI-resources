@@ -83,3 +83,5 @@ AGENTS.md
 # Claude AI assistant files (keep local only)
 CLAUDE.md
 import.yml
+
+refresh_command

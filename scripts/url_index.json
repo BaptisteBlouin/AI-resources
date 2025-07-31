@@ -3223,21 +3223,5 @@
       "Academic & Research/Academic Services/Resources"
     ],
     "added_date": null
-  },
-  "https://github.com/JohnSnowLabs/nlu": {
-    "name": "Spark nlu",
-    "original_url": "https://github.com/JohnSnowLabs/nlu",
-    "tags": [
-      "Tools/Libraries/Deep Learning"
-    ],
-    "added_date": null
-  },
-  "https://github.com/JohnSnowLabs/spark-nlp": {
-    "name": "Spark Nlp",
-    "original_url": "https://github.com/JohnSnowLabs/spark-nlp",
-    "tags": [
-      "Tools/Libraries/Generative AI"
-    ],
-    "added_date": null
   }
 }

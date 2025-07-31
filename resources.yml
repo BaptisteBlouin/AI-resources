@@ -2207,13 +2207,3 @@ resources:
     url: "https://aiindex.stanford.edu/"
     description: "Annual comprehensive report on AI progress, trends, and impact"
     tags: ["Industry & Market Intelligence/Market Analysis/Industry Reports", "Academic & Research/Academic Services/Resources"]
-  - name: "Spark nlu"
-    url: "https://github.com/JohnSnowLabs/nlu"
-    description: "https://github.com/JohnSnowLabs/nlu"
-    tags: ["Tools/Libraries/Deep Learning"]
-    
-  - name: "Spark Nlp"
-    url: "https://github.com/JohnSnowLabs/spark-nlp"
-    description: "https://github.com/JohnSnowLabs/spark-nlp"
-    tags: ["Tools/Libraries/Generative AI"]
-    
