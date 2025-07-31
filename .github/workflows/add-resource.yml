@@ -11,7 +11,6 @@ permissions:
 
 jobs:
   add-resource:
-    if: github.event.action == 'labeled' && github.event.label.name == 'approved'
     runs-on: ubuntu-latest
     
     steps:
@@ -26,6 +25,20 @@ jobs:
           echo "Issue labels:"
           echo '${{ toJSON(github.event.issue.labels) }}'
           echo "=============================="
+          
+      - name: ✋ Check if we should proceed
+        run: |
+          if [[ "${{ github.event.action }}" != "labeled" ]]; then
+            echo "❌ Skipping: Action is '${{ github.event.action }}', not 'labeled'"
+            exit 1
+          fi
+          
+          if [[ "${{ github.event.label.name }}" != "approved" ]]; then
+            echo "❌ Skipping: Label is '${{ github.event.label.name }}', not 'approved'"
+            exit 1
+          fi
+          
+          echo "✅ Proceeding: Action is 'labeled' and label is 'approved'"
           
       - name: 📥 Checkout repository
         uses: actions/checkout@v4
