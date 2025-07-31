@@ -34,7 +34,7 @@ Access it here : https://baptisteblouin.github.io/AI-resources/
 The following list is automatically generated from `resources.yml`.
 
 <!-- START AUTO -->
-<!-- Generated on 2025-07-31 16:10:09 UTC by generate_readme.py -->
+<!-- Generated on 2025-07-31 18:19:43 UTC by generate_readme.py -->
 
 ## 🌐 View the Interactive AI Resources Hub
 

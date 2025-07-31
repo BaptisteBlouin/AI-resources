@@ -724,11 +724,13 @@
                 this.popularTags = [];
                 this.categories = {};
                 this.currentMode = 'form';
+                this.urlIndex = {};
                 this.init();
             }
 
             init() {
                 this.loadTagData();
+                this.loadUrlIndex();
                 this.setupModeListeners();
                 this.setupEventListeners();
                 
@@ -756,6 +758,19 @@
                         'papers/research',
                         'datasets/text'
                     ];
+                }
+            }
+
+            async loadUrlIndex() {
+                try {
+                    const response = await fetch('https://raw.githubusercontent.com/BaptisteBlouin/AI-resources/refs/heads/main/scripts/url_index.json');
+                    if (!response.ok) throw new Error('Failed to load URL index');
+                    
+                    this.urlIndex = await response.json();
+                    console.log('URL index loaded with', Object.keys(this.urlIndex).length, 'URLs');
+                } catch (error) {
+                    console.error('Error loading URL index:', error);
+                    this.urlIndex = {};
                 }
             }
 
@@ -1203,6 +1218,7 @@
                         <input type="url" id="url-${resource.id}" placeholder="https://example.com/awesome-ai-tool" 
                                onInput="manager.updateResource(${resource.id}, 'url', this.value)">
                         <div class="form-help">Direct link to the resource</div>
+                        <div class="resource-validation-status" id="url-status-${resource.id}" style="display: none;"></div>
                     </div>
                     
                     <div class="form-group">
@@ -1272,6 +1288,12 @@
                 if (!resource) return;
 
                 resource[field] = value;
+                
+                // Special handling for URL field to check for duplicates
+                if (field === 'url') {
+                    this.validateUrl(resource, value);
+                }
+                
                 this.validateResource(resource);
                 this.updateUI();
             }
@@ -1301,18 +1323,53 @@
 
                 resource.tags = resource.tags.filter(tag => tag !== tagToRemove);
                 
-                // Update the input field
-                const tagsInput = document.getElementById(`tags-${resourceId}`);
-                tagsInput.value = resource.tags.join(', ');
-                
                 this.updateTagsDisplay(resource);
                 this.validateResource(resource);
                 this.updateUI();
             }
 
+            validateUrl(resource, url) {
+                const urlStatusEl = document.getElementById(`url-status-${resource.id}`);
+                if (!urlStatusEl) return;
+                
+                if (!url.trim()) {
+                    urlStatusEl.style.display = 'none';
+                    resource.urlDuplicate = false;
+                    return;
+                }
+                
+                // Normalize URL for comparison
+                let normalizedUrl = url.trim().toLowerCase();
+                if (!normalizedUrl.startsWith('http')) {
+                    normalizedUrl = 'https://' + normalizedUrl;
+                }
+                
+                // Check if URL already exists in the index
+                const isDuplicate = Object.keys(this.urlIndex).some(existingUrl => {
+                    const normalized = existingUrl.toLowerCase();
+                    return normalized === normalizedUrl || 
+                           normalized.replace(/\/$/, '') === normalizedUrl.replace(/\/$/, '') ||
+                           this.urlIndex[existingUrl].original_url?.toLowerCase() === normalizedUrl;
+                });
+                
+                resource.urlDuplicate = isDuplicate;
+                
+                if (isDuplicate) {
+                    urlStatusEl.style.display = 'block';
+                    urlStatusEl.className = 'resource-validation-status invalid';
+                    urlStatusEl.innerHTML = '⚠️ This URL already exists in the collection';
+                } else {
+                    urlStatusEl.style.display = 'block';
+                    urlStatusEl.className = 'resource-validation-status valid';
+                    urlStatusEl.innerHTML = '✅ URL is unique';
+                }
+            }
+
             validateResource(resource) {
                 const required = ['name', 'url', 'description'];
-                const isValid = required.every(field => resource[field].trim()) && resource.tags.length > 0;
+                const isValid = required.every(field => resource[field].trim()) && 
+                               resource.tags.length > 0 && 
+                               !resource.urlDuplicate;
                 
                 resource.isValid = isValid;
                 
@@ -1326,7 +1383,11 @@
                 } else {
                     resourceEl.classList.remove('completed');
                     statusEl.className = 'resource-validation-status invalid';
-                    statusEl.innerHTML = '❌ Please fill out all required fields';
+                    let message = '❌ Please fill out all required fields';
+                    if (resource.urlDuplicate) {
+                        message = '❌ URL already exists in collection';
+                    }
+                    statusEl.innerHTML = message;
                 }
             }
 
