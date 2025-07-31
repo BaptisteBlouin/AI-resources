@@ -163,7 +163,13 @@ jobs:
           python3 generate_readme.py
           cd ..
           
+          # Force reset any workflow file changes
+          git checkout HEAD -- .github/workflows/ || true
+          git reset HEAD -- .github/workflows/ || true
+          
+          echo "=== Final status check ==="
           git status --porcelain
+          echo "=========================="
           
       - name: 🔄 Manual commit and push
         run: |
@@ -171,26 +177,54 @@ jobs:
           BRANCH_NAME="add-resource-${{ steps.parse-issue.outputs.issue-number }}"
           git checkout -b $BRANCH_NAME
           
-          # Check what files have changed
-          echo "=== Git Status ==="
+          # Aggressively reset all workflow changes
+          echo "Resetting workflow files..."
+          git checkout HEAD -- '.github/**' || true
+          git reset HEAD -- '.github/**' || true
+          git clean -fd .github/ || true
+          
+          # Check what files have changed after reset
+          echo "=== Git Status After Reset ==="
           git status --porcelain
-          echo "=================="
+          echo "=============================="
           
-          # Explicitly exclude any workflow files and stage only our target files
-          git reset HEAD -- .github/ || true
-          git checkout HEAD -- .github/ || true
+          # Stage only the specific files we want to commit, one by one
+          echo "Staging target files individually..."
           
-          # Stage only the specific files we want to commit
-          echo "Staging target files..."
-          git add resources.yml || echo "resources.yml not found or unchanged"
-          git add README.md || echo "README.md not found or unchanged"  
-          git add docs/resources.json || echo "docs/resources.json not found or unchanged"
-          git add scripts/url_index.json || echo "scripts/url_index.json not found or unchanged"
+          if [ -f "resources.yml" ]; then
+            git add resources.yml
+            echo "✓ Staged resources.yml"
+          fi
           
-          # Show what we're about to commit
-          echo "=== Files to be committed ==="
-          git diff --cached --name-only
-          echo "============================="
+          if [ -f "README.md" ]; then
+            git add README.md
+            echo "✓ Staged README.md"
+          fi
+          
+          if [ -f "docs/resources.json" ]; then
+            git add docs/resources.json
+            echo "✓ Staged docs/resources.json"
+          fi
+          
+          if [ -f "scripts/url_index.json" ]; then
+            git add scripts/url_index.json
+            echo "✓ Staged scripts/url_index.json"
+          fi
+          
+          # Final check - make sure no workflow files are staged
+          echo "=== Final staged files check ==="
+          STAGED_FILES=$(git diff --cached --name-only)
+          echo "$STAGED_FILES"
+          
+          # Abort if any .github files are staged
+          if echo "$STAGED_FILES" | grep -q "^\.github/"; then
+            echo "❌ ERROR: Workflow files detected in staged changes!"
+            echo "Staged .github files:"
+            echo "$STAGED_FILES" | grep "^\.github/"
+            exit 1
+          fi
+          echo "✓ No workflow files in staged changes"
+          echo "====================================="
           
           # Commit changes
           git commit -m "Add resource: ${{ steps.parse-issue.outputs.resource-name }}
