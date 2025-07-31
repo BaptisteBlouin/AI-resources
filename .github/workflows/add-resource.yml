@@ -124,10 +124,10 @@ jobs:
           # Validate required fields
           if not all([name, url, description, tags]):
               print("❌ Missing required fields:")
-              print(f"Name: {name}")
-              print(f"URL: {url}")
-              print(f"Description: {description}")
-              print(f"Tags: {tags}")
+              print("Name: " + str(name))
+              print("URL: " + str(url))
+              print("Description: " + str(description))
+              print("Tags: " + str(tags))
               exit(1)
           
           # Create resource YAML entry
@@ -140,7 +140,7 @@ jobs:
           
           # Generate YAML entry manually to match the exact format of the file
           tags_json = json.dumps(tags)
-          yaml_entry = f'  - name: "{name}"\n    url: "{url}"\n    description: "{description}"\n    tags: {tags_json}\n    '
+          yaml_entry = '  - name: "' + name + '"\n    url: "' + url + '"\n    description: "' + description + '"\n    tags: ' + tags_json + '\n    '
           
           print("=== Generated YAML ===")
           print(yaml_entry)
@@ -148,12 +148,12 @@ jobs:
           
           # Write outputs for next steps
           with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
-              f.write(f"resource-name={name}\n")
-              f.write(f"resource-url={url}\n")
-              f.write(f"resource-description={description}\n")
-              f.write(f"resource-tags={','.join(tags)}\n")
-              f.write(f"yaml-entry<<EOF\n{yaml_entry}\nEOF\n")
-              f.write(f"issue-number={issue_number}\n")
+              f.write("resource-name=" + name + "\n")
+              f.write("resource-url=" + url + "\n")
+              f.write("resource-description=" + description + "\n")
+              f.write("resource-tags=" + ','.join(tags) + "\n")
+              f.write("yaml-entry<<EOF\n" + yaml_entry + "\nEOF\n")
+              f.write("issue-number=" + issue_number + "\n")
           
           print("✅ Resource data extracted successfully")
           EOF
