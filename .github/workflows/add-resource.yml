@@ -236,7 +236,8 @@ jobs:
           Auto-generated from issue #${{ steps.parse-issue.outputs.issue-number }}"
           
           # Push branch
-          git push origin $BRANCH_NAME
+          git push https://x-access-token:${{ secrets.PERSONAL_GITHUB_TOKEN }}@github.com/${{ github.repository }} $BRANCH_NAME
+
           
           echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_OUTPUT
         env:
