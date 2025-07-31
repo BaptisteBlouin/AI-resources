@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batch Add Resources - AI Resources Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .batch-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .resource-item {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .resource-item.completed {
+            border-color: var(--success);
+            background: rgba(16, 185, 129, 0.05);
+        }
+        
+        .resource-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .resource-number {
+            background: var(--primary);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+        
+        .remove-resource {
+            background: var(--danger);
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+        
+        .remove-resource:hover {
+            opacity: 0.8;
+        }
+        
+        .resource-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        
+        .resource-form .full-width {
+            grid-column: 1 / -1;
+        }
+        
+        .add-resource-btn {
+            background: var(--success);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .add-resource-btn:hover {
+            opacity: 0.9;
+        }
+        
+        .batch-actions {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .batch-summary {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .submit-batch {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        
+        .submit-batch:hover {
+            opacity: 0.9;
+        }
+        
+        .submit-batch:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: var(--border);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: var(--success);
+            transition: width 0.3s ease;
+        }
+        
+        .validation-status {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+        
+        .status-icon {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+        }
+        
+        .status-valid {
+            background: var(--success);
+        }
+        
+        .status-invalid {
+            background: var(--danger);
+        }
+        
+        .status-pending {
+            background: var(--warning);
+        }
+        
+        @media (max-width: 768px) {
+            .resource-form {
+                grid-template-columns: 1fr;
+            }
+            
+            .batch-container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>📦 Batch Add Resources</h1>
+            <p>Add multiple AI resources at once to the collection</p>
+            <a href="index.html" class="back-link">← Back to Collection</a>
+        </div>
+    </header>
+
+    <main class="batch-container">
+        <div class="progress-section">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            <div class="batch-summary">
+                <span id="completed-count">0</span> of <span id="total-count">1</span> resources completed
+            </div>
+        </div>
+
+        <div id="resources-container">
+            <!-- Resources will be added here dynamically -->
+        </div>
+
+        <button class="add-resource-btn" onclick="addNewResource()">
+            <span>➕</span> Add Another Resource
+        </button>
+
+        <div class="batch-actions">
+            <div class="batch-summary">
+                Ready to submit <strong id="valid-count">0</strong> resources
+            </div>
+            <button class="submit-batch" id="submit-btn" onclick="submitBatch()" disabled>
+                🚀 Submit Batch Import
+            </button>
+        </div>
+    </main>
+
+    <script>
+        class BatchResourceManager {
+            constructor() {
+                this.resources = [];
+                this.resourceIdCounter = 1;
+                this.init();
+            }
+
+            init() {
+                // Add first resource automatically
+                this.addNewResource();
+                this.updateUI();
+            }
+
+            addNewResource() {
+                const resourceId = this.resourceIdCounter++;
+                const resource = {
+                    id: resourceId,
+                    name: '',
+                    url: '',
+                    description: '',
+                    tags: [],
+                    isValid: false
+                };
+
+                this.resources.push(resource);
+                this.renderResource(resource);
+                this.updateUI();
+            }
+
+            removeResource(resourceId) {
+                this.resources = this.resources.filter(r => r.id !== resourceId);
+                document.getElementById(`resource-${resourceId}`).remove();
+                this.updateUI();
+            }
+
+            renderResource(resource) {
+                const container = document.getElementById('resources-container');
+                const resourceEl = document.createElement('div');
+                resourceEl.className = 'resource-item';
+                resourceEl.id = `resource-${resource.id}`;
+                
+                resourceEl.innerHTML = `
+                    <div class="resource-header">
+                        <span class="resource-number">Resource ${resource.id}</span>
+                        <button class="remove-resource" onclick="batchManager.removeResource(${resource.id})" ${this.resources.length === 1 ? 'disabled' : ''}>
+                            🗑️ Remove
+                        </button>
+                    </div>
+                    
+                    <div class="resource-form">
+                        <div>
+                            <label for="name-${resource.id}">Resource Name *</label>
+                            <input type="text" id="name-${resource.id}" placeholder="e.g., TensorFlow" 
+                                   onInput="batchManager.updateResource(${resource.id}, 'name', this.value)">
+                        </div>
+                        
+                        <div>
+                            <label for="url-${resource.id}">URL *</label>
+                            <input type="url" id="url-${resource.id}" placeholder="https://tensorflow.org"
+                                   onInput="batchManager.updateResource(${resource.id}, 'url', this.value)">
+                        </div>
+                        
+                        <div class="full-width">
+                            <label for="description-${resource.id}">Description *</label>
+                            <textarea id="description-${resource.id}" rows="3" 
+                                      placeholder="Brief description of what this resource does..."
+                                      onInput="batchManager.updateResource(${resource.id}, 'description', this.value)"></textarea>
+                        </div>
+                        
+                        <div class="full-width">
+                            <label for="tags-${resource.id}">Tags * (comma-separated)</label>
+                            <input type="text" id="tags-${resource.id}" 
+                                   placeholder="libraries/python/ml, tools/development"
+                                   onInput="batchManager.updateResource(${resource.id}, 'tags', this.value)">
+                        </div>
+                    </div>
+                    
+                    <div class="validation-status">
+                        <div class="status-icon status-pending" id="status-${resource.id}"></div>
+                        <span id="status-text-${resource.id}">Fill out all required fields</span>
+                    </div>
+                `;
+                
+                container.appendChild(resourceEl);
+            }
+
+            updateResource(resourceId, field, value) {
+                const resource = this.resources.find(r => r.id === resourceId);
+                if (!resource) return;
+
+                if (field === 'tags') {
+                    resource.tags = value.split(',').map(tag => tag.trim()).filter(tag => tag);
+                } else {
+                    resource[field] = value;
+                }
+
+                this.validateResource(resource);
+                this.updateUI();
+            }
+
+            validateResource(resource) {
+                const required = ['name', 'url', 'description'];
+                const isValid = required.every(field => resource[field].trim()) && resource.tags.length > 0;
+                
+                resource.isValid = isValid;
+                
+                const resourceEl = document.getElementById(`resource-${resource.id}`);
+                const statusIcon = document.getElementById(`status-${resource.id}`);
+                const statusText = document.getElementById(`status-text-${resource.id}`);
+                
+                if (isValid) {
+                    resourceEl.classList.add('completed');
+                    statusIcon.className = 'status-icon status-valid';
+                    statusText.textContent = 'Ready to submit';
+                } else {
+                    resourceEl.classList.remove('completed');
+                    statusIcon.className = 'status-icon status-invalid';
+                    statusText.textContent = 'Fill out all required fields';
+                }
+            }
+
+            updateUI() {
+                const totalCount = this.resources.length;
+                const completedCount = this.resources.filter(r => r.isValid).length;
+                const progressPercent = totalCount > 0 ? (completedCount / totalCount) * 100 : 0;
+
+                document.getElementById('total-count').textContent = totalCount;
+                document.getElementById('completed-count').textContent = completedCount;
+                document.getElementById('valid-count').textContent = completedCount;
+                document.getElementById('progress-fill').style.width = `${progressPercent}%`;
+
+                const submitBtn = document.getElementById('submit-btn');
+                submitBtn.disabled = completedCount === 0;
+
+                // Update remove button states
+                this.resources.forEach(resource => {
+                    const removeBtn = document.querySelector(`#resource-${resource.id} .remove-resource`);
+                    if (removeBtn) {
+                        removeBtn.disabled = this.resources.length === 1;
+                    }
+                });
+            }
+
+            generateYAML() {
+                const validResources = this.resources.filter(r => r.isValid);
+                let yaml = '';
+                
+                validResources.forEach(resource => {
+                    yaml += `- name: "${resource.name}"\n`;
+                    yaml += `  url: "${resource.url}"\n`;
+                    yaml += `  description: "${resource.description}"\n`;
+                    yaml += `  tags: [${resource.tags.map(tag => `"${tag}"`).join(', ')}]\n\n`;
+                });
+                
+                return yaml.trim();
+            }
+
+            submitBatch() {
+                const validResources = this.resources.filter(r => r.isValid);
+                if (validResources.length === 0) {
+                    alert('Please complete at least one resource before submitting.');
+                    return;
+                }
+
+                const yaml = this.generateYAML();
+                const title = `[Batch] ${validResources.length} AI Resources`;
+                
+                const body = `### Resources YAML *
+
+\`\`\`yaml
+${yaml}
+\`\`\`
+
+### Number of Resources
+
+${validResources.length}
+
+### Batch Submission Checklist
+
+- [x] All URLs are accessible and working
+- [x] No resources are already in the collection  
+- [x] All descriptions are clear and helpful
+- [x] All tags follow the format: category/subcategory/item
+- [x] YAML syntax is correct`;
+
+                const githubUrl = `https://github.com/BaptisteBlouin/AI-resources/issues/new?labels=batch-submission,pending-review&title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}&template=batch-import.yml`;
+                
+                window.open(githubUrl, '_blank');
+            }
+        }
+
+        // Global functions
+        const batchManager = new BatchResourceManager();
+        
+        function addNewResource() {
+            batchManager.addNewResource();
+        }
+        
+        function submitBatch() {
+            batchManager.submitBatch();
+        }
+    </script>
+</body>
+</html>
