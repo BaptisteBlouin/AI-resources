@@ -140,11 +140,7 @@ jobs:
           
           # Generate YAML entry manually to match the exact format of the file
           tags_json = json.dumps(tags)
-          yaml_entry = f"""  - name: "{name}"
-    url: "{url}"
-    description: "{description}"
-    tags: {tags_json}
-    """
+          yaml_entry = f'  - name: "{name}"\n    url: "{url}"\n    description: "{description}"\n    tags: {tags_json}\n    '
           
           print("=== Generated YAML ===")
           print(yaml_entry)
