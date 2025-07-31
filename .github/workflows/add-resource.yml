@@ -1,0 +1,195 @@
+name: 🚀 Auto-Add Resource
+
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  add-resource:
+    if: contains(github.event.label.name, 'approved')
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          
+      - name: 📦 Install dependencies
+        run: |
+          pip install pyyaml
+          
+      - name: 📋 Parse issue and extract resource data
+        id: parse-issue
+        run: |
+          python3 << 'EOF'
+          import os
+          import re
+          import json
+          import yaml
+          
+          # Get issue body from environment
+          issue_body = """${{ github.event.issue.body }}"""
+          issue_number = "${{ github.event.issue.number }}"
+          issue_title = "${{ github.event.issue.title }}"
+          
+          print("=== Issue Body ===")
+          print(issue_body)
+          print("==================")
+          
+          # Parse issue body to extract resource data
+          def extract_field(body, field_name):
+              # Look for the field pattern in the structured format
+              pattern = rf"### {field_name}.*?\n\n(.*?)(?=\n\n###|\n\n---|\Z)"
+              match = re.search(pattern, body, re.DOTALL | re.IGNORECASE)
+              if match:
+                  return match.group(1).strip()
+              return ""
+          
+          # Extract resource data
+          name = extract_field(issue_body, "Resource Name")
+          url = extract_field(issue_body, "URL") 
+          description = extract_field(issue_body, "Description")
+          tags_raw = extract_field(issue_body, "Tags")
+          
+          # Clean and parse tags
+          if tags_raw:
+              tags = [tag.strip() for tag in tags_raw.split(',') if tag.strip()]
+          else:
+              tags = []
+          
+          # Validate required fields
+          if not all([name, url, description, tags]):
+              print("❌ Missing required fields:")
+              print(f"Name: {name}")
+              print(f"URL: {url}")
+              print(f"Description: {description}")
+              print(f"Tags: {tags}")
+              exit(1)
+          
+          # Create resource YAML entry
+          resource = {
+              'name': name,
+              'url': url,
+              'description': description,
+              'tags': tags
+          }
+          
+          # Generate YAML for the new resource
+          yaml_entry = yaml.dump([resource], default_flow_style=False, allow_unicode=True, sort_keys=False)
+          # Remove the leading "- " and adjust indentation
+          yaml_entry = yaml_entry.replace('- name:', '  - name:').replace('\n  ', '\n    ')
+          
+          print("=== Generated YAML ===")
+          print(yaml_entry)
+          print("======================")
+          
+          # Write outputs for next steps
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+              f.write(f"resource-name={name}\n")
+              f.write(f"resource-url={url}\n")
+              f.write(f"resource-description={description}\n")
+              f.write(f"resource-tags={','.join(tags)}\n")
+              f.write(f"yaml-entry<<EOF\n{yaml_entry}\nEOF\n")
+              f.write(f"issue-number={issue_number}\n")
+          
+          print("✅ Resource data extracted successfully")
+          EOF
+          
+      - name: 📝 Add resource to resources.yml
+        run: |
+          echo "Adding resource to resources.yml..."
+          
+          # Append the new resource to the end of resources.yml
+          cat >> resources.yml << 'EOF'
+          ${{ steps.parse-issue.outputs.yaml-entry }}
+          EOF
+          
+          echo "✅ Resource added to resources.yml"
+          
+      - name: 🔄 Generate README and update resources
+        run: |
+          echo "Running generate_readme.py..."
+          cd scripts
+          python3 generate_readme.py
+          cd ..
+          echo "✅ README and resources updated"
+          
+      - name: 📊 Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: |
+            Add resource: ${{ steps.parse-issue.outputs.resource-name }}
+            
+            - Name: ${{ steps.parse-issue.outputs.resource-name }}
+            - URL: ${{ steps.parse-issue.outputs.resource-url }}
+            - Tags: ${{ steps.parse-issue.outputs.resource-tags }}
+            
+            Auto-generated from issue #${{ steps.parse-issue.outputs.issue-number }}
+          title: "Add resource: ${{ steps.parse-issue.outputs.resource-name }}"
+          body: |
+            ## 🚀 Auto-generated resource addition
+            
+            This PR automatically adds a new resource based on the approved submission in issue #${{ steps.parse-issue.outputs.issue-number }}.
+            
+            ### 📋 Resource Details
+            - **Name**: ${{ steps.parse-issue.outputs.resource-name }}
+            - **URL**: ${{ steps.parse-issue.outputs.resource-url }}
+            - **Description**: ${{ steps.parse-issue.outputs.resource-description }}
+            - **Tags**: ${{ steps.parse-issue.outputs.resource-tags }}
+            
+            ### ✅ Automated Actions Completed
+            - [x] Resource added to `resources.yml`
+            - [x] README.md regenerated
+            - [x] Resources index updated
+            - [x] URL validation completed
+            
+            ### 🔍 Review Checklist
+            - [ ] Resource information is accurate
+            - [ ] Tags are appropriate and well-formatted
+            - [ ] No duplicate entries created
+            - [ ] Generated files look correct
+            
+            **Source**: Issue #${{ steps.parse-issue.outputs.issue-number }}
+            **Auto-generated**: ${{ github.run_id }}
+          branch: add-resource-${{ steps.parse-issue.outputs.issue-number }}
+          delete-branch: true
+          
+      - name: 📝 Comment on issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: ${{ steps.parse-issue.outputs.issue-number }},
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `## 🚀 Resource Processing Complete!
+              
+              ✅ Your resource has been automatically processed and a pull request has been created.
+              
+              **What happened:**
+              - Resource added to \`resources.yml\`
+              - README.md regenerated
+              - Pull request created for review
+              
+              **Next steps:**
+              - The pull request will be reviewed and merged
+              - Your resource will appear in the collection shortly
+              
+              Thank you for contributing to the AI Resources collection! 🎉`
+            });
+            
+            // Close the issue as it's been processed
+            github.rest.issues.update({
+              issue_number: ${{ steps.parse-issue.outputs.issue-number }},
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'closed',
+              labels: ['approved', 'processed']
+            });

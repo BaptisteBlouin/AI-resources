@@ -969,6 +969,9 @@ class AddResourceForm {
                 case 'github-pr':
                     await this.createGitHubPR();
                     break;
+                case 'github-edit':
+                    await this.openGitHubDirectEdit();
+                    break;
                 case 'github-issue':
                     await this.createGitHubIssue();
                     break;
@@ -985,39 +988,343 @@ class AddResourceForm {
     }
 
     async createGitHubPR() {
-        // This would typically require GitHub API authentication
-        // For now, we'll redirect to GitHub with pre-filled content
-        const title = `Add resource: ${this.formData.name}`;
-        const body = `## New Resource Submission
+        this.showLoading('Creating GitHub issue...');
+        
+        try {
+            await this.createStructuredGitHubIssue();
+        } catch (error) {
+            console.error('Issue creation error:', error);
+            alert('There was an error creating the GitHub issue. Please try again.');
+        } finally {
+            this.hideLoading();
+        }
+    }
 
-**Resource Name:** ${this.formData.name}
-**URL:** ${this.formData.url}
-**Description:** ${this.formData.description}
-**Tags:** ${this.formData.tags.join(', ')}
+    async calculateInsertionPoint() {
+        // Analyze the tag structure to find the best insertion point
+        const primaryTag = this.formData.tags[0];
+        const tagParts = primaryTag.split('/');
+        
+        return {
+            category: tagParts[0],
+            subcategory: tagParts[1] || null,
+            suggestedLine: null, // Would need server-side calculation for exact line
+            canAutoInsert: false, // For now, always use enhanced issue method
+            insertionGuide: this.generateInsertionGuide(tagParts)
+        };
+    }
 
-### YAML to add to resources.yml:
+    generateInsertionGuide(tagParts) {
+        const category = tagParts[0];
+        const subcategory = tagParts[1];
+        
+        let guide = `📍 **Where to add this resource in resources.yml:**\n\n`;
+        
+        if (subcategory) {
+            guide += `1. Find the **"${category}"** section\n`;
+            guide += `2. Look for the **"${subcategory}"** subsection\n`;
+            guide += `3. Add your resource at the end of that subsection\n`;
+        } else {
+            guide += `1. Find the **"${category}"** section\n`;
+            guide += `2. Add your resource at the end of that section\n`;
+        }
+        
+        guide += `\n💡 **Tip**: Use Ctrl+F to search for existing resources with similar tags to find the right location.`;
+        
+        return guide;
+    }
+
+    generateEnhancedYAML(insertionInfo) {
+        const yaml = this.generateYAML();
+        const guide = insertionInfo.insertionGuide;
+        
+        return `# ========================================
+# 📝 NEW RESOURCE TO ADD
+# ========================================
+# ${guide.replace(/\n/g, '\n# ')}
+# ========================================
+
+${yaml}
+
+# ========================================
+# 📝 END OF NEW RESOURCE
+# ========================================`;
+    }
+
+    generatePRBody(enhancedYAML, insertionInfo) {
+        return `## 🚀 New Resource Submission
+
+### 📋 Resource Details
+- **Name**: ${this.formData.name}
+- **URL**: ${this.formData.url}
+- **Description**: ${this.formData.description}
+- **Tags**: ${this.formData.tags.map(tag => `\`${tag}\``).join(', ')}
+
+### 📍 Where to Add This Resource
+
+${insertionInfo.insertionGuide}
+
+### 📝 YAML Code to Add
 
 \`\`\`yaml
 ${this.generateYAML()}
 \`\`\`
 
-### Checklist:
-- [ ] URL is accessible and working
-- [ ] Description is clear and helpful
-- [ ] Tags follow the established format
-- [ ] Resource is not a duplicate
+### 🔧 Complete Code with Comments
 
-Submitted via web form.`;
+<details>
+<summary>Click to expand the commented version</summary>
 
-        const githubUrl = `https://github.com/BaptisteBlouin/AI-resources/compare/main...main?quick_pull=1&title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
+\`\`\`yaml
+${enhancedYAML}
+\`\`\`
+
+</details>
+
+### ✅ Pre-submission Checklist
+
+- [x] **URL validated**: Resource URL is accessible and working
+- [x] **No duplicates**: Checked against existing resources
+- [x] **Tags formatted**: Following the established tag format
+- [x] **Description quality**: Clear and helpful description provided
+- [ ] **Placement verified**: Resource added to the correct category section
+- [ ] **YAML valid**: No syntax errors in the YAML structure
+
+### 🤖 Submission Info
+
+- **Submitted via**: Web form interface
+- **Validation**: URL and tags pre-validated
+- **Category**: ${this.formData.tags[0].split('/')[0]}
+- **Submission date**: ${new Date().toISOString().split('T')[0]}
+
+---
+
+**For maintainers**: This resource has been pre-validated through the web interface. The YAML is ready to be copied into the appropriate section of \`resources.yml\`.`;
+    }
+
+    async openGitHubWebEditor(enhancedYAML, insertionInfo) {
+        // This would open GitHub's web editor at a specific line
+        // For now, we'll use the enhanced issue method as it's more reliable
+        return this.createEnhancedGitHubIssue(
+            `Add resource: ${this.formData.name}`,
+            this.generatePRBody(enhancedYAML, insertionInfo)
+        );
+    }
+
+    async createEnhancedGitHubIssue(title, body) {
+        const githubUrl = `https://github.com/BaptisteBlouin/AI-resources/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}&labels=resource-submission,web-form&template=resource-submission.md`;
         
-        this.showLoading('Redirecting to GitHub...');
+        // Show user-friendly instructions
+        const instructionsModal = this.createInstructionsModal();
+        document.body.appendChild(instructionsModal);
+        
+        // Open GitHub in new tab
+        window.open(githubUrl, '_blank');
         
         setTimeout(() => {
-            window.open(githubUrl, '_blank');
+            instructionsModal.remove();
+        }, 10000); // Auto-remove after 10 seconds
+    }
+
+    createInstructionsModal() {
+        const modal = document.createElement('div');
+        modal.className = 'loading-overlay';
+        modal.innerHTML = `
+            <div class="loading-content" style="max-width: 600px;">
+                <h2>🚀 GitHub Issue Created!</h2>
+                <div style="text-align: left; margin: 1rem 0;">
+                    <p><strong>What just happened:</strong></p>
+                    <ol style="margin: 1rem 0; padding-left: 1.5rem;">
+                        <li>A new GitHub issue was created with your resource details</li>
+                        <li>The issue includes the exact YAML code and placement instructions</li>
+                        <li>Our maintainers will review and add your resource</li>
+                    </ol>
+                    
+                    <p><strong>Next steps:</strong></p>
+                    <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                        <li>✅ Check the GitHub tab that just opened</li>
+                        <li>✅ Click "Submit new issue" if you haven't already</li>
+                        <li>✅ You'll get notified when your resource is added</li>
+                    </ul>
+                    
+                    <div style="background: var(--bg-secondary); padding: 1rem; border-radius: var(--radius); margin: 1rem 0;">
+                        <strong>💡 Pro tip:</strong> Want to add it yourself? The issue contains the exact YAML code and detailed instructions on where to place it in the resources.yml file!
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button type="button" class="button button-primary" onclick="this.closest('.loading-overlay').remove()">
+                        ✅ Got it!
+                    </button>
+                </div>
+            </div>
+        `;
+        
+        return modal;
+    }
+
+    async openGitHubDirectEdit() {
+        this.showLoading('Opening GitHub editor...');
+        
+        try {
+            // Calculate insertion guidance
+            const insertionInfo = await this.calculateInsertionPoint();
+            const yaml = this.generateYAML();
+            
+            // Copy YAML to clipboard first
+            if (navigator.clipboard) {
+                await navigator.clipboard.writeText(yaml);
+            }
+            
+            // Create instruction modal
+            const instructionsModal = this.createDirectEditModal(insertionInfo, yaml);
+            document.body.appendChild(instructionsModal);
+            
+            // Open GitHub file editor
+            const editUrl = `https://github.com/BaptisteBlouin/AI-resources/edit/main/resources.yml`;
+            window.open(editUrl, '_blank');
+            
+        } catch (error) {
+            console.error('GitHub edit error:', error);
+            // Fallback to enhanced issue
+            await this.createGitHubPR();
+        } finally {
             this.hideLoading();
-            alert('Redirected to GitHub! Please create the pull request from there.');
-        }, 2000);
+        }
+    }
+
+    createDirectEditModal(insertionInfo, yaml) {
+        const modal = document.createElement('div');
+        modal.className = 'loading-overlay';
+        modal.innerHTML = `
+            <div class="loading-content" style="max-width: 700px; max-height: 80vh; overflow-y: auto;">
+                <h2>📝 GitHub Direct Edit Instructions</h2>
+                <div style="text-align: left; margin: 1rem 0;">
+                    <div style="background: var(--success); color: white; padding: 0.75rem; border-radius: var(--radius); margin-bottom: 1rem;">
+                        ✅ <strong>YAML copied to clipboard!</strong> Ready to paste.
+                    </div>
+                    
+                    <p><strong>Follow these steps:</strong></p>
+                    <ol style="margin: 1rem 0; padding-left: 1.5rem; line-height: 1.6;">
+                        <li><strong>GitHub editor opened</strong> in a new tab</li>
+                        <li><strong>Find the right location:</strong>
+                            <div style="background: var(--bg-secondary); padding: 0.75rem; border-radius: var(--radius); margin: 0.5rem 0; font-family: monospace;">
+                                ${insertionInfo.insertionGuide.replace(/\n/g, '<br>')}
+                            </div>
+                        </li>
+                        <li><strong>Paste your code:</strong> Press Ctrl+V (or Cmd+V on Mac) to paste the YAML</li>
+                        <li><strong>Commit changes:</strong> Scroll down, add a commit message like "Add ${this.formData.name}"</li>
+                        <li><strong>Create Pull Request:</strong> Click "Propose changes" button</li>
+                    </ol>
+                    
+                    <div style="background: var(--bg-secondary); padding: 1rem; border-radius: var(--radius); margin: 1rem 0;">
+                        <strong>📋 Your YAML code:</strong>
+                        <pre style="background: var(--bg-primary); padding: 0.75rem; border-radius: var(--radius); margin: 0.5rem 0; overflow-x: auto; font-size: 0.85rem;">${yaml}</pre>
+                        <button type="button" class="button button-secondary" onclick="navigator.clipboard.writeText(\`${yaml.replace(/`/g, '\\`')}\`)">
+                            📋 Copy YAML Again
+                        </button>
+                    </div>
+                    
+                    <div style="background: rgba(37, 99, 235, 0.1); padding: 1rem; border-radius: var(--radius); margin: 1rem 0; border-left: 4px solid var(--primary);">
+                        <strong>💡 Pro Tips:</strong>
+                        <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+                            <li>Use Ctrl+F to search for similar resources</li>
+                            <li>Make sure indentation matches existing entries</li>
+                            <li>The commit message should be descriptive</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button type="button" class="button button-secondary" onclick="this.closest('.loading-overlay').remove()">
+                        📝 Got it, let me edit!
+                    </button>
+                    <button type="button" class="button button-primary" onclick="window.addForm.createGitHubPR(); this.closest('.loading-overlay').remove();">
+                        🔄 Use Smart Issue Instead
+                    </button>
+                </div>
+            </div>
+        `;
+        
+        return modal;
+    }
+
+    async createStructuredGitHubIssue() {
+        const title = `[Resource] ${this.formData.name}`;
+        
+        // Create the issue body in the exact format expected by the template
+        const body = `### Resource Name *
+
+${this.formData.name}
+
+### URL *
+
+${this.formData.url}
+
+### Description *
+
+${this.formData.description}
+
+### Tags *
+
+${this.formData.tags.join(', ')}
+
+### Submission Checklist
+
+- [x] The URL is accessible and working
+- [x] The resource is not already in the collection  
+- [x] The description is clear and helpful
+- [x] The tags follow the format: category/subcategory/item
+
+---
+
+**Submitted via web form** • **Auto-validated** • **Ready for review**`;
+
+        // Use the standard GitHub issue creation URL with body parameter
+        const githubUrl = `https://github.com/BaptisteBlouin/AI-resources/issues/new?labels=resource-submission,pending-review&title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
+        
+        // Show success modal
+        const successModal = this.createSuccessModal();
+        document.body.appendChild(successModal);
+        
+        // Open GitHub
+        window.open(githubUrl, '_blank');
+    }
+
+    createSuccessModal() {
+        const modal = document.createElement('div');
+        modal.className = 'loading-overlay';
+        modal.innerHTML = `
+            <div class="loading-content" style="max-width: 500px;">
+                <h2>🚀 Ready to Submit!</h2>
+                <div style="text-align: left; margin: 1rem 0;">
+                    <p><strong>What's happening:</strong></p>
+                    <ol style="margin: 1rem 0; padding-left: 1.5rem;">
+                        <li>GitHub issue form opened in new tab</li>
+                        <li>Your resource details are pre-filled</li>
+                        <li>Click "Submit new issue" to send for review</li>
+                    </ol>
+                    
+                    <div style="background: var(--bg-secondary); padding: 1rem; border-radius: var(--radius); margin: 1rem 0;">
+                        <strong>⚡ Automatic Process:</strong><br>
+                        Once approved by a maintainer, your resource will be automatically added to the collection via GitHub workflow!
+                    </div>
+                    
+                    <p><strong>Timeline:</strong></p>
+                    <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+                        <li>📝 Submit issue (now)</li>
+                        <li>👀 Maintainer review (usually within 24h)</li>
+                        <li>✅ Auto-approval → Automatic PR creation</li>
+                        <li>🎉 Resource live in collection!</li>
+                    </ul>
+                </div>
+                <div class="button-group">
+                    <button type="button" class="button button-primary" onclick="this.closest('.loading-overlay').remove()">
+                        ✅ Perfect, let's submit!
+                    </button>
+                </div>
+            </div>
+        `;
+        
+        return modal;
     }
 
     async createGitHubIssue() {

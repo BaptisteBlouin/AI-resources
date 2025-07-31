@@ -1049,10 +1049,13 @@
                     <div class="form-group">
                         <label for="submission-type">How would you like to submit this resource?</label>
                         <select id="submission-type" name="submission-type">
-                            <option value="github-pr">Create GitHub Pull Request (Recommended)</option>
-                            <option value="github-issue">Create GitHub Issue</option>
-                            <option value="copy-yaml">Copy YAML for Manual Addition</option>
+                            <option value="github-pr">🚀 Submit for Review (Recommended)</option>
+                            <option value="copy-yaml">📋 Copy YAML Only</option>
                         </select>
+                        <div class="form-help">
+                            <strong>🚀 Submit for Review:</strong> Creates a structured GitHub issue. Once approved by a maintainer, your resource is automatically added via GitHub workflow!<br>
+                            <strong>📋 Copy YAML:</strong> Just copies the YAML code to your clipboard for manual use.
+                        </div>
                     </div>
                 </div>
 
