@@ -1,0 +1,55 @@
+name: 🧪 Test Issue Parsing
+
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  test-parsing:
+    if: github.event.label.name == 'approved'
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 🔍 Show raw issue body
+        run: |
+          echo "=== RAW ISSUE BODY ==="
+          echo '${{ github.event.issue.body }}'
+          echo "======================"
+          
+      - name: 🧪 Test parsing logic
+        run: |
+          python3 << 'EOF'
+          import re
+          
+          issue_body = """${{ github.event.issue.body }}"""
+          
+          print("=== ISSUE BODY ===")
+          print(repr(issue_body))
+          print("==================")
+          
+          def extract_field(body, field_name):
+              print(f"Looking for field: {field_name}")
+              pattern = rf"### {field_name}.*?\n\s*\n(.*?)(?=\n\s*\n###|\n\s*\n---|\Z)"
+              print(f"Pattern: {pattern}")
+              match = re.search(pattern, body, re.DOTALL | re.IGNORECASE)
+              if match:
+                  value = match.group(1).strip()
+                  print(f"Found: '{value}'")
+                  if value == "_No response_":
+                      return ""
+                  return value
+              else:
+                  print("No match found")
+              return ""
+          
+          name = extract_field(issue_body, "Resource Name")
+          url = extract_field(issue_body, "URL")
+          description = extract_field(issue_body, "Description")
+          tags_raw = extract_field(issue_body, "Tags")
+          
+          print(f"Final results:")
+          print(f"Name: '{name}'") 
+          print(f"URL: '{url}'")
+          print(f"Description: '{description}'")
+          print(f"Tags: '{tags_raw}'")
+          EOF

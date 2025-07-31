@@ -91,13 +91,22 @@ jobs:
           print(issue_body)
           print("==================")
           
-          # Parse issue body to extract resource data
+          # Parse issue body to extract resource data from GitHub form
           def extract_field(body, field_name):
-              # Look for the field pattern in the structured format
-              pattern = rf"### {field_name}.*?\n\n(.*?)(?=\n\n###|\n\n---|\Z)"
+              # GitHub form creates content in this format:
+              # ### Resource Name *
+              # 
+              # Value here
+              # 
+              # ### Next Field
+              pattern = rf"### {field_name}.*?\n\s*\n(.*?)(?=\n\s*\n###|\n\s*\n---|\Z)"
               match = re.search(pattern, body, re.DOTALL | re.IGNORECASE)
               if match:
-                  return match.group(1).strip()
+                  value = match.group(1).strip()
+                  # Remove any _No response_ placeholder
+                  if value == "_No response_":
+                      return ""
+                  return value
               return ""
           
           # Extract resource data
